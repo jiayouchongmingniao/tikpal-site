@@ -1,0 +1,203 @@
+---
+import nav from '../content/nav.json';
+---
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Primary">
+    <a class="brand" href="#voice">{nav.brand}</a>
+
+    <ul class="nav-links">
+      {
+        nav.links.map((link) => (
+          <li>
+            <a href={link.href}>{link.label}</a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <a class="nav-shop" href={nav.shop.href}>{nav.shop.label}</a>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      aria-label="Open menu"
+      onclick="toggleMenu()"
+    >
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      {
+        nav.links.map((link) => (
+          <li>
+            <a href={link.href} onclick="toggleMenu(false)">
+              {link.label}
+            </a>
+          </li>
+        ))
+      }
+      <li>
+        <a class="mobile-shop" href={nav.shop.href} onclick="toggleMenu(false)">
+          {nav.shop.label}
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script is:inline>
+    // Single source of truth for the mobile menu state: the toggle button
+    // and every menu link call this, so aria-expanded / aria-label always reset.
+    function toggleMenu(force) {
+      var menu = document.getElementById('mobile-menu');
+      var btn = document.querySelector('.nav-toggle');
+      var open = force === undefined ? !menu.classList.contains('open') : force;
+      menu.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      document.body.classList.toggle('menu-open', open);
+    }
+  </script>
+</header>
+
+<style>
+  .site-header {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 100;
+    backdrop-filter: blur(18px) saturate(1.4);
+    -webkit-backdrop-filter: blur(18px) saturate(1.4);
+    background: rgba(10, 10, 10, 0.55);
+    border-bottom: 1px solid var(--line-light);
+    color: var(--white);
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    height: 4rem;
+  }
+
+  .brand {
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: clamp(1.25rem, 3vw, 2.4rem);
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: var(--text-small);
+    opacity: 0.72;
+    transition: opacity var(--dur-fast) ease;
+  }
+
+  .nav-links a:hover {
+    opacity: 1;
+  }
+
+  .nav-shop {
+    font-size: var(--text-small);
+    font-weight: 600;
+    padding: 0.45rem 1.2rem;
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-pill);
+    transition: background-color var(--dur-fast) ease,
+      color var(--dur-fast) ease;
+  }
+
+  .nav-shop:hover {
+    background: var(--white);
+    color: var(--black);
+  }
+
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    padding: 0.5rem;
+  }
+
+  .nav-toggle-bar {
+    width: 22px;
+    height: 1.5px;
+    background: var(--white);
+    transition: transform var(--dur-fast) var(--ease-out),
+      opacity var(--dur-fast) ease;
+  }
+
+  .nav-toggle[aria-expanded='true'] .nav-toggle-bar:nth-child(1) {
+    transform: translateY(3.75px) rotate(45deg);
+  }
+
+  .nav-toggle[aria-expanded='true'] .nav-toggle-bar:nth-child(2) {
+    transform: translateY(-3.75px) rotate(-45deg);
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  @media (max-width: 860px) {
+    .nav-links,
+    .nav-shop {
+      display: none;
+    }
+
+    .nav-toggle {
+      display: flex;
+    }
+
+    .mobile-menu {
+      display: block;
+      overflow: hidden;
+      max-height: 0;
+      visibility: hidden;
+      transition: max-height var(--dur-med) var(--ease-out),
+        visibility 0s linear var(--dur-med);
+    }
+
+    .mobile-menu.open {
+      max-height: 22rem;
+      visibility: visible;
+      transition: max-height var(--dur-med) var(--ease-out),
+        visibility 0s;
+    }
+
+    .mobile-menu ul {
+      list-style: none;
+      padding: var(--space-2) var(--gutter) var(--space-3);
+      display: grid;
+      gap: 0.25rem;
+    }
+
+    .mobile-menu a {
+      display: block;
+      padding: 0.7rem 0;
+      font-size: var(--text-lead);
+      font-weight: 600;
+      opacity: 0.85;
+    }
+
+    .mobile-menu .mobile-shop {
+      margin-top: var(--space-2);
+      padding: 0.7rem 1.4rem;
+      border: 1px solid var(--line-light);
+      border-radius: var(--radius-pill);
+      width: fit-content;
+      font-size: var(--text-body);
+    }
+  }
+</style>

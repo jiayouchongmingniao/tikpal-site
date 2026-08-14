@@ -1,0 +1,112 @@
+---
+import room from '../../content/room.json';
+---
+
+<section id="room" class="section surface-room grain">
+  <div class="room-glow" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="room-state" aria-hidden="false">
+      <div class="state-stack">
+        <div class="room-state-a state-block">
+          <p class="state-word">{room.states[0].mode}</p>
+          <p class="state-detail mono">{room.states[0].detail}</p>
+        </div>
+        <div class="room-state-b state-block" aria-hidden="true">
+          <p class="state-word">{room.states[1].mode}</p>
+          <p class="state-detail mono">{room.states[1].detail}</p>
+        </div>
+      </div>
+      <span class="state-dot dot-alive" aria-hidden="true"></span>
+    </div>
+
+    <div class="room-copy">
+      <p class="eyebrow mono reveal">{room.title}</p>
+      <h2 class="h2 reveal" style="--reveal-delay: 0.1s">{room.headline}</h2>
+      <p class="lead reveal" style="--reveal-delay: 0.2s">{room.subtitle}</p>
+      <div class="reveal" style="--reveal-delay: 0.3s">
+        <a class="btn btn-ghost" href={room.cta.href}>
+          {room.cta.label}
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .surface-room {
+    text-align: center;
+  }
+
+  .room-glow {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 60vw;
+    height: 60vw;
+    max-width: 46rem;
+    max-height: 46rem;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      rgba(214, 164, 96, 0.14) 0%,
+      rgba(120, 80, 40, 0.06) 45%,
+      transparent 70%
+    );
+    animation: drift 12s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  .room-state {
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-bottom: var(--space-5);
+  }
+
+  .state-stack {
+    display: grid;
+    min-height: 11rem;
+    place-items: center;
+  }
+
+  .state-block {
+    grid-area: 1 / 1;
+    display: grid;
+    gap: var(--space-2);
+    justify-items: center;
+  }
+
+  .state-word {
+    font-size: clamp(3rem, 2rem + 7vw, 6.5rem);
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    line-height: 1;
+    padding-left: 0.22em; /* optical centering vs letter-spacing */
+  }
+
+  .state-detail {
+    opacity: 0.55;
+  }
+
+  .state-dot {
+    margin-top: var(--space-3);
+  }
+
+  .room-copy {
+    display: grid;
+    gap: var(--space-2);
+    justify-items: center;
+    position: relative;
+  }
+
+  .room-copy .lead {
+    max-width: 30em;
+  }
+
+  .room-copy .btn {
+    margin-top: var(--space-2);
+  }
+</style>

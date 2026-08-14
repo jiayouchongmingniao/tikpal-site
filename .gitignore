@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+
+# generated types
+.astro/
+
+# environment
+.env
+.env.*
+
+# logs
+npm-debug.log*
+
+# macOS
+.DS_Store
+
+# workspace marker
+.aicoding-chat-workspace

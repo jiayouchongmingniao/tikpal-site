@@ -1,0 +1,7 @@
+# Cloudflare Pages redirects
+# Placeholder routes until dedicated product pages exist.
+# /voice and /app currently point to the single-page marketing site,
+# whose #voice / #app anchors hold the relevant content.
+# 302 (temporary) so browsers don't cache the placeholder permanently.
+/voice  /#voice  302
+/app    /#app    302

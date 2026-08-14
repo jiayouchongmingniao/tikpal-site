@@ -1,0 +1,190 @@
+---
+import mtr from '../../content/more-than-recording.json';
+---
+
+<section class="section surface-warm">
+  <div class="container">
+    <header class="section-head reveal">
+      <h2 class="h2">{mtr.title}</h2>
+      <p class="lead">{mtr.subtitle}</p>
+    </header>
+
+    <div class="chain" aria-label="From voice to action">
+      <!-- Voice quote -->
+      <article class="chain-step chain-voice">
+        <p class="chain-label mono">{mtr.chain[0].label}</p>
+        <p class="chain-text">“{mtr.chain[0].text}”</p>
+      </article>
+
+      <span class="chain-link" aria-hidden="true"></span>
+
+      <!-- Transcript -->
+      <article class="chain-step">
+        <p class="chain-label mono">{mtr.chain[1].label}</p>
+        <p class="chain-text">{mtr.chain[1].text}</p>
+      </article>
+
+      <span class="chain-link" aria-hidden="true"></span>
+
+      <!-- Key idea -->
+      <article class="chain-step chain-idea">
+        <p class="chain-label mono">{mtr.chain[2].label}</p>
+        <p class="chain-text">“{mtr.chain[2].text}”</p>
+      </article>
+
+      <span class="chain-link" aria-hidden="true"></span>
+
+      <!-- Project -->
+      <article class="chain-step">
+        <p class="chain-label mono">{mtr.chain[3].label}</p>
+        <p class="chain-text">{mtr.chain[3].text}</p>
+      </article>
+
+      <span class="chain-link" aria-hidden="true"></span>
+
+      <!-- Action -->
+      <article class="chain-step chain-action">
+        <p class="chain-label mono">{mtr.chain[4].label}</p>
+        <p class="chain-text">{mtr.chain[4].text}</p>
+      </article>
+    </div>
+
+    <p class="chain-quote reveal">{mtr.closingQuote}</p>
+
+    <div class="chain-support">
+      {
+        mtr.supportingLines.map((line, i) => (
+          <p class="mono reveal" style={`--reveal-delay: ${i * 0.15}s`}>
+            {line}
+          </p>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .chain {
+    display: flex;
+    align-items: stretch;
+    gap: 0.9rem;
+  }
+
+  .chain-step {
+    flex: 1;
+    display: grid;
+    gap: 0.6rem;
+    align-content: start;
+    padding: var(--space-3) 1.2rem;
+    border: 1px solid var(--line-dark);
+    border-radius: var(--radius-m);
+    background: linear-gradient(165deg, var(--white), var(--tone-100));
+    min-height: 9rem;
+  }
+
+  .chain-label {
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  .chain-text {
+    font-size: var(--text-small);
+    line-height: 1.55;
+  }
+
+  .chain-voice .chain-text {
+    font-size: var(--text-body);
+  }
+
+  .chain-idea {
+    background: linear-gradient(165deg, var(--tone-100), var(--tone-200));
+    border-color: rgba(10, 10, 10, 0.18);
+  }
+
+  .chain-idea .chain-text {
+    font-weight: 600;
+    font-size: var(--text-body);
+  }
+
+  .chain-action {
+    border-color: rgba(10, 10, 10, 0.3);
+  }
+
+  .chain-action .chain-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+  }
+
+  .chain-action .chain-text::before {
+    content: "+";
+    display: grid;
+    place-items: center;
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    background: var(--black);
+    color: var(--white);
+    font-size: 0.8em;
+    flex: none;
+  }
+
+  .chain-link {
+    flex: none;
+    align-self: center;
+    width: 2rem;
+    height: 1px;
+    background: var(--tone-400);
+    position: relative;
+  }
+
+  .chain-link::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid var(--tone-400);
+    border-right: 1px solid var(--tone-400);
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .chain-quote {
+    margin-top: var(--space-5);
+    font-size: var(--text-h3);
+    font-weight: 600;
+    letter-spacing: var(--tracking-tight);
+    text-align: center;
+  }
+
+  .chain-support {
+    margin-top: var(--space-2);
+    display: grid;
+    justify-items: center;
+    gap: 0.3rem;
+    opacity: 0.6;
+  }
+
+  @media (max-width: 860px) {
+    .chain {
+      flex-direction: column;
+    }
+
+    .chain-link {
+      width: 1px;
+      height: 2rem;
+      align-self: center;
+      background: var(--tone-400);
+    }
+
+    .chain-link::after {
+      right: 50%;
+      top: auto;
+      bottom: 0;
+      transform: translateX(50%) rotate(135deg);
+    }
+  }
+</style>

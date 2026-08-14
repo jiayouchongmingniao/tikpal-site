@@ -1,0 +1,10 @@
+{
+  "brand": "Tikpal",
+  "links": [
+    { "label": "Voice", "href": "#voice" },
+    { "label": "App", "href": "#app" },
+    { "label": "Room", "href": "#room" },
+    { "label": "Our Approach", "href": "#approach" }
+  ],
+  "shop": { "label": "Shop", "href": "#shop" }
+}

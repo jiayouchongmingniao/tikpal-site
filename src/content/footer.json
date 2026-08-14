@@ -1,0 +1,36 @@
+{
+  "closingLine": "Intelligence that moves with life.",
+  "columns": [
+    {
+      "title": "Products",
+      "links": [
+        { "label": "Voice", "href": "#voice" },
+        { "label": "App", "href": "#app" },
+        { "label": "Room", "href": "#room" }
+      ]
+    },
+    {
+      "title": "Support",
+      "links": [
+        { "label": "Shop", "href": "#shop" },
+        { "label": "Support", "href": "#" },
+        { "label": "FAQ", "href": "#" }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About", "href": "#" },
+        { "label": "Privacy", "href": "#" },
+        { "label": "Terms", "href": "#" }
+      ]
+    }
+  ],
+  "socials": [
+    { "name": "Instagram", "href": "#" },
+    { "name": "X", "href": "#" },
+    { "name": "YouTube", "href": "#" },
+    { "name": "TikTok", "href": "#" }
+  ],
+  "copyright": "© 2026 Tikpal"
+}

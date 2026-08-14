@@ -1,0 +1,26 @@
+{
+  "title": "Capture it before it's gone.",
+  "productName": "Tikpal Voice",
+  "price": "TBD",
+  "priceNote": "Pricing announced soon.",
+  "details": [
+    {
+      "name": "What's included",
+      "body": "Tikpal Voice, charging dock and USB-C cable."
+    },
+    {
+      "name": "Shipping",
+      "body": "Shipping details will be shared at launch."
+    },
+    {
+      "name": "Warranty",
+      "body": "Warranty terms will be published at launch."
+    },
+    {
+      "name": "Returns",
+      "body": "Return policy will be published at launch."
+    }
+  ],
+  "primaryCta": { "label": "Buy Tikpal Voice", "href": "#" },
+  "secondaryCta": { "label": "Explore all features", "href": "#ritual" }
+}

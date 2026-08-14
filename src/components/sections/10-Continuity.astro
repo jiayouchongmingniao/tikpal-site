@@ -1,0 +1,149 @@
+---
+import continuity from '../../content/continuity.json';
+---
+
+<section class="section surface-warm">
+  <div class="container">
+    <header class="section-head reveal">
+      <h2 class="h2">{continuity.title}</h2>
+    </header>
+
+    <div class="cont-timeline">
+      <span class="cont-line" aria-hidden="true"></span>
+
+      {
+        continuity.timeline.map((entry, i) => (
+          <article class="cont-node reveal" style={`--reveal-delay: ${i * 0.15}s`}>
+            <p class="cont-time mono">{entry.time}</p>
+            <span class="cont-point" aria-hidden="true"></span>
+            <div class="cont-card">
+              <p class="cont-device mono">{entry.device}</p>
+              <p class="cont-content">
+                {i === 0 ? `“${entry.content}”` : entry.content}
+              </p>
+              <p class="cont-state mono">{entry.state}</p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+
+    <p class="cont-closing reveal">{continuity.closing}</p>
+  </div>
+</section>
+
+<style>
+  .cont-timeline {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+    padding-top: var(--space-4);
+  }
+
+  .cont-line {
+    position: absolute;
+    top: calc(var(--space-4) + 2.15rem);
+    left: 8%;
+    right: 8%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      var(--tone-300),
+      var(--tone-400) 50%,
+      var(--tone-300)
+    );
+  }
+
+  .cont-node {
+    display: grid;
+    gap: var(--space-2);
+    justify-items: center;
+    text-align: center;
+  }
+
+  .cont-time {
+    opacity: 0.55;
+  }
+
+  .cont-point {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background: var(--black);
+    box-shadow: 0 0 0 5px var(--white), 0 0 0 6px var(--tone-300);
+  }
+
+  .cont-card {
+    display: grid;
+    gap: 0.45rem;
+    padding: var(--space-3) var(--space-2);
+    border: 1px solid var(--line-dark);
+    border-radius: var(--radius-m);
+    background: linear-gradient(170deg, var(--white), var(--tone-100));
+    width: 100%;
+  }
+
+  .cont-device {
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+  }
+
+  .cont-content {
+    font-size: var(--text-body);
+    font-weight: 550;
+    line-height: 1.45;
+  }
+
+  .cont-state {
+    opacity: 0.55;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    justify-content: center;
+  }
+
+  .cont-state::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--alive);
+  }
+
+  .cont-closing {
+    margin-top: var(--space-5);
+    text-align: center;
+    font-size: var(--text-lead);
+    opacity: 0.6;
+  }
+
+  @media (max-width: 860px) {
+    .cont-timeline {
+      grid-template-columns: 1fr;
+      padding-top: 0;
+      padding-left: var(--space-3);
+    }
+
+    .cont-line {
+      top: 6%;
+      bottom: 6%;
+      left: 0.35rem;
+      right: auto;
+      width: 1px;
+      height: auto;
+      background: linear-gradient(
+        180deg,
+        var(--tone-300),
+        var(--tone-400) 50%,
+        var(--tone-300)
+      );
+    }
+
+    .cont-node {
+      justify-items: start;
+      text-align: left;
+    }
+  }
+</style>

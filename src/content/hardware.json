@@ -1,0 +1,12 @@
+{
+  "title": "Sometimes, the best interface is no interface.",
+  "subtitle": "Tikpal Voice gives you a dedicated way to capture what matters without opening another distracting screen.",
+  "phone": {
+    "label": "Phone",
+    "steps": ["Unlock", "Find app", "Open", "Choose", "Record", "Notification appears"]
+  },
+  "tikpal": {
+    "label": "Tikpal",
+    "steps": ["Press", "Speak", "Done"]
+  }
+}

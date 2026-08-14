@@ -1,0 +1,24 @@
+{
+  "title": "Tikpal remembers what came before.",
+  "timeline": [
+    {
+      "time": "10:30",
+      "device": "Voice",
+      "content": "I want to work on this tonight.",
+      "state": "Captured"
+    },
+    {
+      "time": "16:45",
+      "device": "App",
+      "content": "3 ideas related to this",
+      "state": "Connected"
+    },
+    {
+      "time": "20:15",
+      "device": "Room",
+      "content": "Ready when you are.",
+      "state": "Focus"
+    }
+  ],
+  "closing": "Same context. Different presence."
+}

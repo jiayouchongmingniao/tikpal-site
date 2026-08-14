@@ -1,0 +1,5 @@
+{
+  // Tikpal marketing site — deployed as Cloudflare Pages (static Astro output).
+  "name": "tikpal-site",
+  "pages_build_output_dir": "dist"
+}

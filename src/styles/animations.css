@@ -1,0 +1,210 @@
+/* ============================================
+   Tikpal motion — pure CSS keyframes
+   Only transform & opacity animate.
+   ============================================ */
+
+/* --- breathing status light --- */
+@keyframes breathe {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.86);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* --- ambient drift for glows / gradients --- */
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) scale(1.04);
+  }
+}
+
+/* --- soft float for the hero device --- */
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* --- soundwave bars (speak step) --- */
+@keyframes wave {
+  0%,
+  100% {
+    transform: scaleY(0.3);
+    opacity: 0.55;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.wave-bar {
+  transform-origin: center;
+  animation: wave 1.4s ease-in-out infinite;
+}
+
+/* --- Room state cross-fade: LISTEN ↔ UNWIND --- */
+@keyframes roomStateA {
+  0%,
+  42% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50%,
+  92% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes roomStateB {
+  0%,
+  42% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  50%,
+  92% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+.room-state-a {
+  animation: roomStateA 9s ease-in-out infinite;
+}
+
+.room-state-b {
+  animation: roomStateB 9s ease-in-out infinite;
+}
+
+/* ============================================
+   Scroll reveal (driven by src/scripts/reveal.ts)
+   Elements carry .reveal; observer adds .is-visible
+   ============================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity var(--dur-slow) var(--ease-out),
+    transform var(--dur-slow) var(--ease-out);
+  transition-delay: var(--reveal-delay, 0s);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- staggered chain (section 03): children fire in sequence
+   once the chain root becomes visible --- */
+.chain .chain-step {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity var(--dur-med) var(--ease-out),
+    transform var(--dur-med) var(--ease-out);
+}
+
+.chain.is-visible .chain-step:nth-of-type(1) {
+  transition-delay: 0.05s;
+}
+.chain.is-visible .chain-step:nth-of-type(2) {
+  transition-delay: 0.3s;
+}
+.chain.is-visible .chain-step:nth-of-type(3) {
+  transition-delay: 0.55s;
+}
+.chain.is-visible .chain-step:nth-of-type(4) {
+  transition-delay: 0.8s;
+}
+.chain.is-visible .chain-step:nth-of-type(5) {
+  transition-delay: 1.05s;
+}
+
+.chain.is-visible .chain-step {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* connectors inside the chain fade in between steps */
+.chain .chain-link {
+  opacity: 0;
+  transform: scaleX(0.2);
+  transform-origin: left;
+  transition: opacity var(--dur-med) var(--ease-out),
+    transform var(--dur-med) var(--ease-out);
+}
+
+.chain.is-visible .chain-link {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.chain.is-visible .chain-link:nth-of-type(1) {
+  transition-delay: 0.2s;
+}
+.chain.is-visible .chain-link:nth-of-type(2) {
+  transition-delay: 0.45s;
+}
+.chain.is-visible .chain-link:nth-of-type(3) {
+  transition-delay: 0.7s;
+}
+.chain.is-visible .chain-link:nth-of-type(4) {
+  transition-delay: 0.95s;
+}
+
+/* ============================================
+   Reduced motion — everything settles instantly
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+  }
+
+  .reveal,
+  .chain .chain-step,
+  .chain .chain-link {
+    opacity: 1;
+    transform: none;
+  }
+
+  .room-state-b {
+    opacity: 0;
+  }
+
+  .dot-alive {
+    animation: none;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,137 @@
+---
+import scenes from '../../content/scenes.json';
+
+const sceneArt = [
+  // Walking — path, horizon, drifting thought
+  `<svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="220" fill="url(#sg1)"></rect>
+    <defs>
+      <linearGradient id="sg1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#e9e3d8"></stop>
+        <stop offset="1" stop-color="#d8d0c0"></stop>
+      </linearGradient>
+    </defs>
+    <circle cx="318" cy="52" r="26" stroke="#7d766b" stroke-width="1.5"></circle>
+    <path d="M0 158 Q 110 128 210 150 T 400 140" stroke="#54504a" stroke-width="1.5"></path>
+    <path d="M40 196 Q 160 168 400 186" stroke="#7d766b" stroke-width="1" stroke-dasharray="3 7"></path>
+    <circle cx="120" cy="176" r="4" fill="#32302c"></circle>
+    <path d="M120 172 v-14 M120 158 l-6 8 M120 158 l6 8" stroke="#32302c" stroke-width="2" stroke-linecap="round"></path>
+    <path d="M138 138 q 10 -10 22 -4" stroke="#54504a" stroke-width="1.5" stroke-linecap="round" opacity="0.9"></path>
+  </svg>`,
+  // Meeting — table, voices, one quiet device
+  `<svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="220" fill="url(#sg2)"></rect>
+    <defs>
+      <linearGradient id="sg2" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#e6e0d4"></stop>
+        <stop offset="1" stop-color="#d4ccbb"></stop>
+      </linearGradient>
+    </defs>
+    <ellipse cx="200" cy="150" rx="130" ry="34" stroke="#54504a" stroke-width="1.5"></ellipse>
+    <circle cx="110" cy="92" r="14" stroke="#32302c" stroke-width="1.5"></circle>
+    <circle cx="200" cy="78" r="14" stroke="#32302c" stroke-width="1.5"></circle>
+    <circle cx="290" cy="92" r="14" stroke="#32302c" stroke-width="1.5"></circle>
+    <path d="M96 68 q 14 -14 28 0" stroke="#7d766b" stroke-width="1.2"></path>
+    <path d="M186 54 q 14 -14 28 0" stroke="#7d766b" stroke-width="1.2"></path>
+    <rect x="188" y="140" width="24" height="12" rx="6" fill="#32302c"></rect>
+    <circle cx="200" cy="146" r="2" fill="#2FE6A7"></circle>
+  </svg>`,
+  // Everyday life — kitchen shelf, small notes of sound
+  `<svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="220" fill="url(#sg3)"></rect>
+    <defs>
+      <linearGradient id="sg3" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#e8e2d6"></stop>
+        <stop offset="1" stop-color="#dbd3c3"></stop>
+      </linearGradient>
+    </defs>
+    <line x1="60" y1="120" x2="340" y2="120" stroke="#54504a" stroke-width="1.5"></line>
+    <rect x="90" y="84" width="26" height="36" rx="4" stroke="#32302c" stroke-width="1.5"></rect>
+    <path d="M150 120 v-26 a10 10 0 0 1 20 0 v26" stroke="#32302c" stroke-width="1.5"></path>
+    <circle cx="230" cy="104" r="16" stroke="#32302c" stroke-width="1.5"></circle>
+    <rect x="272" y="98" width="34" height="22" rx="11" fill="#32302c"></rect>
+    <circle cx="289" cy="109" r="2.2" fill="#2FE6A7"></circle>
+    <path d="M288 84 q 8 -8 16 0 M292 72 q 10 -10 20 0" stroke="#7d766b" stroke-width="1.2" stroke-linecap="round"></path>
+  </svg>`,
+];
+---
+
+<section class="section surface-tone">
+  <div class="container">
+    <header class="section-head reveal">
+      <h2 class="h2">{scenes.title}</h2>
+    </header>
+
+    <div class="scene-grid">
+      {
+        scenes.cards.map((card, i) => (
+          <article class="scene-card reveal" style={`--reveal-delay: ${i * 0.12}s`}>
+            <div class="scene-art" set:html={sceneArt[i]} aria-hidden="true" />
+            <p class="scene-name mono">{card.name}</p>
+            <h3 class="scene-headline">{card.headline}</h3>
+            <p class="scene-body">{card.body}</p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .scene-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+  }
+
+  .scene-card {
+    display: grid;
+    gap: 0.5rem;
+    padding: var(--space-2);
+    border-radius: var(--radius-l);
+    background: var(--white);
+    border: 1px solid var(--line-dark);
+    transition: transform var(--dur-fast) var(--ease-out),
+      box-shadow var(--dur-fast) ease;
+  }
+
+  .scene-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lift);
+  }
+
+  .scene-art {
+    border-radius: var(--radius-m);
+    overflow: hidden;
+  }
+
+  .scene-art :global(svg) {
+    width: 100%;
+    height: auto;
+  }
+
+  .scene-name {
+    margin-top: var(--space-2);
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+  }
+
+  .scene-headline {
+    font-size: var(--text-h4);
+    font-weight: 600;
+    letter-spacing: var(--tracking-tight);
+  }
+
+  .scene-body {
+    font-size: var(--text-small);
+    opacity: 0.68;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 860px) {
+    .scene-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

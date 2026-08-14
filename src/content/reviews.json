@@ -1,0 +1,16 @@
+{
+  "reviews": [
+    {
+      "role": "Founder",
+      "quote": "I stopped losing ideas on walks."
+    },
+    {
+      "role": "Designer",
+      "quote": "I use it when opening my phone would break the thought."
+    },
+    {
+      "role": "Consultant",
+      "quote": "I listen more in meetings because I'm not taking notes."
+    }
+  ]
+}

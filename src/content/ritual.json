@@ -1,0 +1,22 @@
+{
+  "title": "Just speak.",
+  "subtitle": "Tikpal is designed to get out of the way.",
+  "steps": [
+    {
+      "number": "01",
+      "name": "Press",
+      "detail": "The mic state lights up."
+    },
+    {
+      "number": "02",
+      "name": "Speak",
+      "detail": "Remind me to revisit this idea tonight."
+    },
+    {
+      "number": "03",
+      "name": "Captured",
+      "detail": "Then the interface fades away."
+    }
+  ],
+  "reassurances": ["No app opening.", "No typing.", "No interruption."]
+}

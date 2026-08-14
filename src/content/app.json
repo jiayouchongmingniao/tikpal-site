@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Tikpal App",
+  "title": "Everything you capture, connected.",
+  "subtitle": "Turn conversations, thoughts and ideas into notes, memories and context you can actually return to.",
+  "cta": { "label": "Explore Tikpal App", "href": "#" },
+  "timeline": {
+    "label": "Today",
+    "entries": [
+      { "time": "09:14", "kind": "Idea" },
+      { "time": "11:42", "kind": "Meeting" },
+      { "time": "14:08", "kind": "Reminder" },
+      { "time": "17:31", "kind": "Reflection" }
+    ]
+  },
+  "summaryCard": {
+    "title": "Website Redesign",
+    "meta": "4 related moments",
+    "coreIdea": { "label": "Core idea", "text": "Keep the experience ambient and simple." },
+    "next": { "label": "Next", "text": "Review tomorrow morning." }
+  },
+  "actions": ["Find.", "Connect.", "Continue."],
+  "closing": "Capture with Voice. Make sense of it in App."
+}

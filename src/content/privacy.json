@@ -1,0 +1,18 @@
+{
+  "title": "Your voice is personalized.",
+  "subtitle": "Tikpal is designed to make it clear when you're recording and give you control over what you keep.",
+  "points": [
+    {
+      "name": "Visible recording state",
+      "body": "You always know when Tikpal is listening."
+    },
+    {
+      "name": "Control your data",
+      "body": "Review and delete what you've captured."
+    },
+    {
+      "name": "Designed for consent",
+      "body": "Clear signals help make recording intentional."
+    }
+  ]
+}
