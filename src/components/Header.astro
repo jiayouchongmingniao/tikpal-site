@@ -4,7 +4,17 @@ import nav from '../content/nav.json';
 
 <header class="site-header">
   <nav class="nav container" aria-label="Primary">
-    <a class="brand" href="#voice">{nav.brand}</a>
+    <a class="brand" href="#voice">
+      <img
+        class="brand-logo"
+        src={nav.logo.src}
+        alt={nav.logo.alt}
+        width="1540"
+        height="640"
+        loading="eager"
+        decoding="async"
+      />
+    </a>
 
     <ul class="nav-links">
       {
@@ -16,7 +26,9 @@ import nav from '../content/nav.json';
       }
     </ul>
 
-    <a class="nav-shop" href={nav.shop.href}>{nav.shop.label}</a>
+    <a class="nav-shop" href={nav.shop.href} target="_blank" rel="noopener"
+      >{nav.shop.label}</a
+    >
 
     <button
       class="nav-toggle"
@@ -43,9 +55,13 @@ import nav from '../content/nav.json';
         ))
       }
       <li>
-        <a class="mobile-shop" href={nav.shop.href} onclick="toggleMenu(false)">
-          {nav.shop.label}
-        </a>
+        <a
+          class="mobile-shop"
+          href={nav.shop.href}
+          target="_blank"
+          rel="noopener"
+          onclick="toggleMenu(false)">{nav.shop.label}</a
+        >
       </li>
     </ul>
   </div>
@@ -86,10 +102,14 @@ import nav from '../content/nav.json';
   }
 
   .brand {
-    font-weight: 700;
-    font-size: 1.05rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .brand-logo {
+    height: 26px;
+    width: auto;
+    display: block;
   }
 
   .nav-links {

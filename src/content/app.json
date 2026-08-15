@@ -2,7 +2,18 @@
   "eyebrow": "Tikpal App",
   "title": "Everything you capture, connected.",
   "subtitle": "Turn conversations, thoughts and ideas into notes, memories and context you can actually return to.",
-  "cta": { "label": "Explore Tikpal App", "href": "#" },
+  "quoteLine": "Say it, then let it continue.",
+  "cta": { "label": "Explore Tikpal App", "href": "https://app.tikpal.ai" },
+  "downloads": [
+    {
+      "label": "Download for iOS",
+      "href": "https://apps.apple.com/us/app/tikpal/id6755826084"
+    },
+    {
+      "label": "Download for Android",
+      "href": "https://play.google.com/store/apps/details?id=ai.tikpal.app&hl=en"
+    }
+  ],
   "timeline": {
     "label": "Today",
     "entries": [
@@ -17,6 +28,10 @@
     "meta": "4 related moments",
     "coreIdea": { "label": "Core idea", "text": "Keep the experience ambient and simple." },
     "next": { "label": "Next", "text": "Review tomorrow morning." }
+  },
+  "multiDevice": {
+    "src": "/images/app/multi-device.webp",
+    "alt": "Tikpal content capture preview across phone, tablet, and desktop"
   },
   "actions": ["Find.", "Connect.", "Continue."],
   "closing": "Capture with Voice. Make sense of it in App."

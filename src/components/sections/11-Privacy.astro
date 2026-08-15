@@ -40,6 +40,10 @@ import privacy from '../../content/privacy.json';
         ))
       }
     </div>
+
+    <p class="privacy-footnote mono reveal" style="--reveal-delay: 0.3s">
+      {privacy.footnote}
+    </p>
   </div>
 </section>
 
@@ -81,6 +85,14 @@ import privacy from '../../content/privacy.json';
     font-size: var(--text-small);
     opacity: 0.68;
     line-height: 1.6;
+  }
+
+  .privacy-footnote {
+    margin-top: var(--space-3);
+    text-align: center;
+    font-size: var(--text-micro);
+    letter-spacing: 0.06em;
+    opacity: 0.55;
   }
 
   @media (max-width: 860px) {

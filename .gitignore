@@ -19,3 +19,9 @@ npm-debug.log*
 
 # workspace marker
 .aicoding-chat-workspace
+
+# research scratch files
+.research-tmp/
+
+# wrangler local cache
+.wrangler/

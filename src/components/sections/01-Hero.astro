@@ -15,9 +15,12 @@ import hero from '../../content/hero.json';
       <p class="lead reveal" style="--reveal-delay: 0.18s">{hero.subtitle}</p>
 
       <div class="hero-actions reveal" style="--reveal-delay: 0.28s">
-        <a class="btn btn-solid" href={hero.primaryCta.href}>
-          {hero.primaryCta.label}
-        </a>
+        <a
+          class="btn btn-solid"
+          href={hero.primaryCta.href}
+          target="_blank"
+          rel="noopener">{hero.primaryCta.label}</a
+        >
         <a class="link-arrow" href={hero.secondaryCta.href}>
           {hero.secondaryCta.label}
           <span class="arrow" aria-hidden="true">→</span>
@@ -29,68 +32,26 @@ import hero from '../../content/hero.json';
       </p>
     </div>
 
-    <div class="hero-device" aria-hidden="true">
-      <div class="device-float">
-        <svg
-          class="device-svg"
-          viewBox="0 0 360 480"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img"
-          aria-label="Tikpal Voice device"
-        >
-          <defs>
-            <linearGradient id="devBody" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#2b2926"></stop>
-              <stop offset="0.55" stop-color="#191715"></stop>
-              <stop offset="1" stop-color="#100f0d"></stop>
-            </linearGradient>
-            <linearGradient id="devEdge" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="rgba(250,247,242,0.28)"></stop>
-              <stop offset="1" stop-color="rgba(250,247,242,0.05)"></stop>
-            </linearGradient>
-            <radialGradient id="micGlow" cx="0.5" cy="0.5" r="0.5">
-              <stop offset="0" stop-color="rgba(47,230,167,0.22)"></stop>
-              <stop offset="1" stop-color="rgba(47,230,167,0)"></stop>
-            </radialGradient>
-          </defs>
-
-          <!-- soft ground shadow -->
-          <ellipse cx="180" cy="452" rx="120" ry="14" fill="rgba(0,0,0,0.5)"></ellipse>
-
-          <!-- device body -->
-          <rect x="58" y="42" width="244" height="392" rx="64" fill="url(#devBody)"></rect>
-          <rect x="58" y="42" width="244" height="392" rx="64" stroke="url(#devEdge)" stroke-width="1.5"></rect>
-          <rect x="70" y="54" width="220" height="368" rx="54" stroke="rgba(250,247,242,0.06)" stroke-width="1"></rect>
-
-          <!-- mic perforation grid -->
-          <g fill="rgba(250,247,242,0.34)">
-            <circle cx="156" cy="140" r="2.4"></circle><circle cx="172" cy="140" r="2.4"></circle><circle cx="188" cy="140" r="2.4"></circle><circle cx="204" cy="140" r="2.4"></circle>
-            <circle cx="148" cy="156" r="2.4"></circle><circle cx="164" cy="156" r="2.4"></circle><circle cx="180" cy="156" r="2.4"></circle><circle cx="196" cy="156" r="2.4"></circle><circle cx="212" cy="156" r="2.4"></circle>
-            <circle cx="156" cy="172" r="2.4"></circle><circle cx="172" cy="172" r="2.4"></circle><circle cx="188" cy="172" r="2.4"></circle><circle cx="204" cy="172" r="2.4"></circle>
-          </g>
-
-          <!-- central button -->
-          <circle cx="180" cy="268" r="62" stroke="rgba(250,247,242,0.18)" stroke-width="1.5"></circle>
-          <circle cx="180" cy="268" r="46" fill="#141210" stroke="rgba(250,247,242,0.12)" stroke-width="1"></circle>
-          <circle cx="180" cy="268" r="86" fill="url(#micGlow)"></circle>
-
-          <!-- mic glyph -->
-          <g stroke="rgba(250,247,242,0.85)" stroke-width="3" stroke-linecap="round" fill="none">
-            <rect x="172" y="248" width="16" height="28" rx="8" fill="rgba(250,247,242,0.85)" stroke="none"></rect>
-            <path d="M164 270 a16 16 0 0 0 32 0"></path>
-            <line x1="180" y1="286" x2="180" y2="294"></line>
-          </g>
-
-          <!-- alive indicator LED -->
-          <circle class="led" cx="180" cy="368" r="5" fill="#2FE6A7"></circle>
-          <circle class="led-halo" cx="180" cy="368" r="5" fill="none" stroke="#2FE6A7" stroke-width="1"></circle>
-
-          <!-- engraved wordmark -->
-          <text x="180" y="408" text-anchor="middle" fill="rgba(250,247,242,0.35)" font-size="11" letter-spacing="4" font-family="system-ui, sans-serif">TIKPAL</text>
-        </svg>
-      </div>
-    </div>
+    <figure class="hero-device reveal" style="--reveal-delay: 0.15s">
+      <picture>
+        <source media="(max-width: 767px)" srcset="/images/voice/hero-mobile.avif" />
+        <source type="image/webp" srcset="/images/voice/hero-desktop.webp" />
+        <img
+          class="hero-img"
+          src="/images/voice/hero-desktop.png"
+          alt="Tikpal Voice resting in an open palm — a pocket-sized AI voice companion"
+          width="1672"
+          height="941"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        />
+      </picture>
+      <figcaption class="hero-status mono">
+        <span class="dot-alive" aria-hidden="true"></span>
+        Ready to capture
+      </figcaption>
+    </figure>
   </div>
 </section>
 
@@ -149,35 +110,32 @@ import hero from '../../content/hero.json';
 
   .hero-footnote {
     margin-top: var(--space-3);
-    opacity: 0.5;
+    opacity: 0.55;
   }
 
   .hero-device {
     display: grid;
-    place-items: center;
+    gap: var(--space-2);
+    justify-items: center;
     position: relative;
+    margin: 0;
   }
 
-  .device-float {
-    animation: floaty 7s ease-in-out infinite;
-    width: min(340px, 78%);
-  }
-
-  .device-svg {
+  .hero-img {
     width: 100%;
     height: auto;
-    filter: drop-shadow(0 40px 80px rgba(0, 0, 0, 0.55));
+    border-radius: var(--radius-l);
+    box-shadow: var(--shadow-soft);
   }
 
-  .led {
-    animation: breathe 2.6s ease-in-out infinite;
-    transform-origin: 180px 368px;
-  }
-
-  .led-halo {
-    animation: breathe 2.6s ease-in-out infinite;
-    transform-origin: 180px 368px;
-    opacity: 0.5;
+  .hero-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    opacity: 0.7;
+    font-size: var(--text-micro);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
   }
 
   @media (max-width: 860px) {
@@ -188,7 +146,7 @@ import hero from '../../content/hero.json';
 
     .hero-grid {
       grid-template-columns: 1fr;
-      gap: var(--space-4);
+      gap: var(--space-3);
     }
 
     /* mobile simplification: device first, copy after — product understood in view one */
@@ -196,8 +154,9 @@ import hero from '../../content/hero.json';
       order: -1;
     }
 
-    .device-float {
-      width: min(220px, 60%);
+    .hero-img {
+      max-width: 22rem;
+      border-radius: var(--radius-m);
     }
 
     .hero-footnote {

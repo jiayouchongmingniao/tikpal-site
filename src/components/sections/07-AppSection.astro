@@ -5,12 +5,35 @@ import app from '../../content/app.json';
 <section id="app" class="section surface-warm app-section">
   <div class="container">
     <header class="section-head reveal">
-      <p class="eyebrow mono">{app.eyebrow}</p>
+      <p class="eyebrow mono app-eyebrow">
+        <img
+          class="app-icon"
+          src="/images/app/app-icon.webp"
+          alt="Tikpal app icon"
+          width="1024"
+          height="1024"
+          loading="lazy"
+          decoding="async"
+        />
+        {app.eyebrow}
+      </p>
       <h2 class="h2">{app.title}</h2>
       <p class="lead">{app.subtitle}</p>
+      <p class="quote-line">“{app.quoteLine}”</p>
       <div>
-        <a class="btn btn-dark" href={app.cta.href}>{app.cta.label}</a>
+        <a class="btn btn-dark" href={app.cta.href} target="_blank" rel="noopener"
+          >{app.cta.label}</a
+        >
       </div>
+      <p class="app-downloads">
+        {
+          app.downloads.map((d) => (
+            <a class="download-link" href={d.href} target="_blank" rel="noopener">
+              {d.label}
+            </a>
+          ))
+        }
+      </p>
     </header>
 
     <div class="app-grid">
@@ -50,6 +73,17 @@ import app from '../../content/app.json';
       </div>
     </div>
 
+    <figure class="app-multi-device reveal" style="--reveal-delay: 0.2s">
+      <img
+        src={app.multiDevice.src}
+        alt={app.multiDevice.alt}
+        width="1264"
+        height="848"
+        loading="lazy"
+        decoding="async"
+      />
+    </figure>
+
     <div class="app-actions reveal">
       {
         app.actions.map((action, i) => (
@@ -67,6 +101,57 @@ import app from '../../content/app.json';
 <style>
   .app-section {
     background: linear-gradient(180deg, var(--white) 0%, var(--tone-100) 100%);
+  }
+
+  .app-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .app-icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 7px;
+  }
+
+  .quote-line {
+    font-size: var(--text-body);
+    opacity: 0.62;
+    font-style: italic;
+  }
+
+  .app-downloads {
+    margin-top: var(--space-2);
+    display: flex;
+    justify-content: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+    font-size: var(--text-small);
+  }
+
+  .download-link {
+    color: inherit;
+    opacity: 0.62;
+    text-decoration: underline;
+    text-underline-offset: 0.22em;
+    transition: opacity var(--dur-fast) ease;
+  }
+
+  .download-link:hover {
+    opacity: 1;
+  }
+
+  .app-multi-device {
+    margin: var(--space-4) auto 0;
+    max-width: 52rem;
+  }
+
+  .app-multi-device img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-l);
+    box-shadow: var(--shadow-soft);
   }
 
   .app-grid {
