@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Tikpal vs Plaud — Comparación honesta de dos grabadoras de voz con IA | Tikpal",
+    "description": "Tikpal Voice vs Plaud Note: precio, minutos de IA incluidos, suscripciones y para qué está hecho cada dispositivo. Una comparación honesta y basada en hechos."
+  },
+  "hero": {
+    "eyebrow": "Comparación",
+    "title": "¿Buscas una alternativa a Plaud?",
+    "subtitle": "Plaud y Tikpal convierten la voz en algo útil, pero están diseñados para trabajos distintos. Aquí está la comparación honesta."
+  },
+  "shared": {
+    "title": "Lo que ambos hacen bien",
+    "points": [
+      "Grabar con hardware dedicado en lugar del teléfono.",
+      "Usar IA para convertir la voz en texto y resúmenes.",
+      "Funcionar con una app para iOS y Android.",
+      "Pensados para gente que piensa en voz alta: fundadores, creadores, profesionales."
+    ]
+  },
+  "table": {
+    "title": "Tikpal Voice vs Plaud Note: comparación",
+    "intro": "Los datos de Plaud corresponden a lo publicado en plaud.ai y en prensa al momento de escribir esto (principios de 2026). Consulta los sitios oficiales para lo más reciente.",
+    "rows": [
+      {
+        "label": "Precio",
+        "tikpal": "$129",
+        "plaud": "$159 (Plaud Note)"
+      },
+      {
+        "label": "IA incluida",
+        "tikpal": "200 minutos de IA al mes incluidos",
+        "plaud": "300 minutos de transcripción gratis al mes"
+      },
+      {
+        "label": "Después del límite",
+        "tikpal": "La IA se pausa hasta el mes siguiente; la grabación continúa. Sin niveles de pago",
+        "plaud": "Más minutos requieren suscripción (unos $99,96/año por 1.200 minutos)"
+      },
+      {
+        "label": "Diseñado para",
+        "tikpal": "Capturar → Recordar → Recuperar → Actuar: memoria organizada, tareas, integraciones",
+        "plaud": "Grabar → Transcribir → Resumir: notas de reuniones y transcripciones"
+      },
+      {
+        "label": "Integraciones",
+        "tikpal": "Notion, Todoist, Gmail, Calendar, Xmind",
+        "plaud": "Transcripciones y resúmenes dentro de la app de Plaud"
+      }
+    ]
+  },
+  "fit": {
+    "tikpalTitle": "Tikpal te conviene más si",
+    "tikpalPoints": [
+      "Quieres que lo que dices se convierta en memoria que puedes buscar después, no solo transcripciones.",
+      "Quieres minutos de IA incluidos con el dispositivo, sin suscripciones que desbloquear.",
+      "Quieres enviar ideas a Notion, Todoist, Gmail o Calendar con una sola frase."
+    ],
+    "plaudTitle": "Plaud te conviene más si",
+    "plaudPoints": [
+      "Grabas sobre todo reuniones y llamadas, y tu objetivo principal son transcripciones y resúmenes.",
+      "Prefieres una grabadora fina con forma de tarjeta.",
+      "Estás dispuesto a pagar una suscripción por límites de transcripción más altos."
+    ]
+  },
+  "cta": {
+    "title": "¿Listo para probar la grabadora que recuerda?",
+    "button": {
+      "label": "Compra Tikpal Voice — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    }
+  }
+}

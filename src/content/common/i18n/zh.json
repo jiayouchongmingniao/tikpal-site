@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "brand": "Tikpal",
+    "logo": {
+      "src": "/images/logo-dark.webp",
+      "alt": "Tikpal"
+    },
+    "links": [
+      {
+        "label": "Voice",
+        "href": "/voice/"
+      },
+      {
+        "label": "App",
+        "href": "/app/"
+      },
+      {
+        "label": "Room",
+        "href": "/room/"
+      },
+      {
+        "label": "看看它怎么工作",
+        "href": "/#demo"
+      }
+    ],
+    "shop": {
+      "label": "商店",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    }
+  },
+  "footer": {
+    "closingLine": "随生活流动的智能。一切，从一句话开始。",
+    "columns": [
+      {
+        "title": "产品",
+        "links": [
+          {
+            "label": "Voice",
+            "href": "/voice/"
+          },
+          {
+            "label": "App",
+            "href": "https://app.tikpal.ai"
+          },
+          {
+            "label": "Room",
+            "href": "https://room.tikpal.ai"
+          }
+        ]
+      },
+      {
+        "title": "探索",
+        "links": [
+          {
+            "label": "AI 笔记助手",
+            "href": "/ai-note-taker/"
+          },
+          {
+            "label": "AI 记忆",
+            "href": "/ai-memory/"
+          },
+          {
+            "label": "灵感录音机",
+            "href": "/voice-recorder-for-ideas/"
+          },
+          {
+            "label": "语音转任务",
+            "href": "/voice-to-task/"
+          },
+          {
+            "label": "语音转邮件",
+            "href": "/voice-to-email/"
+          },
+          {
+            "label": "语音转日程",
+            "href": "/voice-to-calendar/"
+          },
+          {
+            "label": "创作者",
+            "href": "/use-cases/creators/"
+          },
+          {
+            "label": "最佳 AI 录音设备",
+            "href": "/compare/ai-voice-recorders/"
+          },
+          {
+            "label": "Tikpal vs Plaud",
+            "href": "/compare/tikpal-vs-plaud/"
+          },
+          {
+            "label": "Plaud 替代品",
+            "href": "/plaud-alternative/"
+          }
+        ]
+      },
+      {
+        "title": "帮助",
+        "links": [
+          {
+            "label": "商店",
+            "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+          },
+          {
+            "label": "客服",
+            "href": "/support/"
+          },
+          {
+            "label": "FAQ",
+            "href": "/faq/"
+          },
+          {
+            "label": "配送与退货",
+            "href": "/support/"
+          }
+        ]
+      },
+      {
+        "title": "公司",
+        "links": [
+          {
+            "label": "关于",
+            "href": "/about/"
+          },
+          {
+            "label": "隐私",
+            "href": "/privacy/"
+          },
+          {
+            "label": "条款",
+            "href": "/terms/"
+          },
+          {
+            "label": "联系我们",
+            "href": "mailto:hello@tikpal.io"
+          }
+        ]
+      }
+    ],
+    "socials": [
+      {
+        "name": "TikTok",
+        "href": "https://www.tiktok.com/@tikpal_ai"
+      },
+      {
+        "name": "YouTube",
+        "href": "https://www.youtube.com/@Tikpal-Ai"
+      },
+      {
+        "name": "Facebook",
+        "href": "https://www.facebook.com/profile.php?id=61583482054366"
+      },
+      {
+        "name": "X",
+        "href": "https://x.com/Spatial_Therapy"
+      },
+      {
+        "name": "Instagram",
+        "href": "https://www.instagram.com/power0fmoney2025/"
+      },
+      {
+        "name": "Discord",
+        "href": "https://discord.com/invite/kjSvmChTWn"
+      },
+      {
+        "name": "Email",
+        "href": "mailto:hello@tikpal.io"
+      }
+    ],
+    "copyright": "© 2025-2026 Spatial Therapy Inc."
+  }
+}

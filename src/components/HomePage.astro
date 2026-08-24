@@ -1,0 +1,36 @@
+---
+import type { HomeContent } from './home/types';
+import BrandHero from './sections/01-BrandHero.astro';
+import VoiceHero from './sections/02-VoiceHero.astro';
+import Demo from './sections/03-Demo.astro';
+import WhyNotPhone from './sections/04-WhyNotPhone.astro';
+import Abilities from './sections/05-Abilities.astro';
+import Integrations from './sections/06-Integrations.astro';
+import Recall from './sections/07-Recall.astro';
+import Community from './sections/08-Community.astro';
+import Privacy from './sections/09-Privacy.astro';
+import FocusTools from './sections/10-FocusTools.astro';
+import HomeFaq from './sections/11-HomeFaq.astro';
+import Hardware from './sections/12-Hardware.astro';
+import FinalCta from './sections/13-FinalCta.astro';
+
+interface Props {
+  content: HomeContent;
+}
+
+const { content } = Astro.props;
+---
+
+<BrandHero content={content.brand} />
+<VoiceHero content={content.hero} />
+<Demo content={content.demo} />
+<WhyNotPhone content={content.whyNotPhone} />
+<Abilities content={content.tasks} />
+<Integrations content={content.integrations} />
+<Recall content={content.recall} />
+<Community content={content.community} />
+<Privacy content={content.trust} />
+<FocusTools content={content.focus} />
+<HomeFaq content={content.homeFaq} />
+<Hardware content={content.hardware} />
+<FinalCta content={content.finalCta} />

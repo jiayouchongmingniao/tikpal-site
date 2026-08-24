@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "Tikpal Room — Suono ad alta fedeltà che si adatta al momento",
+    "description": "Tikpal Room è un sistema integrato di amplificatore, diffusore e musica digitale con intelligenza ambientale: uno strumento per ascoltare, rilassarsi e concentrarsi."
+  },
+  "closingLine": "Intelligenza che si muove con la vita. Ascoltala in ogni stanza.",
+  "hero": {
+    "eyebrow": "Tikpal Room",
+    "headline": "Suono ad alta fedeltà che si adatta al momento.",
+    "subtitle": "Un sistema integrato di amplificatore, diffusore e musica digitale con intelligenza ambientale integrata. Percepisce il tuo stato e plasma il suono e l'atmosfera del tuo spazio.",
+    "primaryCta": "Scopri i diffusori",
+    "secondaryCta": "Trova il tuo sistema",
+    "statusLine": "Diffusori e amplificatore già disponibili · Streamer e console all-in-one presto su Kickstarter"
+  },
+  "states": {
+    "title": "Una stanza, tre stati d'animo.",
+    "items": [
+      {
+        "id": "listen",
+        "name": "Ascolto",
+        "caption": "Riproduzione hi-fi · Accordato alla stanza"
+      },
+      {
+        "id": "unwind",
+        "name": "Relax",
+        "caption": "Atmosfera serale · Luce soffusa"
+      },
+      {
+        "id": "focus",
+        "name": "Focus",
+        "caption": "Presenza silenziosa · Pronto quando lo sei tu"
+      }
+    ],
+    "footnote": "L'atmosfera è musica AI generata dalle tue registrazioni Voice e note dell'App — percepisce il tuo momento e il tuo spazio risponde."
+  },
+  "lineup": {
+    "title": "Tre modi per perderti nel suono.",
+    "subtitle": "Dalla scrivania davanti a te alla stanza che ti avvolge: ogni sistema è accordato per la sua distanza.",
+    "cta": "Trova il tuo suono",
+    "items": [
+      {
+        "id": "near",
+        "name": "Tikpal Near",
+        "tagline": "Design che avvicina la musica.",
+        "distance": "CAMPO VICINO",
+        "best": "Ideale per la scrivania",
+        "specs": [
+          "Design",
+          "Full-range da 4 pollici",
+          "Semplice da vivere",
+          "Riferimento: KEF LSX II"
+        ],
+        "image": "/images/room/near-lsx-ii.webp"
+      },
+      {
+        "id": "reference",
+        "name": "Tikpal Reference",
+        "tagline": "Dall'altra parte della stanza.",
+        "distance": "CAMPO MEDIO",
+        "best": "Ideale per il soggiorno",
+        "specs": [
+          "Costanza",
+          "Direttività controllata",
+          "Misurato CTA-2034"
+        ],
+        "image": "/images/room/placeholder/reference.webp"
+      },
+      {
+        "id": "deep",
+        "name": "Tikpal Deep",
+        "tagline": "Senti tutta la scala.",
+        "distance": "SCALA COMPLETA",
+        "best": "Immersione totale",
+        "specs": [
+          "Scala",
+          "6 pollici",
+          "40 Hz (-3 dB)",
+          "Alta potenza"
+        ],
+        "image": "/images/room/placeholder/deep.webp"
+      }
+    ]
+  },
+  "systems": {
+    "title": "Sistemi per la stanza",
+    "headline": "Tutto abbinato. Niente da configurare.",
+    "note": "Un'esperienza completa, composta in tre modi. Sorgente, amplificazione e suono — accordati come un unico strumento.",
+    "items": [
+      {
+        "name": "Desktop System",
+        "for": "Per spazi personali"
+      },
+      {
+        "name": "Reference System",
+        "for": "Per la vita di ogni giorno",
+        "badge": "Più popolare"
+      },
+      {
+        "name": "Bass Extended System",
+        "for": "Per immersione totale"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Dai vita alla stanza.",
+    "label": "Trova il tuo suono",
+    "href": "https://room.tikpal.ai"
+  }
+}

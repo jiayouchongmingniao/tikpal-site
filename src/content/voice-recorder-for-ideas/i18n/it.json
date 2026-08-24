@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Registratore vocale per idee — Cattura i pensieri prima che spariscano | Tikpal",
+    "description": "Le idee non aspettano. Tikpal Voice cattura le idee dette a voce con un tocco e le trasforma in note che ritrovi davvero. $129, senza abbonamento."
+  },
+  "crumbs": [
+    {
+      "label": "Registratore di idee"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Le idee non aspettano che tu apra un'app.",
+    "subtitle": "Tikpal è un registratore vocale tascabile per le idee: un tocco, parla, e il pensiero è catturato prima di svanire.",
+    "primaryCta": {
+      "label": "Acquista Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 minuti AI al mese inclusi · Nessun abbonamento · Reso entro 30 giorni"
+  },
+  "sections": [
+    {
+      "kind": "flow",
+      "title": "Tutta la cattura dura pochi secondi.",
+      "from": "L'idea arriva",
+      "steps": [
+        "Un tocco",
+        "Parla",
+        "Fatto"
+      ]
+    },
+    {
+      "kind": "scenes",
+      "title": "Le idee arrivano ovunque.",
+      "intro": "Tikpal è pensato per i momenti in cui mani e occhi sono occupati.",
+      "items": [
+        {
+          "name": "A passeggio",
+          "body": "Le idee migliori arrivano camminando. Catturale senza fermarti."
+        },
+        {
+          "name": "Guida e tragitti",
+          "body": "Occhi sulla strada, mani al loro posto: un tocco cattura il pensiero."
+        },
+        {
+          "name": "Alla scrivania",
+          "body": "Di' l'idea prima che la prossima scheda ti distragga."
+        },
+        {
+          "name": "Lavoro creativo",
+          "body": "Non spezzare il flusso. Di' l'idea e resta nel lavoro."
+        },
+        {
+          "name": "Prima di dormire",
+          "body": "Dilla al buio. Ritrovala al mattino."
+        },
+        {
+          "name": "All'improvviso",
+          "body": "Nessuna preparazione, nessuna ricerca di app: premi e parla appena arriva."
+        }
+      ]
+    },
+    {
+      "kind": "quote",
+      "title": "Dove è finita quell'idea?",
+      "quote": "Qual era l'idea che ho avuto nella passeggiata di martedì?",
+      "result": "→ Trovata — insieme a tutto quello che hai detto intorno"
+    },
+    {
+      "kind": "chips",
+      "title": "Un'idea può diventare",
+      "chips": [
+        "Una nota",
+        "Un'attività",
+        "Un evento",
+        "Una bozza"
+      ],
+      "note": "Tikpal organizza ciò che dici nella Tikpal App."
+    },
+    {
+      "kind": "points",
+      "title": "Fatto per catturare in movimento.",
+      "points": [
+        "Un tocco avvia la registrazione — niente sblocco, niente app.",
+        "Quattro microfoni ti catturano con chiarezza, anche all'aperto.",
+        "16GB di archiviazione locale tengono al sicuro ogni idea.",
+        "Resistente all'acqua (IP65) e grande come una tasca."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Risposte rapide",
+    "items": [
+      {
+        "q": "Serve un abbonamento?",
+        "a": "No. Tikpal include 200 minuti AI ogni mese e le funzioni principali funzionano senza abbonamento."
+      },
+      {
+        "q": "Tikpal funziona senza il mio telefono?",
+        "a": "La registrazione funziona da sola. La Tikpal App è dove consulti, organizzi e configuri."
+      },
+      {
+        "q": "Cosa succede quando finisco i miei 200 minuti AI?",
+        "a": "I tuoi 200 minuti AI si rinnovano ogni mese: i minuti non usati non si accumulano. Se li esaurisci, le funzioni AI si fermano fino al mese successivo, ma puoi continuare a registrare e tutto resta salvato sul dispositivo."
+      },
+      {
+        "q": "Quanto tempo richiede la spedizione?",
+        "a": "La maggior parte degli ordini arriva entro 5–10 giorni lavorativi negli USA e in Asia-Pacifico, e 7–12 giorni lavorativi in Europa. La stima esatta è mostrata al checkout."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Il pensiero arriva una volta sola. Non perderlo nella schermata di sblocco.",
+    "button": {
+      "label": "Acquista Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Scopri di più su Tikpal Voice",
+      "href": "/voice/"
+    }
+  }
+}

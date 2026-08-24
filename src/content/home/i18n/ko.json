@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "title": "Tikpal Voice — AI 보이스 레코더, 아이디어·메모·할 일을 말로 기록",
+    "description": "Tikpal Voice는 주머니 속 AI 보이스 레코더입니다. 아이디어, 메모, 할 일을 말로 남기면 자동으로 정리되고, 지난 생각까지 다시 찾을 수 있으며 Notion, Gmail, Todoist, 캘린더와 연동됩니다. $129."
+  },
+  "closingLine": "모든 것은 한마디에서 시작됩니다. 나머지는 자연스럽게 따라옵니다.",
+  "brand": {
+    "eyebrow": "Tikpal",
+    "title": "당신과 함께 움직이는 인텔리전스.",
+    "subtitle": "하나의 맥락. 삶이 어디에서든.",
+    "products": [
+      {
+        "name": "Tikpal Voice",
+        "verb": "캡처.",
+        "line": "Voice로 바로 담고."
+      },
+      {
+        "name": "Tikpal App",
+        "verb": "이해.",
+        "line": "App에서 정리하고."
+      },
+      {
+        "name": "Tikpal Room",
+        "verb": "응답.",
+        "line": "Room으로 완성하세요."
+      }
+    ],
+    "exploreCta": {
+      "label": "Tikpal 만나기",
+      "href": "#voice"
+    }
+  },
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "titleLine1": "먼저 기록하고,",
+    "titleLine2": "생각은 나중에.",
+    "subtitle": "한 번의 탭으로 생각을 잡아두세요. Tikpal이 기억하고, 정리해서, 있어야 할 곳으로 보내 줍니다.",
+    "seoLine": "단순한 AI 보이스 레코더가 아닙니다. Tikpal은 말한 생각을 정리된 기억, 할 일, 행동으로 바꿔줍니다.",
+    "primaryCta": {
+      "label": "Tikpal 구매하기 — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "secondaryCta": {
+      "label": "직접 확인하기",
+      "href": "#demo"
+    },
+    "exploreLink": {
+      "label": "Tikpal Voice 알아보기",
+      "href": "/voice/"
+    },
+    "trustLine": "매달 AI 200분 포함 · 구독 불필요 · 30일 반품"
+  },
+  "demo": {
+    "eyebrow": "진짜 기록, 진짜 결과",
+    "title": "한 번만 말하세요. 나머지는 Tikpal이.",
+    "deviceCaption": "Tikpal Voice를 한 번 탭",
+    "quoteLabel": "당신이 말하면",
+    "quote": "랜딩 페이지를 고쳐야 해. 사용자 문제를 먼저 내세우고, 내일 Sam에게 이메일 보내는 것도 기억해 줘.",
+    "resultsLabel": "Tikpal이 이렇게 만듭니다",
+    "outputs": [
+      {
+        "kind": "아이디어",
+        "text": "랜딩 페이지 포지셔닝 수정"
+      },
+      {
+        "kind": "인사이트",
+        "text": "기능보다 사용자 문제를 먼저"
+      },
+      {
+        "kind": "할 일",
+        "text": "내일 Sam에게 이메일"
+      }
+    ],
+    "flowLine": "기록 → 정리 → 바로 실행"
+  },
+  "whyNotPhone": {
+    "title": "스마트폰은 뭐든 할 수 있습니다.",
+    "title2": "바로 그게 문제입니다.",
+    "phoneLabel": "스마트폰",
+    "phoneSteps": [
+      "잠금 해제",
+      "앱 찾기",
+      "녹음 시작",
+      "알림",
+      "메시지",
+      "Instagram",
+      "생각은 사라짐."
+    ],
+    "tikpalLabel": "Tikpal",
+    "tikpalLine": "누르고, 말하고, 끝.",
+    "closing": "피드 없음. 알림 없음. 전환 없음."
+  },
+  "tasks": {
+    "title": "자연스럽게 말하세요.",
+    "title2": "쓸모 있는 결과가 남습니다.",
+    "noteLine": "Tikpal은 따로 열 필요가 없는 AI 노트 테이커처럼 작동합니다. 자연스럽게 말하면 아이디어가 메모, 할 일, 일정, 초안이 됩니다.",
+    "noteLink": {
+      "label": "AI 노트 테이커 자세히 보기",
+      "href": "/ai-note-taker/"
+    },
+    "cards": [
+      {
+        "name": "기억",
+        "quote": "스피커 인클로저는 아마 12mm 더 넓혀야 해.",
+        "result": "Speaker Project에 저장됨"
+      },
+      {
+        "name": "실행",
+        "quote": "내일 John에게 자료를 보내라고 알림 줘.",
+        "result": "할 일 생성 — 내일 오전 9:00"
+      },
+      {
+        "name": "만들기",
+        "quote": "디자인을 바꾸는 이유를 설명하는 이메일 초안 써줘.",
+        "result": "이메일 초안 완성"
+      },
+      {
+        "name": "떠올리기",
+        "quote": "지난달에 스피커 디자인에 대해 뭐라고 했지?",
+        "result": "관련 생각 6개 발견"
+      }
+    ],
+    "customLine": "App에서 사용자 지정 AI 작업으로 Tikpal을 당신 방식대로 일하게 만드세요."
+  },
+  "recall": {
+    "title": "아이디어를 찾으세요.",
+    "title2": "음성 파일이 아니라.",
+    "leftLabel": "일반 녹음기",
+    "filesLabel": "녹음 128개",
+    "files": [
+      "08/21 14:32",
+      "08/21 16:07",
+      "08/22 09:16",
+      "08/22 13:41"
+    ],
+    "rightLabel": "Tikpal",
+    "query": "지난달에 스피커 디자인에 대해 내가 뭐라고 했지?",
+    "resultLabel": "관련 생각 6개를 찾았어요",
+    "tags": [
+      "인클로저 치수",
+      "웨이브가이드 크기",
+      "후면 포트 배치",
+      "소재 마감",
+      "저역 확장",
+      "앰프 배치"
+    ],
+    "closing": "덜 녹음하고, 더 많이 기억하세요.",
+    "memoryLink": {
+      "label": "AI 메모리에 대해 알아보기",
+      "href": "/ai-memory/"
+    }
+  },
+  "integrations": {
+    "title": "한 번만 말하세요.",
+    "title2": "있을 곳으로 알아서 갑니다.",
+    "actions": [
+      {
+        "quote": "이거 내 할 일에 추가해 줘.",
+        "target": "Todoist"
+      },
+      {
+        "quote": "Project Atlas에 저장해 줘.",
+        "target": "Notion"
+      },
+      {
+        "quote": "Sarah에게 보낼 이메일 초안 써줘.",
+        "target": "Gmail"
+      },
+      {
+        "quote": "이건 목요일 오후에 넣어 줘.",
+        "target": "Calendar"
+      }
+    ],
+    "proof": "Notion · Gmail · Todoist · Calendar"
+  },
+  "focus": {
+    "eyebrow": "집중 도구 포함",
+    "title": "스마트폰을 들 이유를 줄여줍니다.",
+    "modes": [
+      "포모도로",
+      "호흡",
+      "앰비언트 사운드"
+    ],
+    "line": "다른 앱을 열지 않고 집중하세요."
+  },
+  "trust": {
+    "title": "당신의 목소리는 사적인 것입니다.",
+    "subtitle": "Tikpal이 언제 듣고, 무엇을 동기화하고, 무엇을 삭제할지 당신이 정합니다.",
+    "points": [
+      {
+        "name": "눈에 보이는 녹음",
+        "body": "불이 켜지면 Tikpal이 듣고 있다는 뜻입니다."
+      },
+      {
+        "name": "로컬 우선",
+        "body": "동기화 전에 먼저 기기 안 16GB에 저장."
+      },
+      {
+        "name": "당신의 데이터는 당신이 관리",
+        "body": "언제든 검토 · 내보내기 · 삭제."
+      }
+    ],
+    "footnote": "당신의 녹음은 공개 모델 학습에 절대 사용되지 않습니다."
+  },
+  "community": {
+    "eyebrow": "Tikpal 커뮤니티 · Discord",
+    "title": "아이디어가 실제로 떠오르는 순간에 쓰입니다.",
+    "subtitle": "Tikpal 커뮤니티의 진짜 목소리.",
+    "voices": [
+      {
+        "quote": "Love the product, can't wait to see where it goes. ❤️",
+        "user": "lukeszboyiii",
+        "meta": "Aug 11, 2026"
+      },
+      {
+        "quote": "I also love how responsive you are with support and making changes when people request them! You even sent me a new unit when the screen was broken, and implemented ideas I suggested",
+        "user": "TSCNSam",
+        "meta": "Aug 12, 2026"
+      },
+      {
+        "quote": "Liking using the timer to stay focused in the morning.",
+        "user": "lukeszboyiii",
+        "meta": "Mar 15, 2026"
+      }
+    ],
+    "footnote": "Tikpal Discord 커뮤니티 게시글을 그대로 인용했습니다. 사용자 이름도 변경 없음."
+  },
+  "finalCta": {
+    "title": "생각은 한 번만 찾아옵니다.",
+    "subtitle": "잠금 화면에 흘려보내지 마세요.",
+    "productName": "Tikpal Voice",
+    "price": "$129",
+    "primaryCta": {
+      "label": "Tikpal 구매하기",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustPoints": [
+      "월 200분 AI",
+      "구독 불필요",
+      "30일 반품",
+      "1년 보증",
+      "추적 가능한 전 세계 배송"
+    ]
+  },
+  "homeFaq": {
+    "title": "구매 전에 궁금한 것들",
+    "items": [
+      {
+        "q": "구독이 필요한가요?",
+        "a": "아니요. Tikpal에는 매달 AI 200분이 포함되며, 핵심 녹음은 구독 없이 계속 쓸 수 있습니다."
+      },
+      {
+        "q": "스마트폰 없이도 Tikpal이 작동하나요?",
+        "a": "녹음은 기기 자체로 됩니다. Tikpal App은 검토, 정리, 설정을 위한 곳입니다."
+      },
+      {
+        "q": "Wi-Fi가 꼭 필요한가요?",
+        "a": "오프라인으로 녹음할 수 있습니다. Wi-Fi가 연결되면 동기화됩니다."
+      },
+      {
+        "q": "녹음은 어디에 저장되나요?",
+        "a": "먼저 기기 안에 저장됩니다(16GB). 동기화 여부는 당신이 정합니다."
+      },
+      {
+        "q": "데이터를 삭제할 수 있나요?",
+        "a": "네. 언제든 확인, 내보내기, 삭제가 가능합니다."
+      },
+      {
+        "q": "마음에 안 들면요?",
+        "a": "30일 반품 — 아무 조건 없이 반품할 수 있습니다."
+      },
+      {
+        "q": "iPhone과 Android 모두 되나요?",
+        "a": "네 — Tikpal App은 둘 다 지원합니다."
+      },
+      {
+        "q": "AI 200분을 다 쓰면 어떻게 되나요?",
+        "a": "AI 200분은 매달 새로 부여되며, 쓰지 않은 분은 이월되지 않습니다. 모두 쓰면 AI 기능은 다음 달까지 일시 중단되지만, 녹음은 계속할 수 있고 모든 내용은 기기에 그대로 저장됩니다."
+      },
+      {
+        "q": "배송은 얼마나 걸리나요?",
+        "a": "대부분의 주문은 미국과 아시아·태평양 지역 기준 5–10 영업일, 유럽 기준 7–12 영업일 안에 도착해요. 정확한 예상 기간은 결제 페이지에서 확인할 수 있어요."
+      },
+      {
+        "q": "수입 관세가 있나요?",
+        "a": "국가별 통관 규정에 따라 수입 관세나 세금이 부과될 수 있으며, 이는 가격에 포함되지 않습니다."
+      }
+    ],
+    "moreLink": {
+      "label": "전체 FAQ 보기",
+      "href": "/faq/"
+    }
+  },
+  "hardware": {
+    "title": "당신의 하루 속으로 자연스럽게 사라집니다.",
+    "subtitle": "늘 들고 다닐 만큼 작게. 생각이 떠오르는 순간, 바로 준비 완료.",
+    "points": [
+      {
+        "name": "쿼드 마이크"
+      },
+      {
+        "name": "AMOLED"
+      },
+      {
+        "name": "16GB"
+      },
+      {
+        "name": "820mAh"
+      },
+      {
+        "name": "IP65"
+      }
+    ],
+    "specsToggle": "전체 사양 보기",
+    "specs": [
+      {
+        "name": "마이크",
+        "value": "AI 노이즈 감소 쿼드 마이크 어레이"
+      },
+      {
+        "name": "디스플레이",
+        "value": "1.75인치 AMOLED"
+      },
+      {
+        "name": "저장",
+        "value": "16GB 로컬"
+      },
+      {
+        "name": "배터리",
+        "value": "820mAh"
+      },
+      {
+        "name": "방수",
+        "value": "IP65"
+      },
+      {
+        "name": "충전",
+        "value": "마그네틱 포고핀 충전"
+      }
+    ]
+  }
+}

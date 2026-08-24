@@ -99,6 +99,71 @@
   animation: roomStateB 9s ease-in-out infinite;
 }
 
+/* --- Room state cycle: LISTEN → UNWIND → FOCUS (three-way cross-fade) --- */
+@keyframes stateCycleA {
+  0%,
+  28% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  33%,
+  95% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes stateCycleB {
+  0%,
+  28% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  33%,
+  61% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  66%,
+  100% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes stateCycleC {
+  0%,
+  61% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  66%,
+  95% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+.state-cycle-a {
+  animation: stateCycleA 12s ease-in-out infinite;
+}
+
+.state-cycle-b {
+  animation: stateCycleB 12s ease-in-out infinite;
+}
+
+.state-cycle-c {
+  animation: stateCycleC 12s ease-in-out infinite;
+}
+
 /* ============================================
    Scroll reveal (driven by src/scripts/reveal.ts)
    Elements carry .reveal; observer adds .is-visible
@@ -201,6 +266,17 @@
 
   .room-state-b {
     opacity: 0;
+  }
+
+  .state-cycle-b,
+  .state-cycle-c {
+    animation: none;
+    opacity: 0;
+  }
+
+  .state-cycle-a {
+    animation: none;
+    opacity: 1;
   }
 
   .dot-alive {

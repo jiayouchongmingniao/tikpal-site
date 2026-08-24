@@ -1,0 +1,131 @@
+---
+import type { RoomHero } from './types';
+
+interface Props {
+  content: RoomHero;
+}
+
+const { content } = Astro.props;
+---
+
+<section class="hero section surface-room grain">
+  <!-- full-bleed scene image -->
+  <picture>
+    <source type="image/avif" srcset="/images/room/room-device.avif" />
+    <img
+      class="hero-bg"
+      src="/images/room/room-device.webp"
+      alt="Tikpal Room — an all-in-one device with speakers, amplifier and streamer in a single body, on a wooden desk"
+      width="1600"
+      height="902"
+      loading="eager"
+      fetchpriority="high"
+      decoding="async"
+    />
+  </picture>
+  <div class="hero-veil" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+
+  <div class="container hero-inner">
+    <p class="eyebrow mono reveal">{content.eyebrow}</p>
+    <h1 class="h1 reveal" style="--reveal-delay: 0.1s">{content.headline}</h1>
+    <p class="lead reveal" style="--reveal-delay: 0.2s">{content.subtitle}</p>
+    <div class="hero-actions reveal" style="--reveal-delay: 0.3s">
+      <a class="btn btn-solid" href="https://room.tikpal.ai" target="_blank" rel="noopener">
+        {content.primaryCta}
+        <span aria-hidden="true">→</span>
+      </a>
+      <a class="btn btn-ghost" href="#lineup">{content.secondaryCta}</a>
+    </div>
+    <p class="hero-status mono reveal" style="--reveal-delay: 0.4s">{content.statusLine}</p>
+  </div>
+</section>
+
+<style>
+  .hero {
+    min-height: 100svh;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: clamp(4rem, 3rem + 6vw, 7rem);
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.55;
+  }
+
+  /* legibility veil: warm dark floor rising toward the copy */
+  .hero-veil {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(23, 19, 14, 0.96) 0%,
+      rgba(23, 19, 14, 0.55) 45%,
+      rgba(23, 19, 14, 0.35) 100%
+    );
+    pointer-events: none;
+  }
+
+  .hero-glow {
+    position: absolute;
+    left: -12%;
+    bottom: -20%;
+    width: 48vw;
+    height: 48vw;
+    max-width: 40rem;
+    max-height: 40rem;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      var(--amber-soft) 0%,
+      rgba(201, 138, 75, 0.05) 45%,
+      transparent 70%
+    );
+    animation: drift 14s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    position: relative;
+    display: grid;
+    gap: var(--space-2);
+    align-content: end;
+    max-width: var(--container);
+  }
+
+  .hero-inner .h1 {
+    max-width: 14em;
+  }
+
+  .hero-inner .lead {
+    max-width: 34em;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-top: var(--space-2);
+  }
+
+  .hero-status {
+    margin-top: var(--space-2);
+    font-size: var(--text-small);
+    letter-spacing: 0.06em;
+    opacity: 0.9;
+    max-width: 46em;
+  }
+
+  @media (max-width: 860px) {
+    .hero {
+      min-height: 0;
+      padding-top: calc(var(--section-pad) + 2rem);
+    }
+  }
+</style>

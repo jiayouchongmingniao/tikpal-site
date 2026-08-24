@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ArticlePage from '../../../components/ArticlePage.astro';
+import type { ArticleContent } from '../../../components/ArticlePage.astro';
+import type { CommonContent } from '../../../components/home/types';
+import { LANGS, pagePath, HOME_LANGS } from '../../../utils/i18n';
+
+import zh from '../../../content/support/i18n/zh.json';
+import ja from '../../../content/support/i18n/ja.json';
+import ko from '../../../content/support/i18n/ko.json';
+import de from '../../../content/support/i18n/de.json';
+import es from '../../../content/support/i18n/es.json';
+import it from '../../../content/support/i18n/it.json';
+
+import zhCommon from '../../../content/common/i18n/zh.json';
+import jaCommon from '../../../content/common/i18n/ja.json';
+import koCommon from '../../../content/common/i18n/ko.json';
+import deCommon from '../../../content/common/i18n/de.json';
+import esCommon from '../../../content/common/i18n/es.json';
+import itCommon from '../../../content/common/i18n/it.json';
+
+const locales: Record<string, ArticleContent> = {
+  zh: zh as ArticleContent,
+  ja: ja as ArticleContent,
+  ko: ko as ArticleContent,
+  de: de as ArticleContent,
+  es: es as ArticleContent,
+  it: it as ArticleContent,
+};
+
+const commonLocales: Record<string, CommonContent> = {
+  zh: zhCommon as CommonContent,
+  ja: jaCommon as CommonContent,
+  ko: koCommon as CommonContent,
+  de: deCommon as CommonContent,
+  es: esCommon as CommonContent,
+  it: itCommon as CommonContent,
+};
+
+export function getStaticPaths() {
+  return HOME_LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as string;
+const content = locales[lang];
+
+// 7 language alternates + x-default → /support/
+const alternates = [
+  ...LANGS.map((l) => ({
+    lang: l,
+    href: new URL(pagePath('support', l), Astro.site).href,
+  })),
+  { lang: 'x-default', href: new URL('/support/', Astro.site).href },
+];
+---
+
+<BaseLayout
+  title={content.meta.title}
+  description={content.meta.description}
+  lang={lang}
+  alternates={alternates}
+  currentLang={lang}
+  common={commonLocales[lang]}
+  pageKind="support"
+>
+  <ArticlePage content={content} />
+</BaseLayout>

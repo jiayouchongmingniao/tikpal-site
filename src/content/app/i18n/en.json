@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Tikpal App — Your thinking, extended.",
+    "description": "The Tikpal App carries every captured moment forward — weaving fragments into context you can search, summarize and export."
+  },
+  "closingLine": "Intelligence that moves with life — in your pocket, on your side.",
+  "hero": {
+    "eyebrow": "Tikpal App",
+    "headline": "Your thinking, extended.",
+    "subtitle": "Voice catches the moment — App carries it forward, weaving every fragment into context you can act on.",
+    "primaryCta": "Try Tikpal App",
+    "statusLine": "Say it, then let it continue.",
+    "downloads": [
+      {
+        "label": "Download for iOS",
+        "href": "https://apps.apple.com/us/app/tikpal/id6755826084"
+      },
+      {
+        "label": "Download for Android",
+        "href": "https://play.google.com/store/apps/details?id=ai.tikpal.app&hl=en"
+      }
+    ]
+  },
+  "capture": {
+    "title": "Fragments become context.",
+    "timeline": {
+      "label": "Today",
+      "entries": [
+        {
+          "time": "09:14",
+          "kind": "Idea"
+        },
+        {
+          "time": "11:42",
+          "kind": "Meeting"
+        },
+        {
+          "time": "14:08",
+          "kind": "Reminder"
+        },
+        {
+          "time": "17:31",
+          "kind": "Reflection"
+        }
+      ]
+    },
+    "summaryCard": {
+      "title": "Website Redesign",
+      "meta": "4 related moments",
+      "coreIdea": {
+        "label": "Core idea",
+        "text": "Keep the experience ambient and simple."
+      },
+      "next": {
+        "label": "Next",
+        "text": "Review tomorrow morning."
+      }
+    }
+  },
+  "tasks": {
+    "title": "Your rules. Its job.",
+    "subtitle": "Tell the App what to do with your words — you speak, Tikpal does the rest.",
+    "points": [
+      {
+        "name": "Define once",
+        "detail": "Set a task in the App — what to extract, where it should land."
+      },
+      {
+        "name": "Tikpal gets to work",
+        "detail": "You keep talking — Tikpal hears it and does the work. No tapping, no forms."
+      },
+      {
+        "name": "Lands where you need it",
+        "detail": "Calendar, ledger, inbox — results arrive already in place."
+      }
+    ],
+    "examples": "Expenses · Calendar · Clear thinking · Email · and your own"
+  },
+  "devices": {
+    "title": "One library. Every screen.",
+    "multiDevice": {
+      "src": "/images/app/multi-device.webp",
+      "alt": "Tikpal Voice, the Tikpal App and Tikpal Room — one library across every screen"
+    },
+    "actions": [
+      "Find.",
+      "Connect.",
+      "Continue."
+    ]
+  },
+  "cta": {
+    "title": "Capture with Voice. Think further in App.",
+    "label": "Try Tikpal App",
+    "href": "https://app.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+  }
+}

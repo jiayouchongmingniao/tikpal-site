@@ -1,0 +1,123 @@
+---
+export interface PrivacySection {
+  heading: string;
+  paragraphs: string[];
+}
+
+export interface PrivacyContent {
+  meta: { title: string; description: string };
+  page: {
+    eyebrow: string;
+    title: string;
+    updatedLabel: string;
+    updated: string;
+    intro: string;
+  };
+  sections: PrivacySection[];
+}
+
+interface Props {
+  content: PrivacyContent;
+}
+
+const { content } = Astro.props;
+---
+
+<main class="privacy-page surface-dark grain">
+  <div class="container">
+    <header class="privacy-head reveal">
+      <p class="privacy-eyebrow mono">{content.page.eyebrow}</p>
+      <h1 class="privacy-title">{content.page.title}</h1>
+      <p class="privacy-updated mono">{content.page.updatedLabel} · {content.page.updated}</p>
+      <p class="privacy-intro">{content.page.intro}</p>
+    </header>
+
+    <div class="privacy-body">
+      {
+        content.sections.map((section, i) => (
+          <section class="privacy-section reveal">
+            <h2 class="privacy-heading">
+              <span class="privacy-num mono">{String(i + 1).padStart(2, '0')}</span>
+              {section.heading}
+            </h2>
+            {section.paragraphs.map((p) => <p class="privacy-paragraph">{p}</p>)}
+          </section>
+        ))
+      }
+    </div>
+  </div>
+</main>
+
+<style>
+  .privacy-page {
+    padding: calc(var(--space-6) + 4rem) 0 var(--space-6);
+    color: var(--white);
+    min-height: 60vh;
+  }
+
+  .privacy-head {
+    max-width: 42rem;
+    margin-bottom: var(--space-5);
+  }
+
+  .privacy-eyebrow {
+    font-size: var(--text-micro);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    opacity: 0.55;
+    margin-bottom: var(--space-2);
+  }
+
+  .privacy-title {
+    font-size: var(--text-h1);
+    font-weight: 600;
+    letter-spacing: var(--tracking-tight);
+    line-height: 1.05;
+  }
+
+  .privacy-updated {
+    margin-top: var(--space-2);
+    font-size: var(--text-micro);
+    opacity: 0.55;
+  }
+
+  .privacy-intro {
+    margin-top: var(--space-3);
+    font-size: var(--text-small);
+    line-height: 1.7;
+    opacity: 0.85;
+  }
+
+  .privacy-body {
+    border-top: 1px solid var(--line-light);
+    padding-top: var(--space-4);
+    display: grid;
+    gap: var(--space-4);
+    max-width: 42rem;
+  }
+
+  .privacy-heading {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    font-size: var(--text-h4);
+    font-weight: 600;
+    letter-spacing: var(--tracking-tight);
+    margin-bottom: var(--space-2);
+  }
+
+  .privacy-num {
+    font-size: var(--text-micro);
+    opacity: 0.45;
+  }
+
+  .privacy-paragraph {
+    font-size: var(--text-small);
+    line-height: 1.75;
+    opacity: 0.8;
+  }
+
+  .privacy-paragraph + .privacy-paragraph {
+    margin-top: 0.75rem;
+  }
+</style>

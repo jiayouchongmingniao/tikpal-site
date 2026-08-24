@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Tikpal Support",
+    "description": "Get help with Tikpal Voice, the Tikpal App and Tikpal Room — setup guides, orders, account help and how to reach us."
+  },
+  "page": {
+    "eyebrow": "Help",
+    "title": "Support",
+    "intro": "Whether you're setting up Tikpal for the first time, tracking an order or just stuck on something, we're here to help."
+  },
+  "sections": [
+    {
+      "heading": "Getting started",
+      "paragraphs": [
+        "Set up takes only a few minutes: charge your Tikpal Voice, install the Tikpal App, sign in and hold the touch button to record your first note. Transcription and organization happen automatically.",
+        "Tikpal Room follows the same flow — plug it in, open the app and follow the on-screen steps to connect it to your account and your space."
+      ]
+    },
+    {
+      "heading": "Orders & shipping",
+      "paragraphs": [
+        "Orders placed in the Tikpal Shop are confirmed by email with tracking information as soon as they ship. Delivery times and availability are shown at checkout.",
+        "If your order hasn't arrived, arrived damaged or isn't what you expected, contact us with your order number and we'll make it right."
+      ]
+    },
+    {
+      "heading": "Devices & apps",
+      "paragraphs": [
+        "Tikpal Voice, Tikpal Room and the Tikpal App receive regular updates that improve capture quality, transcription and sync. Keeping the app up to date is the fastest fix for most issues.",
+        "If a device won't connect or record, restart the app and make sure Bluetooth and microphone access are enabled. Most connection problems are resolved by re-pairing the device."
+      ]
+    },
+    {
+      "heading": "Account & privacy",
+      "paragraphs": [
+        "Your recordings and transcripts belong to you. You can export or delete your data at any time from the Tikpal App.",
+        "Details on how we handle your information are in our Privacy Policy. For account-specific requests — data export, deletion or changes — write to us directly."
+      ]
+    },
+    {
+      "heading": "Contact us",
+      "paragraphs": [
+        "Email: hello@tikpal.io — we reply to every message, usually within one business day.",
+        "You can also reach the community and the team on our Discord. For quick answers to common questions, check the FAQ."
+      ]
+    }
+  ]
+}

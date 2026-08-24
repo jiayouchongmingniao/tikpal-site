@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "title": "AI Note Taker Without Opening Your Phone | Tikpal Voice",
+    "description": "Tikpal is an AI note taker you can use the moment an idea happens. Speak naturally and turn voice into notes, tasks, calendar events and drafts."
+  },
+  "crumbs": [
+    {
+      "label": "AI Note Taker"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "An AI note taker you don't have to open.",
+    "subtitle": "Most AI note takers wait for a meeting. Tikpal takes notes the moment a thought happens — one press, no screen, no unlock.",
+    "primaryCta": {
+      "label": "Get Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 AI minutes/month included · No subscription required · 30-day returns"
+  },
+  "sections": [
+    {
+      "kind": "table",
+      "title": "Most AI note takers start with a meeting.",
+      "intro": "Tikpal starts whenever a thought happens.",
+      "cols": [
+        "Tikpal",
+        "Typical AI note taker"
+      ],
+      "rows": [
+        {
+          "label": "Starts from",
+          "values": [
+            "Any thought, anywhere",
+            "A scheduled meeting"
+          ]
+        },
+        {
+          "label": "Getting started",
+          "values": [
+            "One press and speak",
+            "Open an app, join a call"
+          ]
+        },
+        {
+          "label": "What you get",
+          "values": [
+            "Notes, tasks, calendar events, drafts",
+            "Transcript and summary"
+          ]
+        },
+        {
+          "label": "Where it ends up",
+          "values": [
+            "Organized memory you can search",
+            "Another app to keep open"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "scenes",
+      "title": "Notes happen outside the meeting room.",
+      "intro": "Tikpal keeps up with the moments where ideas actually arrive.",
+      "items": [
+        {
+          "name": "Walking",
+          "body": "The good ideas come mid-stride. Press once, speak, keep walking — the note is waiting when you're back."
+        },
+        {
+          "name": "Commuting",
+          "body": "Hands on the handlebar, thought on your mind. Capture it without pulling out your phone."
+        },
+        {
+          "name": "Working",
+          "body": "Between calls and deadlines, say what needs doing and let it become a task."
+        },
+        {
+          "name": "Creating",
+          "body": "Don't break the flow to type. Speak the idea and stay in the work."
+        }
+      ]
+    },
+    {
+      "kind": "flow",
+      "title": "Speak once. Get something you can use.",
+      "from": "“Remind me to send the proposal draft to Ana before Friday…”",
+      "steps": [
+        "Note",
+        "Task",
+        "Calendar",
+        "Draft"
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "Notes land where you already work.",
+      "chips": [
+        "Todoist",
+        "Notion",
+        "Gmail",
+        "Calendar",
+        "Xmind"
+      ],
+      "note": "Connect the tools you already use in the Tikpal App."
+    },
+    {
+      "kind": "points",
+      "title": "Your notes stay yours.",
+      "points": [
+        "A clear light shows when Tikpal is listening.",
+        "16GB local storage before anything syncs.",
+        "Review, export or delete anytime.",
+        "Your recordings are never used to train public models."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Quick answers",
+    "items": [
+      {
+        "q": "Do I need a subscription?",
+        "a": "No. Tikpal includes 200 AI minutes every month, and core recording stays available without a subscription."
+      },
+      {
+        "q": "Does it really work without opening my phone?",
+        "a": "Yes. Recording happens on the device: press and speak. Your notes appear in the Tikpal App — organized into text, tasks and drafts."
+      },
+      {
+        "q": "What happens after I use my 200 AI minutes?",
+        "a": "Your 200 AI minutes refresh every month — unused minutes don't roll over. If you run out, AI features pause until the next month, but you can keep recording and everything stays saved on the device."
+      },
+      {
+        "q": "How long does shipping take?",
+        "a": "Most orders arrive within 5–10 business days in the US and Asia-Pacific, and 7–12 business days in Europe. Exact estimates are shown at checkout."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Record first. Think later.",
+    "button": {
+      "label": "Get Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Learn more about Tikpal Voice",
+      "href": "/voice/"
+    }
+  }
+}

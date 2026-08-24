@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "title": "用 AI 把语音笔记变成邮件草稿 | Tikpal",
+    "description": "说出想法，Tikpal 替你起草邮件——用你的话写成，等你审阅。没有你的确认，什么都不会发出。$129，无需订阅。"
+  },
+  "crumbs": [
+    {
+      "label": "语音转邮件"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "说出想法，得到草稿。",
+    "subtitle": "Tikpal 把你说的话变成可以阅读、修改和发送的邮件草稿——一个字都不用打。",
+    "primaryCta": {
+      "label": "购买 Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "每月含 200 分钟 AI · 无需订阅 · 30 天退货"
+  },
+  "sections": [
+    {
+      "kind": "quote",
+      "title": "说出邮件，得到草稿。",
+      "quote": "告诉 Sarah 我们把会议改到周五，并说明原因。",
+      "result": "→ 邮件草稿，等你审阅"
+    },
+    {
+      "kind": "flow",
+      "title": "语音如何变成草稿。",
+      "from": "“告诉 Sarah 我们把会议改到周五，并说明原因。”",
+      "steps": [
+        "转录",
+        "起草",
+        "你审阅并发送"
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "只起草，不自动发送。",
+      "points": [
+        "Tikpal 准备草稿；发送键由你按下。",
+        "离开你手之前，每个字都可以阅读和修改。",
+        "在 Tikpal App 中连接 Gmail，草稿就落在你写邮件的地方。",
+        "哪些录音变成草稿，由你决定。"
+      ]
+    },
+    {
+      "kind": "scenes",
+      "title": "几乎自己会写的邮件。",
+      "items": [
+        {
+          "name": "跟进",
+          "body": "通话后的快速跟进——说出来，草稿就好。"
+        },
+        {
+          "name": "改期",
+          "body": "说出变动和原因，邮件自然成形。"
+        },
+        {
+          "name": "进度同步",
+          "body": "说出进展，得到一份干净的更新草稿。"
+        },
+        {
+          "name": "在外奔波",
+          "body": "站与站之间起草，准备好了再发送。"
+        }
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "你的话，只属于你。",
+      "points": [
+        "Tikpal 聆听时，有清晰的指示灯。",
+        "同步之前，先存进 16GB 本地存储。",
+        "随时查看、导出或删除。",
+        "你的录音永远不会用于训练公开模型。"
+      ]
+    }
+  ],
+  "faq": {
+    "title": "快速解答",
+    "items": [
+      {
+        "q": "需要订阅吗？",
+        "a": "不需要。Tikpal 每月包含 200 AI 分钟，核心录音功能无需订阅即可使用。"
+      },
+      {
+        "q": "Tikpal 会自动发送邮件吗？",
+        "a": "不会。Tikpal 只准备草稿，每一封都由你审阅后亲自发送。"
+      },
+      {
+        "q": "200 AI 分钟用完了怎么办？",
+        "a": "200 AI 分钟每月刷新——未用完的部分不结转。如果用完了，AI 功能会暂停到下个月，但你可以继续录音，一切都会保存在设备上。"
+      },
+      {
+        "q": "发货要多久？",
+        "a": "美国和亚太地区大多数订单 5–10 个工作日送达，欧洲 7–12 个工作日。具体预估会在结账时显示。"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "说出想法，选对时机发送。",
+    "button": {
+      "label": "购买 Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "了解 Tikpal Voice",
+      "href": "/voice/"
+    }
+  }
+}

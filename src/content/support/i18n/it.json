@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Centro assistenza Tikpal",
+    "description": "Assistenza per Tikpal Voice, la Tikpal App e Tikpal Room — guide alla configurazione, ordini, aiuto con l'account e come contattarci."
+  },
+  "page": {
+    "eyebrow": "Assistenza",
+    "title": "Centro assistenza",
+    "intro": "Che tu stia configurando Tikpal per la prima volta, seguendo un ordine o sia bloccato su qualcosa, siamo qui per aiutarti."
+  },
+  "sections": [
+    {
+      "heading": "Per iniziare",
+      "paragraphs": [
+        "La configurazione richiede solo pochi minuti: carica il tuo Tikpal Voice, installa la Tikpal App, accedi e tieni premuto il pulsante touch per registrare la tua prima nota. Trascrizione e organizzazione avvengono automaticamente.",
+        "Con Tikpal Room il flusso è lo stesso — collegalo, apri l'app e segui i passaggi sullo schermo per collegarlo al tuo account e al tuo spazio."
+      ]
+    },
+    {
+      "heading": "Ordini e spedizioni",
+      "paragraphs": [
+        "Gli ordini effettuati nel Tikpal Shop vengono confermati via email con le informazioni di tracciamento non appena spediti. Tempi di consegna e disponibilità sono mostrati al checkout.",
+        "Se il tuo ordine non arriva, arriva danneggiato o non è quello che ti aspettavi, contattaci con il numero d'ordine e risolveremo."
+      ]
+    },
+    {
+      "heading": "Dispositivi e app",
+      "paragraphs": [
+        "Tikpal Voice, Tikpal Room e la Tikpal App ricevono aggiornamenti regolari che migliorano qualità di cattura, trascrizione e sincronizzazione. Mantenere l'app aggiornata è il modo più veloce per risolvere la maggior parte dei problemi.",
+        "Se un dispositivo non si connette o non registra, riavvia l'app e assicurati che Bluetooth e accesso al microfono siano abilitati. La maggior parte dei problemi di connessione si risolve riassociando il dispositivo."
+      ]
+    },
+    {
+      "heading": "Account e privacy",
+      "paragraphs": [
+        "Le tue registrazioni e le tue trascrizioni ti appartengono. Puoi esportare o eliminare i tuoi dati in qualsiasi momento dalla Tikpal App.",
+        "I dettagli su come trattiamo le tue informazioni sono nella nostra Informativa sulla privacy. Per richieste specifiche sull'account — esportazione, eliminazione o modifiche — scrivici direttamente."
+      ]
+    },
+    {
+      "heading": "Contattaci",
+      "paragraphs": [
+        "Email: hello@tikpal.io — rispondiamo a ogni messaggio, di solito entro un giorno lavorativo.",
+        "Puoi anche raggiungere la community e il team sul nostro Discord. Per risposte rapide alle domande più comuni, consulta le FAQ."
+      ]
+    }
+  ]
+}

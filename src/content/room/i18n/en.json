@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "Tikpal Room — High-fidelity sound that adapts to the moment",
+    "description": "Tikpal Room is an integrated amplifier, speaker and digital music system with ambient intelligence — one instrument for listening, unwinding and focus."
+  },
+  "closingLine": "Intelligence that moves with life. Hear it in every room.",
+  "hero": {
+    "eyebrow": "Tikpal Room",
+    "headline": "High-fidelity sound that adapts to the moment.",
+    "subtitle": "An integrated amplifier, speaker and digital music system with ambient intelligence built in. It senses your state — and shapes the music and atmosphere of your space.",
+    "primaryCta": "Explore the speakers",
+    "secondaryCta": "Find your system",
+    "statusLine": "Speakers and amplifier available now · Streamer and all-in-one console launching soon on Kickstarter"
+  },
+  "states": {
+    "title": "One room, three states of mind.",
+    "items": [
+      {
+        "id": "listen",
+        "name": "Listen",
+        "caption": "High-fidelity playback · Room-tuned"
+      },
+      {
+        "id": "unwind",
+        "name": "Unwind",
+        "caption": "Evening ambience · Low light"
+      },
+      {
+        "id": "focus",
+        "name": "Focus",
+        "caption": "Quiet presence · Ready when you are"
+      }
+    ],
+    "footnote": "Ambience is AI music drawn from your Voice captures and App notes — it senses your moment, and your space answers."
+  },
+  "lineup": {
+    "title": "Three ways to get lost in sound.",
+    "subtitle": "From the desk in front of you to the room all around — each system is voiced for its distance.",
+    "cta": "Find your sound",
+    "items": [
+      {
+        "id": "near",
+        "name": "Tikpal Near",
+        "tagline": "Design that brings music closer.",
+        "distance": "NEAR-FIELD",
+        "best": "Best for Desktop",
+        "specs": [
+          "Design-forward",
+          "Full-range 4-inch",
+          "Easy to live with",
+          "Benchmarked against the KEF LSX II"
+        ],
+        "image": "/images/room/near-lsx-ii.webp"
+      },
+      {
+        "id": "reference",
+        "name": "Tikpal Reference",
+        "tagline": "Right across the room.",
+        "distance": "MID-FIELD",
+        "best": "Best for Living",
+        "specs": [
+          "Consistency",
+          "Controlled directivity",
+          "CTA-2034 measured"
+        ],
+        "image": "/images/room/placeholder/reference.webp"
+      },
+      {
+        "id": "deep",
+        "name": "Tikpal Deep",
+        "tagline": "Feel the full scale.",
+        "distance": "FULL-SCALE",
+        "best": "Maximum Immersion",
+        "specs": [
+          "Scale",
+          "6-inch",
+          "40 Hz (-3 dB)",
+          "High output"
+        ],
+        "image": "/images/room/placeholder/deep.webp"
+      }
+    ]
+  },
+  "systems": {
+    "title": "Room systems",
+    "headline": "Everything matched. Nothing to figure out.",
+    "note": "One complete room experience, assembled three ways. Source, amplification and sound — tuned to work as a single instrument.",
+    "items": [
+      {
+        "name": "Desktop System",
+        "for": "For personal spaces"
+      },
+      {
+        "name": "Reference System",
+        "for": "For everyday living",
+        "badge": "Most Popular"
+      },
+      {
+        "name": "Bass Extended System",
+        "for": "For full-scale immersion"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Bring the room to life.",
+    "label": "Find your sound",
+    "href": "https://room.tikpal.ai"
+  }
+}

@@ -1,0 +1,190 @@
+---
+import type { Recall } from '../home/types';
+
+interface Props {
+  content: Recall;
+}
+
+const { content: recall } = Astro.props;
+---
+
+<section id="recall" class="section surface-room grain">
+  <div class="container">
+    <header class="section-head reveal">
+      <h2 class="h2">
+        {recall.title}<br />
+        <span class="recall-line-2">{recall.title2}</span>
+      </h2>
+    </header>
+
+    <div class="recall-grid">
+      <article class="recall-panel reveal">
+        <p class="recall-label mono">{recall.leftLabel}</p>
+        <p class="recall-files-count mono">{recall.filesLabel}</p>
+        <ul class="recall-files mono">
+          {
+            recall.files.map((file) => (
+              <li class="recall-file">{file}</li>
+            ))
+          }
+          <li class="recall-file recall-file-more" aria-hidden="true">…</li>
+        </ul>
+      </article>
+
+      <span class="recall-vs mono" aria-hidden="true">→</span>
+
+      <article class="recall-panel recall-panel-tikpal reveal" style="--reveal-delay: 0.15s">
+        <p class="recall-label mono">{recall.rightLabel}</p>
+        <p class="recall-query">“{recall.query}”</p>
+        <p class="recall-result mono">
+          <span class="dot-alive" aria-hidden="true"></span>
+          {recall.resultLabel}
+        </p>
+        <ul class="recall-tags">
+          {
+            recall.tags.map((tag) => (
+              <li class="recall-tag mono">{tag}</li>
+            ))
+          }
+        </ul>
+      </article>
+    </div>
+
+    <p class="recall-closing reveal" style="--reveal-delay: 0.25s">
+      {recall.closing}
+      <a class="recall-memory-link" href={recall.memoryLink.href}>{recall.memoryLink.label}</a>
+    </p>
+  </div>
+</section>
+
+<style>
+  .recall-line-2 {
+    color: var(--tone-400);
+  }
+
+  .recall-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: var(--space-3);
+    align-items: stretch;
+  }
+
+  .recall-panel {
+    display: grid;
+    gap: 0.9rem;
+    align-content: start;
+    padding: var(--space-3) 1.2rem;
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-l);
+    background: rgba(250, 247, 242, 0.03);
+  }
+
+  .recall-panel-tikpal {
+    border-color: rgba(47, 230, 167, 0.3);
+  }
+
+  .recall-label {
+    font-size: var(--text-micro);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  .recall-files-count {
+    font-size: var(--text-small);
+    opacity: 0.75;
+  }
+
+  .recall-files {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.45rem;
+  }
+
+  .recall-file {
+    font-size: var(--text-micro);
+    letter-spacing: 0.04em;
+    opacity: 0.45;
+  }
+
+  .recall-file-more {
+    opacity: 0.3;
+  }
+
+  .recall-vs {
+    align-self: center;
+    opacity: 0.35;
+    font-size: var(--text-h4);
+  }
+
+  .recall-query {
+    font-size: var(--text-body);
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .recall-result {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: var(--text-small);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .recall-result .dot-alive {
+    flex: none;
+  }
+
+  .recall-tags {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .recall-tag {
+    padding: 0.35rem 0.8rem;
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-pill);
+    font-size: var(--text-micro);
+    letter-spacing: 0.04em;
+    opacity: 0.8;
+    background: rgba(250, 247, 242, 0.04);
+  }
+
+  .recall-closing {
+    margin-top: var(--space-4);
+    text-align: center;
+    font-size: var(--text-lead);
+    font-weight: 500;
+    letter-spacing: var(--tracking-tight);
+    color: var(--tone-400);
+  }
+
+  .recall-memory-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: var(--text-small);
+    font-weight: 500;
+    color: var(--alive);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  @media (max-width: 860px) {
+    .recall-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .recall-vs {
+      justify-self: center;
+      transform: rotate(90deg);
+    }
+  }
+</style>

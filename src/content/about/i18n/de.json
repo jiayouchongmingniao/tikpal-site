@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Über uns — Tikpal",
+    "description": "Spatial Therapy Inc. entwickelt Tikpal — einen KI-Sprachbegleiter für Gedanken, Gespräche und Ideen."
+  },
+  "page": {
+    "eyebrow": "Unternehmen",
+    "title": "Über Tikpal",
+    "intro": "Tikpal wird von Spatial Therapy Inc. entwickelt. Wir glauben, dass Intelligenz sich mit dem Leben bewegen sollte — leise, persönlich und immer bereit, wenn ein Gedanke entsteht."
+  },
+  "sections": [
+    {
+      "heading": "Unsere Mission",
+      "paragraphs": [
+        "Das meiste, was zählt, wird nie aufgeschrieben. Ideen kommen beim Gehen, Kochen, Autofahren — in Momenten, in denen ein Bildschirm nur stört.",
+        "Unsere Mission: das Wichtige mit einem Wort festhalten und in etwas Nutzbares verwandeln — Notizen, Zusammenfassungen und Struktur — ohne deinen Flow zu unterbrechen."
+      ]
+    },
+    {
+      "heading": "Was wir bauen",
+      "paragraphs": [
+        "Tikpal Voice — ein Sprachbegleiter für die Hosentasche, der deine Gedanken aufnimmt, transkribiert und organisiert, bereit im Moment ihres Entstehens.",
+        "Tikpal App — die Heimat deiner Bibliothek: Suche, Zusammenfassungen, Export in die Tools, die du bereits nutzt.",
+        "Tikpal Room — ein Voice-First-System für geteilte Räume, das dieselbe Capture-Erfahrung in die Räume bringt, in denen Leben stattfindet."
+      ]
+    },
+    {
+      "heading": "Unser Ansatz",
+      "paragraphs": [
+        "Voice-first, freihändig. Erfassen braucht ein Wort, kein Suchen nach Apps.",
+        "Von Grund auf privat. Deine Aufnahmen gehören dir — wir verkaufen deine Daten nicht und nutzen sie nicht für Werbung. Details in unserer Datenschutzerklärung.",
+        "Für das echte Leben gebaut. Entworfen, um in Alltagsroutinen zu verschwinden, statt Aufmerksamkeit zu fordern."
+      ]
+    },
+    {
+      "heading": "Das Unternehmen",
+      "paragraphs": [
+        "Tikpal wird von Spatial Therapy Inc. entwickelt.",
+        "Fragen, Feedback oder Ideen für Partnerschaften? Schreib uns an hello@tikpal.io."
+      ]
+    }
+  ]
+}

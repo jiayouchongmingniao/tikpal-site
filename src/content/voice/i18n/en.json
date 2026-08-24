@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "title": "Record First. Think Later. — Tikpal Voice AI Voice Recorder",
+    "description": "Tikpal Voice is a pocket AI voice recorder for capturing ideas, notes and tasks without opening your phone. Record, organize, recall and act on what you say."
+  },
+  "crumbs": [
+    {
+      "label": "Voice"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Record first. Think later.",
+    "subtitle": "More than an AI voice recorder. Tikpal turns spoken thoughts into organized memory, tasks and action.",
+    "primaryCta": {
+      "label": "Get Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 AI minutes/month included · No subscription required · 30-day returns"
+  },
+  "sections": [
+    {
+      "kind": "flow",
+      "title": "Say it once. Tikpal handles the rest.",
+      "intro": "One real voice note — four things you can actually use.",
+      "from": "“I keep thinking we should fold the speaker flat for travel…”",
+      "steps": [
+        "Transcription",
+        "Idea",
+        "Insight",
+        "Task"
+      ]
+    },
+    {
+      "kind": "table",
+      "title": "Your phone can do everything. That's the problem.",
+      "cols": [
+        "Tikpal Voice",
+        "Phone"
+      ],
+      "rows": [
+        {
+          "label": "Getting started",
+          "values": [
+            "One press and speak",
+            "Unlock, find the app, dodge notifications"
+          ]
+        },
+        {
+          "label": "After recording",
+          "values": [
+            "Notes, tasks and memory — organized for you",
+            "Another audio file to lose in a folder"
+          ]
+        },
+        {
+          "label": "Finding it later",
+          "values": [
+            "Ask in plain words, get the idea back",
+            "Scroll through filenames and dates"
+          ]
+        },
+        {
+          "label": "Attention",
+          "values": [
+            "No feed, no apps — capture and move on",
+            "Every capture invites you to keep scrolling"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "Speak naturally. Get something useful.",
+      "chips": [
+        "Remember",
+        "Do",
+        "Create",
+        "Recall"
+      ]
+    },
+    {
+      "kind": "quote",
+      "title": "Find the idea. Not the audio file.",
+      "quote": "What did I say about the speaker design last month?",
+      "result": "→ Related thoughts, found in seconds"
+    },
+    {
+      "kind": "chips",
+      "title": "Say it once — it goes where it belongs.",
+      "chips": [
+        "Todoist",
+        "Notion",
+        "Gmail",
+        "Calendar",
+        "Xmind"
+      ],
+      "note": "Connect the tools you already use in the Tikpal App."
+    },
+    {
+      "kind": "points",
+      "title": "Your voice is personal.",
+      "points": [
+        "You decide when Tikpal listens, what gets synced and what gets deleted.",
+        "A clear light shows when Tikpal is listening.",
+        "16GB local storage before anything syncs.",
+        "Review, export or delete anytime — your recordings are never used to train public models."
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "Built to stay with you.",
+      "chips": [
+        "Quad mic",
+        "AMOLED",
+        "16GB",
+        "820mAh",
+        "IP65"
+      ],
+      "note": "1.75-inch AMOLED display · magnetic pogo-pin charging · IP65 water resistance."
+    }
+  ],
+  "faq": {
+    "title": "Quick answers",
+    "items": [
+      {
+        "q": "Do I need a subscription?",
+        "a": "No. Tikpal includes 200 AI minutes every month, and core recording stays available without a subscription."
+      },
+      {
+        "q": "Does Tikpal work without my phone?",
+        "a": "Recording works on its own. The Tikpal App is where you review, organize and configure."
+      },
+      {
+        "q": "What happens after I use my 200 AI minutes?",
+        "a": "Your 200 AI minutes refresh every month — unused minutes don't roll over. If you run out, AI features pause until the next month, but you can keep recording and everything stays saved on the device."
+      },
+      {
+        "q": "How long does shipping take?",
+        "a": "Most orders arrive within 5–10 business days in the US and Asia-Pacific, and 7–12 business days in Europe. Exact estimates are shown at checkout."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "The thought happens once. Don't lose it to the unlock screen.",
+    "button": {
+      "label": "Get Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    }
+  }
+}

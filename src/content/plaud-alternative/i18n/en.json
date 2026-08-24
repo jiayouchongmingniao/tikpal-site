@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Looking for a Plaud Alternative? Meet Tikpal Voice",
+    "description": "Plaud is built around recording and transcription. Tikpal is built around capturing thoughts and turning them into usable memory and action. $129, no subscription."
+  },
+  "crumbs": [
+    {
+      "label": "Plaud Alternative"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Looking for a different kind of AI voice recorder?",
+    "subtitle": "Plaud is designed around recording and transcription. Tikpal is designed around capturing thoughts — and turning them into memory and action.",
+    "primaryCta": {
+      "label": "Get Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 AI minutes/month included · No subscription required · 30-day returns"
+  },
+  "sections": [
+    {
+      "kind": "points",
+      "title": "Two tools, two jobs.",
+      "points": [
+        "Plaud is designed around recording and transcription — capturing meetings and calls as text.",
+        "Tikpal is designed around ideas — capturing thoughts the moment they happen.",
+        "After recording, Tikpal keeps working: notes, tasks, calendar events and drafts.",
+        "Different products for different workflows."
+      ]
+    },
+    {
+      "kind": "flow",
+      "title": "What happens after you speak.",
+      "from": "You say an idea out loud",
+      "steps": [
+        "Transcribed",
+        "Organized",
+        "Findable",
+        "Actionable"
+      ]
+    },
+    {
+      "kind": "quote",
+      "title": "The recording is only the start.",
+      "quote": "What did I say about the speaker design last month?",
+      "result": "→ Found — with everything you said around it"
+    },
+    {
+      "kind": "points",
+      "title": "What Tikpal brings.",
+      "points": [
+        "One press starts recording — no unlock, no app.",
+        "200 AI minutes every month, no subscription required.",
+        "16GB local storage — your recordings stay on the device first.",
+        "Connects with Todoist, Notion, Gmail and Calendar in the Tikpal App."
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "Your words stay yours.",
+      "points": [
+        "A clear light shows when Tikpal is listening.",
+        "Recordings are stored locally before anything syncs.",
+        "Review, export or delete anytime.",
+        "Your recordings are never used to train public models."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Quick answers",
+    "items": [
+      {
+        "q": "Is Tikpal better than Plaud?",
+        "a": "They're different tools for different jobs. Plaud focuses on recording and transcription, which serves meeting-heavy workflows well. Tikpal focuses on capturing everyday thoughts and turning them into memory and action. Choose based on how you work."
+      },
+      {
+        "q": "Do I need a subscription?",
+        "a": "No. Tikpal includes 200 AI minutes every month, and core recording stays available without a subscription."
+      },
+      {
+        "q": "What happens after I use my 200 AI minutes?",
+        "a": "Your 200 AI minutes refresh every month — unused minutes don't roll over. If you run out, AI features pause until the next month, but you can keep recording and everything stays saved on the device."
+      },
+      {
+        "q": "How long does shipping take?",
+        "a": "Most orders arrive within 5–10 business days in the US and Asia-Pacific, and 7–12 business days in Europe. Exact estimates are shown at checkout."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "The thought happens once. Don't lose it to the unlock screen.",
+    "button": {
+      "label": "Get Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Learn more about Tikpal Voice",
+      "href": "/voice/"
+    }
+  }
+}

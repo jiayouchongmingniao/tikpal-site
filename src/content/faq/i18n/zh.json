@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "FAQ",
+    "description": "关于 Tikpal Voice、Tikpal App 与 Tikpal Room 的常见问题——捕捉、转写、订单、隐私等。"
+  },
+  "page": {
+    "eyebrow": "帮助",
+    "title": "常见问题",
+    "intro": "这里是我们最常收到的问题与快速解答。没有找到答案？写信给我们：hello@tikpal.io。"
+  },
+  "sections": [
+    {
+      "heading": "Tikpal Voice 是什么？",
+      "paragraphs": [
+        "Tikpal Voice 是口袋里的语音伙伴。按住触控按钮开口说话，它就会录制、转写并整理你的想法，变成真正可用的笔记与摘要——全程无需屏幕。"
+      ]
+    },
+    {
+      "heading": "转写支持哪些语言？",
+      "paragraphs": [
+        "Tikpal 支持主流世界语言的捕捉与转写，转写质量也会随每次更新持续提升。无论使用哪种语言，你都可以在 Tikpal App 中查看和管理捕捉到的内容。"
+      ]
+    },
+    {
+      "heading": "使用时需要带手机吗？",
+      "paragraphs": [
+        "Tikpal Voice 的设计就是解放双手——在设备上一按即可完成捕捉。手机 App 是你的资料库之家：随时回顾、搜索、摘要与导出。"
+      ]
+    },
+    {
+      "heading": "Tikpal Room 是什么？",
+      "paragraphs": [
+        "Tikpal Room 把同样的语音优先捕捉体验带进厨房、客厅等共享空间。它是面向生活发生之处的语音优先系统，让想法不必伸手拿手机也能被接住。"
+      ]
+    },
+    {
+      "heading": "我的数据存储在哪里？",
+      "paragraphs": [
+        "你的录音与转写内容会被安全存储，并通过 Tikpal 账户在你的设备间同步。你可以随时在 Tikpal App 中导出或删除自己的数据。"
+      ]
+    },
+    {
+      "heading": "如何下单？",
+      "paragraphs": [
+        "订单通过 Tikpal 商店完成。配送时间与可购情况会在结算页面显示，发货后你会收到包含物流信息的邮件。"
+      ]
+    },
+    {
+      "heading": "订单或设备出了问题怎么办？",
+      "paragraphs": [
+        "请带着订单号联系 hello@tikpal.io，我们会协助处理。损坏、延误或与预期不符的订单会逐一妥善解决，保修期内的设备将维修或更换。"
+      ]
+    },
+    {
+      "heading": "如何联系你们？",
+      "paragraphs": [
+        "发送邮件至 hello@tikpal.io——我们会回复每一条消息，通常在 1 个工作日内。你也可以加入 Discord，与社区和团队交流。"
+      ]
+    }
+  ]
+}

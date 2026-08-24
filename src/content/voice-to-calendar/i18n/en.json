@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Create Calendar Events from Voice with AI | Tikpal",
+    "description": "Say when, and Tikpal creates the calendar event — time, title and all. Plan out loud without opening an app. $129, no subscription."
+  },
+  "crumbs": [
+    {
+      "label": "Voice to Calendar"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Say when. Tikpal puts it on the calendar.",
+    "subtitle": "Speak your plans naturally and Tikpal turns them into real calendar events — no tapping, no typing.",
+    "primaryCta": {
+      "label": "Get Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 AI minutes/month included · No subscription required · 30-day returns"
+  },
+  "sections": [
+    {
+      "kind": "quote",
+      "title": "Plan out loud.",
+      "quote": "Meet Ana Thursday at three.",
+      "result": "→ Calendar event created · Thursday · 3:00 PM"
+    },
+    {
+      "kind": "flow",
+      "title": "How voice becomes an event.",
+      "from": "“Meet Ana Thursday at three.”",
+      "steps": [
+        "Transcribed",
+        "Time understood",
+        "Event created"
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "Where events land.",
+      "chips": [
+        "Your calendar",
+        "The Tikpal App"
+      ],
+      "note": "Connect your calendar in the Tikpal App."
+    },
+    {
+      "kind": "scenes",
+      "title": "Plans happen everywhere.",
+      "items": [
+        {
+          "name": "At work",
+          "body": "Say the meeting or deadline the moment it's set — it's on the calendar before the next task."
+        },
+        {
+          "name": "Personal plans",
+          "body": "Dinner, calls, catch-ups — spoken in seconds, scheduled for real."
+        },
+        {
+          "name": "Deadlines",
+          "body": "Speak the date and it becomes a real marker on your week."
+        },
+        {
+          "name": "Driving",
+          "body": "Plan the next appointment without touching your phone."
+        }
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "Your plans stay yours.",
+      "points": [
+        "A clear light shows when Tikpal is listening.",
+        "16GB local storage before anything syncs.",
+        "Review, export or delete anytime.",
+        "Your recordings are never used to train public models."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Quick answers",
+    "items": [
+      {
+        "q": "Do I need a subscription?",
+        "a": "No. Tikpal includes 200 AI minutes every month, and core recording stays available without a subscription."
+      },
+      {
+        "q": "Can Tikpal really understand times?",
+        "a": "Yes. Speak naturally — “Thursday at three”, “next Monday morning” — and Tikpal turns it into a real calendar event. You can review everything in the Tikpal App."
+      },
+      {
+        "q": "What happens after I use my 200 AI minutes?",
+        "a": "Your 200 AI minutes refresh every month — unused minutes don't roll over. If you run out, AI features pause until the next month, but you can keep recording and everything stays saved on the device."
+      },
+      {
+        "q": "How long does shipping take?",
+        "a": "Most orders arrive within 5–10 business days in the US and Asia-Pacific, and 7–12 business days in Europe. Exact estimates are shown at checkout."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Your week, spoken into place.",
+    "button": {
+      "label": "Get Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Learn more about Tikpal Voice",
+      "href": "/voice/"
+    }
+  }
+}

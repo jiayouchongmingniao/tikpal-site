@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Chi siamo — Tikpal",
+    "description": "Spatial Therapy Inc. crea Tikpal — un compagno vocale con IA per pensieri, conversazioni e idee."
+  },
+  "page": {
+    "eyebrow": "Azienda",
+    "title": "Chi è Tikpal",
+    "intro": "Tikpal è creato da Spatial Therapy Inc. Crediamo che l'intelligenza debba muoversi con la vita: silenziosa, personale e sempre pronta quando nasce un pensiero."
+  },
+  "sections": [
+    {
+      "heading": "La nostra missione",
+      "paragraphs": [
+        "La maggior parte di ciò che conta non viene mai scritta. Le idee arrivano camminando, cucinando, guidando — momenti in cui uno schermo è d'intralcio.",
+        "La nostra missione è catturare ciò che conta con una sola parola e trasformarlo in qualcosa di utile: note, riepiloghi e struttura — senza interrompere il tuo flusso."
+      ]
+    },
+    {
+      "heading": "Cosa costruiamo",
+      "paragraphs": [
+        "Tikpal Voice — un compagno vocale tascabile che registra, trascrive e organizza i tuoi pensieri, pronto nel momento in cui nascono.",
+        "Tikpal App — la casa della tua raccolta: ricerca, riepiloghi ed esportazione verso gli strumenti che già usi.",
+        "Tikpal Room — un sistema vocale per spazi condivisi, che porta la stessa esperienza di acquisizione nelle stanze dove accade la vita."
+      ]
+    },
+    {
+      "heading": "Il nostro approccio",
+      "paragraphs": [
+        "Vocale prima di tutto, a mani libere. Per acquisire basta una parola, non cercare un'app.",
+        "Privato per progettazione. Le tue registrazioni sono tue — non vendiamo i tuoi dati né li usiamo per la pubblicità. Dettagli nella nostra Informativa sulla privacy.",
+        "Fatto per la vita reale. Progettato per integrarsi nelle routine quotidiane invece di pretendere attenzione."
+      ]
+    },
+    {
+      "heading": "L'azienda",
+      "paragraphs": [
+        "Tikpal è creato da Spatial Therapy Inc.",
+        "Domande, feedback o idee di collaborazione? Scrivici a hello@tikpal.io."
+      ]
+    }
+  ]
+}

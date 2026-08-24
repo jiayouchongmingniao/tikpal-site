@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PrivacyPage from '../../../components/PrivacyPage.astro';
+import type { PrivacyContent } from '../../../components/PrivacyPage.astro';
+import type { CommonContent } from '../../../components/home/types';
+import { LANGS, HOME_LANGS } from '../../../utils/i18n';
+
+import zh from '../../../content/privacy/i18n/zh.json';
+import ja from '../../../content/privacy/i18n/ja.json';
+import ko from '../../../content/privacy/i18n/ko.json';
+import de from '../../../content/privacy/i18n/de.json';
+import es from '../../../content/privacy/i18n/es.json';
+import it from '../../../content/privacy/i18n/it.json';
+
+import zhCommon from '../../../content/common/i18n/zh.json';
+import jaCommon from '../../../content/common/i18n/ja.json';
+import koCommon from '../../../content/common/i18n/ko.json';
+import deCommon from '../../../content/common/i18n/de.json';
+import esCommon from '../../../content/common/i18n/es.json';
+import itCommon from '../../../content/common/i18n/it.json';
+
+const locales: Record<string, PrivacyContent> = {
+  zh: zh as PrivacyContent,
+  ja: ja as PrivacyContent,
+  ko: ko as PrivacyContent,
+  de: de as PrivacyContent,
+  es: es as PrivacyContent,
+  it: it as PrivacyContent,
+};
+
+const commonLocales: Record<string, CommonContent> = {
+  zh: zhCommon as CommonContent,
+  ja: jaCommon as CommonContent,
+  ko: koCommon as CommonContent,
+  de: deCommon as CommonContent,
+  es: esCommon as CommonContent,
+  it: itCommon as CommonContent,
+};
+
+export function getStaticPaths() {
+  return HOME_LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as string;
+const content = locales[lang];
+
+const privacyPath = (l: string): string =>
+  l === 'en' ? '/privacy/' : `/${l}/privacy/`;
+
+// 7 language alternates + x-default → /privacy/
+const alternates = [
+  ...LANGS.map((l) => ({
+    lang: l,
+    href: new URL(privacyPath(l), Astro.site).href,
+  })),
+  { lang: 'x-default', href: new URL('/privacy/', Astro.site).href },
+];
+---
+
+<BaseLayout
+  title={content.meta.title}
+  description={content.meta.description}
+  lang={lang}
+  alternates={alternates}
+  currentLang={lang}
+  common={commonLocales[lang]}
+  pageKind="privacy"
+>
+  <PrivacyPage content={content} />
+</BaseLayout>

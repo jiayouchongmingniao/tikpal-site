@@ -1,0 +1,162 @@
+---
+// /app language entry — detects navigator.language and redirects to the
+// matching /app/{lang} page. Standalone (no BaseLayout) so the dark loading
+// state paints instantly with zero render-blocking assets.
+const langs = [
+  { code: 'en', label: 'English' },
+  { code: 'de', label: 'Deutsch' },
+  { code: 'it', label: 'Italiano' },
+  { code: 'ko', label: '한국어' },
+  { code: 'ja', label: '日本語' },
+  { code: 'zh', label: '中文' },
+  { code: 'es', label: 'Español' },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tikpal App</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="https://www.tikpal.ai/app/en/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+        background: #0a0a0a;
+        color: #faf7f2;
+        font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .entry {
+        display: grid;
+        justify-items: center;
+        gap: 1.25rem;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .entry-brand {
+        font-size: clamp(1.6rem, 4vw, 2.4rem);
+        font-weight: 650;
+        letter-spacing: -0.03em;
+      }
+
+      .entry-brand em {
+        font-style: normal;
+        color: #c98a4b;
+      }
+
+      .entry-status {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+        font-size: 0.72rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        opacity: 0.6;
+      }
+
+      .entry-status::before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #2fe6a7;
+        animation: entry-breathe 2.6s ease-in-out infinite;
+      }
+
+      @keyframes entry-breathe {
+        0%,
+        100% {
+          opacity: 0.45;
+          transform: scale(0.86);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .entry-langs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1.4rem;
+        list-style: none;
+        padding-top: 0.5rem;
+      }
+
+      .entry-langs a {
+        color: #faf7f2;
+        text-decoration: none;
+        font-size: 0.9rem;
+        opacity: 0.72;
+        border-bottom: 1px solid transparent;
+        transition: opacity 0.3s ease, border-color 0.3s ease;
+      }
+
+      .entry-langs a:hover {
+        opacity: 1;
+        border-color: currentColor;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .entry-status::before {
+          animation: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="entry">
+      <p class="entry-brand">Tikpal <em>App</em></p>
+      <p class="entry-status">Loading your app</p>
+
+      <noscript>
+        <ul class="entry-langs">
+          {
+            langs.map((l) => (
+              <li>
+                <a href={`/app/${l.code}/`}>{l.label}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </noscript>
+    </main>
+
+    <script is:inline>
+      // Prefix-match navigator.language against the 7 supported languages,
+      // fall back to English. location.replace keeps /app out of history.
+      (function () {
+        var langs = ['en', 'de', 'it', 'ko', 'ja', 'zh', 'es'];
+        var nav = (navigator.language || 'en').toLowerCase();
+        var prefix = nav.split('-')[0];
+        var target = langs.indexOf(prefix) !== -1 ? prefix : 'en';
+        location.replace('/app/' + target + '/');
+      })();
+    </script>
+  </body>
+</html>

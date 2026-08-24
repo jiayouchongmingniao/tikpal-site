@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "Convierte tu voz en tareas con IA | Tikpal Voice",
+    "description": "Di la tarea en voz alta y Tikpal la convierte en un pendiente real — con Todoist y la Tikpal App. Sin escribir, sin abrir el teléfono. $129."
+  },
+  "crumbs": [
+    {
+      "label": "Voz a tarea"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Di la tarea. Sigue adelante.",
+    "subtitle": "Tikpal escucha lo que dices y lo convierte en una tarea sobre la que actuar — mientras tú sigues con lo tuyo.",
+    "primaryCta": {
+      "label": "Comprar Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 minutos de IA al mes incluidos · Sin suscripción · 30 días de devolución"
+  },
+  "sections": [
+    {
+      "kind": "quote",
+      "title": "De tu voz a tu lista de pendientes.",
+      "quote": "Recuérdame enviar la presentación a John mañana.",
+      "result": "→ Tarea creada · Mañana · 9:00"
+    },
+    {
+      "kind": "flow",
+      "title": "Cómo la voz se convierte en tarea.",
+      "from": "“Recuérdame enviar la presentación a John mañana.”",
+      "steps": [
+        "Transcrita",
+        "Entendida",
+        "Tarea creada"
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "Dónde aterrizan tus tareas.",
+      "chips": [
+        "Todoist",
+        "Tikpal App"
+      ],
+      "note": "Conecta Todoist en la Tikpal App y elige a dónde van las tareas."
+    },
+    {
+      "kind": "scenes",
+      "title": "Las tareas surgen lejos de tu escritorio.",
+      "items": [
+        {
+          "name": "Entre reuniones",
+          "body": "Di lo que te acaban de asignar: está en la lista antes de la siguiente llamada."
+        },
+        {
+          "name": "En movimiento",
+          "body": "Caminando, conduciendo, cocinando: di la tarea y sigue."
+        },
+        {
+          "name": "Antes de dormir",
+          "body": "Vacía la cabeza. Tu yo de mañana recibe una lista limpia."
+        }
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "Tú tienes el control.",
+      "points": [
+        "Revisa, edita o borra cada tarea en la Tikpal App.",
+        "200 minutos de IA incluidos cada mes — sin suscripción.",
+        "Las grabaciones quedan en el dispositivo hasta que sincronices.",
+        "Una luz clara indica cuándo Tikpal está escuchando."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Respuestas rápidas",
+    "items": [
+      {
+        "q": "¿Necesito una suscripción?",
+        "a": "No. Tikpal incluye 200 minutos de IA cada mes y las funciones esenciales funcionan sin suscripción."
+      },
+      {
+        "q": "¿Necesito el teléfono cerca?",
+        "a": "No. La grabación ocurre en el dispositivo y se sincroniza después. La Tikpal App es donde revisas y gestionas tus tareas."
+      },
+      {
+        "q": "¿Y si Tikpal entiende mal un detalle?",
+        "a": "Cada tarea se puede editar en la Tikpal App, así puedes corregir cualquier cosa antes de que importe."
+      },
+      {
+        "q": "¿Cuánto tarda el envío?",
+        "a": "La mayoría de los pedidos llegan en 5–10 días laborables en EE. UU. y Asia-Pacífico, y en 7–12 días laborables en Europa. La estimación exacta se muestra al pagar."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Dilo una vez. Ya está en la lista.",
+    "button": {
+      "label": "Comprar Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Descubre más sobre Tikpal Voice",
+      "href": "/voice/"
+    }
+  }
+}

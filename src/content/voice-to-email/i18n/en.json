@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "title": "Turn Voice Notes Into Email Drafts with AI | Tikpal",
+    "description": "Speak the idea and Tikpal drafts the email for you — in your words, ready for review. Nothing sends without you. $129, no subscription."
+  },
+  "crumbs": [
+    {
+      "label": "Voice to Email"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Speak the idea. Get the draft.",
+    "subtitle": "Tikpal turns what you say into an email draft you can read, edit and send — without typing a word.",
+    "primaryCta": {
+      "label": "Get Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 AI minutes/month included · No subscription required · 30-day returns"
+  },
+  "sections": [
+    {
+      "kind": "quote",
+      "title": "Say the email. Get the draft.",
+      "quote": "Tell Sarah we're moving the meeting to Friday and explain why.",
+      "result": "→ Email draft, ready for your review"
+    },
+    {
+      "kind": "flow",
+      "title": "How voice becomes a draft.",
+      "from": "“Tell Sarah we're moving the meeting to Friday and explain why.”",
+      "steps": [
+        "Transcribed",
+        "Drafted",
+        "You review & send"
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "Drafts — never auto-send.",
+      "points": [
+        "Tikpal prepares the draft; you press send.",
+        "Read and edit every word before it leaves your hands.",
+        "Connect Gmail in the Tikpal App so drafts land where you write.",
+        "You decide which recordings become drafts."
+      ]
+    },
+    {
+      "kind": "scenes",
+      "title": "Emails that write themselves (almost).",
+      "items": [
+        {
+          "name": "Follow-ups",
+          "body": "The quick follow-up after a call — said, drafted, done."
+        },
+        {
+          "name": "Reschedules",
+          "body": "Say the change and the reason; the email takes shape."
+        },
+        {
+          "name": "Status updates",
+          "body": "Speak the progress, get a clean update draft."
+        },
+        {
+          "name": "On the move",
+          "body": "Draft it between stops. Send it when you're ready."
+        }
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "Your words stay yours.",
+      "points": [
+        "A clear light shows when Tikpal is listening.",
+        "16GB local storage before anything syncs.",
+        "Review, export or delete anytime.",
+        "Your recordings are never used to train public models."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Quick answers",
+    "items": [
+      {
+        "q": "Do I need a subscription?",
+        "a": "No. Tikpal includes 200 AI minutes every month, and core recording stays available without a subscription."
+      },
+      {
+        "q": "Does Tikpal send emails automatically?",
+        "a": "No. Tikpal only prepares drafts. You review each one and send it yourself."
+      },
+      {
+        "q": "What happens after I use my 200 AI minutes?",
+        "a": "Your 200 AI minutes refresh every month — unused minutes don't roll over. If you run out, AI features pause until the next month, but you can keep recording and everything stays saved on the device."
+      },
+      {
+        "q": "How long does shipping take?",
+        "a": "Most orders arrive within 5–10 business days in the US and Asia-Pacific, and 7–12 business days in Europe. Exact estimates are shown at checkout."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Speak the idea. Send it when it's right.",
+    "button": {
+      "label": "Get Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Learn more about Tikpal Voice",
+      "href": "/voice/"
+    }
+  }
+}

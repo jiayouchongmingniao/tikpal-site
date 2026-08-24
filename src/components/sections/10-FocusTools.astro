@@ -1,0 +1,66 @@
+---
+import type { Focus } from '../home/types';
+
+interface Props {
+  content: Focus;
+}
+
+const { content: focus } = Astro.props;
+---
+
+<section id="focus" class="section surface-room grain">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow mono">{focus.eyebrow}</p>
+      <h2 class="h2">{focus.title}</h2>
+    </header>
+
+    <div class="focus-modes reveal" style="--reveal-delay: 0.15s">
+      {
+        focus.modes.map((mode, i) => (
+          <p class="focus-mode mono">
+            {i > 0 && <span class="focus-sep" aria-hidden="true">·</span>}
+            {mode}
+          </p>
+        ))
+      }
+    </div>
+
+    <p class="focus-line reveal" style="--reveal-delay: 0.25s">{focus.line}</p>
+  </div>
+</section>
+
+<style>
+  .focus-modes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem 1.1rem;
+    margin-top: var(--space-3);
+  }
+
+  .focus-mode {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.1rem;
+    font-size: var(--text-body);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+
+  .focus-sep {
+    opacity: 0.35;
+  }
+
+  .focus-line {
+    margin-top: var(--space-3);
+    max-width: 34rem;
+    margin-inline: auto;
+    text-align: center;
+    font-size: var(--text-small);
+    opacity: 0.62;
+    line-height: 1.6;
+  }
+</style>

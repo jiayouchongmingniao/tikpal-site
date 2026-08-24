@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "Tikpal Room — その瞬間に寄り添うハイファイサウンド",
+    "description": "Tikpal Room は、アンビエントインテリジェンスを備えた統合アンプ・スピーカー・デジタルミュージックシステム。聴く、くつろぐ、集中するための一台です。"
+  },
+  "closingLine": "暮らしとともに動くインテリジェンス。どの部屋でも、聴こえる。",
+  "hero": {
+    "eyebrow": "Tikpal Room",
+    "headline": "その瞬間に寄り添う、ハイファイサウンド。",
+    "subtitle": "アンビエントインテリジェンスを内蔵した、統合アンプ・スピーカー・デジタルミュージックシステム。あなたの状態を読み取り、空間の音と雰囲気を仕立てます。",
+    "primaryCta": "スピーカーを見る",
+    "secondaryCta": "あなたのシステムを見つける",
+    "statusLine": "スピーカーとアンプは現在販売中 · ストリーマーとオールインワンは Kickstarter でまもなくクラウドファンディング開始"
+  },
+  "states": {
+    "title": "ひとつの部屋、三つの心の状態。",
+    "items": [
+      {
+        "id": "listen",
+        "name": "聴く",
+        "caption": "ハイファイ再生 · ルームチューニング"
+      },
+      {
+        "id": "unwind",
+        "name": "くつろぐ",
+        "caption": "夜の雰囲気 · 灯りは控えめに"
+      },
+      {
+        "id": "focus",
+        "name": "集中する",
+        "caption": "静かな存在 · いつでも準備はできています"
+      }
+    ],
+    "footnote": "アンビエンスは AI 音楽として生成：あなたの Voice 記録と App ノートから——今この瞬間を感じ取り、空間が応えます。"
+  },
+  "lineup": {
+    "title": "音に没入する、三つの方法。",
+    "subtitle": "目の前のデスクから、部屋全体まで——それぞれのシステムが、聴く距離に合わせて調声されています。",
+    "cta": "あなたの音を見つける",
+    "items": [
+      {
+        "id": "near",
+        "name": "Tikpal Near",
+        "tagline": "デザインで、音楽をもっと近くに。",
+        "distance": "ニアフィールド",
+        "best": "デスクに最適",
+        "specs": [
+          "デザイン性",
+          "4インチ・フルレンジ",
+          "気楽に付き合える",
+          "KEF LSX II をベンチマーク"
+        ],
+        "image": "/images/room/near-lsx-ii.webp"
+      },
+      {
+        "id": "reference",
+        "name": "Tikpal Reference",
+        "tagline": "部屋の向こう側から、まっすぐ。",
+        "distance": "ミッドフィールド",
+        "best": "リビングに最適",
+        "specs": [
+          "一貫性",
+          "コントロールされた指向性",
+          "CTA-2034 測定"
+        ],
+        "image": "/images/room/placeholder/reference.webp"
+      },
+      {
+        "id": "deep",
+        "name": "Tikpal Deep",
+        "tagline": "スケールのすべてを感じる。",
+        "distance": "フルスケール",
+        "best": "最大限の没入",
+        "specs": [
+          "スケール",
+          "6インチ",
+          "40 Hz (-3 dB)",
+          "ハイアウトプット"
+        ],
+        "image": "/images/room/placeholder/deep.webp"
+      }
+    ]
+  },
+  "systems": {
+    "title": "ルームシステム",
+    "headline": "すべてが調和。考えることは何もない。",
+    "note": "ひとつの完全なルーム体験、三つの構成。ソース、増幅、サウンド——ひとつの楽器として調律されています。",
+    "items": [
+      {
+        "name": "Desktop System",
+        "for": "パーソナルスペースに"
+      },
+      {
+        "name": "Reference System",
+        "for": "毎日の暮らしに",
+        "badge": "一番人気"
+      },
+      {
+        "name": "Bass Extended System",
+        "for": "フルスケールの没入に"
+      }
+    ]
+  },
+  "cta": {
+    "title": "部屋に命を吹き込む。",
+    "label": "あなたの音を見つける",
+    "href": "https://room.tikpal.ai"
+  }
+}

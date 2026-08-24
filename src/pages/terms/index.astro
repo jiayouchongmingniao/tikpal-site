@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticlePage from '../../components/ArticlePage.astro';
+import type { ArticleContent } from '../../components/ArticlePage.astro';
+import type { CommonContent } from '../../components/home/types';
+import { LANGS, pagePath } from '../../utils/i18n';
+
+import en from '../../content/terms/i18n/en.json';
+import enCommon from '../../content/common/i18n/en.json';
+
+const content = en as ArticleContent;
+
+// 7 language alternates + x-default → /terms/
+const alternates = [
+  ...LANGS.map((l) => ({
+    lang: l,
+    href: new URL(pagePath('terms', l), Astro.site).href,
+  })),
+  { lang: 'x-default', href: new URL('/terms/', Astro.site).href },
+];
+---
+
+<BaseLayout
+  title={content.meta.title}
+  description={content.meta.description}
+  lang="en"
+  alternates={alternates}
+  currentLang="en"
+  common={enCommon as CommonContent}
+  pageKind="terms"
+>
+  <ArticlePage content={content} />
+</BaseLayout>

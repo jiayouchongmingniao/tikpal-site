@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Sobre nosotros — Tikpal",
+    "description": "Spatial Therapy Inc. crea Tikpal — un compañero de voz con IA para pensamientos, conversaciones e ideas."
+  },
+  "page": {
+    "eyebrow": "Empresa",
+    "title": "Sobre Tikpal",
+    "intro": "Tikpal está creado por Spatial Therapy Inc. Creemos que la inteligencia debe moverse con la vida: silenciosa, personal y siempre lista cuando surge un pensamiento."
+  },
+  "sections": [
+    {
+      "heading": "Nuestra misión",
+      "paragraphs": [
+        "La mayor parte de lo que importa nunca se escribe. Las ideas llegan al caminar, cocinar, conducir — momentos en los que una pantalla estorba.",
+        "Nuestra misión es capturar lo que importa con una sola palabra y convertirlo en algo útil: notas, resúmenes y estructura — sin interrumpir tu flujo."
+      ]
+    },
+    {
+      "heading": "Qué construimos",
+      "paragraphs": [
+        "Tikpal Voice — un compañero de voz de bolsillo que graba, transcribe y organiza tus pensamientos, listo en el momento en que surgen.",
+        "Tikpal App — el hogar de tu biblioteca: búsqueda, resúmenes y exportación a las herramientas que ya usas.",
+        "Tikpal Room — un sistema de voz para espacios compartidos que lleva la misma experiencia de captura a las habitaciones donde ocurre la vida."
+      ]
+    },
+    {
+      "heading": "Nuestro enfoque",
+      "paragraphs": [
+        "Voz primero, manos libres. Capturar requiere una palabra, no buscar una app.",
+        "Privado por diseño. Tus grabaciones son tuyas — no vendemos tus datos ni los usamos para publicidad. Consulta nuestra Política de privacidad.",
+        "Hecho para la vida real. Diseñado para integrarse en las rutinas diarias en lugar de exigir atención."
+      ]
+    },
+    {
+      "heading": "La empresa",
+      "paragraphs": [
+        "Tikpal está hecho por Spatial Therapy Inc.",
+        "¿Preguntas, comentarios o ideas de colaboración? Escríbenos a hello@tikpal.io."
+      ]
+    }
+  ]
+}

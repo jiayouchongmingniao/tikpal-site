@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Grabadora de voz con IA para creadores | Tikpal Voice",
+    "description": "Para diseñadores, escritores, músicos, fundadores y gente de producto: Tikpal captura ideas habladas con una pulsación — sin romper tu flujo creativo. $129, sin suscripción."
+  },
+  "crumbs": [
+    {
+      "label": "Casos de uso"
+    },
+    {
+      "label": "Creadores"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Captura la idea sin romper el flujo.",
+    "subtitle": "Tikpal captura ideas habladas con una pulsación — sin móvil, sin app, sin salir del trabajo.",
+    "primaryCta": {
+      "label": "Comprar Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 minutos de IA al mes incluidos · Sin suscripción · 30 días de devolución"
+  },
+  "sections": [
+    {
+      "kind": "quote",
+      "title": "La idea llega en pleno flujo.",
+      "quote": "Esa frase — atrápala antes de que se vaya.",
+      "result": "→ Una pulsación. Capturada. De vuelta al trabajo."
+    },
+    {
+      "kind": "scenes",
+      "title": "Hecha para creadores.",
+      "items": [
+        {
+          "name": "Diseñadores",
+          "body": "Da forma a conceptos lejos de la pantalla: di la dirección y sigue dibujando."
+        },
+        {
+          "name": "Escritores",
+          "body": "La frase llega lejos del teclado. Dila; te estará esperando en tu escritorio."
+        },
+        {
+          "name": "Músicos",
+          "body": "Melodías y letras aterrizan entre tomas. Atrápalas sin echar mano del móvil."
+        },
+        {
+          "name": "Fundadores",
+          "body": "Frases de pitch, nombres, estrategia: dilo cuando aparece, encuéntralo al redactar."
+        },
+        {
+          "name": "Gente de producto",
+          "body": "Insights de usuarios e ideas de funciones: capturados en movimiento, listos para la próxima spec."
+        }
+      ]
+    },
+    {
+      "kind": "flow",
+      "title": "De la voz al trabajo.",
+      "from": "Una idea dicha en voz alta",
+      "steps": [
+        "Capturada",
+        "Organizada",
+        "En tus herramientas"
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "Dónde aterrizan las ideas.",
+      "chips": [
+        "Notas",
+        "Tareas",
+        "Borradores",
+        "Notion",
+        "Todoist"
+      ],
+      "note": "Tikpal organiza lo que dices en la Tikpal App."
+    },
+    {
+      "kind": "points",
+      "title": "Hecha para capturar en cualquier sitio.",
+      "points": [
+        "Una pulsación inicia la grabación: sin desbloquear, sin app.",
+        "Cuatro micrófonos te capturan con claridad, incluso al aire libre.",
+        "16GB de almacenamiento local mantienen cada idea a salvo.",
+        "Resistente al agua (IP65) y con tamaño de bolsillo."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Respuestas rápidas",
+    "items": [
+      {
+        "q": "¿Necesito una suscripción?",
+        "a": "No. Tikpal incluye 200 minutos de IA cada mes y las funciones esenciales funcionan sin suscripción."
+      },
+      {
+        "q": "¿Funciona Tikpal sin mi teléfono?",
+        "a": "La grabación funciona por sí sola. La Tikpal App es el lugar para revisar, organizar y configurar."
+      },
+      {
+        "q": "¿Qué pasa al agotar mis 200 minutos de IA?",
+        "a": "Tus 200 minutos de IA se renuevan cada mes; los no usados no se acumulan. Si los agotas, las funciones de IA se pausan hasta el mes siguiente, pero puedes seguir grabando y todo queda guardado en el dispositivo."
+      },
+      {
+        "q": "¿Cuánto tarda el envío?",
+        "a": "La mayoría de los pedidos llegan en 5–10 días laborables en EE. UU. y Asia-Pacífico, y en 7–12 días laborables en Europa. La estimación exacta se muestra al pagar."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Quédate en el flujo. Deja que Tikpal atrape la idea.",
+    "button": {
+      "label": "Comprar Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Descubre más sobre Tikpal Voice",
+      "href": "/voice/"
+    }
+  }
+}

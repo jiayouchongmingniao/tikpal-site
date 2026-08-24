@@ -23,12 +23,18 @@
   --alive: #2fe6a7;
   --alive-dim: rgba(47, 230, 167, 0.16);
 
+  /* warm amber — lamplight accents only, never broad fills */
+  --amber: #c98a4b;
+  --amber-soft: rgba(201, 138, 75, 0.16);
+
   /* semantic surface names */
   --surface-dark: var(--black);
   --surface-warm: var(--white);
   --surface-room: #17130e; /* warm dark for Room */
 
   /* --- typography --- */
+  --font-display: "Space Grotesk Variable", "Space Grotesk", system-ui,
+    -apple-system, sans-serif;
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     sans-serif;
   --font-mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas,

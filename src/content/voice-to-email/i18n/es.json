@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "title": "Convierte notas de voz en borradores de email con IA | Tikpal",
+    "description": "Di la idea y Tikpal redacta el email por ti — con tus palabras, listo para revisar. Nada se envía sin ti. $129, sin suscripción."
+  },
+  "crumbs": [
+    {
+      "label": "Voz a email"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Di la idea. Recibe el borrador.",
+    "subtitle": "Tikpal convierte lo que dices en un borrador de email que puedes leer, editar y enviar — sin escribir una palabra.",
+    "primaryCta": {
+      "label": "Comprar Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 minutos de IA al mes incluidos · Sin suscripción · 30 días de devolución"
+  },
+  "sections": [
+    {
+      "kind": "quote",
+      "title": "Di el email. Recibe el borrador.",
+      "quote": "Dile a Sarah que movemos la reunión al viernes y explícale por qué.",
+      "result": "→ Borrador de email, listo para tu revisión"
+    },
+    {
+      "kind": "flow",
+      "title": "Cómo la voz se convierte en borrador.",
+      "from": "“Dile a Sarah que movemos la reunión al viernes y explícale por qué.”",
+      "steps": [
+        "Transcrita",
+        "Redactada",
+        "Tú revisas y envías"
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "Borradores — nunca envío automático.",
+      "points": [
+        "Tikpal prepara el borrador; tú pulsas enviar.",
+        "Lee y edita cada palabra antes de que salga de tus manos.",
+        "Conecta Gmail en la Tikpal App para que los borradores lleguen donde escribes.",
+        "Tú decides qué grabaciones se convierten en borradores."
+      ]
+    },
+    {
+      "kind": "scenes",
+      "title": "Emails que casi se escriben solos.",
+      "items": [
+        {
+          "name": "Seguimientos",
+          "body": "El seguimiento rápido tras una llamada: dicho, redactado, listo."
+        },
+        {
+          "name": "Cambios de fecha",
+          "body": "Di el cambio y el motivo; el email toma forma."
+        },
+        {
+          "name": "Actualizaciones",
+          "body": "Cuenta el progreso, recibe un borrador limpio."
+        },
+        {
+          "name": "En movimiento",
+          "body": "Redacta entre paradas. Envía cuando estés listo."
+        }
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "Tus palabras son tuyas.",
+      "points": [
+        "Una luz clara indica cuándo Tikpal está escuchando.",
+        "16GB de almacenamiento local antes de sincronizar nada.",
+        "Revisa, exporta o borra cuando quieras.",
+        "Tus grabaciones nunca se usan para entrenar modelos públicos."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Respuestas rápidas",
+    "items": [
+      {
+        "q": "¿Necesito una suscripción?",
+        "a": "No. Tikpal incluye 200 minutos de IA cada mes y las funciones esenciales funcionan sin suscripción."
+      },
+      {
+        "q": "¿Tikpal envía emails automáticamente?",
+        "a": "No. Tikpal solo prepara borradores. Tú revisas cada uno y lo envías."
+      },
+      {
+        "q": "¿Qué pasa al agotar mis 200 minutos de IA?",
+        "a": "Tus 200 minutos de IA se renuevan cada mes; los no usados no se acumulan. Si los agotas, las funciones de IA se pausan hasta el mes siguiente, pero puedes seguir grabando y todo queda guardado en el dispositivo."
+      },
+      {
+        "q": "¿Cuánto tarda el envío?",
+        "a": "La mayoría de los pedidos llegan en 5–10 días laborables en EE. UU. y Asia-Pacífico, y en 7–12 días laborables en Europa. La estimación exacta se muestra al pagar."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Di la idea. Envíala cuando sea el momento.",
+    "button": {
+      "label": "Comprar Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Descubre más sobre Tikpal Voice",
+      "href": "/voice/"
+    }
+  }
+}

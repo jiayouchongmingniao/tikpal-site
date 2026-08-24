@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "创作者的 AI 录音笔 | Tikpal Voice",
+    "description": "给设计师、写作者、音乐人、创始人和产品人：Tikpal 按一下就能接住说出口的想法——不打断你的心流。$129，无需订阅。"
+  },
+  "crumbs": [
+    {
+      "label": "使用场景"
+    },
+    {
+      "label": "创作者"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "接住想法，不打断心流。",
+    "subtitle": "Tikpal 按一下就能接住说出口的想法——不用手机，不用应用，不离开作品。",
+    "primaryCta": {
+      "label": "购买 Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "每月含 200 分钟 AI · 无需订阅 · 30 天退货"
+  },
+  "sections": [
+    {
+      "kind": "quote",
+      "title": "想法总在心流中途到来。",
+      "quote": "那句话——趁它还没消失，抓住它。",
+      "result": "→ 按一下。接住了。回到作品里。"
+    },
+    {
+      "kind": "scenes",
+      "title": "为创作者而生。",
+      "items": [
+        {
+          "name": "设计师",
+          "body": "离开屏幕也能推敲概念——说出方向，继续画草图。"
+        },
+        {
+          "name": "写作者",
+          "body": "好句子总在离开键盘时出现。说出来，它会在桌前等你。"
+        },
+        {
+          "name": "音乐人",
+          "body": "旋律和歌词在 take 之间落下。不用伸手拿手机，就能接住。"
+        },
+        {
+          "name": "创始人",
+          "body": "金句、名字、策略——灵感来了就说，写方案时找回来。"
+        },
+        {
+          "name": "产品人",
+          "body": "用户洞察和功能想法——路上随手记下，直接进下一版方案。"
+        }
+      ]
+    },
+    {
+      "kind": "flow",
+      "title": "从语音到作品。",
+      "from": "说出口的想法",
+      "steps": [
+        "捕捉",
+        "整理",
+        "进入你的工具"
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "想法落在哪里。",
+      "chips": [
+        "笔记",
+        "任务",
+        "草稿",
+        "Notion",
+        "Todoist"
+      ],
+      "note": "Tikpal 在 Tikpal App 中整理你说的话。"
+    },
+    {
+      "kind": "points",
+      "title": "随时随地都能记录。",
+      "points": [
+        "按一下就开始录音——不用解锁，不用开应用。",
+        "四麦克风阵列，在户外也能清晰拾音。",
+        "16GB 本地存储，每个想法都安全。",
+        "IP65 防水，口袋大小的身材。"
+      ]
+    }
+  ],
+  "faq": {
+    "title": "快速解答",
+    "items": [
+      {
+        "q": "需要订阅吗？",
+        "a": "不需要。Tikpal 每月包含 200 AI 分钟，核心录音功能无需订阅即可使用。"
+      },
+      {
+        "q": "不带手机，Tikpal 能用吗？",
+        "a": "录音可以独立完成。Tikpal App 是你查看、整理和设置的地方。"
+      },
+      {
+        "q": "200 AI 分钟用完了怎么办？",
+        "a": "200 AI 分钟每月刷新——未用完的部分不结转。如果用完了，AI 功能会暂停到下个月，但你可以继续录音，一切都会保存在设备上。"
+      },
+      {
+        "q": "发货要多久？",
+        "a": "美国和亚太地区大多数订单 5–10 个工作日送达，欧洲 7–12 个工作日。具体预估会在结账时显示。"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "留在心流里，想法交给 Tikpal。",
+    "button": {
+      "label": "购买 Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "了解 Tikpal Voice",
+      "href": "/voice/"
+    }
+  }
+}

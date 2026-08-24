@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Tikpal App — 延展你的思维。",
+    "description": "Tikpal App 把每一个被捕捉的瞬间延续下去——把零散片段连成可搜索、可摘要、可导出的上下文。"
+  },
+  "closingLine": "随生活流动的智能——装进口袋，陪在你身边。",
+  "hero": {
+    "eyebrow": "Tikpal App",
+    "headline": "延展你的思维。",
+    "subtitle": "Voice 捕捉瞬间，App 让它继续生长——把零散片段连成可行动的上下文。",
+    "primaryCta": "试试 Tikpal App",
+    "statusLine": "说出口，让它接着生长。",
+    "downloads": [
+      {
+        "label": "下载 iOS 版",
+        "href": "https://apps.apple.com/us/app/tikpal/id6755826084"
+      },
+      {
+        "label": "下载 Android 版",
+        "href": "https://play.google.com/store/apps/details?id=ai.tikpal.app&hl=en"
+      }
+    ]
+  },
+  "capture": {
+    "title": "碎片，连成上下文。",
+    "timeline": {
+      "label": "今天",
+      "entries": [
+        {
+          "time": "09:14",
+          "kind": "灵感"
+        },
+        {
+          "time": "11:42",
+          "kind": "会议"
+        },
+        {
+          "time": "14:08",
+          "kind": "提醒"
+        },
+        {
+          "time": "17:31",
+          "kind": "复盘"
+        }
+      ]
+    },
+    "summaryCard": {
+      "title": "网站改版",
+      "meta": "4 个相关时刻",
+      "coreIdea": {
+        "label": "核心想法",
+        "text": "保持体验的氛围感与简洁。"
+      },
+      "next": {
+        "label": "下一步",
+        "text": "明早审阅。"
+      }
+    }
+  },
+  "tasks": {
+    "title": "你定规则，它来办。",
+    "subtitle": "告诉 App 你的话要变成什么——你只管开口，Tikpal 把剩下的办好。",
+    "points": [
+      {
+        "name": "定义一次",
+        "detail": "在 App 里设好任务——提取什么、送到哪里。"
+      },
+      {
+        "name": "Tikpal 接手去办",
+        "detail": "你只管说，Tikpal 听了就去办——不用点来点去，不用填表。"
+      },
+      {
+        "name": "落到需要的地方",
+        "detail": "日历、账本、收件箱——结果直接就位。"
+      }
+    ],
+    "examples": "记账 · 日程 · 理清思路 · 邮件 · 还有你自己的"
+  },
+  "devices": {
+    "title": "一个资料库，所有屏幕。",
+    "multiDevice": {
+      "src": "/images/app/multi-device.webp",
+      "alt": "Tikpal Voice、Tikpal App 与 Tikpal Room——同一座内容库，贯通每一块屏幕"
+    },
+    "actions": [
+      "发现。",
+      "连接。",
+      "继续。"
+    ]
+  },
+  "cta": {
+    "title": "Voice 捕捉，App 延展。",
+    "label": "试试 Tikpal App",
+    "href": "https://app.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+  }
+}

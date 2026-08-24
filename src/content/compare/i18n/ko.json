@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Tikpal vs Plaud — 두 AI 보이스 레코더의 정직한 비교 | Tikpal",
+    "description": "Tikpal Voice와 Plaud Note 비교: 가격, 포함된 AI 분수, 구독, 각 제품이 잘하는 일. 사실에 기반한 정직한 비교로 선택을 돕습니다."
+  },
+  "hero": {
+    "eyebrow": "비교",
+    "title": "Plaud의 대안을 찾고 계신가요?",
+    "subtitle": "Plaud와 Tikpal은 모두 음성을 쓸모 있는 것으로 바꿔줍니다 — 하지만 중심에 둔 역할이 다릅니다. 정직한 비교를 확인하세요."
+  },
+  "shared": {
+    "title": "둘 다 잘하는 것",
+    "points": [
+      "스마트폰 대신 전용 하드웨어로 녹음합니다.",
+      "AI로 음성을 텍스트와 요약으로 바꿉니다.",
+      "iOS와 Android 앱과 함께 작동합니다.",
+      "소리 내어 생각하는 사람들을 위한 제품입니다 — 창업자, 크리에이터, 직장인."
+    ]
+  },
+  "table": {
+    "title": "Tikpal Voice vs Plaud Note 비교",
+    "intro": "Plaud 정보는 작성 시점(2026년 초)의 plaud.ai와 보도 자료 기준입니다. 최신 정보는 공식 사이트를 확인하세요.",
+    "rows": [
+      {
+        "label": "가격",
+        "tikpal": "$129",
+        "plaud": "$159 (Plaud Note)"
+      },
+      {
+        "label": "포함된 AI",
+        "tikpal": "매월 200분 AI 포함",
+        "plaud": "매월 300분 무료 전사"
+      },
+      {
+        "label": "한도 이후",
+        "tikpal": "다음 달까지 AI 일시 중단, 녹음은 계속 — 유료 등급 없음",
+        "plaud": "추가 분수는 구독 필요 (연 약 $99.96에 월 1,200분)"
+      },
+      {
+        "label": "설계의 중심",
+        "tikpal": "캡처 → 기억 → 리콜 → 행동: 정리된 기억, 할 일, 연동",
+        "plaud": "녹음 → 전사 → 요약: 회의 메모와 스크립트"
+      },
+      {
+        "label": "연동",
+        "tikpal": "Notion, Todoist, Gmail, 캘린더, Xmind",
+        "plaud": "Plaud 앱 안에서의 전사와 요약"
+      }
+    ]
+  },
+  "fit": {
+    "tikpalTitle": "이런 분에게는 Tikpal이 더 맞습니다",
+    "tikpalPoints": [
+      "말한 내용을 전사만이 아니라 나중에 검색할 수 있는 기억으로 만들고 싶을 때.",
+      "기기에 AI 분수가 포함되고, 잠금 해제할 구독 등급이 없기를 원할 때.",
+      "한마디로 아이디어를 Notion, Todoist, Gmail, 캘린더로 보내고 싶을 때."
+    ],
+    "plaudTitle": "이런 분에게는 Plaud가 더 맞습니다",
+    "plaudPoints": [
+      "녹음의 대부분이 회의와 통화이고, 전사와 요약이 주 목적일 때.",
+      "카드 모양의 얇은 레코더를 선호할 때.",
+      "더 높은 전사 한도를 위해 구독료를 낼 의향이 있을 때."
+    ]
+  },
+  "cta": {
+    "title": "기억하는 레코더를 사용해 볼 준비가 되셨나요?",
+    "button": {
+      "label": "Tikpal Voice 구매하기 — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    }
+  }
+}

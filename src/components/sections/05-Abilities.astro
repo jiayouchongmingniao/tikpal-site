@@ -1,0 +1,161 @@
+---
+import type { TasksSection } from '../home/types';
+
+interface Props {
+  content: TasksSection;
+}
+
+const { content: tasks } = Astro.props;
+---
+
+<section id="tasks" class="section surface-dark grain">
+  <div class="container">
+    <header class="section-head reveal">
+      <h2 class="h2">
+        {tasks.title}<br />
+        <span class="tasks-line-2">{tasks.title2}</span>
+      </h2>
+    </header>
+
+    <p class="task-note-line reveal" style="--reveal-delay: 0.08s">
+      {tasks.noteLine}
+      <a class="task-note-link" href={tasks.noteLink.href}>{tasks.noteLink.label}</a>
+    </p>
+
+    <div class="task-grid">
+      {
+        tasks.cards.map((card, i) => (
+          <article class="task-card reveal" style={`--reveal-delay: ${i * 0.12}s`}>
+            <p class="task-name mono">{card.name}</p>
+            <p class="task-quote">“{card.quote}”</p>
+            <span class="task-arrow" aria-hidden="true"></span>
+            <p class="task-result">{card.result}</p>
+          </article>
+        ))
+      }
+    </div>
+
+    <p class="task-custom reveal">
+      <span class="dot-alive" aria-hidden="true"></span>
+      {tasks.customLine}
+    </p>
+  </div>
+</section>
+
+<style>
+  .tasks-line-2 {
+    color: var(--tone-400);
+  }
+
+  .task-note-line {
+    margin: calc(-1 * var(--space-2)) auto var(--space-3);
+    max-width: 42rem;
+    text-align: center;
+    font-size: var(--text-small);
+    line-height: 1.6;
+    opacity: 0.65;
+  }
+
+  .task-note-link {
+    display: inline-block;
+    margin-top: 0.35rem;
+    font-size: var(--text-small);
+    color: var(--alive);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    opacity: 1;
+  }
+
+  .task-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-3);
+  }
+
+  .task-card {
+    display: grid;
+    gap: 0.7rem;
+    align-content: start;
+    padding: var(--space-3) 1.2rem;
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-m);
+    background: rgba(250, 247, 242, 0.055);
+    min-height: 11rem;
+  }
+
+  .task-name {
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  .task-quote {
+    font-size: var(--text-body);
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .task-arrow {
+    width: 1px;
+    height: 1.6rem;
+    background: var(--tone-600);
+    position: relative;
+    margin-left: 0.4rem;
+  }
+
+  .task-arrow::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 6px;
+    height: 6px;
+    border-bottom: 1px solid var(--tone-600);
+    border-right: 1px solid var(--tone-600);
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  .task-result {
+    font-size: var(--text-small);
+    line-height: 1.55;
+  }
+
+  .task-custom {
+    margin: var(--space-4) auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    max-width: 52rem;
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid rgba(47, 230, 167, 0.38);
+    border-radius: var(--radius-l);
+    background: var(--alive-dim);
+    font-size: var(--text-lead);
+    font-weight: 600;
+    letter-spacing: var(--tracking-tight);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .task-custom .dot-alive {
+    flex: none;
+  }
+
+  @media (max-width: 1080px) {
+    .task-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .task-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .task-card {
+      min-height: 0;
+    }
+  }
+</style>

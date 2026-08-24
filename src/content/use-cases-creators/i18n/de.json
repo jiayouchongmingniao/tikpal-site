@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "KI-Voice-Recorder für Kreative | Tikpal Voice",
+    "description": "Für Designer, Autoren, Musiker, Gründer und Produktmenschen: Tikpal fängt gesprochene Ideen mit einem Druck — ohne deinen kreativen Flow zu brechen. $129, ohne Abo."
+  },
+  "crumbs": [
+    {
+      "label": "Anwendungsfälle"
+    },
+    {
+      "label": "Kreative"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Fang die Idee, ohne den Flow zu brechen.",
+    "subtitle": "Tikpal fängt gesprochene Ideen mit einem Druck — kein Handy, keine App, kein Verlassen der Arbeit.",
+    "primaryCta": {
+      "label": "Tikpal kaufen — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 KI-Minuten/Monat inklusive · Kein Abo nötig · 30 Tage Rückgabe"
+  },
+  "sections": [
+    {
+      "kind": "quote",
+      "title": "Die Idee kommt mitten im Flow.",
+      "quote": "Diese Zeile — schnapp sie, bevor sie weg ist.",
+      "result": "→ Ein Druck. Gefangen. Zurück an die Arbeit."
+    },
+    {
+      "kind": "scenes",
+      "title": "Gemacht für Kreative.",
+      "items": [
+        {
+          "name": "Designer",
+          "body": "Forme Konzepte weg vom Bildschirm — sprich die Richtung aus und skizziere weiter."
+        },
+        {
+          "name": "Autoren",
+          "body": "Die Zeile kommt weg von der Tastatur. Sprich sie aus; sie wartet am Schreibtisch."
+        },
+        {
+          "name": "Musiker",
+          "body": "Melodien und Textzeilen landen zwischen Takes. Fang sie, ohne nach dem Handy zu greifen."
+        },
+        {
+          "name": "Gründer",
+          "body": "Pitch-Zeilen, Namen, Strategie — sag es, wenn es passiert, und finde es beim Entwerfen wieder."
+        },
+        {
+          "name": "Produktmenschen",
+          "body": "Nutzer-Insights und Feature-Ideen — unterwegs eingefangen, bereit für die nächste Spez."
+        }
+      ]
+    },
+    {
+      "kind": "flow",
+      "title": "Von Stimme zu Arbeit.",
+      "from": "Eine gesprochene Idee",
+      "steps": [
+        "Gefangen",
+        "Organisiert",
+        "In deinen Tools"
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "Wo Ideen landen.",
+      "chips": [
+        "Notizen",
+        "Aufgaben",
+        "Entwürfe",
+        "Notion",
+        "Todoist"
+      ],
+      "note": "Tikpal organisiert, was du sagst, in der Tikpal App."
+    },
+    {
+      "kind": "points",
+      "title": "Gemacht für Aufnahme überall.",
+      "points": [
+        "Ein Druck startet die Aufnahme — kein Entsperren, keine App.",
+        "Quad-Mikrofone nehmen dich klar auf, auch draußen.",
+        "16GB lokaler Speicher halten jede Idee sicher.",
+        "Wasserfest (IP65) und taschengroß."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Kurz beantwortet",
+    "items": [
+      {
+        "q": "Brauche ich ein Abo?",
+        "a": "Nein. Tikpal enthält jeden Monat 200 KI-Minuten, und die Kernfunktionen laufen ohne Abo."
+      },
+      {
+        "q": "Funktioniert Tikpal ohne mein Handy?",
+        "a": "Die Aufnahme läuft eigenständig. Die Tikpal App ist der Ort zum Ansehen, Organisieren und Einstellen."
+      },
+      {
+        "q": "Was passiert nach meinen 200 KI-Minuten?",
+        "a": "Die 200 KI-Minuten erneuern sich monatlich — nicht genutzte Minuten verfallen. Sind sie aufgebraucht, pausieren KI-Funktionen bis zum nächsten Monat, aber du kannst weiter aufnehmen und alles bleibt auf dem Gerät gespeichert."
+      },
+      {
+        "q": "Wie lange dauert der Versand?",
+        "a": "Die meisten Bestellungen kommen in den USA und im Raum Asien-Pazifik innerhalb von 5–10 Werktagen an, in Europa in 7–12 Werktagen. Die genaue Schätzung steht beim Checkout."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Bleib im Flow. Lass Tikpal die Idee fangen.",
+    "button": {
+      "label": "Tikpal kaufen — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Mehr über Tikpal Voice erfahren",
+      "href": "/voice/"
+    }
+  }
+}

@@ -1,0 +1,137 @@
+---
+import type { WhyNotPhone } from '../home/types';
+
+interface Props {
+  content: WhyNotPhone;
+}
+
+const { content: why } = Astro.props;
+---
+
+<section id="why-not-phone" class="section surface-dark grain">
+  <div class="container">
+    <header class="section-head reveal">
+      <h2 class="h2">
+        {why.title}<br />
+        <span class="why-line-2">{why.title2}</span>
+      </h2>
+    </header>
+
+    <div class="why-grid">
+      <div class="why-col why-phone reveal" style="--reveal-delay: 0.1s">
+        <p class="why-label mono">{why.phoneLabel}</p>
+        <ol class="why-steps">
+          {
+            why.phoneSteps.map((step, i) => {
+              const last = i === why.phoneSteps.length - 1;
+              return (
+                <li class:list={['why-step', { 'why-step-gone': last }]}>
+                  {step}
+                </li>
+              );
+            })
+          }
+        </ol>
+      </div>
+
+      <div class="why-col why-tikpal reveal" style="--reveal-delay: 0.22s">
+        <p class="why-label mono">{why.tikpalLabel}</p>
+        <p class="why-done">{why.tikpalLine}</p>
+        <p class="why-closing">{why.closing}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .why-line-2 {
+    color: var(--tone-400);
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+  }
+
+  .why-col {
+    display: grid;
+    gap: var(--space-2);
+    align-content: start;
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-l);
+    border: 1px solid var(--line-light);
+  }
+
+  .why-phone {
+    background: rgba(250, 247, 242, 0.02);
+  }
+
+  .why-tikpal {
+    background: rgba(250, 247, 242, 0.055);
+  }
+
+  .why-label {
+    font-size: var(--text-micro);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  .why-steps {
+    list-style: none;
+    display: grid;
+    gap: 0.55rem;
+  }
+
+  .why-step {
+    font-size: var(--text-body);
+    opacity: 0.62;
+    line-height: 1.5;
+    padding-left: 1.1rem;
+    position: relative;
+  }
+
+  .why-step::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.5;
+  }
+
+  .why-step-gone {
+    opacity: 0.9;
+    font-weight: 600;
+  }
+
+  .why-step-gone::before {
+    opacity: 0.9;
+  }
+
+  .why-done {
+    font-size: clamp(1.6rem, 1rem + 1.6vw, 2.2rem);
+    font-weight: 650;
+    line-height: 1.2;
+    letter-spacing: var(--tracking-tight);
+  }
+
+  .why-closing {
+    font-size: var(--text-small);
+    opacity: 0.62;
+  }
+
+  @media (max-width: 860px) {
+    .why-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .why-col {
+      padding: var(--space-3);
+    }
+  }
+</style>

@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "title": "I migliori registratori vocali AI per idee, note e riunioni",
+    "description": "Non esiste un unico miglior registratore AI: solo quello giusto per come lavori. Confronta per idee spontanee, riunioni, uso indossabile, trascrizione e privacy."
+  },
+  "crumbs": [
+    {
+      "label": "Confronto"
+    },
+    {
+      "label": "Migliori registratori AI"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Nessun vincitore unico. Il registratore giusto per come pensi.",
+    "subtitle": "Salta le classifiche finte. Confronta i registratori AI per il lavoro che fai davvero — e guarda dove si colloca Tikpal.",
+    "primaryCta": {
+      "label": "Acquista Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 minuti AI al mese inclusi · Nessun abbonamento · Reso entro 30 giorni"
+  },
+  "sections": [
+    {
+      "kind": "scenes",
+      "title": "Cinque modi di scegliere.",
+      "intro": "Invece di una classifica, scegli la dimensione che conta per te.",
+      "items": [
+        {
+          "name": "Ideale per idee spontanee",
+          "body": "Vince la strada più breve dal pensiero alla registrazione. Cerca la cattura con una pressione, senza telefono: è esattamente ciò per cui è nato Tikpal."
+        },
+        {
+          "name": "Ideale per riunioni",
+          "body": "Conversazioni lunghe e strutturate. Dai priorità a registrazioni lunghe affidabili e riepiloghi pensati per le riunioni."
+        },
+        {
+          "name": "Ideale da indossare",
+          "body": "Se lo vuoi addosso, controlla aggancio, peso e come parte la registrazione."
+        },
+        {
+          "name": "Ideale per la trascrizione",
+          "body": "Se la trascrizione è il prodotto, confronta qualità, lingue e cosa include il prezzo."
+        },
+        {
+          "name": "Ideale per la privacy",
+          "body": "Cerca archiviazione locale, indicatori chiari di registrazione e una policy dati onesta."
+        }
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "Dove si colloca Tikpal.",
+      "points": [
+        "Tikpal è costruito per idee e memoria vocale personale: prima cattura, poi note, attività ed eventi.",
+        "La ricerca semantica trova ciò che hai detto — senza nomi di file.",
+        "$129 con 200 minuti AI ogni mese — nessun abbonamento.",
+        "Se le tue giornate sono soprattutto riunioni e chiamate, uno strumento incentrato sulla trascrizione potrebbe adattarsi meglio. Preferiamo che tu scelga bene."
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "L'hardware dietro.",
+      "points": [
+        "Quattro microfoni per una ripresa chiara, anche all'aperto.",
+        "Schermo AMOLED da 1,75″: lo stato a colpo d'occhio.",
+        "16GB di archiviazione locale e resistenza all'acqua IP65.",
+        "Aggancio magnetico pogo-pin per tracolle, scrivanie e altro."
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "Le tue parole restano tue.",
+      "points": [
+        "Una luce chiara indica quando Tikpal ascolta.",
+        "16GB di archiviazione locale prima di qualsiasi sincronizzazione.",
+        "Consulta, esporta o elimina in qualsiasi momento.",
+        "Le tue registrazioni non vengono mai usate per addestrare modelli pubblici."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Risposte rapide",
+    "items": [
+      {
+        "q": "Qual è il miglior registratore vocale AI?",
+        "a": "Dipende da cosa registri. Per idee spontanee e memoria vocale ricercabile, Tikpal è costruito esattamente per questo. Per flussi pieni di riunioni, uno strumento incentrato sulla trascrizione può adattarsi meglio."
+      },
+      {
+        "q": "Tikpal funziona per le riunioni?",
+        "a": "Sì: Tikpal registra le riunioni e le trascrive nei tuoi 200 minuti AI mensili. Il focus di design è la cattura personale quotidiana: idee, note e attività."
+      },
+      {
+        "q": "Serve un abbonamento?",
+        "a": "No. Tikpal include 200 minuti AI ogni mese e le funzioni principali funzionano senza abbonamento."
+      },
+      {
+        "q": "Cosa succede quando finisco i miei 200 minuti AI?",
+        "a": "I tuoi 200 minuti AI si rinnovano ogni mese: i minuti non usati non si accumulano. Se li esaurisci, le funzioni AI si fermano fino al mese successivo, ma puoi continuare a registrare e tutto resta salvato sul dispositivo."
+      },
+      {
+        "q": "Quanto tempo richiede la spedizione?",
+        "a": "La maggior parte degli ordini arriva entro 5–10 giorni lavorativi negli USA e in Asia-Pacifico, e 7–12 giorni lavorativi in Europa. La stima esatta è mostrata al checkout."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Qualsiasi cosa tu scelga, non lasciare scappare il pensiero.",
+    "button": {
+      "label": "Acquista Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Scopri di più su Tikpal Voice",
+      "href": "/voice/"
+    }
+  }
+}

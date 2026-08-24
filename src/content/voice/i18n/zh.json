@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "title": "Record First. Think Later. — Tikpal Voice AI 录音笔",
+    "description": "Tikpal Voice 是一款口袋 AI 录音笔，不用掏出手机就能记下灵感、笔记和任务。录下来、整理好、随时找回，还能变成行动。"
+  },
+  "crumbs": [
+    {
+      "label": "Voice"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "先录下来，再慢慢想。",
+    "subtitle": "不止是一支 AI 录音笔。Tikpal 把你说的话变成有条理的记忆、任务和行动。",
+    "primaryCta": {
+      "label": "购买 Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "每月含 200 分钟 AI · 无需订阅 · 30 天退货"
+  },
+  "sections": [
+    {
+      "kind": "flow",
+      "title": "说一遍就够了，剩下的交给 Tikpal。",
+      "intro": "一段真实的语音笔记，能变成四样真正有用的东西。",
+      "from": "“我一直在想，音箱是不是可以折叠成平的方便携带……”",
+      "steps": [
+        "转写",
+        "灵感",
+        "洞察",
+        "任务"
+      ]
+    },
+    {
+      "kind": "table",
+      "title": "手机什么都能做，这正是问题所在。",
+      "cols": [
+        "Tikpal Voice",
+        "手机"
+      ],
+      "rows": [
+        {
+          "label": "开始记录",
+          "values": [
+            "按一下，直接说",
+            "解锁、找 App、躲开各种通知"
+          ]
+        },
+        {
+          "label": "录完之后",
+          "values": [
+            "笔记、任务和记忆，自动整理好",
+            "又一个丢在文件夹里的音频文件"
+          ]
+        },
+        {
+          "label": "日后找回",
+          "values": [
+            "用人话提问，灵感原样回来",
+            "在一堆文件名和日期里翻找"
+          ]
+        },
+        {
+          "label": "注意力",
+          "values": [
+            "没有信息流和 App，记完就走",
+            "每次记录都在勾着你继续刷"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "自然地说，得到有用的东西。",
+      "chips": [
+        "记住",
+        "去做",
+        "创作",
+        "回忆"
+      ]
+    },
+    {
+      "kind": "quote",
+      "title": "找的是灵感，不是音频文件。",
+      "quote": "上个月我说过什么关于音箱设计的事？",
+      "result": "→ 相关想法，几秒内找到"
+    },
+    {
+      "kind": "chips",
+      "title": "说一遍，就去它该去的地方。",
+      "chips": [
+        "Todoist",
+        "Notion",
+        "Gmail",
+        "Calendar",
+        "Xmind"
+      ],
+      "note": "在 Tikpal App 里连接你已经在用的工具。"
+    },
+    {
+      "kind": "points",
+      "title": "你的声音是私人的。",
+      "points": [
+        "Tikpal 什么时候听、同步什么、删除什么，都由你决定。",
+        "Tikpal 录音时，有清晰的指示灯。",
+        "同步之前，先存在本地 16GB 空间里。",
+        "随时查看、导出或删除——你的录音永远不会被用于训练公开模型。"
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "生来就跟着你走。",
+      "chips": [
+        "Quad mic",
+        "AMOLED",
+        "16GB",
+        "820mAh",
+        "IP65"
+      ],
+      "note": "1.75 英寸 AMOLED 屏幕 · 磁吸 pogo-pin 充电 · IP65 防水。"
+    }
+  ],
+  "faq": {
+    "title": "快速解答",
+    "items": [
+      {
+        "q": "需要订阅吗？",
+        "a": "不需要。Tikpal 每月包含 200 分钟 AI，不订阅也能正常使用核心录音功能。"
+      },
+      {
+        "q": "不带手机，Tikpal 能用吗？",
+        "a": "录音可以独立进行。Tikpal App 用来回顾、整理和设置。"
+      },
+      {
+        "q": "200 分钟 AI 用完了怎么办？",
+        "a": "200 分钟每月刷新，用不完不结转。用完之后，AI 功能暂停到下个月，但你可以继续录音，所有内容都保存在设备上。"
+      },
+      {
+        "q": "发货要多久？",
+        "a": "美国和亚太地区一般 5–10 个工作日送达，欧洲 7–12 个工作日。具体时效以结算页为准。"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "想法只出现一次，别把它丢在解锁屏幕里。",
+    "button": {
+      "label": "购买 Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    }
+  }
+}

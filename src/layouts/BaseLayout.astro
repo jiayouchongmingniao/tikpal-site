@@ -2,33 +2,73 @@
 // Import the reveal script as raw text so it can be inlined (is:inline).
 // @ts-ignore — Vite `?raw` suffix import
 import revealScript from '../scripts/reveal.ts?raw';
+import '@fontsource-variable/space-grotesk';
 import '../styles/tokens.css';
 import '../styles/base.css';
 import '../styles/animations.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import type { CommonContent } from '../components/home/types';
+import enCommon from '../content/common/i18n/en.json';
+
+interface Alternate {
+  lang: string;
+  href: string;
+}
 
 interface Props {
   title?: string;
   description?: string;
+  lang?: string;
+  ogImage?: string;
+  alternates?: Alternate[];
+  currentLang?: string;
+  // Localized nav + footer copy; falls back to English.
+  common?: CommonContent;
+  // Optional per-page override for the footer closing line.
+  footerClosingLine?: string;
+  // Drives language-switcher link targets. Known kinds: 'home' | 'room' |
+  // 'app' | landing slugs ('voice', 'ai-note-taker', ...) | 'compare/{slug}'
+  // | 'use-cases/{slug}' | 'privacy' | 'terms' | 'about' | 'support' | 'faq'.
+  pageKind?: string;
+  // Structured data graphs rendered as application/ld+json scripts in <head>.
+  jsonLd?: object[];
 }
 
 const {
   title = 'Tikpal — Capture what matters.',
   description = 'An AI voice companion for thoughts, conversations and ideas — ready the moment they happen.',
+  lang = 'en',
+  ogImage = '/og.png',
+  alternates = [],
+  currentLang,
+  common = enCommon as CommonContent,
+  footerClosingLine,
+  pageKind = 'home',
+  jsonLd = [],
 } = Astro.props;
 
+const footer = footerClosingLine
+  ? { ...common.footer, closingLine: footerClosingLine }
+  : common.footer;
+
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImageUrl = new URL(ogImage, Astro.site);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {
+      alternates.map((alt) => (
+        <link rel="alternate" hreflang={alt.lang} href={alt.href} />
+      ))
+    }
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="theme-color" content="#0A0A0A" />
 
@@ -38,13 +78,26 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={new URL('/og.png', Astro.site)} />
+    <meta property="og:image" content={ogImageUrl} />
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="900" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={new URL('/og.png', Astro.site)} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    {jsonLd.map((graph) => (
+      <script type="application/ld+json" is:inline set:html={JSON.stringify(graph)} />
+    ))}
+
+    <!-- Microsoft Clarity — heatmaps & session recordings (site-wide) -->
+    <script type="text/javascript" is:inline>
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "un7pt49853");
+    </script>
 
     <noscript>
       <style>
@@ -58,11 +111,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     </noscript>
   </head>
   <body>
-    <Header />
+    <Header nav={common.nav} currentLang={currentLang} pageKind={pageKind} />
     <main>
       <slot />
     </main>
-    <Footer />
+    <Footer footer={footer} lang={lang} />
     <script is:inline set:html={revealScript} />
   </body>
 </html>

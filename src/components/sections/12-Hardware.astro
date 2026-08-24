@@ -1,0 +1,114 @@
+---
+import type { Hardware } from '../home/types';
+
+interface Props {
+  content: Hardware;
+}
+
+const { content: hardware } = Astro.props;
+---
+
+<section id="hardware" class="section surface-dark grain">
+  <div class="container">
+    <header class="section-head reveal">
+      <h2 class="h2">{hardware.title}</h2>
+      <p class="lead">{hardware.subtitle}</p>
+    </header>
+
+    <div class="hw-chips">
+      {
+        hardware.points.map((point, i) => (
+          <span class="hw-chip mono reveal" style={`--reveal-delay: ${i * 0.08}s`}>{point.name}</span>
+        ))
+      }
+    </div>
+
+    <details class="hw-specs reveal" style="--reveal-delay: 0.3s">
+      <summary class="hw-specs-toggle mono">{hardware.specsToggle}</summary>
+      <dl class="hw-specs-list">
+        {
+          hardware.specs.map((spec) => (
+            <div class="hw-spec">
+              <dt class="hw-spec-name mono">{spec.name}</dt>
+              <dd class="hw-spec-value">{spec.value}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </details>
+  </div>
+</section>
+
+<style>
+  .hw-chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+  }
+
+  .hw-chip {
+    padding: 0.55rem 1.2rem;
+    border: 1px solid var(--line-light);
+    border-radius: 999px;
+    background: rgba(250, 247, 242, 0.03);
+    font-size: var(--text-small);
+    letter-spacing: 0.08em;
+    color: var(--tone-400);
+  }
+
+  .hw-specs {
+    margin-top: var(--space-4);
+    text-align: center;
+  }
+
+  .hw-specs-toggle {
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+    font-size: var(--text-small);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    border-bottom: 1px solid var(--line-light);
+    padding-bottom: 0.25rem;
+    transition: opacity 0.2s ease;
+  }
+
+  .hw-specs-toggle:hover {
+    opacity: 0.95;
+  }
+
+  .hw-specs-toggle::-webkit-details-marker {
+    display: none;
+  }
+
+  .hw-specs-list {
+    margin: var(--space-3) auto 0;
+    max-width: 34rem;
+    display: grid;
+    gap: 0.6rem;
+    text-align: left;
+  }
+
+  .hw-spec {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--line-light);
+  }
+
+  .hw-spec-name {
+    font-size: var(--text-micro);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  .hw-spec-value {
+    margin: 0;
+    font-size: var(--text-small);
+    font-weight: 600;
+  }
+</style>

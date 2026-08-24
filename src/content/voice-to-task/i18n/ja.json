@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "AI で音声をタスクに | Tikpal Voice",
+    "description": "タスクを声に出せば、Tikpal が本物の ToDo に変換——Todoist と Tikpal App に対応。タイピング不要、スマホ不要。$129。"
+  },
+  "crumbs": [
+    {
+      "label": "音声→タスク"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "タスクを口にしたら、前に進む。",
+    "subtitle": "Tikpal はあなたの言葉を聞き、行動できるタスクに変えます——あなたはその間のことも続けられます。",
+    "primaryCta": {
+      "label": "Tikpal を購入 — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "毎月 200 分の AI 付き · サブスク不要 · 30 日間返品可"
+  },
+  "sections": [
+    {
+      "kind": "quote",
+      "title": "あなたの声から、ToDo リストへ。",
+      "quote": "明日、John に企画書を送るのを忘れずに。",
+      "result": "→ タスク作成 · 明日 · 9:00"
+    },
+    {
+      "kind": "flow",
+      "title": "音声がタスクになるまで。",
+      "from": "“明日、John に企画書を送るのを忘れずに。”",
+      "steps": [
+        "文字起こし",
+        "理解",
+        "タスク作成"
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "タスクが届く場所。",
+      "chips": [
+        "Todoist",
+        "Tikpal App"
+      ],
+      "note": "Tikpal App で Todoist と連携し、タスクの行き先を選べます。"
+    },
+    {
+      "kind": "scenes",
+      "title": "タスクはデスク以外で生まれる。",
+      "items": [
+        {
+          "name": "会議の合間",
+          "body": "頼まれたことを口に——次の通話の前にリストへ。"
+        },
+        {
+          "name": "外出中",
+          "body": "歩きながら、運転しながら、料理しながら：タスクを話し、動き続ける。"
+        },
+        {
+          "name": "寝る前",
+          "body": "頭を空っぽに。明日のあなたがきれいな ToDo リストを受け取ります。"
+        }
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "主導権はあなたに。",
+      "points": [
+        "Tikpal App でタスクの確認・編集・削除ができます。",
+        "毎月 200 分の AI 付き——サブスク不要。",
+        "録音は同期するまでデバイスに保存。",
+        "Tikpal が聞いているときはライトでお知らせ。"
+      ]
+    }
+  ],
+  "faq": {
+    "title": "よくある質問",
+    "items": [
+      {
+        "q": "サブスクリプションは必要ですか？",
+        "a": "いいえ。Tikpal には毎月 200 分の AI が含まれ、サブスクリプションなしでも録音などの基本機能は使えます。"
+      },
+      {
+        "q": "スマホは近くに必要ですか？",
+        "a": "不要です。録音はデバイスで行われ、あとで同期します。タスクの確認と管理は Tikpal App で。"
+      },
+      {
+        "q": "Tikpal が細かい所を聞き間違えたら？",
+        "a": "タスクは Tikpal App で編集できるので、大事な前にいつでも修正できます。"
+      },
+      {
+        "q": "配送はどのくらいかかりますか？",
+        "a": "米国とアジア太平洋地域は通常 5〜10 営業日、欧州は 7〜12 営業日でお届けします。正確な目安はチェックアウト時に表示されます。"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "一度言えば、リストに載る。",
+    "button": {
+      "label": "Tikpal を購入 — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Tikpal Voice について詳しく",
+      "href": "/voice/"
+    }
+  }
+}

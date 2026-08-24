@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Datenschutzerklärung — Tikpal",
+    "description": "Wie Spatial Therapy Inc. deine Informationen bei Tikpal Voice, App und Room erhebt, verwendet und schützt."
+  },
+  "page": {
+    "eyebrow": "Rechtliches",
+    "title": "Datenschutzerklärung",
+    "updatedLabel": "Zuletzt aktualisiert",
+    "updated": "22. August 2026",
+    "intro": "Diese Datenschutzerklärung erklärt, wie Spatial Therapy Inc. („Tikpal“, „wir“) deine Informationen erhebt, verwendet und schützt, wenn du unsere Websites, das Tikpal Voice Gerät, die Tikpal App und Tikpal Room nutzt."
+  },
+  "sections": [
+    {
+      "heading": "Welche Informationen wir erheben",
+      "paragraphs": [
+        "Kontoinformationen — wie E-Mail-Adresse und Profildaten, wenn du ein Tikpal-Konto erstellst.",
+        "Inhalte, die du erstellst — Sprachaufnahmen, Transkripte, Notizen und Zusammenfassungen, die du mit Voice, App oder Room aufnimmst.",
+        "Geräte- und Nutzungsinformationen — Gerätemodell, App-Version, Spracheinstellungen und Interaktionsdaten, die uns helfen, die Produkte zuverlässig zu halten.",
+        "Kaufinformationen — Bestelldaten beim Kauf eines Produkts (Zahlungsdetails werden von unseren Zahlungsdienstleistern verarbeitet und nicht von uns gespeichert)."
+      ]
+    },
+    {
+      "heading": "Wie wir deine Informationen verwenden",
+      "paragraphs": [
+        "Für das Kern-Erlebnis: Aufnahme, Transkription, Organisation und Synchronisierung zwischen deinen Geräten.",
+        "Zur Verbesserung der Produkte, etwa durch die Analyse aggregierter Nutzungsmuster.",
+        "Für die Kommunikation zu deinem Konto, Bestellungen und Produktupdates.",
+        "Um Tikpal sicher zu halten und unsere Nutzungsbedingungen durchzusetzen."
+      ]
+    },
+    {
+      "heading": "Sprachdaten",
+      "paragraphs": [
+        "Deine Aufnahmen gehören dir. Wir verarbeiten Sprachaufnahmen nur, um die Transkripte, Zusammenfassungen und die Organisation zu erstellen, die du anforderst.",
+        "Wir verkaufen deine Sprachdaten nicht und nutzen sie nicht für Werbung.",
+        "Du kannst jederzeit in der App einzelne Aufnahmen oder deine gesamte Bibliothek löschen. Gelöschte Inhalte entfernen wir innerhalb von 30 Tagen aus dem aktiven Speicher und aus Backups."
+      ]
+    },
+    {
+      "heading": "Wie wir Informationen weitergeben",
+      "paragraphs": [
+        "Wir verkaufen deine personenbezogenen Daten nicht.",
+        "Wir geben Informationen nur an Dienstleister weiter, die uns beim Betrieb unterstützen (z. B. Cloud-Hosting, Analysen und Zahlungsabwicklung), auf Grundlage strenger Verträge — oder wenn gesetzlich erforderlich."
+      ]
+    },
+    {
+      "heading": "Datensicherheit und Aufbewahrung",
+      "paragraphs": [
+        "Deine Daten werden bei der Übertragung und im Ruhezustand verschlüsselt; der Zugriff ist auf das für den Betrieb notwendige Maß beschränkt.",
+        "Wir bewahren deine Informationen auf, solange dein Konto aktiv ist, und löschen sie auf Anfrage wie unter „Deine Möglichkeiten und Rechte“ beschrieben."
+      ]
+    },
+    {
+      "heading": "Deine Möglichkeiten und Rechte",
+      "paragraphs": [
+        "Du kannst deine Inhalte in der App einsehen, korrigieren oder exportieren.",
+        "Du kannst dein Konto und alle zugehörigen Daten jederzeit in den App-Einstellungen löschen oder uns kontaktieren.",
+        "Je nach Wohnort hast du nach lokalen Datenschutzgesetzen zusätzliche Rechte wie Auskunft, Berichtigung, Löschung oder Datenübertragbarkeit."
+      ]
+    },
+    {
+      "heading": "Datenschutz für Kinder",
+      "paragraphs": [
+        "Tikpal-Produkte richten sich nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine personenbezogenen Daten von Kindern unter 13 Jahren. Falls du glaubst, dass ein Kind uns personenbezogene Daten übermittelt hat, kontaktiere uns — wir löschen sie."
+      ]
+    },
+    {
+      "heading": "Änderungen dieser Erklärung",
+      "paragraphs": [
+        "Wir können diese Richtlinie von Zeit zu Zeit aktualisieren. Bei wesentlichen Änderungen benachrichtigen wir dich in der App oder auf dieser Seite und aktualisieren das Datum oben."
+      ]
+    },
+    {
+      "heading": "Kontakt",
+      "paragraphs": [
+        "Bei Fragen zu dieser Richtlinie oder deinen Daten erreichst du uns unter privacy@tikpal.ai oder schriftlich bei Spatial Therapy Inc."
+      ]
+    }
+  ]
+}

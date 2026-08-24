@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "¿Buscas una alternativa a Plaud? Conoce Tikpal Voice",
+    "description": "Plaud está diseñado en torno a la grabación y la transcripción. Tikpal está diseñado en torno a capturar pensamientos y convertirlos en memoria y acción. $129, sin suscripción."
+  },
+  "crumbs": [
+    {
+      "label": "Alternativa a Plaud"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "¿Buscas otro tipo de grabadora con IA?",
+    "subtitle": "Plaud está diseñado en torno a la grabación y la transcripción. Tikpal está diseñado en torno a capturar pensamientos — y convertirlos en memoria y acción.",
+    "primaryCta": {
+      "label": "Comprar Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 minutos de IA al mes incluidos · Sin suscripción · 30 días de devolución"
+  },
+  "sections": [
+    {
+      "kind": "points",
+      "title": "Dos herramientas, dos trabajos.",
+      "points": [
+        "Plaud está diseñado en torno a la grabación y la transcripción: reuniones y llamadas convertidas en texto.",
+        "Tikpal está diseñado en torno a las ideas: captura el pensamiento en el momento en que aparece.",
+        "Después de grabar, Tikpal sigue trabajando: notas, tareas, eventos y borradores.",
+        "Productos distintos para formas de trabajar distintas."
+      ]
+    },
+    {
+      "kind": "flow",
+      "title": "Qué pasa después de hablar.",
+      "from": "Dices una idea en voz alta",
+      "steps": [
+        "Transcrita",
+        "Organizada",
+        "Localizable",
+        "Accionable"
+      ]
+    },
+    {
+      "kind": "quote",
+      "title": "La grabación es solo el principio.",
+      "quote": "¿Qué dije el mes pasado sobre el diseño del altavoz?",
+      "result": "→ Encontrado — junto a todo lo que dijiste alrededor"
+    },
+    {
+      "kind": "points",
+      "title": "Lo que aporta Tikpal.",
+      "points": [
+        "Una pulsación inicia la grabación: sin desbloquear, sin app.",
+        "200 minutos de IA cada mes, sin suscripción.",
+        "16GB de almacenamiento local: las grabaciones se quedan primero en el dispositivo.",
+        "Se conecta con Todoist, Notion, Gmail y Calendario en la Tikpal App."
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "Tus palabras son tuyas.",
+      "points": [
+        "Una luz clara indica cuándo Tikpal está escuchando.",
+        "Las grabaciones se guardan en local antes de sincronizar nada.",
+        "Revisa, exporta o borra cuando quieras.",
+        "Tus grabaciones nunca se usan para entrenar modelos públicos."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Respuestas rápidas",
+    "items": [
+      {
+        "q": "¿Tikpal es mejor que Plaud?",
+        "a": "Son dos herramientas para trabajos distintos. Plaud se centra en grabación y transcripción, ideal para flujos llenos de reuniones. Tikpal se centra en capturar pensamientos cotidianos y convertirlos en memoria y acción. Elige según cómo trabajas."
+      },
+      {
+        "q": "¿Necesito una suscripción?",
+        "a": "No. Tikpal incluye 200 minutos de IA cada mes y las funciones esenciales funcionan sin suscripción."
+      },
+      {
+        "q": "¿Qué pasa al agotar mis 200 minutos de IA?",
+        "a": "Tus 200 minutos de IA se renuevan cada mes; los no usados no se acumulan. Si los agotas, las funciones de IA se pausan hasta el mes siguiente, pero puedes seguir grabando y todo queda guardado en el dispositivo."
+      },
+      {
+        "q": "¿Cuánto tarda el envío?",
+        "a": "La mayoría de los pedidos llegan en 5–10 días laborables en EE. UU. y Asia-Pacífico, y en 7–12 días laborables en Europa. La estimación exacta se muestra al pagar."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "El pensamiento aparece una vez. No lo pierdas en la pantalla de desbloqueo.",
+    "button": {
+      "label": "Comprar Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Descubre más sobre Tikpal Voice",
+      "href": "/voice/"
+    }
+  }
+}

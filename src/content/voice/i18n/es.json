@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "title": "Record First. Think Later. — Tikpal Voice, grabadora de voz con IA",
+    "description": "Tikpal Voice es una grabadora de voz con IA de bolsillo para capturar ideas, notas y tareas sin abrir el teléfono. Graba, organiza, recuerda y convierte tu voz en acción."
+  },
+  "crumbs": [
+    {
+      "label": "Voice"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Primero graba. Piensa después.",
+    "subtitle": "Más que una grabadora de voz con IA. Tikpal convierte tus pensamientos hablados en memoria organizada, tareas y acción.",
+    "primaryCta": {
+      "label": "Comprar Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 minutos de IA al mes incluidos · Sin suscripción · 30 días de devolución"
+  },
+  "sections": [
+    {
+      "kind": "flow",
+      "title": "Dilo una vez. Tikpal hace el resto.",
+      "intro": "Una nota de voz real — cuatro cosas que puedes usar de verdad.",
+      "from": "“No dejo de pensar que el altavoz debería plegarse plano para viajar…”",
+      "steps": [
+        "Transcripción",
+        "Idea",
+        "Insight",
+        "Tarea"
+      ]
+    },
+    {
+      "kind": "table",
+      "title": "Tu teléfono puede hacerlo todo. Ese es el problema.",
+      "cols": [
+        "Tikpal Voice",
+        "Teléfono"
+      ],
+      "rows": [
+        {
+          "label": "Para empezar",
+          "values": [
+            "Un botón y a hablar",
+            "Desbloquear, buscar la app, esquivar notificaciones"
+          ]
+        },
+        {
+          "label": "Después de grabar",
+          "values": [
+            "Notas, tareas y memoria, organizadas por ti",
+            "Otro archivo de audio perdido en una carpeta"
+          ]
+        },
+        {
+          "label": "Encontrarlo después",
+          "values": [
+            "Pregunta con palabras normales y recupera la idea",
+            "Revisar nombres de archivo y fechas"
+          ]
+        },
+        {
+          "label": "Atención",
+          "values": [
+            "Sin feed ni apps: graba y sigue",
+            "Cada captura te invita a seguir mirando"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "Habla con naturalidad. Obtén algo útil.",
+      "chips": [
+        "Recordar",
+        "Hacer",
+        "Crear",
+        "Recuperar"
+      ]
+    },
+    {
+      "kind": "quote",
+      "title": "Encuentra la idea. No el archivo de audio.",
+      "quote": "¿Qué dije el mes pasado sobre el diseño del altavoz?",
+      "result": "→ Ideas relacionadas, encontradas en segundos"
+    },
+    {
+      "kind": "chips",
+      "title": "Dilo una vez — llega a donde debe.",
+      "chips": [
+        "Todoist",
+        "Notion",
+        "Gmail",
+        "Calendar",
+        "Xmind"
+      ],
+      "note": "Conecta en la Tikpal App las herramientas que ya usas."
+    },
+    {
+      "kind": "points",
+      "title": "Tu voz es personal.",
+      "points": [
+        "Tú decides cuándo escucha Tikpal, qué se sincroniza y qué se borra.",
+        "Una luz clara muestra cuándo Tikpal está escuchando.",
+        "16GB de almacenamiento local antes de sincronizar nada.",
+        "Revisa, exporta o borra cuando quieras: tus grabaciones nunca se usan para entrenar modelos públicos."
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "Hecho para ir contigo.",
+      "chips": [
+        "Quad mic",
+        "AMOLED",
+        "16GB",
+        "820mAh",
+        "IP65"
+      ],
+      "note": "Pantalla AMOLED de 1,75 pulgadas · carga magnética pogo-pin · resistencia al agua IP65."
+    }
+  ],
+  "faq": {
+    "title": "Respuestas rápidas",
+    "items": [
+      {
+        "q": "¿Necesito una suscripción?",
+        "a": "No. Tikpal incluye 200 minutos de IA cada mes y la grabación básica funciona sin suscripción."
+      },
+      {
+        "q": "¿Funciona Tikpal sin el teléfono?",
+        "a": "La grabación funciona sola. La Tikpal App es donde revisas, organizas y configuras."
+      },
+      {
+        "q": "¿Qué pasa al agotar mis 200 minutos de IA?",
+        "a": "Los 200 minutos se renuevan cada mes y los no usados no se acumulan. Si los agotas, las funciones de IA se pausan hasta el mes siguiente, pero puedes seguir grabando y todo queda guardado en el dispositivo."
+      },
+      {
+        "q": "¿Cuánto tarda el envío?",
+        "a": "La mayoría de los pedidos llegan en 5–10 días laborables en EE. UU. y Asia-Pacífico, y en 7–12 días laborables en Europa. El cálculo exacto aparece al pagar."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "La idea llega una sola vez. No la pierdas en la pantalla de desbloqueo.",
+    "button": {
+      "label": "Comprar Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    }
+  }
+}

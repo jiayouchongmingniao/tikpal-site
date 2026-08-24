@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Privacy Policy — Tikpal",
+    "description": "How Spatial Therapy Inc. collects, uses and protects your information across Tikpal Voice, App and Room."
+  },
+  "page": {
+    "eyebrow": "Legal",
+    "title": "Privacy Policy",
+    "updatedLabel": "Last updated",
+    "updated": "August 22, 2026",
+    "intro": "This Privacy Policy explains how Spatial Therapy Inc. (\"Tikpal\", \"we\", \"us\") collects, uses and protects your information when you use our websites, the Tikpal Voice device, the Tikpal App and Tikpal Room."
+  },
+  "sections": [
+    {
+      "heading": "Information We Collect",
+      "paragraphs": [
+        "Account information — such as your email address and profile details when you create a Tikpal account.",
+        "Content you create — voice recordings, transcripts, notes and summaries you capture with Voice, App or Room.",
+        "Device and usage information — device model, app version, language settings and interaction data that helps us keep the products reliable.",
+        "Purchase information — order details when you buy a product (payment details are handled by our payment providers, not stored by us)."
+      ]
+    },
+    {
+      "heading": "How We Use Your Information",
+      "paragraphs": [
+        "To provide the core experience: capture, transcription, organization and sync across your devices.",
+        "To improve the products, for example by analyzing aggregate usage patterns.",
+        "To communicate with you about your account, orders and product updates.",
+        "To keep Tikpal safe, secure and compliant with our Terms."
+      ]
+    },
+    {
+      "heading": "Voice Data",
+      "paragraphs": [
+        "Your recordings belong to you. We process voice recordings to produce the transcripts, summaries and organization you ask for.",
+        "We do not sell your voice data, and we do not use it for advertising.",
+        "You can delete any recording or your entire library from the App at any time. When you delete content, we remove it from active storage and from backups within 30 days."
+      ]
+    },
+    {
+      "heading": "How We Share Information",
+      "paragraphs": [
+        "We do not sell your personal information.",
+        "We share information only with service providers that help us operate (such as cloud hosting, analytics and payment processing), under strict contracts, or when required by law."
+      ]
+    },
+    {
+      "heading": "Data Security & Retention",
+      "paragraphs": [
+        "Your data is encrypted in transit and at rest, and access is limited to what is needed to operate the service.",
+        "We keep your information for as long as your account is active, and delete it on request as described in Your Choices & Rights."
+      ]
+    },
+    {
+      "heading": "Your Choices & Rights",
+      "paragraphs": [
+        "You can access, correct or export your content from within the App.",
+        "You can delete your account and all associated data at any time from the App settings, or by contacting us.",
+        "Depending on where you live, you may have additional rights such as access, rectification, erasure or portability under local data protection laws."
+      ]
+    },
+    {
+      "heading": "Children's Privacy",
+      "paragraphs": [
+        "Tikpal products are not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us personal information, contact us and we will delete it."
+      ]
+    },
+    {
+      "heading": "Changes to This Policy",
+      "paragraphs": [
+        "We may update this policy from time to time. If we make material changes, we will notify you in the App or on this page, and update the date above."
+      ]
+    },
+    {
+      "heading": "Contact Us",
+      "paragraphs": [
+        "If you have questions about this policy or your data, contact us at privacy@tikpal.ai or write to Spatial Therapy Inc."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+---
+import type { RoomSystems } from './types';
+
+interface Props {
+  content: RoomSystems;
+}
+
+const { content } = Astro.props;
+---
+
+<section id="systems" class="systems section surface-dark grain">
+  <div class="systems-glow" aria-hidden="true"></div>
+
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow mono">{content.title}</p>
+      <h2 class="h2">{content.headline}</h2>
+      <p class="lead">{content.note}</p>
+    </header>
+
+    <div class="bundle-grid">
+      {
+        content.items.map((bundle, i) => (
+          <article
+            class="bundle reveal"
+            style={`--reveal-delay: ${i * 0.14}s`}
+          >
+            <div class="bundle-top">
+              <span class="bundle-index mono">0{i + 1}</span>
+              {
+                bundle.badge && (
+                  <span class="bundle-badge mono">{bundle.badge}</span>
+                )
+              }
+            </div>
+            <h3 class="bundle-name">{bundle.name}</h3>
+            <p class="bundle-audience mono">{bundle.for}</p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .systems-glow {
+    position: absolute;
+    right: -14%;
+    top: -18%;
+    width: 46vw;
+    height: 46vw;
+    max-width: 38rem;
+    max-height: 38rem;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      var(--amber-soft) 0%,
+      rgba(201, 138, 75, 0.05) 45%,
+      transparent 70%
+    );
+    animation: drift 15s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  .bundle-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+  }
+
+  .bundle {
+    display: grid;
+    gap: 0.6rem;
+    align-content: start;
+    padding: var(--space-3);
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-l);
+    background: rgba(250, 247, 242, 0.03);
+    min-height: 12rem;
+    transition: transform var(--dur-fast) var(--ease-out),
+      border-color var(--dur-fast) ease;
+  }
+
+  .bundle:hover {
+    transform: translateY(-6px);
+    border-color: rgba(250, 247, 242, 0.3);
+  }
+
+  .bundle-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+    min-height: 1.6rem;
+    margin-bottom: var(--space-1);
+  }
+
+  .bundle-index {
+    opacity: 0.4;
+    letter-spacing: 0.14em;
+  }
+
+  /* mono outlined badge — no bright fills */
+  .bundle-badge {
+    padding: 0.3rem 0.85rem;
+    border: 1px solid rgba(250, 247, 242, 0.45);
+    border-radius: var(--radius-pill);
+    font-size: var(--text-micro);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    opacity: 0.85;
+  }
+
+  .bundle-name {
+    font-size: var(--text-h4);
+    font-weight: 650;
+    letter-spacing: var(--tracking-tight);
+  }
+
+  .bundle-audience {
+    opacity: 0.55;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: var(--text-micro);
+  }
+
+  @media (max-width: 860px) {
+    .bundle-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .bundle {
+      min-height: 0;
+    }
+  }
+</style>

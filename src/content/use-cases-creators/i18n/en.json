@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "AI Voice Recorder for Creators | Tikpal Voice",
+    "description": "For designers, writers, musicians, founders and product people: Tikpal catches spoken ideas with one press — without breaking your creative flow. $129, no subscription."
+  },
+  "crumbs": [
+    {
+      "label": "Use Cases"
+    },
+    {
+      "label": "Creators"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Catch the idea without breaking the flow.",
+    "subtitle": "Tikpal catches spoken ideas with one press — no phone, no app, no leaving the work.",
+    "primaryCta": {
+      "label": "Get Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 AI minutes/month included · No subscription required · 30-day returns"
+  },
+  "sections": [
+    {
+      "kind": "quote",
+      "title": "The idea arrives mid-flow.",
+      "quote": "That line — grab it before it's gone.",
+      "result": "→ One press. Captured. Back to work."
+    },
+    {
+      "kind": "scenes",
+      "title": "Made for creators.",
+      "items": [
+        {
+          "name": "Designers",
+          "body": "Shape concepts away from the screen — speak the direction and keep sketching."
+        },
+        {
+          "name": "Writers",
+          "body": "The line arrives away from the keyboard. Say it; it'll be waiting at your desk."
+        },
+        {
+          "name": "Musicians",
+          "body": "Melodies and lyrics land between takes. Catch them without reaching for a phone."
+        },
+        {
+          "name": "Founders",
+          "body": "Pitch lines, names, strategy — say it when it hits, find it when you draft."
+        },
+        {
+          "name": "Product people",
+          "body": "User insights and feature ideas — captured on the move, ready for the next spec."
+        }
+      ]
+    },
+    {
+      "kind": "flow",
+      "title": "From voice to work.",
+      "from": "A spoken idea",
+      "steps": [
+        "Captured",
+        "Organized",
+        "In your tools"
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "Where ideas land.",
+      "chips": [
+        "Notes",
+        "Tasks",
+        "Drafts",
+        "Notion",
+        "Todoist"
+      ],
+      "note": "Tikpal organizes what you say in the Tikpal App."
+    },
+    {
+      "kind": "points",
+      "title": "Built for capture anywhere.",
+      "points": [
+        "One press starts recording — no unlock, no app.",
+        "Quad mic array picks you up clearly, even outdoors.",
+        "16GB local storage keeps every idea safe.",
+        "Water-resistant (IP65) and sized for a pocket."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Quick answers",
+    "items": [
+      {
+        "q": "Do I need a subscription?",
+        "a": "No. Tikpal includes 200 AI minutes every month, and core recording stays available without a subscription."
+      },
+      {
+        "q": "Does Tikpal work without my phone?",
+        "a": "Recording works on its own. The Tikpal App is where you review, organize and configure."
+      },
+      {
+        "q": "What happens after I use my 200 AI minutes?",
+        "a": "Your 200 AI minutes refresh every month — unused minutes don't roll over. If you run out, AI features pause until the next month, but you can keep recording and everything stays saved on the device."
+      },
+      {
+        "q": "How long does shipping take?",
+        "a": "Most orders arrive within 5–10 business days in the US and Asia-Pacific, and 7–12 business days in Europe. Exact estimates are shown at checkout."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Stay in the flow. Let Tikpal catch the idea.",
+    "button": {
+      "label": "Get Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Learn more about Tikpal Voice",
+      "href": "/voice/"
+    }
+  }
+}

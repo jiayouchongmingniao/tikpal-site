@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Informativa sulla privacy — Tikpal",
+    "description": "Come Spatial Therapy Inc. raccoglie, utilizza e protegge le tue informazioni su Tikpal Voice, App e Room."
+  },
+  "page": {
+    "eyebrow": "Note legali",
+    "title": "Informativa sulla privacy",
+    "updatedLabel": "Ultimo aggiornamento",
+    "updated": "22 agosto 2026",
+    "intro": "Questa Informativa sulla privacy spiega come Spatial Therapy Inc. (\"Tikpal\", \"noi\") raccoglie, utilizza e protegge le tue informazioni quando utilizzi i nostri siti web, il dispositivo Tikpal Voice, la Tikpal App e Tikpal Room."
+  },
+  "sections": [
+    {
+      "heading": "Informazioni che raccogliamo",
+      "paragraphs": [
+        "Informazioni sull'account — come indirizzo email e dati del profilo quando crei un account Tikpal.",
+        "Contenuti che crei — registrazioni vocali, trascrizioni, note e riepiloghi acquisiti con Voice, App o Room.",
+        "Informazioni sul dispositivo e sull'utilizzo — modello del dispositivo, versione dell'app, impostazioni linguistiche e dati di interazione che ci aiutano a mantenere affidabili i prodotti.",
+        "Informazioni sugli acquisti — dettagli dell'ordine quando acquisti un prodotto (i dati di pagamento sono gestiti dai nostri fornitori di pagamento e non vengono archiviati da noi)."
+      ]
+    },
+    {
+      "heading": "Come utilizziamo le tue informazioni",
+      "paragraphs": [
+        "Per offrire l'esperienza centrale: acquisizione, trascrizione, organizzazione e sincronizzazione tra i tuoi dispositivi.",
+        "Per migliorare i prodotti, ad esempio analizzando modelli di utilizzo aggregati.",
+        "Per comunicare con te su account, ordini e aggiornamenti del prodotto.",
+        "Per mantenere Tikpal sicuro e conforme ai nostri Termini."
+      ]
+    },
+    {
+      "heading": "Dati vocali",
+      "paragraphs": [
+        "Le tue registrazioni sono tue. Elaboriamo le registrazioni vocali per produrre le trascrizioni, i riepiloghi e l'organizzazione che richiedi.",
+        "Non vendiamo i tuoi dati vocali e non li utilizziamo per la pubblicità.",
+        "Puoi eliminare qualsiasi registrazione o l'intera raccolta dall'App in qualsiasi momento. Quando elimini un contenuto, lo rimuoviamo dall'archivio attivo e dai backup entro 30 giorni."
+      ]
+    },
+    {
+      "heading": "Come condividiamo le informazioni",
+      "paragraphs": [
+        "Non vendiamo le tue informazioni personali.",
+        "Condividiamo le informazioni solo con fornitori che ci aiutano a operare (come hosting cloud, analisi ed elaborazione dei pagamenti), secondo contratti rigorosi, o quando richiesto dalla legge."
+      ]
+    },
+    {
+      "heading": "Sicurezza e conservazione dei dati",
+      "paragraphs": [
+        "I tuoi dati sono cifrati in transito e a riposo, e l'accesso è limitato a quanto necessario per il funzionamento del servizio.",
+        "Conserviamo le tue informazioni finché il tuo account è attivo e le eliminiamo su richiesta come descritto in Le tue scelte e i tuoi diritti."
+      ]
+    },
+    {
+      "heading": "Le tue scelte e i tuoi diritti",
+      "paragraphs": [
+        "Puoi accedere ai tuoi contenuti, correggerli o esportarli dall'App.",
+        "Puoi eliminare il tuo account e tutti i dati associati in qualsiasi momento dalle impostazioni dell'App, oppure contattandoci.",
+        "A seconda di dove risiedi, potresti avere diritti aggiuntivi come accesso, rettifica, cancellazione o portabilità secondo le leggi locali sulla protezione dei dati."
+      ]
+    },
+    {
+      "heading": "Privacy dei minori",
+      "paragraphs": [
+        "I prodotti Tikpal non sono destinati ai minori di 13 anni. Non raccogliamo consapevolmente informazioni personali di minori di 13 anni. Se ritieni che un minore ci abbia fornito informazioni personali, contattaci e le elimineremo."
+      ]
+    },
+    {
+      "heading": "Modifiche a questa informativa",
+      "paragraphs": [
+        "Potremmo aggiornare questa informativa di tanto in tanto. In caso di modifiche sostanziali, ti avviseremo nell'App o su questa pagina e aggiorneremo la data in alto."
+      ]
+    },
+    {
+      "heading": "Contatti",
+      "paragraphs": [
+        "Per domande su questa informativa o sui tuoi dati, scrivici a privacy@tikpal.ai o a Spatial Therapy Inc."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PrivacyPage from '../../components/PrivacyPage.astro';
+import type { PrivacyContent } from '../../components/PrivacyPage.astro';
+import type { CommonContent } from '../../components/home/types';
+import { LANGS } from '../../utils/i18n';
+
+import en from '../../content/privacy/i18n/en.json';
+import enCommon from '../../content/common/i18n/en.json';
+
+const content = en as PrivacyContent;
+
+export const privacyPath = (l: string): string =>
+  l === 'en' ? '/privacy/' : `/${l}/privacy/`;
+
+// 7 language alternates + x-default → /privacy/
+const alternates = [
+  ...LANGS.map((l) => ({
+    lang: l,
+    href: new URL(privacyPath(l), Astro.site).href,
+  })),
+  { lang: 'x-default', href: new URL('/privacy/', Astro.site).href },
+];
+---
+
+<BaseLayout
+  title={content.meta.title}
+  description={content.meta.description}
+  lang="en"
+  alternates={alternates}
+  currentLang="en"
+  common={enCommon as CommonContent}
+  pageKind="privacy"
+>
+  <PrivacyPage content={content} />
+</BaseLayout>

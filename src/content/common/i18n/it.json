@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "brand": "Tikpal",
+    "logo": {
+      "src": "/images/logo-dark.webp",
+      "alt": "Tikpal"
+    },
+    "links": [
+      {
+        "label": "Voice",
+        "href": "/voice/"
+      },
+      {
+        "label": "App",
+        "href": "/app/"
+      },
+      {
+        "label": "Room",
+        "href": "/room/"
+      },
+      {
+        "label": "Come funziona",
+        "href": "/#demo"
+      }
+    ],
+    "shop": {
+      "label": "Shop",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    }
+  },
+  "footer": {
+    "closingLine": "Intelligenza che si muove con la vita. Inizia con una parola.",
+    "columns": [
+      {
+        "title": "Prodotti",
+        "links": [
+          {
+            "label": "Voice",
+            "href": "/voice/"
+          },
+          {
+            "label": "App",
+            "href": "https://app.tikpal.ai"
+          },
+          {
+            "label": "Room",
+            "href": "https://room.tikpal.ai"
+          }
+        ]
+      },
+      {
+        "title": "Esplora",
+        "links": [
+          {
+            "label": "Appunti con IA",
+            "href": "/ai-note-taker/"
+          },
+          {
+            "label": "Memoria IA",
+            "href": "/ai-memory/"
+          },
+          {
+            "label": "Registratore per idee",
+            "href": "/voice-recorder-for-ideas/"
+          },
+          {
+            "label": "Dalla voce alle attività",
+            "href": "/voice-to-task/"
+          },
+          {
+            "label": "Dalla voce alle email",
+            "href": "/voice-to-email/"
+          },
+          {
+            "label": "Dalla voce al calendario",
+            "href": "/voice-to-calendar/"
+          },
+          {
+            "label": "Per creativi",
+            "href": "/use-cases/creators/"
+          },
+          {
+            "label": "Migliori registratori IA",
+            "href": "/compare/ai-voice-recorders/"
+          },
+          {
+            "label": "Tikpal vs Plaud",
+            "href": "/compare/tikpal-vs-plaud/"
+          },
+          {
+            "label": "Alternativa a Plaud",
+            "href": "/plaud-alternative/"
+          }
+        ]
+      },
+      {
+        "title": "Servizio",
+        "links": [
+          {
+            "label": "Shop",
+            "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+          },
+          {
+            "label": "Assistenza",
+            "href": "/support/"
+          },
+          {
+            "label": "FAQ",
+            "href": "/faq/"
+          },
+          {
+            "label": "Spedizione e resi",
+            "href": "/support/"
+          }
+        ]
+      },
+      {
+        "title": "Azienda",
+        "links": [
+          {
+            "label": "Chi siamo",
+            "href": "/about/"
+          },
+          {
+            "label": "Privacy",
+            "href": "/privacy/"
+          },
+          {
+            "label": "Termini",
+            "href": "/terms/"
+          },
+          {
+            "label": "Contatti",
+            "href": "mailto:hello@tikpal.io"
+          }
+        ]
+      }
+    ],
+    "socials": [
+      {
+        "name": "TikTok",
+        "href": "https://www.tiktok.com/@tikpal_ai"
+      },
+      {
+        "name": "YouTube",
+        "href": "https://www.youtube.com/@Tikpal-Ai"
+      },
+      {
+        "name": "Facebook",
+        "href": "https://www.facebook.com/profile.php?id=61583482054366"
+      },
+      {
+        "name": "X",
+        "href": "https://x.com/Spatial_Therapy"
+      },
+      {
+        "name": "Instagram",
+        "href": "https://www.instagram.com/power0fmoney2025/"
+      },
+      {
+        "name": "Discord",
+        "href": "https://discord.com/invite/kjSvmChTWn"
+      },
+      {
+        "name": "Email",
+        "href": "mailto:hello@tikpal.io"
+      }
+    ],
+    "copyright": "© 2025-2026 Spatial Therapy Inc."
+  }
+}

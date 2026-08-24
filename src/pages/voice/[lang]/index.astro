@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import LandingPage from '../../../components/landing/LandingPage.astro';
+import type { LandingPageContent } from '../../../components/landing/types';
+import type { CommonContent } from '../../../components/home/types';
+import { HOME_LABELS, homePath, localizeContent } from '../../../utils/i18n';
+import { breadcrumbJsonLd, faqJsonLd, productJsonLd } from '../../../utils/jsonLd';
+
+import en from '../../../content/voice/i18n/en.json';
+import de from '../../../content/voice/i18n/de.json';
+import it from '../../../content/voice/i18n/it.json';
+import ko from '../../../content/voice/i18n/ko.json';
+import ja from '../../../content/voice/i18n/ja.json';
+import zh from '../../../content/voice/i18n/zh.json';
+import es from '../../../content/voice/i18n/es.json';
+
+import enCommon from '../../../content/common/i18n/en.json';
+import deCommon from '../../../content/common/i18n/de.json';
+import itCommon from '../../../content/common/i18n/it.json';
+import koCommon from '../../../content/common/i18n/ko.json';
+import jaCommon from '../../../content/common/i18n/ja.json';
+import zhCommon from '../../../content/common/i18n/zh.json';
+import esCommon from '../../../content/common/i18n/es.json';
+
+export const VOICE_LANGS = ['en', 'de', 'it', 'ko', 'ja', 'zh', 'es'] as const;
+
+const locales: Record<string, LandingPageContent> = {
+  en: localizeContent(en as LandingPageContent, 'en'),
+  de: localizeContent(de as LandingPageContent, 'de'),
+  it: localizeContent(it as LandingPageContent, 'it'),
+  ko: localizeContent(ko as LandingPageContent, 'ko'),
+  ja: localizeContent(ja as LandingPageContent, 'ja'),
+  zh: localizeContent(zh as LandingPageContent, 'zh'),
+  es: localizeContent(es as LandingPageContent, 'es'),
+};
+
+const commonLocales: Record<string, CommonContent> = {
+  en: enCommon as CommonContent,
+  de: deCommon as CommonContent,
+  it: itCommon as CommonContent,
+  ko: koCommon as CommonContent,
+  ja: jaCommon as CommonContent,
+  zh: zhCommon as CommonContent,
+  es: esCommon as CommonContent,
+};
+
+export function getStaticPaths() {
+  return VOICE_LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as string;
+const content = locales[lang];
+
+// 7 language alternates + x-default → /voice/en/
+const alternates = [
+  ...VOICE_LANGS.map((l) => ({
+    lang: l,
+    href: new URL(`/voice/${l}/`, Astro.site).href,
+  })),
+  { lang: 'x-default', href: new URL('/voice/en/', Astro.site).href },
+];
+
+const jsonLd = [
+  breadcrumbJsonLd([
+    { name: HOME_LABELS[lang], url: new URL(homePath(lang), Astro.site).href },
+    { name: 'Tikpal Voice', url: new URL(`/voice/${lang}/`, Astro.site).href },
+  ]),
+  faqJsonLd(content.faq!.items),
+  productJsonLd(content.meta.description),
+];
+---
+
+<BaseLayout
+  title={content.meta.title}
+  description={content.meta.description}
+  lang={lang}
+  alternates={alternates}
+  currentLang={lang}
+  common={commonLocales[lang]}
+  pageKind="voice"
+  jsonLd={jsonLd}
+>
+  <LandingPage content={content} homeLabel={HOME_LABELS[lang]} homeHref={homePath(lang)} />
+</BaseLayout>

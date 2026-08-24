@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Tikpal App — 생각을 더 멀리.",
+    "description": "Tikpal App은 캡처한 모든 순간을 이어갑니다—흩어진 조각을 검색, 요약, 내보내기 가능한 맥락으로."
+  },
+  "closingLine": "삶과 함께 움직이는 인텔리전스 — 주머니 속에, 당신 곁에.",
+  "hero": {
+    "eyebrow": "Tikpal App",
+    "headline": "생각을 더 멀리.",
+    "subtitle": "Voice가 순간을 담고, App이 이어갑니다—흩어진 조각을 행동할 수 있는 맥락으로.",
+    "primaryCta": "Tikpal App 사용해 보기",
+    "statusLine": "말하고, 그다음은 맡기세요.",
+    "downloads": [
+      {
+        "label": "iOS용 다운로드",
+        "href": "https://apps.apple.com/us/app/tikpal/id6755826084"
+      },
+      {
+        "label": "Android용 다운로드",
+        "href": "https://play.google.com/store/apps/details?id=ai.tikpal.app&hl=en"
+      }
+    ]
+  },
+  "capture": {
+    "title": "조각이 맥락이 됩니다.",
+    "timeline": {
+      "label": "오늘",
+      "entries": [
+        {
+          "time": "09:14",
+          "kind": "아이디어"
+        },
+        {
+          "time": "11:42",
+          "kind": "회의"
+        },
+        {
+          "time": "14:08",
+          "kind": "리마인더"
+        },
+        {
+          "time": "17:31",
+          "kind": "회고"
+        }
+      ]
+    },
+    "summaryCard": {
+      "title": "웹사이트 리뉴얼",
+      "meta": "관련된 4개의 순간",
+      "coreIdea": {
+        "label": "핵심 아이디어",
+        "text": "경험은 앰비언트하고 심플하게."
+      },
+      "next": {
+        "label": "다음",
+        "text": "내일 아침에 검토하기."
+      }
+    }
+  },
+  "tasks": {
+    "title": "규칙은 당신이, 일은 Tikpal이.",
+    "subtitle": "앱에 당신의 말이 무엇이 되어야 할지 알려 주세요 — 당신은 말하고, Tikpal이 나머지를 합니다.",
+    "points": [
+      {
+        "name": "한 번 정의",
+        "detail": "앱에서 작업을 설정하세요 — 무엇을 추출해 어디로 보낼지."
+      },
+      {
+        "name": "Tikpal이 처리",
+        "detail": "당신은 계속 말하기만 하면 — Tikpal이 듣고 일을 끝냅니다. 탭도, 양식도 없이."
+      },
+      {
+        "name": "필요한 곳으로",
+        "detail": "캘린더, 가계부, 받은편지함 — 결과가 이미 자리에 있습니다."
+      }
+    ],
+    "examples": "가계부 · 일정 · 생각 정리 · 이메일 · 그리고 나만의 작업"
+  },
+  "devices": {
+    "title": "하나의 라이브러리, 모든 화면에서.",
+    "multiDevice": {
+      "src": "/images/app/multi-device.webp",
+      "alt": "Tikpal Voice, Tikpal 앱, Tikpal Room — 하나의 라이브러리가 모든 화면으로"
+    },
+    "actions": [
+      "발견하다.",
+      "연결하다.",
+      "이어가다."
+    ]
+  },
+  "cta": {
+    "title": "Voice로 담고, App으로 확장하다.",
+    "label": "Tikpal App 사용해 보기",
+    "href": "https://app.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+  }
+}

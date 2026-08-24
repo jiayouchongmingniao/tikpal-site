@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Tikpal 与 Plaud 对比 — 两款 AI 录音设备的客观比较 | Tikpal",
+    "description": "Tikpal Voice 与 Plaud Note 对比：价格、包含的 AI 时长、订阅模式和各自适合的场景。基于公开信息的客观比较，帮你做决定。"
+  },
+  "hero": {
+    "eyebrow": "对比",
+    "title": "在找 Plaud 的替代品？",
+    "subtitle": "Plaud 和 Tikpal 都把说的话变成有用的东西——但它们围绕不同的任务设计。这是一份客观对比。"
+  },
+  "shared": {
+    "title": "两者都做得好的",
+    "points": [
+      "用专门的硬件录音，而不是手机。",
+      "用 AI 把语音转成文字和摘要。",
+      "配合 iOS 和 Android 上的 App 使用。",
+      "面向把想法说出来的人——创业者、创作者、职场人。"
+    ]
+  },
+  "table": {
+    "title": "Tikpal Voice 与 Plaud Note 对比",
+    "intro": "Plaud 信息来自撰写时（2026 年初）plaud.ai 及公开报道，请以官网最新信息为准。",
+    "rows": [
+      {
+        "label": "价格",
+        "tikpal": "$129",
+        "plaud": "$159（Plaud Note）"
+      },
+      {
+        "label": "包含的 AI 用量",
+        "tikpal": "每月含 200 分钟 AI 时长",
+        "plaud": "每月 300 分钟免费转写"
+      },
+      {
+        "label": "超出之后",
+        "tikpal": "AI 时长暂停到下月，录音不受影响，也没有付费档",
+        "plaud": "更多分钟数需订阅（约 $99.96/年，每月 1,200 分钟）"
+      },
+      {
+        "label": "围绕什么设计",
+        "tikpal": "记录 → 记忆 → 回忆 → 行动：有序记忆、任务、集成",
+        "plaud": "录音 → 转写 → 摘要：会议记录与逐字稿"
+      },
+      {
+        "label": "集成",
+        "tikpal": "Notion、Todoist、Gmail、日历、Xmind",
+        "plaud": "在 Plaud App 内做转写与摘要"
+      }
+    ]
+  },
+  "fit": {
+    "tikpalTitle": "这些情况，Tikpal 更适合你",
+    "tikpalPoints": [
+      "你想让说出口的话变成日后能搜的记忆，而不只是逐字稿。",
+      "你希望设备自带 AI 时长，没有要解锁的订阅档。",
+      "你想一句话就把想法送到 Notion、Todoist、Gmail 或日历。"
+    ],
+    "plaudTitle": "这些情况，Plaud 更适合你",
+    "plaudPoints": [
+      "你的录音大多是会议和通话，主要要转写和摘要。",
+      "你喜欢卡片形状、更薄的录音设备。",
+      "你愿意用订阅换取更高的转写上限。"
+    ]
+  },
+  "cta": {
+    "title": "想试试会记忆的录音笔？",
+    "button": {
+      "label": "购买 Tikpal Voice — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    }
+  }
+}

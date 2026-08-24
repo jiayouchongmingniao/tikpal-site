@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "Trasforma la voce in attività con l'IA | Tikpal Voice",
+    "description": "Di' l'attività ad alta voce e Tikpal la trasforma in un vero impegno — con Todoist e la Tikpal App. Niente digitazione, niente telefono. $129."
+  },
+  "crumbs": [
+    {
+      "label": "Voce in attività"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Di' l'attività. Vai avanti.",
+    "subtitle": "Tikpal ascolta ciò che dici e lo trasforma in un'attività da portare a termine — mentre tu continui a fare quello che stavi facendo.",
+    "primaryCta": {
+      "label": "Acquista Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 minuti AI al mese inclusi · Nessun abbonamento · Reso entro 30 giorni"
+  },
+  "sections": [
+    {
+      "kind": "quote",
+      "title": "Dalla tua voce alla tua lista di cose da fare.",
+      "quote": "Ricordami di mandare la presentazione a John domani.",
+      "result": "→ Attività creata · Domani · 9:00"
+    },
+    {
+      "kind": "flow",
+      "title": "Come la voce diventa attività.",
+      "from": "“Ricordami di mandare la presentazione a John domani.”",
+      "steps": [
+        "Trascritta",
+        "Compresa",
+        "Attività creata"
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "Dove arrivano le tue attività.",
+      "chips": [
+        "Todoist",
+        "Tikpal App"
+      ],
+      "note": "Collega Todoist nella Tikpal App e scegli dove vanno le attività."
+    },
+    {
+      "kind": "scenes",
+      "title": "Le attività nascono lontano dalla scrivania.",
+      "items": [
+        {
+          "name": "Tra una riunione e l'altra",
+          "body": "Di' quello che ti è appena stato assegnato: è in lista prima della prossima chiamata."
+        },
+        {
+          "name": "In movimento",
+          "body": "Camminando, guidando, cucinando: di' l'attività e continua."
+        },
+        {
+          "name": "Prima di dormire",
+          "body": "Svuota la testa. Il te di domani trova una lista pulita."
+        }
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "Il controllo resta tuo.",
+      "points": [
+        "Consulta, modifica o elimina ogni attività nella Tikpal App.",
+        "200 minuti AI inclusi ogni mese — nessun abbonamento.",
+        "Le registrazioni restano sul dispositivo finché non sincronizzi.",
+        "Una luce chiara indica quando Tikpal ascolta."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Risposte rapide",
+    "items": [
+      {
+        "q": "Serve un abbonamento?",
+        "a": "No. Tikpal include 200 minuti AI ogni mese e le funzioni principali funzionano senza abbonamento."
+      },
+      {
+        "q": "Mi serve il telefono vicino?",
+        "a": "No. La registrazione avviene sul dispositivo e si sincronizza dopo. La Tikpal App è dove consulti e gestisci le tue attività."
+      },
+      {
+        "q": "E se Tikpal sbaglia un dettaglio?",
+        "a": "Ogni attività è modificabile nella Tikpal App, così puoi sistemare tutto prima che conti."
+      },
+      {
+        "q": "Quanto tempo richiede la spedizione?",
+        "a": "La maggior parte degli ordini arriva entro 5–10 giorni lavorativi negli USA e in Asia-Pacifico, e 7–12 giorni lavorativi in Europa. La stima esatta è mostrata al checkout."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Dillo una volta. È già in lista.",
+    "button": {
+      "label": "Acquista Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Scopri di più su Tikpal Voice",
+      "href": "/voice/"
+    }
+  }
+}

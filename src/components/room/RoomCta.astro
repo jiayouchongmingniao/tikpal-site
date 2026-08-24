@@ -1,0 +1,65 @@
+---
+import type { RoomCta } from './types';
+
+interface Props {
+  content: RoomCta;
+}
+
+const { content } = Astro.props;
+---
+
+<section class="cta section surface-room grain">
+  <div class="cta-glow" aria-hidden="true"></div>
+
+  <div class="container cta-inner">
+    <p class="eyebrow mono reveal">Tikpal Room</p>
+    <h2 class="h1 reveal" style="--reveal-delay: 0.1s">{content.title}</h2>
+    <div class="reveal" style="--reveal-delay: 0.2s">
+      <a class="btn btn-solid" href={content.href} target="_blank" rel="noopener">
+        {content.label}
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta {
+    text-align: center;
+  }
+
+  .cta-glow {
+    position: absolute;
+    left: 50%;
+    bottom: -30%;
+    width: 56vw;
+    height: 56vw;
+    max-width: 44rem;
+    max-height: 44rem;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(
+      circle,
+      var(--amber-soft) 0%,
+      rgba(201, 138, 75, 0.05) 45%,
+      transparent 70%
+    );
+    animation: drift 16s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  .cta-inner {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    gap: var(--space-3);
+  }
+
+  .cta-inner .h1 {
+    max-width: 12em;
+  }
+
+  .cta-inner .eyebrow::before {
+    display: none;
+  }
+</style>

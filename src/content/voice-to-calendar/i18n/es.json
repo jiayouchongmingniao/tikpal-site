@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Crea eventos de calendario con la voz e IA | Tikpal",
+    "description": "Di cuándo, y Tikpal crea el evento del calendario — hora, título y todo. Planifica en voz alta sin abrir una app. $129, sin suscripción."
+  },
+  "crumbs": [
+    {
+      "label": "Voz a calendario"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Di cuándo. Tikpal lo pone en el calendario.",
+    "subtitle": "Cuenta tus planes con naturalidad y Tikpal los convierte en eventos reales del calendario — sin tocar, sin escribir.",
+    "primaryCta": {
+      "label": "Comprar Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 minutos de IA al mes incluidos · Sin suscripción · 30 días de devolución"
+  },
+  "sections": [
+    {
+      "kind": "quote",
+      "title": "Planifica en voz alta.",
+      "quote": "Quedo con Ana el jueves a las tres.",
+      "result": "→ Evento creado · Jueves · 15:00"
+    },
+    {
+      "kind": "flow",
+      "title": "Cómo la voz se convierte en evento.",
+      "from": "“Quedo con Ana el jueves a las tres.”",
+      "steps": [
+        "Transcrita",
+        "Hora entendida",
+        "Evento creado"
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "Dónde aterrizan los eventos.",
+      "chips": [
+        "Tu calendario",
+        "La Tikpal App"
+      ],
+      "note": "Conecta tu calendario en la Tikpal App."
+    },
+    {
+      "kind": "scenes",
+      "title": "Los planes pasan en cualquier sitio.",
+      "items": [
+        {
+          "name": "En el trabajo",
+          "body": "Di la reunión o el plazo en cuanto se fija: ya está en el calendario antes de la siguiente tarea."
+        },
+        {
+          "name": "Planes personales",
+          "body": "Cenas, llamadas, reencuentros: dicho en segundos, agendado de verdad."
+        },
+        {
+          "name": "Plazos",
+          "body": "Di la fecha y se convierte en una marca real de tu semana."
+        },
+        {
+          "name": "Conduciendo",
+          "body": "Planifica la próxima cita sin tocar el móvil."
+        }
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "Tus planes son tuyos.",
+      "points": [
+        "Una luz clara indica cuándo Tikpal está escuchando.",
+        "16GB de almacenamiento local antes de sincronizar nada.",
+        "Revisa, exporta o borra cuando quieras.",
+        "Tus grabaciones nunca se usan para entrenar modelos públicos."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Respuestas rápidas",
+    "items": [
+      {
+        "q": "¿Necesito una suscripción?",
+        "a": "No. Tikpal incluye 200 minutos de IA cada mes y las funciones esenciales funcionan sin suscripción."
+      },
+      {
+        "q": "¿Tikpal entiende de verdad las horas?",
+        "a": "Sí. Habla con naturalidad — “el jueves a las tres”, “el lunes que viene por la mañana” — y Tikpal lo convierte en un evento real del calendario. Puedes revisarlo todo en la Tikpal App."
+      },
+      {
+        "q": "¿Qué pasa al agotar mis 200 minutos de IA?",
+        "a": "Tus 200 minutos de IA se renuevan cada mes; los no usados no se acumulan. Si los agotas, las funciones de IA se pausan hasta el mes siguiente, pero puedes seguir grabando y todo queda guardado en el dispositivo."
+      },
+      {
+        "q": "¿Cuánto tarda el envío?",
+        "a": "La mayoría de los pedidos llegan en 5–10 días laborables en EE. UU. y Asia-Pacífico, y en 7–12 días laborables en Europa. La estimación exacta se muestra al pagar."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Tu semana, dicha en voz alta y en su sitio.",
+    "button": {
+      "label": "Comprar Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Descubre más sobre Tikpal Voice",
+      "href": "/voice/"
+    }
+  }
+}

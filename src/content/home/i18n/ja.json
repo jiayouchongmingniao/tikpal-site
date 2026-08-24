@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "title": "Tikpal Voice — AI ボイスレコーダー｜アイデア・メモ・タスクを声で記録",
+    "description": "Tikpal Voice はポケットサイズの AI ボイスレコーダー。思いつきやメモ、タスクを声で残し、自動で整理・文字起こし。過去の発言も思い出せ、Notion・Gmail・Todoist・カレンダーと連携。$129。"
+  },
+  "closingLine": "すべては、ひと言から。あとは、ついてくる。",
+  "brand": {
+    "eyebrow": "Tikpal",
+    "title": "あなたとともに動くインテリジェンス。",
+    "subtitle": "ひとつのコンテキスト。暮らしのどこでも。",
+    "products": [
+      {
+        "name": "Tikpal Voice",
+        "verb": "キャプチャ。",
+        "line": "Voice でサッと残す。"
+      },
+      {
+        "name": "Tikpal App",
+        "verb": "理解。",
+        "line": "App で形にする。"
+      },
+      {
+        "name": "Tikpal Room",
+        "verb": "応答。",
+        "line": "Room で空間に広げる。"
+      }
+    ],
+    "exploreCta": {
+      "label": "Tikpal と出会う",
+      "href": "#voice"
+    }
+  },
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "titleLine1": "まず、記録。",
+    "titleLine2": "考えるのは、後で。",
+    "subtitle": "ワンタップで思いつきをキャッチ。Tikpal が覚えて、整理して、行くべきところへ届けます。",
+    "seoLine": "ただの AI ボイスレコーダーではありません。Tikpal は声に出した考えを、整理された記憶・タスク・行動に変えます。",
+    "primaryCta": {
+      "label": "Tikpal を手に入れる — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "secondaryCta": {
+      "label": "動くところを見る",
+      "href": "#demo"
+    },
+    "exploreLink": {
+      "label": "Tikpal Voice を詳しく",
+      "href": "/voice/"
+    },
+    "trustLine": "毎月 200 分の AI 時間込み · サブスク不要 · 30 日間返品可"
+  },
+  "demo": {
+    "eyebrow": "リアルな記録、リアルな成果",
+    "title": "一度言えば、あとは Tikpal。",
+    "deviceCaption": "Tikpal Voice をワンタップ",
+    "quoteLabel": "あなたの言葉",
+    "quote": "ランディングページを作り直したい。ユーザーの課題を先に打ち出して。あと明日、Sam にメールするのを忘れないように。",
+    "resultsLabel": "Tikpal が形にします",
+    "outputs": [
+      {
+        "kind": "アイデア",
+        "text": "ランディングページの訴求を見直す"
+      },
+      {
+        "kind": "インサイト",
+        "text": "機能より先にユーザーの課題を"
+      },
+      {
+        "kind": "タスク",
+        "text": "明日、Sam にメール"
+      }
+    ],
+    "flowLine": "記録 → 整理 → すぐ動ける"
+  },
+  "whyNotPhone": {
+    "title": "スマホは何でもできる。",
+    "title2": "それが、問題だ。",
+    "phoneLabel": "スマホ",
+    "phoneSteps": [
+      "ロック解除",
+      "アプリを探す",
+      "録音を開始",
+      "通知が来る",
+      "メッセージ",
+      "Instagram",
+      "思いつきは消えた。"
+    ],
+    "tikpalLabel": "Tikpal",
+    "tikpalLine": "押す。話す。それだけ。",
+    "closing": "フィードなし。通知なし。行き来なし。"
+  },
+  "tasks": {
+    "title": "自然に話す。",
+    "title2": "役に立つものが手に入る。",
+    "noteLine": "Tikpal は、開く必要のない AI メモ係。自然に話すだけで、アイデアがメモ・タスク・カレンダー予定・下書きになります。",
+    "noteLink": {
+      "label": "AI ノートテイカーの詳細はこちら",
+      "href": "/ai-note-taker/"
+    },
+    "cards": [
+      {
+        "name": "覚えておく",
+        "quote": "スピーカーの筐体はたぶん 12mm 広くすべきだ。",
+        "result": "Speaker Project に保存済み"
+      },
+      {
+        "name": "やる",
+        "quote": "明日、John に資料を送るようリマインドして。",
+        "result": "タスク作成済み — 明日 9:00"
+      },
+      {
+        "name": "つくる",
+        "quote": "デザインを変える理由を説明するメールを下書きして。",
+        "result": "メールの下書き完了"
+      },
+      {
+        "name": "思い出す",
+        "quote": "先月、スピーカーのデザインについて何て言ったっけ？",
+        "result": "関連する思いつきを 6 件発見"
+      }
+    ],
+    "customLine": "App でカスタム AI タスクをつくって、Tikpal をあなたのやり方で働かせよう。"
+  },
+  "recall": {
+    "title": "アイデアを見つける。",
+    "title2": "音声ファイルではなく。",
+    "leftLabel": "ふつうのレコーダー",
+    "filesLabel": "128 件の録音",
+    "files": [
+      "08/21 14:32",
+      "08/21 16:07",
+      "08/22 09:16",
+      "08/22 13:41"
+    ],
+    "rightLabel": "Tikpal",
+    "query": "先月、スピーカーのデザインについて何て言ってたっけ？",
+    "resultLabel": "関連する考えが 6 件見つかりました",
+    "tags": [
+      "エンクロージャーの寸法",
+      "ウェーブガイドのサイズ",
+      "背面ポートの配置",
+      "素材の仕上げ",
+      "低音の伸び",
+      "アンプの配置"
+    ],
+    "closing": "録音は少なく、記憶は多く。",
+    "memoryLink": {
+      "label": "AI メモリーの仕組みはこちら",
+      "href": "/ai-memory/"
+    }
+  },
+  "integrations": {
+    "title": "一度、口にするだけ。",
+    "title2": "行くべき場所へ、たどり着く。",
+    "actions": [
+      {
+        "quote": "これをタスクに追加して。",
+        "target": "Todoist"
+      },
+      {
+        "quote": "Project Atlas に保存して。",
+        "target": "Notion"
+      },
+      {
+        "quote": "Sarah にメールの下書きを。",
+        "target": "Gmail"
+      },
+      {
+        "quote": "これ、木曜の午後に。",
+        "target": "Calendar"
+      }
+    ],
+    "proof": "Notion · Gmail · Todoist · Calendar"
+  },
+  "focus": {
+    "eyebrow": "集中ツールも内蔵",
+    "title": "スマホに手を伸ばす理由を、ひとつ減らす。",
+    "modes": [
+      "ポモドーロ",
+      "呼吸",
+      "アンビエントサウンド"
+    ],
+    "line": "別のアプリを開かずに、集中を。"
+  },
+  "trust": {
+    "title": "あなたの声は、個人的なもの。",
+    "subtitle": "いつ Tikpal が聞くか、何を同期するか、何を消すか。決めるのはあなたです。",
+    "points": [
+      {
+        "name": "見える録音",
+        "body": "ライトがつけば、Tikpal が聞いている合図。"
+      },
+      {
+        "name": "ローカルファースト",
+        "body": "同期の前に、まず本体の 16GB へ。"
+      },
+      {
+        "name": "あなたのデータは、あなたのもの",
+        "body": "いつでも確認・書き出し・削除。"
+      }
+    ],
+    "footnote": "あなたの録音が公開モデルの学習に使われることはありません。"
+  },
+  "community": {
+    "eyebrow": "Tikpal コミュニティ · Discord",
+    "title": "ひらめきが生まれる、その瞬間に使われている。",
+    "subtitle": "Tikpal コミュニティからの本物の声。",
+    "voices": [
+      {
+        "quote": "Love the product, can't wait to see where it goes. ❤️",
+        "user": "lukeszboyiii",
+        "meta": "Aug 11, 2026"
+      },
+      {
+        "quote": "I also love how responsive you are with support and making changes when people request them! You even sent me a new unit when the screen was broken, and implemented ideas I suggested",
+        "user": "TSCNSam",
+        "meta": "Aug 12, 2026"
+      },
+      {
+        "quote": "Liking using the timer to stay focused in the morning.",
+        "user": "lukeszboyiii",
+        "meta": "Mar 15, 2026"
+      }
+    ],
+    "footnote": "Tikpal Discord コミュニティの投稿をそのまま引用。ユーザー名も変更なし。"
+  },
+  "finalCta": {
+    "title": "思いつきは、一度しか生まれない。",
+    "subtitle": "ロック画面に消させないで。",
+    "productName": "Tikpal Voice",
+    "price": "$129",
+    "primaryCta": {
+      "label": "Tikpal を手に入れる",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustPoints": [
+      "毎月 200 分の AI",
+      "サブスク不要",
+      "30 日間返品可",
+      "1 年保証",
+      "追跡付き全世界配送"
+    ]
+  },
+  "homeFaq": {
+    "title": "購入前の疑問に、先回り。",
+    "items": [
+      {
+        "q": "サブスクリプションは必要？",
+        "a": "不要です。Tikpal には毎月 200 分の AI 時間が含まれ、録音の基本機能はサブスクなしで使えます。"
+      },
+      {
+        "q": "スマホがなくても、Tikpal は使える？",
+        "a": "録音は本体だけで完結します。Tikpal App は振り返り、整理、設定のための場所です。"
+      },
+      {
+        "q": "Wi-Fi は必要？",
+        "a": "オフラインで録音できます。Wi-Fi が使えるときに同期します。"
+      },
+      {
+        "q": "録音はどこに保存される？",
+        "a": "まず本体に保存（16GB）。同期するかどうかはあなたが決められます。"
+      },
+      {
+        "q": "データは削除できる？",
+        "a": "できます。いつでも確認・エクスポート・削除が可能です。"
+      },
+      {
+        "q": "気に入らなかったら？",
+        "a": "30 日間返品可——理由を問わず返品できます。"
+      },
+      {
+        "q": "iPhone と Android に対応？",
+        "a": "はい、Tikpal App は両方に対応しています。"
+      },
+      {
+        "q": "毎月 200 分の AI 時間を使い切ったらどうなりますか？",
+        "a": "毎月 200 分の AI 時間は月初にリフレッシュされ、使い切らなかった分は繰り越されません。使い切った場合、AI 機能は翌月まで一時停止しますが、録音はそのまま続けられ、すべてデバイスに保存されます。"
+      },
+      {
+        "q": "配送にはどのくらいかかりますか？",
+        "a": "ほとんどのご注文は、米国とアジア太平洋地域で 5–10 営業日、ヨーロッパで 7–12 営業日以内にお届けします。正確な日数はチェックアウト画面でご確認いただけます。"
+      },
+      {
+        "q": "輸入関税はかかりますか？",
+        "a": "お住まいの国の通関ルールによっては、輸入関税や税金が発生する場合があります。これらは価格に含まれていません。"
+      }
+    ],
+    "moreLink": {
+      "label": "FAQ をすべて見る",
+      "href": "/faq/"
+    }
+  },
+  "hardware": {
+    "title": "あなたの一日に、そっとなじむ。",
+    "subtitle": "ずっと持ち歩ける小ささ。考えが浮かんだら、すぐ準備完了。",
+    "points": [
+      {
+        "name": "クアッドマイク"
+      },
+      {
+        "name": "AMOLED"
+      },
+      {
+        "name": "16GB"
+      },
+      {
+        "name": "820mAh"
+      },
+      {
+        "name": "IP65"
+      }
+    ],
+    "specsToggle": "すべての仕様を見る",
+    "specs": [
+      {
+        "name": "マイク",
+        "value": "AI ノイズ低減付き 4 マイクアレイ"
+      },
+      {
+        "name": "ディスプレイ",
+        "value": "1.75 インチ AMOLED"
+      },
+      {
+        "name": "ストレージ",
+        "value": "16GB ローカル"
+      },
+      {
+        "name": "バッテリー",
+        "value": "820mAh"
+      },
+      {
+        "name": "防水性能",
+        "value": "IP65"
+      },
+      {
+        "name": "充電",
+        "value": "マグネット式ポゴピン充電"
+      }
+    ]
+  }
+}

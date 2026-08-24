@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AppHero from '../../../components/app/AppHero.astro';
+import AppCapture from '../../../components/app/AppCapture.astro';
+import AppTasks from '../../../components/app/AppTasks.astro';
+import AppDevices from '../../../components/app/AppDevices.astro';
+import AppCta from '../../../components/app/AppCta.astro';
+import type { AppPageContent } from '../../../components/app/types';
+
+import en from '../../../content/app/i18n/en.json';
+import de from '../../../content/app/i18n/de.json';
+import it from '../../../content/app/i18n/it.json';
+import ko from '../../../content/app/i18n/ko.json';
+import ja from '../../../content/app/i18n/ja.json';
+import zh from '../../../content/app/i18n/zh.json';
+import es from '../../../content/app/i18n/es.json';
+
+import enCommon from '../../../content/common/i18n/en.json';
+import deCommon from '../../../content/common/i18n/de.json';
+import itCommon from '../../../content/common/i18n/it.json';
+import koCommon from '../../../content/common/i18n/ko.json';
+import jaCommon from '../../../content/common/i18n/ja.json';
+import zhCommon from '../../../content/common/i18n/zh.json';
+import esCommon from '../../../content/common/i18n/es.json';
+import type { CommonContent } from '../../../components/home/types';
+
+export const APP_LANGS = ['en', 'de', 'it', 'ko', 'ja', 'zh', 'es'] as const;
+
+const locales: Record<string, AppPageContent> = {
+  en: en as AppPageContent,
+  de: de as AppPageContent,
+  it: it as AppPageContent,
+  ko: ko as AppPageContent,
+  ja: ja as AppPageContent,
+  zh: zh as AppPageContent,
+  es: es as AppPageContent,
+};
+
+const commonLocales: Record<string, CommonContent> = {
+  en: enCommon as CommonContent,
+  de: deCommon as CommonContent,
+  it: itCommon as CommonContent,
+  ko: koCommon as CommonContent,
+  ja: jaCommon as CommonContent,
+  zh: zhCommon as CommonContent,
+  es: esCommon as CommonContent,
+};
+
+export function getStaticPaths() {
+  return APP_LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as string;
+const content = locales[lang];
+
+// 7 language alternates + x-default → /app/en/
+const alternates = [
+  ...APP_LANGS.map((l) => ({
+    lang: l,
+    href: new URL(`/app/${l}/`, Astro.site).href,
+  })),
+  { lang: 'x-default', href: new URL('/app/en/', Astro.site).href },
+];
+---
+
+<BaseLayout
+  title={content.meta.title}
+  description={content.meta.description}
+  lang={lang}
+  alternates={alternates}
+  currentLang={lang}
+  common={commonLocales[lang]}
+  footerClosingLine={content.closingLine}
+  pageKind="app"
+>
+  <AppHero content={content.hero} ctaHref={content.cta.href} />
+  <AppCapture content={content.capture} />
+  <AppTasks content={content.tasks} />
+  <AppDevices content={content.devices} />
+  <AppCta content={content.cta} />
+</BaseLayout>

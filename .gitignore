@@ -25,3 +25,6 @@ npm-debug.log*
 
 # wrangler local cache
 .wrangler/
+
+# agent session artifacts
+.qoder/

@@ -1,0 +1,146 @@
+---
+import type { RoomStates } from './types';
+
+interface Props {
+  content: RoomStates;
+}
+
+const { content } = Astro.props;
+
+/* one wide scene image per state — listen/unwind reuse the room filmstrips */
+const stateImages: Record<string, { src: string; width: number; height: number }> = {
+  listen: { src: '/images/room/state-listen.webp', width: 1280, height: 360 },
+  unwind: { src: '/images/room/state-unwind.webp', width: 1280, height: 360 },
+  focus: { src: '/images/room/room-device.webp', width: 2560, height: 1444 },
+};
+---
+
+<section class="states section surface-dark grain">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow mono">Tikpal Room · States</p>
+      <h2 class="h2">{content.title}</h2>
+    </header>
+
+    <!-- three panels stacked in one grid cell, cross-fading on a 12s loop -->
+    <div class="state-stage reveal" style="--reveal-delay: 0.15s">
+      {
+        content.items.map((state, i) => {
+          const img = stateImages[state.id] ?? stateImages.focus;
+          return (
+            <article
+              class={`state-panel state-cycle-${['a', 'b', 'c'][i]}`}
+              aria-hidden={i !== 0}
+            >
+              <picture>
+                <source type="image/avif" srcset={img.src.replace(/\.webp$/, '.avif')} />
+                <img
+                  class="state-img"
+                  src={img.src}
+                  alt=""
+                  width={img.width}
+                  height={img.height}
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </picture>
+              <div class="state-veil" aria-hidden="true" />
+              <div class="state-copy">
+                <span class="state-index mono">0{i + 1}</span>
+                <h3 class="state-name">{state.name}</h3>
+                <p class="state-caption mono">{state.caption}</p>
+              </div>
+              <span class="state-dot dot-alive" aria-hidden="true" />
+            </article>
+          );
+        })
+      }
+    </div>
+
+    <p class="states-footnote mono reveal" style="--reveal-delay: 0.3s">{content.footnote}</p>
+  </div>
+</section>
+
+<style>
+  .state-stage {
+    position: relative;
+    display: grid;
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-l);
+    overflow: hidden;
+    background: var(--tone-900);
+  }
+
+  .state-panel {
+    grid-area: 1 / 1;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    min-height: clamp(16rem, 32vw, 26rem);
+  }
+
+  .state-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.5;
+  }
+
+  .state-veil {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(10, 10, 10, 0.9) 0%,
+      rgba(10, 10, 10, 0.25) 55%,
+      rgba(10, 10, 10, 0.1) 100%
+    );
+    pointer-events: none;
+  }
+
+  .state-copy {
+    position: relative;
+    display: grid;
+    gap: 0.5rem;
+    padding: clamp(1.5rem, 4vw, 3rem);
+  }
+
+  .state-index {
+    opacity: 0.45;
+    letter-spacing: 0.14em;
+  }
+
+  .state-name {
+    font-family: var(--font-display);
+    font-size: var(--text-h2);
+    font-weight: 650;
+    letter-spacing: var(--tracking-tight);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .state-caption {
+    opacity: 0.6;
+    letter-spacing: 0.06em;
+  }
+
+  .state-dot {
+    position: absolute;
+    top: clamp(1.25rem, 3vw, 2rem);
+    right: clamp(1.25rem, 3vw, 2rem);
+  }
+
+  .states-footnote {
+    margin-top: var(--space-4);
+    text-align: center;
+    font-size: var(--text-micro);
+    letter-spacing: 0.06em;
+    opacity: 0.55;
+    max-width: 46em;
+    margin-inline: auto;
+  }
+</style>

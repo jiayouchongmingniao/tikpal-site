@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "Sprache in Aufgaben verwandeln mit KI | Tikpal Voice",
+    "description": "Sag die Aufgabe laut, und Tikpal macht daraus ein echtes To-do — mit Todoist und der Tikpal App. Kein Tippen, kein Handy. $129."
+  },
+  "crumbs": [
+    {
+      "label": "Sprache zu Aufgabe"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Sag die Aufgabe. Mach weiter.",
+    "subtitle": "Tikpal hört, was du sagst, und macht daraus eine Aufgabe, die du abarbeiten kannst — während du einfach weitermachst.",
+    "primaryCta": {
+      "label": "Tikpal kaufen — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 KI-Minuten/Monat inklusive · Kein Abo nötig · 30 Tage Rückgabe"
+  },
+  "sections": [
+    {
+      "kind": "quote",
+      "title": "Von deiner Stimme in deine To-do-Liste.",
+      "quote": "Erinner mich, John morgen die Präsentation zu schicken.",
+      "result": "→ Aufgabe erstellt · Morgen · 9:00 Uhr"
+    },
+    {
+      "kind": "flow",
+      "title": "So wird aus Stimme eine Aufgabe.",
+      "from": "„Erinner mich, John morgen die Präsentation zu schicken.“",
+      "steps": [
+        "Transkribiert",
+        "Verstanden",
+        "Aufgabe erstellt"
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "Wo deine Aufgaben landen.",
+      "chips": [
+        "Todoist",
+        "Tikpal App"
+      ],
+      "note": "Verbinde Todoist in der Tikpal App und wähle, wohin Aufgaben gehen."
+    },
+    {
+      "kind": "scenes",
+      "title": "Aufgaben entstehen abseits des Schreibtischs.",
+      "items": [
+        {
+          "name": "Zwischen Meetings",
+          "body": "Sag, was gerade verteilt wurde — es steht auf der Liste, bevor der nächste Call beginnt."
+        },
+        {
+          "name": "Unterwegs",
+          "body": "Gehen, fahren, kochen: Sprich die Aufgabe und mach weiter."
+        },
+        {
+          "name": "Vor dem Schlafen",
+          "body": "Kopf frei bekommen. Das Morgen-Ich bekommt eine saubere To-do-Liste."
+        }
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "Du behältst die Kontrolle.",
+      "points": [
+        "Jede Aufgabe in der Tikpal App ansehen, bearbeiten oder löschen.",
+        "200 KI-Minuten jeden Monat inklusive — kein Abo.",
+        "Aufnahmen bleiben auf dem Gerät, bis du synchronisierst.",
+        "Ein klares Licht zeigt, wann Tikpal zuhört."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Kurz beantwortet",
+    "items": [
+      {
+        "q": "Brauche ich ein Abo?",
+        "a": "Nein. Tikpal enthält jeden Monat 200 KI-Minuten, und die Kernfunktionen laufen ohne Abo."
+      },
+      {
+        "q": "Muss mein Handy in der Nähe sein?",
+        "a": "Nein. Die Aufnahme passiert auf dem Gerät und wird später synchronisiert. Die Tikpal App ist der Ort zum Prüfen und Verwalten deiner Aufgaben."
+      },
+      {
+        "q": "Was, wenn Tikpal ein Detail falsch versteht?",
+        "a": "Jede Aufgabe ist in der Tikpal App bearbeitbar, damit du alles korrigieren kannst, bevor es wichtig wird."
+      },
+      {
+        "q": "Wie lange dauert der Versand?",
+        "a": "Die meisten Bestellungen kommen in den USA und im Raum Asien-Pazifik innerhalb von 5–10 Werktagen an, in Europa in 7–12 Werktagen. Die genaue Schätzung steht beim Checkout."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Einmal aussprechen. Schon auf der Liste.",
+    "button": {
+      "label": "Tikpal kaufen — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Mehr über Tikpal Voice erfahren",
+      "href": "/voice/"
+    }
+  }
+}

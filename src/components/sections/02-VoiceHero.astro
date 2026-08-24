@@ -1,0 +1,357 @@
+---
+import type { HomeHero } from '../home/types';
+
+interface Props {
+  content: HomeHero;
+}
+
+const { content: hero } = Astro.props;
+
+interface HeroSlide {
+  avif: string;
+  webp: string;
+  avifMobile: string;
+  webpMobile: string;
+  alt: string;
+}
+
+const slides: HeroSlide[] = [
+  {
+    avif: '/images/voice/scene-1.avif',
+    webp: '/images/voice/scene-1.webp',
+    avifMobile: '/images/voice/scene-1-mobile.avif',
+    webpMobile: '/images/voice/scene-1-mobile.webp',
+    alt: 'Tikpal Voice mounted on a bike handlebar — capture thoughts on the ride',
+  },
+  {
+    avif: '/images/voice/scene-2.avif',
+    webp: '/images/voice/scene-2.webp',
+    avifMobile: '/images/voice/scene-2-mobile.avif',
+    webpMobile: '/images/voice/scene-2-mobile.webp',
+    alt: 'A creator holding Tikpal Voice — one touch and the idea is kept',
+  },
+  {
+    avif: '/images/voice/scene-3.avif',
+    webp: '/images/voice/scene-3.webp',
+    avifMobile: '/images/voice/scene-3-mobile.avif',
+    webpMobile: '/images/voice/scene-3-mobile.webp',
+    alt: 'Tikpal Voice on a desk beside a laptop — present, never demanding attention',
+  },
+  {
+    avif: '/images/voice/scene-4.avif',
+    webp: '/images/voice/scene-4.webp',
+    avifMobile: '/images/voice/scene-4-mobile.avif',
+    webpMobile: '/images/voice/scene-4-mobile.webp',
+    alt: 'Tikpal Voice clipped to a music stand — capturing inspiration mid-practice',
+  },
+];
+---
+
+<section id="voice" class="hero section surface-dark grain">
+  <div class="hero-glow" aria-hidden="true"></div>
+
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow mono hero-eyebrow reveal">
+        <span class="dot-alive" aria-hidden="true"></span>
+        {hero.eyebrow}
+      </p>
+      <h2 class="h1 reveal" style="--reveal-delay: 0.08s">
+        {hero.titleLine1}<br />
+        <span class="hero-line-2">{hero.titleLine2}</span>
+      </h2>
+      <p class="lead reveal" style="--reveal-delay: 0.18s">{hero.subtitle}</p>
+      <p class="hero-seoline reveal" style="--reveal-delay: 0.22s">{hero.seoLine}</p>
+
+      <div class="hero-actions reveal" style="--reveal-delay: 0.28s">
+        <a
+          class="btn btn-solid"
+          href={hero.primaryCta.href}
+          target="_blank"
+          rel="noopener">{hero.primaryCta.label}</a
+        >
+        <a
+          class="link-arrow"
+          href={hero.secondaryCta.href}
+          {...(hero.secondaryCta.href.startsWith('#')
+            ? {}
+            : { target: '_blank', rel: 'noopener' })}>
+          {hero.secondaryCta.label}
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <p class="hero-trust mono reveal" style="--reveal-delay: 0.34s">
+        {hero.trustLine}
+      </p>
+
+      <a
+        class="link-arrow hero-explore reveal"
+        style="--reveal-delay: 0.4s"
+        href={hero.exploreLink.href}
+      >
+        {hero.exploreLink.label}
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <figure class="hero-device reveal" style="--reveal-delay: 0.15s">
+      <div class="hero-carousel">
+        {slides.map((slide, i) => (
+          <picture class="hero-slide" data-hero-slide={i}>
+            <source media="(max-width: 767px)" type="image/avif" srcset={slide.avifMobile} />
+            <source media="(max-width: 767px)" srcset={slide.webpMobile} />
+            <source type="image/avif" srcset={slide.avif} />
+            <img
+              class="hero-img"
+              src={slide.webp}
+              alt={slide.alt}
+              width={700}
+              height={467}
+              loading={i === 0 ? 'eager' : 'lazy'}
+              fetchpriority={i === 0 ? 'high' : undefined}
+              decoding="async"
+            />
+          </picture>
+        ))}
+      </div>
+      <figcaption class="hero-status mono">
+        <span class="dot-alive" aria-hidden="true"></span>
+        Ready to capture
+      </figcaption>
+      <div class="hero-dots" role="tablist" aria-label="Hero image carousel">
+        {slides.map((_, i) => (
+          <button
+            class="hero-dot"
+            data-hero-dot={i}
+            role="tab"
+            aria-label={`Show slide ${i + 1} of ${slides.length}`}
+            aria-selected={i === 0 ? 'true' : 'false'}
+          ></button>
+        ))}
+      </div>
+    </figure>
+  </div>
+</section>
+
+<script>
+  const slides = Array.from(document.querySelectorAll('[data-hero-slide]'));
+  const dots = Array.from(document.querySelectorAll('[data-hero-dot]'));
+  if (slides.length && dots.length) {
+    let index = 0;
+    let timer: number | undefined;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const show = (next: number) => {
+      index = (next + slides.length) % slides.length;
+      slides.forEach((s, i) => s.classList.toggle('is-active', i === index));
+      dots.forEach((d, i) => {
+        d.classList.toggle('is-active', i === index);
+        d.setAttribute('aria-selected', i === index ? 'true' : 'false');
+      });
+    };
+
+    const restart = () => {
+      if (reduced) return;
+      if (timer) window.clearInterval(timer);
+      timer = window.setInterval(() => show(index + 1), 3000);
+    };
+
+    dots.forEach((d, i) =>
+      d.addEventListener('click', () => {
+        show(i);
+        restart();
+      })
+    );
+
+    const carousel = document.querySelector('.hero-carousel');
+    carousel?.addEventListener('mouseenter', () => {
+      if (timer) window.clearInterval(timer);
+    });
+    carousel?.addEventListener('mouseleave', restart);
+
+    show(0);
+    restart();
+  }
+</script>
+
+<style>
+  .hero {
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    padding-top: calc(var(--section-pad) + 2rem);
+  }
+
+  .hero-glow {
+    position: absolute;
+    right: -10%;
+    top: 10%;
+    width: 55vw;
+    height: 55vw;
+    max-width: 52rem;
+    max-height: 52rem;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      rgba(120, 112, 100, 0.2) 0%,
+      rgba(120, 112, 100, 0.05) 45%,
+      transparent 70%
+    );
+    animation: drift 11s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  .hero-eyebrow {
+    gap: 0.6rem;
+  }
+
+  .hero-eyebrow .dot-alive {
+    flex: none;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 46fr 54fr;
+    gap: var(--space-4);
+    align-items: center;
+    position: relative;
+  }
+
+  .hero-copy {
+    display: grid;
+    gap: var(--space-3);
+    align-content: center;
+  }
+
+  /* hero title is tuned so each designed line of the longest localized
+     headline fits the copy column on desktop — no orphaned fragments
+     (e.g. CJK "伙伴。") breaking onto their own line */
+  .hero h2 {
+    font-size: clamp(2rem, 1rem + 1.9vw, 2.7rem);
+    line-height: 1.14;
+  }
+
+  .hero-line-2 {
+    color: var(--tone-400);
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+    margin-top: var(--space-1);
+  }
+
+  .hero-trust {
+    margin-top: var(--space-3);
+    font-size: var(--text-small);
+    letter-spacing: 0.04em;
+    opacity: 0.85;
+  }
+
+  .hero-seoline {
+    font-size: var(--text-small);
+    line-height: 1.6;
+    opacity: 0.6;
+    max-width: 36rem;
+  }
+
+  .hero-explore {
+    font-size: var(--text-small);
+  }
+
+  .hero-device {
+    display: grid;
+    gap: var(--space-2);
+    justify-items: center;
+    position: relative;
+    margin: 0;
+  }
+
+  .hero-carousel {
+    display: grid;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius-l);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .hero-slide {
+    grid-area: 1 / 1;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+
+  .hero-slide.is-active {
+    opacity: 1;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .hero-dots {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .hero-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    background: currentColor;
+    opacity: 0.25;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .hero-dot.is-active {
+    opacity: 0.9;
+    transform: scale(1.25);
+  }
+
+  .hero-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    opacity: 0.7;
+    font-size: var(--text-micro);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 860px) {
+    .hero {
+      min-height: 0;
+      padding-top: 7rem;
+    }
+
+    .hero-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-3);
+    }
+
+    /* mobile simplification: device first, copy after — product understood in view one */
+    .hero-device {
+      order: -1;
+    }
+
+    .hero-carousel {
+      max-width: 22rem;
+      margin: 0 auto;
+      border-radius: var(--radius-m);
+    }
+
+    .hero-img {
+      border-radius: 0;
+    }
+  }
+</style>

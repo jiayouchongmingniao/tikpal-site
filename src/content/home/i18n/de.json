@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "title": "Tikpal Voice — KI-Voice-Rekorder für Ideen, Notizen & Aufgaben",
+    "description": "Halte Ideen, Notizen und Aufgaben mit Tikpal Voice fest — ein KI-Voice-Rekorder für die Hosentasche, der Gesprochenes organisiert, frühere Gedanken wiederfindet und sich mit Notion, Gmail, Todoist und Kalender verbindet. $129."
+  },
+  "closingLine": "Es beginnt mit einem Wort. Alles andere folgt.",
+  "brand": {
+    "eyebrow": "Tikpal",
+    "title": "Intelligenz, die sich mit dir bewegt.",
+    "subtitle": "Ein Kontext. Wo auch immer das Leben stattfindet.",
+    "products": [
+      {
+        "name": "Tikpal Voice",
+        "verb": "Erfassen.",
+        "line": "Mit Voice festhalten."
+      },
+      {
+        "name": "Tikpal App",
+        "verb": "Verstehen.",
+        "line": "Mit App weiterdenken."
+      },
+      {
+        "name": "Tikpal Room",
+        "verb": "Antworten.",
+        "line": "Mit Room erleben."
+      }
+    ],
+    "exploreCta": {
+      "label": "Tikpal kennenlernen",
+      "href": "#voice"
+    }
+  },
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "titleLine1": "Erst aufnehmen.",
+    "titleLine2": "Dann denken.",
+    "subtitle": "Halte einen Gedanken mit einem Tipp fest. Tikpal merkt ihn sich, ordnet ihn und bringt ihn dorthin, wo er hingehört.",
+    "seoLine": "Mehr als ein KI-Voice-Rekorder: Tikpal macht aus gesprochenen Gedanken organisierte Erinnerung, Aufgaben und Action.",
+    "primaryCta": {
+      "label": "Tikpal kaufen — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "secondaryCta": {
+      "label": "In Aktion sehen",
+      "href": "#demo"
+    },
+    "exploreLink": {
+      "label": "Tikpal Voice entdecken",
+      "href": "/voice/"
+    },
+    "trustLine": "200 AI-Minuten/Monat inklusive · Kein Abo nötig · 30 Tage Rückgabe"
+  },
+  "demo": {
+    "eyebrow": "Echte Aufnahme, echte Ergebnisse",
+    "title": "Einmal sagen. Tikpal erledigt den Rest.",
+    "deviceCaption": "Ein Tipp auf Tikpal Voice",
+    "quoteLabel": "Du sagst",
+    "quote": "Die Landingpage muss überarbeitet werden — erst das Problem der Nutzer, und erinnere mich, morgen Sam zu mailen.",
+    "resultsLabel": "Tikpal macht daraus",
+    "outputs": [
+      {
+        "kind": "Idee",
+        "text": "Positionierung der Landingpage überarbeiten"
+      },
+      {
+        "kind": "Erkenntnis",
+        "text": "Das Nutzerproblem vor den Features führen"
+      },
+      {
+        "kind": "Aufgabe",
+        "text": "Morgen Sam mailen"
+      }
+    ],
+    "flowLine": "Erfasst → Geordnet → Bereit zum Handeln"
+  },
+  "whyNotPhone": {
+    "title": "Dein Handy kann alles.",
+    "title2": "Genau das ist das Problem.",
+    "phoneLabel": "Dein Handy",
+    "phoneSteps": [
+      "Entsperren",
+      "App suchen",
+      "Aufnahme starten",
+      "Benachrichtigung",
+      "Nachricht",
+      "Instagram",
+      "Gedanke weg."
+    ],
+    "tikpalLabel": "Tikpal",
+    "tikpalLine": "Drücken. Sprechen. Fertig.",
+    "closing": "Kein Feed. Keine Benachrichtigungen. Kein Hin-und-her."
+  },
+  "tasks": {
+    "title": "Sprich einfach.",
+    "title2": "Bekomme etwas Nützliches.",
+    "noteLine": "Tikpal funktioniert wie ein KI-Notizbuch, das du nie öffnen musst: Einfach sprechen — und Ideen werden zu Notizen, Aufgaben, Terminen oder Entwürfen.",
+    "noteLink": {
+      "label": "Mehr über den AI-Notizassistenten",
+      "href": "/ai-note-taker/"
+    },
+    "cards": [
+      {
+        "name": "Erinnern",
+        "quote": "Das Lautsprechergehäuse sollte wohl 12 mm breiter sein.",
+        "result": "Im Speaker Project gespeichert"
+      },
+      {
+        "name": "Erledigen",
+        "quote": "Erinnere mich, John morgen die Präsentation zu schicken.",
+        "result": "Aufgabe erstellt — morgen, 9:00 Uhr"
+      },
+      {
+        "name": "Entwerfen",
+        "quote": "Schreib eine E-Mail, warum wir das Design ändern.",
+        "result": "E-Mail-Entwurf bereit"
+      },
+      {
+        "name": "Abrufen",
+        "quote": "Was habe ich letzten Monat zum Lautsprecherdesign gesagt?",
+        "result": "6 verwandte Gedanken gefunden"
+      }
+    ],
+    "customLine": "Mit eigenen AI-Aufgaben in der App arbeitet Tikpal so, wie du es willst."
+  },
+  "recall": {
+    "title": "Finde die Idee.",
+    "title2": "Nicht die Audiodatei.",
+    "leftLabel": "Ein normaler Recorder",
+    "filesLabel": "128 Aufnahmen",
+    "files": [
+      "08/21 14:32",
+      "08/21 16:07",
+      "08/22 09:16",
+      "08/22 13:41"
+    ],
+    "rightLabel": "Tikpal",
+    "query": "Was habe ich letzten Monat über das Lautsprecher-Design gesagt?",
+    "resultLabel": "6 verwandte Gedanken gefunden",
+    "tags": [
+      "Gehäusemaße",
+      "Waveguide-Größe",
+      "Anordnung der rückseitigen Öffnungen",
+      "Material-Finish",
+      "Basswiedergabe",
+      "Verstärker-Anordnung"
+    ],
+    "closing": "Weniger aufnehmen. Mehr behalten.",
+    "memoryLink": {
+      "label": "Mehr über das AI-Gedächtnis",
+      "href": "/ai-memory/"
+    }
+  },
+  "integrations": {
+    "title": "Sag es einmal.",
+    "title2": "Es kommt dorthin, wo es hingehört.",
+    "actions": [
+      {
+        "quote": "Füge das zu meinen Aufgaben hinzu.",
+        "target": "Todoist"
+      },
+      {
+        "quote": "Speichere das unter Project Atlas.",
+        "target": "Notion"
+      },
+      {
+        "quote": "Entwirf eine E-Mail an Sarah.",
+        "target": "Gmail"
+      },
+      {
+        "quote": "Setz das auf Donnerstag Nachmittag.",
+        "target": "Calendar"
+      }
+    ],
+    "proof": "Notion · Gmail · Todoist · Calendar"
+  },
+  "focus": {
+    "eyebrow": "Fokus-Werkzeuge inklusive",
+    "title": "Weniger Gründe, zum Handy zu greifen.",
+    "modes": [
+      "Pomodoro",
+      "Atmen",
+      "Ambient Sound"
+    ],
+    "line": "Fokus, ohne eine weitere App zu öffnen."
+  },
+  "trust": {
+    "title": "Deine Stimme ist persönlich.",
+    "subtitle": "Du entscheidest, wann Tikpal zuhört, was synchronisiert und was gelöscht wird.",
+    "points": [
+      {
+        "name": "Sichtbare Aufnahme",
+        "body": "Ein klares Licht zeigt, wann Tikpal zuhört."
+      },
+      {
+        "name": "Lokal zuerst",
+        "body": "16GB lokaler Speicher, bevor etwas synchronisiert wird."
+      },
+      {
+        "name": "Deine Daten, deine Kontrolle",
+        "body": "Ansehen · Exportieren · Löschen — jederzeit."
+      }
+    ],
+    "footnote": "Deine Aufnahmen werden nie für das Training öffentlicher Modelle verwendet."
+  },
+  "community": {
+    "eyebrow": "Tikpal Community · Discord",
+    "title": "Im Einsatz, wenn Ideen wirklich passieren.",
+    "subtitle": "Echte Worte aus der Tikpal-Community.",
+    "voices": [
+      {
+        "quote": "Love the product, can't wait to see where it goes. ❤️",
+        "user": "lukeszboyiii",
+        "meta": "Aug 11, 2026"
+      },
+      {
+        "quote": "I also love how responsive you are with support and making changes when people request them! You even sent me a new unit when the screen was broken, and implemented ideas I suggested",
+        "user": "TSCNSam",
+        "meta": "Aug 12, 2026"
+      },
+      {
+        "quote": "Liking using the timer to stay focused in the morning.",
+        "user": "lukeszboyiii",
+        "meta": "Mar 15, 2026"
+      }
+    ],
+    "footnote": "Unbearbeitet zitiert aus der Tikpal-Discord-Community. Nutzernamen unverändert."
+  },
+  "finalCta": {
+    "title": "Der Gedanke kommt nur einmal.",
+    "subtitle": "Verlier ihn nicht an den Sperrbildschirm.",
+    "productName": "Tikpal Voice",
+    "price": "$129",
+    "primaryCta": {
+      "label": "Tikpal kaufen",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustPoints": [
+      "200 KI-Minuten pro Monat",
+      "Kein Abo nötig",
+      "30 Tage Rückgabe",
+      "1 Jahr Garantie",
+      "Weltweiter Versand mit Tracking"
+    ]
+  },
+  "homeFaq": {
+    "title": "Fragen vor dem Kauf?",
+    "items": [
+      {
+        "q": "Brauche ich ein Abo?",
+        "a": "Nein. Tikpal enthält jeden Monat 200 AI-Minuten, und die Aufnahme bleibt ohne Abo verfügbar."
+      },
+      {
+        "q": "Funktioniert Tikpal ohne Handy?",
+        "a": "Die Aufnahme läuft eigenständig. Die Tikpal App ist zum Durchsehen, Ordnen und Einrichten da."
+      },
+      {
+        "q": "Braucht es WLAN?",
+        "a": "Du kannst offline aufnehmen. Aufnahmen synchronisieren, sobald WLAN verfügbar ist."
+      },
+      {
+        "q": "Wo werden meine Aufnahmen gespeichert?",
+        "a": "Zuerst auf dem Gerät — 16GB lokaler Speicher — und nur synchronisiert, wenn du es willst."
+      },
+      {
+        "q": "Kann ich meine Daten löschen?",
+        "a": "Ja. Aufnahmen jederzeit ansehen, exportieren und löschen."
+      },
+      {
+        "q": "Was, wenn es mir nicht gefällt?",
+        "a": "30 Tage Rückgaberecht — ohne Fragen."
+      },
+      {
+        "q": "Funktioniert es mit iPhone und Android?",
+        "a": "Ja — die Tikpal App unterstützt beides."
+      },
+      {
+        "q": "Was passiert, wenn meine 200 AI-Minuten aufgebraucht sind?",
+        "a": "Deine 200 AI-Minuten werden jeden Monat erneuert — nicht genutzte Minuten verfallen. Wenn sie aufgebraucht sind, pausieren die AI-Funktionen bis zum nächsten Monat, aber du kannst weiter aufnehmen und alles bleibt auf dem Gerät gespeichert."
+      },
+      {
+        "q": "Wie lange dauert der Versand?",
+        "a": "Die meisten Bestellungen kommen in den USA und im asiatisch-pazifischen Raum innerhalb von 5–10 Werktagen an, in Europa innerhalb von 7–12 Werktagen. Die genaue Lieferzeit siehst du an der Kasse."
+      },
+      {
+        "q": "Fallen Einfuhrabgaben an?",
+        "a": "Je nach Zollregeln deines Landes können Einfuhrabgaben oder Steuern anfallen — sie sind nicht im Preis enthalten."
+      }
+    ],
+    "moreLink": {
+      "label": "Alle FAQ lesen",
+      "href": "/faq/"
+    }
+  },
+  "hardware": {
+    "title": "Gemacht, um sich in deinen Tag einzufügen.",
+    "subtitle": "Klein genug, um immer dabei zu sein. Bereit, sobald ein Gedanke kommt.",
+    "points": [
+      {
+        "name": "Quad-Mikrofone"
+      },
+      {
+        "name": "AMOLED"
+      },
+      {
+        "name": "16GB"
+      },
+      {
+        "name": "820mAh"
+      },
+      {
+        "name": "IP65"
+      }
+    ],
+    "specsToggle": "Alle Spezifikationen",
+    "specs": [
+      {
+        "name": "Mikrofone",
+        "value": "Quad-Mic-Array mit AI-Rauschunterdrückung"
+      },
+      {
+        "name": "Display",
+        "value": "1,75 Zoll AMOLED"
+      },
+      {
+        "name": "Speicher",
+        "value": "16GB lokal"
+      },
+      {
+        "name": "Akku",
+        "value": "820mAh"
+      },
+      {
+        "name": "Wasserschutz",
+        "value": "IP65"
+      },
+      {
+        "name": "Laden",
+        "value": "Magnetisches Pogo-Pin-Laden"
+      }
+    ]
+  }
+}

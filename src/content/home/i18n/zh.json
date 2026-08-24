@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "title": "Tikpal Voice — AI 录音笔，把灵感、笔记和任务随口记下",
+    "description": "Tikpal Voice 是一款口袋 AI 录音笔，随口一说即可记灵感、笔记和任务：自动整理、随时回忆，还能同步到 Notion、Gmail、Todoist 和日历。$129。"
+  },
+  "closingLine": "一切，从一句话开始。其余的，随之而来。",
+  "brand": {
+    "eyebrow": "Tikpal",
+    "title": "智能，随你而行。",
+    "subtitle": "一个语境。生活在哪里发生，它都在。",
+    "products": [
+      {
+        "name": "Tikpal Voice",
+        "verb": "捕捉。",
+        "line": "用 Voice 随手记下来。"
+      },
+      {
+        "name": "Tikpal App",
+        "verb": "理解。",
+        "line": "在 App 里慢慢理清。"
+      },
+      {
+        "name": "Tikpal Room",
+        "verb": "回应。",
+        "line": "让 Room 把它带进生活。"
+      }
+    ],
+    "exploreCta": {
+      "label": "认识 Tikpal",
+      "href": "#voice"
+    }
+  },
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "titleLine1": "先记下来。",
+    "titleLine2": "再慢慢想。",
+    "subtitle": "一下轻触，抓住念头。Tikpal 记住它、整理它，把它送到该去的地方。",
+    "seoLine": "不止是一台 AI 录音笔——Tikpal 把你说的话变成有序的记忆、任务和行动。",
+    "primaryCta": {
+      "label": "入手 Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "secondaryCta": {
+      "label": "看看它怎么工作",
+      "href": "#demo"
+    },
+    "exploreLink": {
+      "label": "了解 Tikpal Voice",
+      "href": "/voice/"
+    },
+    "trustLine": "每月含 200 分钟 AI 时长 · 无需订阅 · 30 天退货"
+  },
+  "demo": {
+    "eyebrow": "真实的一句话，真实的成果",
+    "title": "说一次就够了，剩下的交给 Tikpal。",
+    "deviceCaption": "在 Tikpal Voice 上轻触一下",
+    "quoteLabel": "你开口说",
+    "quote": "落地页要改一版，开头先讲用户的问题；还有，明天记得提醒我给 Sam 发邮件。",
+    "resultsLabel": "Tikpal 帮你变成",
+    "outputs": [
+      {
+        "kind": "想法",
+        "text": "调整落地页的定位"
+      },
+      {
+        "kind": "洞察",
+        "text": "先讲用户的问题，再讲功能"
+      },
+      {
+        "kind": "任务",
+        "text": "明天给 Sam 发邮件"
+      }
+    ],
+    "flowLine": "记录 → 整理 → 随时行动"
+  },
+  "whyNotPhone": {
+    "title": "你的手机什么都能干。",
+    "title2": "这正是问题所在。",
+    "phoneLabel": "你的手机",
+    "phoneSteps": [
+      "解锁",
+      "翻出 App",
+      "开始录音",
+      "弹出通知",
+      "来了条消息",
+      "刷起 Instagram",
+      "念头，没了。"
+    ],
+    "tikpalLabel": "Tikpal",
+    "tikpalLine": "按下，开口，搞定。",
+    "closing": "没有信息流，没有通知，不被打断。"
+  },
+  "tasks": {
+    "title": "自然地开口。",
+    "title2": "拿到有用的东西。",
+    "noteLine": "Tikpal 就像一个不用打开的 AI 笔记员：自然开口，你的想法就能变成笔记、任务、日程或草稿。",
+    "noteLink": {
+      "label": "进一步了解 AI 笔记助手",
+      "href": "/ai-note-taker/"
+    },
+    "cards": [
+      {
+        "name": "记住",
+        "quote": "音箱外壳可能要再加 12 毫米。",
+        "result": "已存进「音箱项目」"
+      },
+      {
+        "name": "去做",
+        "quote": "提醒我明天把演示稿发给 John。",
+        "result": "任务已建好——明天上午 9:00"
+      },
+      {
+        "name": "创作",
+        "quote": "帮我起草一封邮件，说说我们为什么改设计。",
+        "result": "邮件草稿已就绪"
+      },
+      {
+        "name": "回忆",
+        "quote": "上个月关于音箱设计，我说过什么？",
+        "result": "找到 6 条相关想法"
+      }
+    ],
+    "customLine": "在 App 里创建自定义 AI 任务，让 Tikpal 按你的方式工作。"
+  },
+  "recall": {
+    "title": "找到想法，",
+    "title2": "而不是音频文件。",
+    "leftLabel": "普通录音笔",
+    "filesLabel": "128 条录音",
+    "files": [
+      "08/21 14:32",
+      "08/21 16:07",
+      "08/22 09:16",
+      "08/22 13:41"
+    ],
+    "rightLabel": "Tikpal",
+    "query": "上个月我说过什么关于音箱设计的话？",
+    "resultLabel": "找到 6 条相关想法",
+    "tags": [
+      "箱体尺寸",
+      "波导管大小",
+      "后置端口布局",
+      "材质处理",
+      "低频下潜",
+      "功放布局"
+    ],
+    "closing": "少录一点，多记住一点。",
+    "memoryLink": {
+      "label": "了解 AI 记忆如何工作",
+      "href": "/ai-memory/"
+    }
+  },
+  "integrations": {
+    "title": "说一次。",
+    "title2": "让它去到该去的地方。",
+    "actions": [
+      {
+        "quote": "把这条加进我的任务。",
+        "target": "Todoist"
+      },
+      {
+        "quote": "存到 Project Atlas 下面。",
+        "target": "Notion"
+      },
+      {
+        "quote": "帮我起草一封给 Sarah 的邮件。",
+        "target": "Gmail"
+      },
+      {
+        "quote": "把这个放到周四下午。",
+        "target": "Calendar"
+      }
+    ],
+    "proof": "Notion · Gmail · Todoist · Calendar"
+  },
+  "focus": {
+    "eyebrow": "自带专注小工具",
+    "title": "更少理由去拿手机。",
+    "modes": [
+      "番茄钟",
+      "呼吸",
+      "氛围音"
+    ],
+    "line": "不用打开别的 App，也能专注。"
+  },
+  "trust": {
+    "title": "你的声音是私人的。",
+    "subtitle": "什么时候 Tikpal 在听、同步什么、删除什么，都由你决定。",
+    "points": [
+      {
+        "name": "可见的录音",
+        "body": "灯亮起时，就是 Tikpal 在听。"
+      },
+      {
+        "name": "本地优先",
+        "body": "同步之前，先存在本机 16GB。"
+      },
+      {
+        "name": "你的数据，你来掌控",
+        "body": "随时回看 · 导出 · 删除。"
+      }
+    ],
+    "footnote": "你的录音，永远不会被用来训练公开模型。"
+  },
+  "community": {
+    "eyebrow": "Tikpal 社区 · Discord",
+    "title": "灵感出现的时刻，它都在场。",
+    "subtitle": "来自 Tikpal 社区的真实声音。",
+    "voices": [
+      {
+        "quote": "Love the product, can't wait to see where it goes. ❤️",
+        "user": "lukeszboyiii",
+        "meta": "Aug 11, 2026"
+      },
+      {
+        "quote": "I also love how responsive you are with support and making changes when people request them! You even sent me a new unit when the screen was broken, and implemented ideas I suggested",
+        "user": "TSCNSam",
+        "meta": "Aug 12, 2026"
+      },
+      {
+        "quote": "Liking using the timer to stay focused in the morning.",
+        "user": "lukeszboyiii",
+        "meta": "Mar 15, 2026"
+      }
+    ],
+    "footnote": "引自 Tikpal Discord 社区原帖，用户名保持不变。"
+  },
+  "finalCta": {
+    "title": "念头只来一次。",
+    "subtitle": "别让它消失在解锁屏里。",
+    "productName": "Tikpal Voice",
+    "price": "$129",
+    "primaryCta": {
+      "label": "入手 Tikpal",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustPoints": [
+      "每月 200 分钟 AI 时长",
+      "无需订阅",
+      "30 天退货",
+      "1 年保修",
+      "全球可追踪配送"
+    ]
+  },
+  "homeFaq": {
+    "title": "买之前，想问的都在这里。",
+    "items": [
+      {
+        "q": "需要订阅吗？",
+        "a": "不需要。Tikpal 每月包含 200 分钟 AI 时长，核心录音功能无需订阅也能用。"
+      },
+      {
+        "q": "不连手机，Tikpal 能用吗？",
+        "a": "录音独立完成。Tikpal App 用来回看、整理和设置。"
+      },
+      {
+        "q": "需要 Wi-Fi 吗？",
+        "a": "可以离线录音，有 Wi-Fi 时自动同步。"
+      },
+      {
+        "q": "录音存在哪里？",
+        "a": "先存在设备本地——16GB 存储——是否同步由你决定。"
+      },
+      {
+        "q": "能删除我的数据吗？",
+        "a": "可以，随时查看、导出、删除。"
+      },
+      {
+        "q": "不喜欢怎么办？",
+        "a": "30 天退货，无需理由。"
+      },
+      {
+        "q": "iPhone 和安卓都能用吗？",
+        "a": "都可以，Tikpal App 两者都支持。"
+      },
+      {
+        "q": "200 分钟 AI 时长用完后会怎样？",
+        "a": "200 分钟 AI 时长每月刷新，未用完的不结转。用完后，AI 功能会暂停到下个月，但你仍然可以照常录音，所有内容都会保存在设备上。"
+      },
+      {
+        "q": "配送要多久？",
+        "a": "大多数订单在美国和亚太地区的送达时间为 5–10 个工作日，欧洲为 7–12 个工作日。具体时效会在结账页面显示。"
+      },
+      {
+        "q": "会产生进口关税吗？",
+        "a": "根据你所在国家或地区的海关规定，可能会产生进口关税或税费，这部分不包含在售价里。"
+      }
+    ],
+    "moreLink": {
+      "label": "查看完整 FAQ",
+      "href": "/faq/"
+    }
+  },
+  "hardware": {
+    "title": "自然地隐入你的日常。",
+    "subtitle": "小到可以一直带在身边。想法一到，随时就绪。",
+    "points": [
+      {
+        "name": "四麦克风"
+      },
+      {
+        "name": "AMOLED"
+      },
+      {
+        "name": "16GB"
+      },
+      {
+        "name": "820mAh"
+      },
+      {
+        "name": "IP65"
+      }
+    ],
+    "specsToggle": "查看完整规格",
+    "specs": [
+      {
+        "name": "麦克风",
+        "value": "四麦阵列，AI 降噪"
+      },
+      {
+        "name": "显示屏",
+        "value": "1.75 英寸 AMOLED"
+      },
+      {
+        "name": "存储",
+        "value": "16GB 本地"
+      },
+      {
+        "name": "电池",
+        "value": "820mAh"
+      },
+      {
+        "name": "防水",
+        "value": "IP65"
+      },
+      {
+        "name": "充电",
+        "value": "磁吸 pogo-pin 充电"
+      }
+    ]
+  }
+}

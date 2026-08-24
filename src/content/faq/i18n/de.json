@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "FAQ",
+    "description": "Häufig gestellte Fragen zu Tikpal Voice, der Tikpal App und Tikpal Room — Aufnahme, Transkription, Bestellungen, Datenschutz und mehr."
+  },
+  "page": {
+    "eyebrow": "Hilfe",
+    "title": "Häufig gestellte Fragen",
+    "intro": "Schnelle Antworten auf die Fragen, die wir am häufigsten hören. Nicht fündig geworden? Schreib uns an hello@tikpal.io."
+  },
+  "sections": [
+    {
+      "heading": "Was ist Tikpal Voice?",
+      "paragraphs": [
+        "Tikpal Voice ist ein hosentaschengroßer Sprachbegleiter. Du hältst den Touch-Button gedrückt, sprichst — und es nimmt auf, transkribiert und organisiert deine Gedanken zu Notizen und Zusammenfassungen, die du wirklich nutzen kannst. Ganz ohne Bildschirm."
+      ]
+    },
+    {
+      "heading": "Welche Sprachen unterstützt die Transkription?",
+      "paragraphs": [
+        "Tikpal nimmt die wichtigsten Weltsprachen auf und transkribiert sie; die Qualität verbessert sich mit jedem Update. Unabhängig von der Sprache kannst du deine erfassten Inhalte in der Tikpal App ansehen und verwalten."
+      ]
+    },
+    {
+      "heading": "Brauche ich ein Handy, um es zu nutzen?",
+      "paragraphs": [
+        "Tikpal Voice ist von Grund auf für die freihändige Nutzung gebaut — die Aufnahme passiert mit einer Berührung direkt auf dem Gerät. Die Handy-App ist das Zuhause deiner Bibliothek: ansehen, suchen, zusammenfassen und exportieren, wann immer du bereit bist."
+      ]
+    },
+    {
+      "heading": "Was ist Tikpal Room?",
+      "paragraphs": [
+        "Tikpal Room bringt dieselbe sprachgesteuerte Erfassung in geteilte Räume wie Küche und Wohnzimmer. Es ist ein Voice-First-System für die Orte, an denen das Leben stattfindet — damit Ideen eingefangen werden können, ohne zum Handy zu greifen."
+      ]
+    },
+    {
+      "heading": "Wo werden meine Daten gespeichert?",
+      "paragraphs": [
+        "Deine Aufnahmen und Transkripte werden sicher gespeichert und über dein Tikpal-Konto zwischen deinen Geräten synchronisiert. Du kannst deine Daten jederzeit in der Tikpal App exportieren oder löschen."
+      ]
+    },
+    {
+      "heading": "Wie gebe ich eine Bestellung auf?",
+      "paragraphs": [
+        "Bestellungen laufen über den Tikpal Shop. Lieferzeiten und Verfügbarkeit werden beim Checkout angezeigt, und sobald deine Bestellung versandt wurde, erhältst du eine E-Mail mit Sendungsverfolgung."
+      ]
+    },
+    {
+      "heading": "Was passiert, wenn etwas mit meiner Bestellung oder meinem Gerät nicht stimmt?",
+      "paragraphs": [
+        "Kontaktiere uns mit deiner Bestellnummer unter hello@tikpal.io — wir helfen dir. Beschädigte, verspätete oder unerwartete Bestellungen werden Fall für Fall gelöst, und Geräte innerhalb der Garantie werden repariert oder ersetzt."
+      ]
+    },
+    {
+      "heading": "Wie kann ich euch erreichen?",
+      "paragraphs": [
+        "Schreib eine E-Mail an hello@tikpal.io — wir antworten auf jede Nachricht, in der Regel innerhalb eines Werktags. Du kannst auch unserem Discord beitreten und mit Community und Team sprechen."
+      ]
+    }
+  ]
+}

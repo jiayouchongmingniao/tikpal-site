@@ -19,8 +19,8 @@ body {
   font-family: var(--font-sans);
   font-size: var(--text-body);
   line-height: 1.6;
-  color: var(--black);
-  background: var(--white);
+  color: var(--white);
+  background: var(--black);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -109,6 +109,13 @@ button {
   height: 1px;
   background: currentColor;
   opacity: 0.6;
+}
+
+.h1,
+.h2,
+h1,
+h2 {
+  font-family: var(--font-display);
 }
 
 .h1 {

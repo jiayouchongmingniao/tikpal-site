@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "title": "Sprachnotizen mit KI in E-Mail-Entwürfe verwandeln | Tikpal",
+    "description": "Sag die Idee, und Tikpal schreibt den E-Mail-Entwurf für dich — in deinen Worten, bereit zur Prüfung. Ohne dich wird nichts gesendet. $129, ohne Abo."
+  },
+  "crumbs": [
+    {
+      "label": "Sprache zu E-Mail"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Sag die Idee. Bekomm den Entwurf.",
+    "subtitle": "Tikpal macht aus dem, was du sagst, einen E-Mail-Entwurf, den du lesen, bearbeiten und senden kannst — ohne ein Wort zu tippen.",
+    "primaryCta": {
+      "label": "Tikpal kaufen — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 KI-Minuten/Monat inklusive · Kein Abo nötig · 30 Tage Rückgabe"
+  },
+  "sections": [
+    {
+      "kind": "quote",
+      "title": "Sag die E-Mail. Bekomm den Entwurf.",
+      "quote": "Sag Sarah, dass wir das Meeting auf Freitag verschieben, und erkläre warum.",
+      "result": "→ E-Mail-Entwurf, bereit für deine Prüfung"
+    },
+    {
+      "kind": "flow",
+      "title": "So wird aus Stimme ein Entwurf.",
+      "from": "„Sag Sarah, dass wir das Meeting auf Freitag verschieben, und erkläre warum.“",
+      "steps": [
+        "Transkribiert",
+        "Entworfen",
+        "Du prüfst & sendest"
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "Entwürfe — niemals Auto-Send.",
+      "points": [
+        "Tikpal bereitet den Entwurf vor; Senden drückst du.",
+        "Lies und bearbeite jedes Wort, bevor es deine Hände verlässt.",
+        "Verbinde Gmail in der Tikpal App, damit Entwürfe dort landen, wo du schreibst.",
+        "Du entscheidest, welche Aufnahmen zu Entwürfen werden."
+      ]
+    },
+    {
+      "kind": "scenes",
+      "title": "E-Mails, die sich fast von selbst schreiben.",
+      "items": [
+        {
+          "name": "Follow-ups",
+          "body": "Das kurze Follow-up nach einem Call — gesagt, entworfen, erledigt."
+        },
+        {
+          "name": "Umpalten",
+          "body": "Sag die Änderung und den Grund; die E-Mail nimmt Form an."
+        },
+        {
+          "name": "Status-Updates",
+          "body": "Sprich den Fortschritt, bekomm einen sauberen Update-Entwurf."
+        },
+        {
+          "name": "Unterwegs",
+          "body": "Zwischen Stopps entwerfen. Senden, wenn du bereit bist."
+        }
+      ]
+    },
+    {
+      "kind": "points",
+      "title": "Deine Worte bleiben deine.",
+      "points": [
+        "Ein klares Licht zeigt, wann Tikpal zuhört.",
+        "16GB lokaler Speicher, bevor etwas synchronisiert wird.",
+        "Jederzeit ansehen, exportieren oder löschen.",
+        "Deine Aufnahmen trainieren keine öffentlichen Modelle."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Kurz beantwortet",
+    "items": [
+      {
+        "q": "Brauche ich ein Abo?",
+        "a": "Nein. Tikpal enthält jeden Monat 200 KI-Minuten, und die Kernfunktionen laufen ohne Abo."
+      },
+      {
+        "q": "Sendet Tikpal E-Mails automatisch?",
+        "a": "Nein. Tikpal bereitet nur Entwürfe vor. Du prüfst jeden und sendest ihn selbst."
+      },
+      {
+        "q": "Was passiert nach meinen 200 KI-Minuten?",
+        "a": "Die 200 KI-Minuten erneuern sich monatlich — nicht genutzte Minuten verfallen. Sind sie aufgebraucht, pausieren KI-Funktionen bis zum nächsten Monat, aber du kannst weiter aufnehmen und alles bleibt auf dem Gerät gespeichert."
+      },
+      {
+        "q": "Wie lange dauert der Versand?",
+        "a": "Die meisten Bestellungen kommen in den USA und im Raum Asien-Pazifik innerhalb von 5–10 Werktagen an, in Europa in 7–12 Werktagen. Die genaue Schätzung steht beim Checkout."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Sag die Idee. Sende sie, wenn es passt.",
+    "button": {
+      "label": "Tikpal kaufen — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Mehr über Tikpal Voice erfahren",
+      "href": "/voice/"
+    }
+  }
+}

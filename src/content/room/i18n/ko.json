@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "Tikpal Room — 순간에 맞춰지는 하이파이 사운드",
+    "description": "Tikpal Room은 앰프, 스피커, 디지털 뮤직 시스템을 하나로 통합한 앰비언트 인텔리전스 시스템 — 감상, 휴식, 집중을 위한 하나의 악기입니다."
+  },
+  "closingLine": "삶과 함께 움직이는 인텔리전스. 모든 방에서 들어보세요.",
+  "hero": {
+    "eyebrow": "Tikpal Room",
+    "headline": "순간에 맞춰지는 하이파이 사운드.",
+    "subtitle": "앰비언트 인텔리전스를 내장한 통합 앰프, 스피커, 디지털 뮤직 시스템. 당신의 상태를 감지해 공간의 음악과 분위기를 완성합니다.",
+    "primaryCta": "스피커 살펴보기",
+    "secondaryCta": "나에게 맞는 시스템 찾기",
+    "statusLine": "스피커와 앰프 현재 판매 중 · 스트리머와 올인원 콘솔은 Kickstarter 크라우드펀딩 예정"
+  },
+  "states": {
+    "title": "하나의 방, 세 가지 마음의 상태.",
+    "items": [
+      {
+        "id": "listen",
+        "name": "감상",
+        "caption": "하이파이 재생 · 룸 튜닝"
+      },
+      {
+        "id": "unwind",
+        "name": "휴식",
+        "caption": "저녁의 무드 · 낮은 조명"
+      },
+      {
+        "id": "focus",
+        "name": "집중",
+        "caption": "조용한 존재감 · 준비는 끝났습니다"
+      }
+    ],
+    "footnote": "앰비언스는 AI 음악으로 생성됩니다: 당신의 Voice 기록과 App 노트에서——지금 이 순간을 감지해 공간이 응답합니다."
+  },
+  "lineup": {
+    "title": "소리에 빠져드는 세 가지 방법.",
+    "subtitle": "눈앞의 데스크에서 방 전체까지 — 각 시스템은 그 거리에 맞춰 튜닝되었습니다.",
+    "cta": "나만의 사운드 찾기",
+    "items": [
+      {
+        "id": "near",
+        "name": "Tikpal Near",
+        "tagline": "디자인으로 음악에 더 가까이.",
+        "distance": "니어필드",
+        "best": "데스크에 최적",
+        "specs": [
+          "디자인",
+          "4인치 풀레인지",
+          "손쉬운 일상",
+          "KEF LSX II 벤치마크"
+        ],
+        "image": "/images/room/near-lsx-ii.webp"
+      },
+      {
+        "id": "reference",
+        "name": "Tikpal Reference",
+        "tagline": "방 건너편, 그대로.",
+        "distance": "미드필드",
+        "best": "거실에 최적",
+        "specs": [
+          "일관성",
+          "정제된 지향성",
+          "CTA-2034 측정"
+        ],
+        "image": "/images/room/placeholder/reference.webp"
+      },
+      {
+        "id": "deep",
+        "name": "Tikpal Deep",
+        "tagline": "풀 스케일을 온몸으로.",
+        "distance": "풀 스케일",
+        "best": "최고의 몰입",
+        "specs": [
+          "스케일",
+          "6인치",
+          "40 Hz (-3 dB)",
+          "하이 출력"
+        ],
+        "image": "/images/room/placeholder/deep.webp"
+      }
+    ]
+  },
+  "systems": {
+    "title": "룸 시스템",
+    "headline": "모두 매칭 완료. 고민할 것 없이.",
+    "note": "완벽한 룸 경험 하나, 세 가지 구성. 소스, 앰프, 사운드 — 하나의 악기처럼 조율됩니다.",
+    "items": [
+      {
+        "name": "Desktop System",
+        "for": "개인 공간을 위한"
+      },
+      {
+        "name": "Reference System",
+        "for": "일상을 위한",
+        "badge": "가장 인기"
+      },
+      {
+        "name": "Bass Extended System",
+        "for": "풀 스케일 몰입을 위한"
+      }
+    ]
+  },
+  "cta": {
+    "title": "방에 생명을 불어넣다.",
+    "label": "나만의 사운드 찾기",
+    "href": "https://room.tikpal.ai"
+  }
+}

@@ -1,0 +1,173 @@
+---
+import type { AppCapture } from './types';
+
+interface Props {
+  content: AppCapture;
+}
+
+const { content } = Astro.props;
+---
+
+<section class="section surface-dark grain">
+  <div class="container">
+    <header class="section-head reveal">
+      <h2 class="h2">{content.title}</h2>
+    </header>
+
+    <div class="capture-grid">
+      <!-- Left: scattered fragments of one day -->
+      <div class="capture-timeline card reveal">
+        <p class="timeline-label mono">{content.timeline.label} — Fragments</p>
+        <ol>
+          {
+            content.timeline.entries.map((entry) => (
+              <li class="timeline-row">
+                <span class="tl-time mono">{entry.time}</span>
+                <span class="tl-line" aria-hidden="true"></span>
+                <span class="tl-kind">{entry.kind}</span>
+              </li>
+            ))
+          }
+        </ol>
+      </div>
+
+      <!-- Right: fragments resolving into context -->
+      <div class="capture-summary card reveal" style="--reveal-delay: 0.15s">
+        <div class="summary-head">
+          <h3 class="summary-title">{content.summaryCard.title}</h3>
+          <span class="summary-meta mono">{content.summaryCard.meta}</span>
+        </div>
+        <dl class="summary-body">
+          <div class="summary-row">
+            <dt class="mono">{content.summaryCard.coreIdea.label}</dt>
+            <dd>{content.summaryCard.coreIdea.text}</dd>
+          </div>
+          <div class="summary-row">
+            <dt class="mono">{content.summaryCard.next.label}</dt>
+            <dd>{content.summaryCard.next.text}</dd>
+          </div>
+        </dl>
+        <span class="summary-dot dot-alive" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .capture-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: var(--space-3);
+    align-items: stretch;
+  }
+
+  .capture-timeline {
+    padding: var(--space-3);
+    display: grid;
+    gap: var(--space-2);
+    align-content: start;
+  }
+
+  .timeline-label {
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+  }
+
+  .capture-timeline ol {
+    list-style: none;
+    display: grid;
+  }
+
+  .timeline-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--line-light);
+  }
+
+  .timeline-row:last-child {
+    border-bottom: none;
+  }
+
+  .tl-time {
+    opacity: 0.55;
+    flex: none;
+    width: 3.6em;
+  }
+
+  .tl-line {
+    width: 1.4rem;
+    height: 1px;
+    background: var(--tone-600);
+    flex: none;
+  }
+
+  .tl-kind {
+    font-weight: 550;
+  }
+
+  .capture-summary {
+    padding: var(--space-3);
+    display: grid;
+    gap: var(--space-2);
+    align-content: start;
+    position: relative;
+    background: rgba(250, 247, 242, 0.055);
+  }
+
+  .summary-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .summary-title {
+    font-size: var(--text-h4);
+    font-weight: 600;
+  }
+
+  .summary-meta {
+    opacity: 0.5;
+  }
+
+  .summary-body {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .summary-row {
+    display: grid;
+    gap: 0.3rem;
+    padding: var(--space-2);
+    border-radius: var(--radius-s);
+    background: rgba(10, 10, 10, 0.45);
+    border: 1px solid var(--line-light);
+  }
+
+  .summary-row dt {
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: var(--text-micro);
+  }
+
+  .summary-row dd {
+    font-size: var(--text-body);
+  }
+
+  .summary-dot {
+    position: absolute;
+    top: var(--space-3);
+    right: var(--space-3);
+  }
+
+  @media (max-width: 860px) {
+    .capture-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

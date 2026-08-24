@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import ComparePage from '../../../../components/compare/ComparePage.astro';
+import type { ComparePageContent } from '../../../../components/compare/types';
+import type { CommonContent } from '../../../../components/home/types';
+import { productJsonLd, breadcrumbJsonLd } from '../../../../utils/jsonLd';
+import { HOME_LABELS, homePath } from '../../../../utils/i18n';
+
+import en from '../../../../content/compare/i18n/en.json';
+import de from '../../../../content/compare/i18n/de.json';
+import it from '../../../../content/compare/i18n/it.json';
+import ko from '../../../../content/compare/i18n/ko.json';
+import ja from '../../../../content/compare/i18n/ja.json';
+import zh from '../../../../content/compare/i18n/zh.json';
+import es from '../../../../content/compare/i18n/es.json';
+
+import enCommon from '../../../../content/common/i18n/en.json';
+import deCommon from '../../../../content/common/i18n/de.json';
+import itCommon from '../../../../content/common/i18n/it.json';
+import koCommon from '../../../../content/common/i18n/ko.json';
+import jaCommon from '../../../../content/common/i18n/ja.json';
+import zhCommon from '../../../../content/common/i18n/zh.json';
+import esCommon from '../../../../content/common/i18n/es.json';
+
+export const COMPARE_LANGS = ['en', 'de', 'it', 'ko', 'ja', 'zh', 'es'] as const;
+
+const locales: Record<string, ComparePageContent> = {
+  en: en as ComparePageContent,
+  de: de as ComparePageContent,
+  it: it as ComparePageContent,
+  ko: ko as ComparePageContent,
+  ja: ja as ComparePageContent,
+  zh: zh as ComparePageContent,
+  es: es as ComparePageContent,
+};
+
+const commonLocales: Record<string, CommonContent> = {
+  en: enCommon as CommonContent,
+  de: deCommon as CommonContent,
+  it: itCommon as CommonContent,
+  ko: koCommon as CommonContent,
+  ja: jaCommon as CommonContent,
+  zh: zhCommon as CommonContent,
+  es: esCommon as CommonContent,
+};
+
+export function getStaticPaths() {
+  return COMPARE_LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as string;
+const content = locales[lang];
+
+// Product-name crumb stays "Tikpal vs Plaud" in every language.
+const CRUMB_LABEL = 'Tikpal vs Plaud';
+
+// 7 language alternates + x-default → /compare/tikpal-vs-plaud/en/
+const alternates = [
+  ...COMPARE_LANGS.map((l) => ({
+    lang: l,
+    href: new URL(`/compare/tikpal-vs-plaud/${l}/`, Astro.site).href,
+  })),
+  { lang: 'x-default', href: new URL('/compare/tikpal-vs-plaud/en/', Astro.site).href },
+];
+
+const jsonLd = [
+  breadcrumbJsonLd([
+    { name: HOME_LABELS[lang], url: new URL(homePath(lang), Astro.site).href },
+    { name: CRUMB_LABEL, url: new URL(`/compare/tikpal-vs-plaud/${lang}/`, Astro.site).href },
+  ]),
+  productJsonLd(content.meta.description),
+];
+---
+
+<BaseLayout
+  title={content.meta.title}
+  description={content.meta.description}
+  lang={lang}
+  alternates={alternates}
+  currentLang={lang}
+  common={commonLocales[lang]}
+  pageKind="compare"
+  jsonLd={jsonLd}
+  ogImage="/og-compare.png"
+>
+  <ComparePage
+    content={content}
+    homeLabel={HOME_LABELS[lang]}
+    homeHref={homePath(lang)}
+    crumbLabel={CRUMB_LABEL}
+  />
+</BaseLayout>

@@ -1,0 +1,110 @@
+---
+import type { Integrations } from '../home/types';
+
+interface Props {
+  content: Integrations;
+}
+
+const { content: integrations } = Astro.props;
+---
+
+<section id="integrations" class="section surface-dark grain">
+  <div class="container">
+    <header class="section-head reveal">
+      <h2 class="h2">
+        {integrations.title}<br />
+        <span class="integ-line-2">{integrations.title2}</span>
+      </h2>
+    </header>
+
+    <div class="integ-grid">
+      {
+        integrations.actions.map((action, i) => (
+          <article class="integ-card reveal" style={`--reveal-delay: ${i * 0.12}s`}>
+            <p class="integ-quote">“{action.quote}”</p>
+            <span class="integ-arrow" aria-hidden="true">→</span>
+            <p class="integ-target mono">
+              <span class="dot-alive" aria-hidden="true"></span>
+              {action.target}
+            </p>
+          </article>
+        ))
+      }
+    </div>
+
+    <p class="integ-proof mono reveal" style="--reveal-delay: 0.3s">{integrations.proof}</p>
+  </div>
+</section>
+
+<style>
+  .integ-line-2 {
+    color: var(--tone-400);
+  }
+
+  .integ-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-3);
+  }
+
+  .integ-card {
+    display: grid;
+    gap: 0.8rem;
+    align-content: start;
+    padding: var(--space-3) 1.2rem;
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-l);
+    background: rgba(250, 247, 242, 0.03);
+    min-height: 10rem;
+  }
+
+  .integ-quote {
+    font-size: var(--text-body);
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .integ-arrow {
+    opacity: 0.35;
+    margin-left: 0.2rem;
+  }
+
+  .integ-target {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: var(--text-small);
+    letter-spacing: 0.08em;
+    opacity: 0.9;
+  }
+
+  .integ-target .dot-alive {
+    flex: none;
+  }
+
+  .integ-proof {
+    margin-top: var(--space-4);
+    text-align: center;
+    font-size: var(--text-small);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  @media (max-width: 1080px) {
+    .integ-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .integ-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .integ-card {
+      min-height: 0;
+    }
+  }
+</style>

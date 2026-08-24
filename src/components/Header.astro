@@ -1,34 +1,75 @@
 ---
-import nav from '../content/nav.json';
+import type { CommonNav } from './home/types';
+import { LANGS, localizeHref, pagePath } from '../utils/i18n';
+
+interface Props {
+  nav: CommonNav;
+  currentLang?: string;
+  // Which site area renders the language switcher targets:
+  // 'home' switches between / and /{lang}/, 'room' between /room/{lang}/,
+  // 'app' between /app/{lang}/,
+  // article pages ('privacy' | 'terms' | 'about' | 'support' | 'faq') between /{kind}/ and /{lang}/{kind}/.
+  pageKind?: string;
+}
+
+const { nav, currentLang, pageKind = 'home' } = Astro.props;
+const lang = currentLang ?? 'en';
+
+const langLinks = LANGS.map((code) => ({
+  code,
+  label: code.toUpperCase(),
+  href: pagePath(pageKind, code),
+}));
 ---
 
 <header class="site-header">
   <nav class="nav container" aria-label="Primary">
-    <a class="brand" href="#voice">
-      <img
-        class="brand-logo"
-        src={nav.logo.src}
-        alt={nav.logo.alt}
-        width="1540"
-        height="640"
-        loading="eager"
-        decoding="async"
-      />
+    <a class="brand" href={localizeHref('/', lang)}>
+      <picture>
+        <source type="image/avif" srcset={nav.logo.src.replace(/\.webp$/, '.avif')} />
+        <img
+          class="brand-logo"
+          src={nav.logo.src}
+          alt={nav.logo.alt}
+          width="600"
+          height="249"
+          loading="eager"
+          decoding="async"
+        />
+      </picture>
     </a>
 
     <ul class="nav-links">
       {
         nav.links.map((link) => (
           <li>
-            <a href={link.href}>{link.label}</a>
+            <a href={localizeHref(link.href, lang)}>{link.label}</a>
           </li>
         ))
       }
     </ul>
 
-    <a class="nav-shop" href={nav.shop.href} target="_blank" rel="noopener"
-      >{nav.shop.label}</a
-    >
+    {
+      currentLang && (
+        <ul class="lang-switch mono" aria-label="Language">
+          {langLinks.map((l) => (
+            <li>
+              <a
+                href={l.href}
+                class={l.code === currentLang ? 'is-active' : ''}
+                aria-current={l.code === currentLang ? 'page' : undefined}
+              >
+                {l.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+
+    <a class="nav-shop" href={localizeHref(nav.shop.href, lang)}>
+      {nav.shop.label}
+    </a>
 
     <button
       class="nav-toggle"
@@ -48,7 +89,7 @@ import nav from '../content/nav.json';
       {
         nav.links.map((link) => (
           <li>
-            <a href={link.href} onclick="toggleMenu(false)">
+            <a href={localizeHref(link.href, lang)} onclick="toggleMenu(false)">
               {link.label}
             </a>
           </li>
@@ -57,12 +98,30 @@ import nav from '../content/nav.json';
       <li>
         <a
           class="mobile-shop"
-          href={nav.shop.href}
-          target="_blank"
-          rel="noopener"
+          href={localizeHref(nav.shop.href, lang)}
           onclick="toggleMenu(false)">{nav.shop.label}</a
         >
       </li>
+      {
+        currentLang && (
+          <li class="mobile-lang">
+            <ul class="lang-switch mono" aria-label="Language">
+              {langLinks.map((l) => (
+                <li>
+                  <a
+                    href={l.href}
+                    class={l.code === currentLang ? 'is-active' : ''}
+                    aria-current={l.code === currentLang ? 'page' : undefined}
+                    onclick="toggleMenu(false)"
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </li>
+        )
+      }
     </ul>
   </div>
 
@@ -74,6 +133,12 @@ import nav from '../content/nav.json';
       var btn = document.querySelector('.nav-toggle');
       var open = force === undefined ? !menu.classList.contains('open') : force;
       menu.classList.toggle('open', open);
+      // Inline max-height: highest possible CSS origin, so no stylesheet rule
+      // (scoped or not) can ever override it. Measured from real content —
+      // always fits, whatever the menu holds (nav + shop + lang switcher).
+      // The CSS keeps the max-height transition; reduced-motion users get an
+      // instant toggle via the global transition-duration override.
+      menu.style.maxHeight = open ? menu.scrollHeight + 'px' : '0px';
       btn.setAttribute('aria-expanded', String(open));
       btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
       document.body.classList.toggle('menu-open', open);
@@ -86,9 +151,7 @@ import nav from '../content/nav.json';
     position: fixed;
     inset: 0 0 auto 0;
     z-index: 100;
-    backdrop-filter: blur(18px) saturate(1.4);
-    -webkit-backdrop-filter: blur(18px) saturate(1.4);
-    background: rgba(10, 10, 10, 0.55);
+    background: rgba(10, 10, 10, 0.92);
     border-bottom: 1px solid var(--line-light);
     color: var(--white);
   }
@@ -143,6 +206,47 @@ import nav from '../content/nav.json';
     color: var(--black);
   }
 
+  /* language switcher — mono technical codes, warm minimal */
+  .lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+    list-style: none;
+    padding: 0.25rem;
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-pill);
+  }
+
+  .lang-switch a {
+    display: block;
+    padding: 0.3rem 0.5rem;
+    font-size: var(--text-micro);
+    letter-spacing: 0.1em;
+    opacity: 0.5;
+    border-radius: var(--radius-pill);
+    transition: opacity var(--dur-fast) ease,
+      background-color var(--dur-fast) ease, color var(--dur-fast) ease;
+  }
+
+  .lang-switch a:hover {
+    opacity: 1;
+  }
+
+  .lang-switch a.is-active {
+    opacity: 1;
+    background: var(--amber-soft);
+    color: var(--amber);
+  }
+
+  .mobile-lang {
+    padding-top: var(--space-1);
+  }
+
+  .mobile-lang .lang-switch {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
   .nav-toggle {
     display: none;
     flex-direction: column;
@@ -172,7 +276,8 @@ import nav from '../content/nav.json';
 
   @media (max-width: 860px) {
     .nav-links,
-    .nav-shop {
+    .nav-shop,
+    nav > .lang-switch {
       display: none;
     }
 
@@ -190,7 +295,8 @@ import nav from '../content/nav.json';
     }
 
     .mobile-menu.open {
-      max-height: 22rem;
+      /* height itself is set inline by toggleMenu() — see the script above;
+         this rule only restores visibility without the hide delay */
       visibility: visible;
       transition: max-height var(--dur-med) var(--ease-out),
         visibility 0s;
@@ -209,6 +315,21 @@ import nav from '../content/nav.json';
       font-size: var(--text-lead);
       font-weight: 600;
       opacity: 0.85;
+    }
+
+    /* higher specificity than .mobile-menu a above, so the language chips
+       keep their compact style instead of inheriting the big menu links */
+    .mobile-menu .lang-switch a {
+      padding: 0.3rem 0.5rem;
+      font-size: var(--text-micro);
+      font-weight: 400;
+    }
+
+    /* .mobile-menu ul also matches the pill itself — restore its flex row */
+    .mobile-menu .lang-switch {
+      display: flex;
+      gap: 0.15rem;
+      padding: 0.25rem;
     }
 
     .mobile-menu .mobile-shop {

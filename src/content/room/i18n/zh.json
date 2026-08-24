@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "Tikpal Room — 随此刻而生的高保真之声",
+    "description": "Tikpal Room 是集功放、音箱与数字音乐系统于一体的氛围智能系统——聆听、放松与专注，一台乐器即足。"
+  },
+  "closingLine": "随生活流动的智能。每个房间，都听得见。",
+  "hero": {
+    "eyebrow": "Tikpal Room",
+    "headline": "高保真之声，随此刻而生。",
+    "subtitle": "集功放、音箱与数字音乐系统于一体，内置氛围智能。感知你的状态，定制空间的声音与氛围。",
+    "primaryCta": "探索音箱系列",
+    "secondaryCta": "找到属于你的系统",
+    "statusLine": "音箱与功放现已开售 · 数播与一体机即将登陆 Kickstarter 开启众筹"
+  },
+  "states": {
+    "title": "一个房间，三种心境。",
+    "items": [
+      {
+        "id": "listen",
+        "name": "聆听",
+        "caption": "高保真播放 · 房间调校"
+      },
+      {
+        "id": "unwind",
+        "name": "放松",
+        "caption": "夜晚氛围 · 灯光低垂"
+      },
+      {
+        "id": "focus",
+        "name": "专注",
+        "caption": "静谧陪伴 · 随时待命"
+      }
+    ],
+    "footnote": "氛围由 AI 生成：源自你的 Voice 记录与 App 笔记——感知你的此刻，空间回应你。"
+  },
+  "lineup": {
+    "title": "三种方式，沉入声音。",
+    "subtitle": "从眼前的书桌，到环绕四周的房间——每套系统都为它的聆听距离而调声。",
+    "cta": "找到属于你的声音",
+    "items": [
+      {
+        "id": "near",
+        "name": "Tikpal Near",
+        "tagline": "以设计，靠近音乐。",
+        "distance": "近场",
+        "best": "桌面之选",
+        "specs": [
+          "设计感",
+          "4 英寸全频单元",
+          "轻松融入",
+          "对标 KEF LSX II"
+        ],
+        "image": "/images/room/near-lsx-ii.webp"
+      },
+      {
+        "id": "reference",
+        "name": "Tikpal Reference",
+        "tagline": "就在房间那头。",
+        "distance": "中场",
+        "best": "客厅之选",
+        "specs": [
+          "一致性",
+          "受控指向性",
+          "CTA-2034 测量"
+        ],
+        "image": "/images/room/placeholder/reference.webp"
+      },
+      {
+        "id": "deep",
+        "name": "Tikpal Deep",
+        "tagline": "感受完整声场。",
+        "distance": "全场",
+        "best": "极致沉浸",
+        "specs": [
+          "声场规模",
+          "6 英寸单元",
+          "40 Hz (-3 dB)",
+          "高声压"
+        ],
+        "image": "/images/room/placeholder/deep.webp"
+      }
+    ]
+  },
+  "systems": {
+    "title": "Room 系统",
+    "headline": "一切匹配，无需费心。",
+    "note": "一套完整的 Room 体验，三种组装方式。音源、放大与声音——调校如同一件乐器。",
+    "items": [
+      {
+        "name": "Desktop System",
+        "for": "适合个人空间"
+      },
+      {
+        "name": "Reference System",
+        "for": "适合日常生活",
+        "badge": "最受欢迎"
+      },
+      {
+        "name": "Bass Extended System",
+        "for": "适合全身心沉浸"
+      }
+    ]
+  },
+  "cta": {
+    "title": "让房间苏醒。",
+    "label": "找到属于你的声音",
+    "href": "https://room.tikpal.ai"
+  }
+}

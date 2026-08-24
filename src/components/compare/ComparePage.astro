@@ -1,0 +1,332 @@
+---
+import type { ComparePageContent } from './types';
+
+interface Props {
+  content: ComparePageContent;
+  // Localized breadcrumb labels (mirrored by BreadcrumbList schema).
+  homeLabel: string;
+  homeHref: string;
+  crumbLabel: string;
+}
+
+const { content, homeLabel, homeHref, crumbLabel } = Astro.props;
+const { hero, shared, table, fit, cta } = content;
+---
+
+<!-- Visible breadcrumb (mirrored by BreadcrumbList schema) -->
+<nav class="cp-crumbbar" aria-label="Breadcrumb">
+  <ol class="cp-crumbs mono">
+    <li><a href={homeHref}>{homeLabel}</a></li>
+    <li>
+      <span class="cp-crumb-sep" aria-hidden="true">/</span>
+      <span class="cp-crumb-current" aria-current="page">{crumbLabel}</span>
+    </li>
+  </ol>
+</nav>
+
+<!-- Hero: H1 targets "Plaud alternative" -->
+<section class="cp-hero section surface-dark grain">
+  <div class="container cp-hero-copy">
+    <p class="eyebrow mono reveal">{hero.eyebrow}</p>
+    <h1 class="cp-title reveal" style="--reveal-delay: 0.08s">{hero.title}</h1>
+    <p class="lead reveal" style="--reveal-delay: 0.16s">{hero.subtitle}</p>
+  </div>
+</section>
+
+<!-- What both do well -->
+<section class="section surface-warm">
+  <div class="container">
+    <header class="section-head reveal">
+      <h2 class="h2">{shared.title}</h2>
+    </header>
+    <ul class="cp-shared">
+      {
+        shared.points.map((point, i) => (
+          <li class="cp-shared-item reveal" style={`--reveal-delay: ${i * 0.08}s`}>
+            <span class="cp-check" aria-hidden="true">✓</span> {point}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<!-- Comparison table -->
+<section class="section surface-dark grain">
+  <div class="container">
+    <header class="section-head reveal">
+      <h2 class="h2">{table.title}</h2>
+    </header>
+    <p class="cp-intro mono reveal">{table.intro}</p>
+    <div class="cp-table reveal">
+      <div class="cp-table-head cp-table-row">
+        <span class="cp-table-label"></span>
+        <span class="cp-table-col mono cp-table-tikpal">Tikpal Voice</span>
+        <span class="cp-table-col mono">Plaud Note</span>
+      </div>
+      {
+        table.rows.map((row, i) => (
+          <div class="cp-table-row reveal" style={`--reveal-delay: ${0.06 * (i + 1)}s`}>
+            <span class="cp-table-label">{row.label}</span>
+            <span class="cp-table-col cp-table-tikpal">{row.tikpal}</span>
+            <span class="cp-table-col cp-plaud">{row.plaud}</span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Who each fits better -->
+<section class="section surface-warm">
+  <div class="container">
+    <div class="cp-fit">
+      <article class="cp-fit-card reveal">
+        <h3 class="cp-fit-title">{fit.tikpalTitle}</h3>
+        <ul class="cp-fit-list">
+          {
+            fit.tikpalPoints.map((point) => (
+              <li class="cp-fit-item">
+                <span class="cp-check" aria-hidden="true">✓</span> {point}
+              </li>
+            ))
+          }
+        </ul>
+      </article>
+      <article class="cp-fit-card reveal" style="--reveal-delay: 0.12s">
+        <h3 class="cp-fit-title">{fit.plaudTitle}</h3>
+        <ul class="cp-fit-list">
+          {
+            fit.plaudPoints.map((point) => (
+              <li class="cp-fit-item">
+                <span class="cp-check cp-check-alt" aria-hidden="true">✓</span> {point}
+              </li>
+            ))
+          }
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section surface-dark grain">
+  <div class="container cp-cta reveal">
+    <h2 class="h2">{cta.title}</h2>
+    <a class="btn btn-solid" href={cta.button.href} target="_blank" rel="noopener">
+      {cta.button.label}
+    </a>
+  </div>
+</section>
+
+<style>
+  .cp-crumbbar {
+    position: relative;
+    z-index: 2;
+    padding: 5.4rem 1.4rem 0;
+    background: #0a0a0a;
+  }
+
+  .cp-crumbs {
+    max-width: 72rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.55rem;
+    list-style: none;
+    padding: 0;
+    font-size: var(--text-micro);
+    letter-spacing: 0.08em;
+    color: rgba(250, 247, 242, 0.6);
+  }
+
+  .cp-crumbs a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.25s ease, border-color 0.25s ease;
+  }
+
+  .cp-crumbs a:hover {
+    color: rgba(250, 247, 242, 0.95);
+    border-color: currentColor;
+  }
+
+  .cp-crumb-sep {
+    opacity: 0.4;
+    margin-right: 0.55rem;
+  }
+
+  .cp-crumb-current {
+    color: rgba(250, 247, 242, 0.9);
+  }
+
+  .cp-hero {
+    min-height: 62svh;
+    display: flex;
+    align-items: center;
+    padding-top: calc(var(--section-pad) + 1rem);
+  }
+
+  .cp-hero-copy {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    gap: var(--space-2);
+  }
+
+  .cp-title {
+    max-width: 46rem;
+    font-size: clamp(2rem, 1.1rem + 2.4vw, 3.2rem);
+    line-height: 1.12;
+    letter-spacing: var(--tracking-tight);
+  }
+
+  .cp-hero-copy .lead {
+    max-width: 40rem;
+  }
+
+  .cp-shared {
+    max-width: 46rem;
+    margin: 0 auto;
+    display: grid;
+    gap: 0.9rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  .cp-shared-item,
+  .cp-fit-item {
+    font-size: var(--text-small);
+    line-height: 1.6;
+    opacity: 0.85;
+  }
+
+  .cp-check {
+    color: var(--tone-400);
+  }
+
+  .cp-check-alt {
+    opacity: 0.6;
+  }
+
+  .cp-intro {
+    max-width: 56rem;
+    margin: 0 auto var(--space-3);
+    text-align: center;
+    font-size: var(--text-micro);
+    letter-spacing: 0.06em;
+    opacity: 0.6;
+  }
+
+  .cp-table {
+    max-width: 56rem;
+    margin: 0 auto;
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-m);
+    overflow: hidden;
+  }
+
+  .cp-table-row {
+    display: grid;
+    grid-template-columns: 1.1fr 1.4fr 1.4fr;
+    gap: var(--space-2);
+    padding: 0.9rem 1.1rem;
+    border-top: 1px solid var(--line-light);
+    align-items: baseline;
+  }
+
+  .cp-table-head {
+    border-top: none;
+    background: rgba(250, 247, 242, 0.06);
+  }
+
+  .cp-table-label {
+    font-weight: 600;
+    font-size: var(--text-small);
+  }
+
+  .cp-table-col {
+    font-size: var(--text-small);
+    line-height: 1.5;
+  }
+
+  .cp-table-tikpal {
+    font-weight: 500;
+  }
+
+  .cp-plaud {
+    opacity: 0.75;
+  }
+
+  .cp-fit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+  }
+
+  .cp-fit-card {
+    display: grid;
+    gap: var(--space-2);
+    align-content: start;
+    padding: var(--space-3) 1.2rem;
+    border: 1px solid var(--line-dark);
+    border-radius: var(--radius-m);
+  }
+
+  .cp-fit-title {
+    font-size: var(--text-lead);
+    font-weight: 600;
+  }
+
+  .cp-fit-list {
+    display: grid;
+    gap: 0.7rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  .cp-cta {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    gap: var(--space-2);
+  }
+
+  @media (max-width: 860px) {
+    .cp-hero {
+      min-height: 0;
+      padding-top: 7rem;
+    }
+
+    .cp-table-row {
+      grid-template-columns: 1fr;
+      gap: 0.3rem;
+    }
+
+    .cp-table-head {
+      display: none;
+    }
+
+    .cp-table-col::before {
+      display: block;
+      font-size: var(--text-micro);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.5;
+    }
+
+    .cp-table-tikpal::before {
+      content: 'Tikpal Voice';
+    }
+
+    .cp-plaud::before {
+      content: 'Plaud Note';
+    }
+
+    .cp-fit {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

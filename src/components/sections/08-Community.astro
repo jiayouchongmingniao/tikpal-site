@@ -1,0 +1,141 @@
+---
+import type { Community } from '../home/types';
+
+interface Props {
+  content: Community;
+}
+
+const { content: community } = Astro.props;
+
+/* longest quote gets a full-width highlight card */
+const wideIndex = community.voices.reduce(
+  (best, v, i, arr) => (v.quote.length > arr[best].quote.length ? i : best),
+  0
+);
+---
+
+<section id="community" class="section surface-dark grain">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow mono">{community.eyebrow}</p>
+      <h2 class="h2">{community.title}</h2>
+      <p class="lead">{community.subtitle}</p>
+    </header>
+
+    <div class="community-grid">
+      {
+        community.voices.map((voice, i) => (
+          <figure
+            class:list={['voice-card reveal', { 'voice-wide': i === wideIndex }]}
+            style={`--reveal-delay: ${i * 0.1}s`}
+          >
+            <span class="voice-avatar mono" aria-hidden="true">
+              {voice.user.charAt(0).toUpperCase()}
+            </span>
+            <blockquote class="voice-quote">{voice.quote}</blockquote>
+            <figcaption class="voice-meta mono">
+              <span class="voice-user">{voice.user}</span>
+              <span aria-hidden="true">·</span>
+              <span class="voice-date">{voice.meta}</span>
+            </figcaption>
+          </figure>
+        ))
+      }
+    </div>
+
+    <p class="community-footnote mono reveal" style="--reveal-delay: 0.3s">
+      {community.footnote}
+    </p>
+  </div>
+</section>
+
+<style>
+  .community-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    gap: var(--space-3);
+  }
+
+  .voice-card {
+    display: grid;
+    gap: 0.9rem;
+    align-content: start;
+    padding: var(--space-3);
+    border-radius: var(--radius-l);
+    background: rgba(250, 247, 242, 0.03);
+    border: 1px solid var(--line-light);
+    margin: 0;
+  }
+
+  .voice-wide {
+    grid-column: 1 / -1;
+  }
+
+  .voice-avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--line-light);
+    background: rgba(250, 247, 242, 0.06);
+    font-size: var(--text-small);
+    letter-spacing: 0;
+    opacity: 0.85;
+  }
+
+  .voice-quote {
+    font-size: var(--text-body);
+    line-height: 1.65;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .voice-quote::before {
+    content: '\201C';
+    opacity: 0.4;
+    margin-right: 0.1em;
+  }
+
+  .voice-wide .voice-quote {
+    font-size: var(--text-lead);
+    max-width: 34em;
+  }
+
+  .voice-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    font-size: var(--text-micro);
+    letter-spacing: 0.06em;
+  }
+
+  .voice-user {
+    opacity: 0.8;
+  }
+
+  .voice-date {
+    opacity: 0.55;
+  }
+
+  .voice-meta [aria-hidden] {
+    opacity: 0.4;
+  }
+
+  .community-footnote {
+    margin-top: var(--space-4);
+    text-align: center;
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    opacity: 0.35;
+  }
+
+  @media (max-width: 860px) {
+    .community-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

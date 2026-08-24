@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "title": "Prendi appunti con l'IA senza aprire il telefono | Tikpal Voice",
+    "description": "Tikpal è un assistente di appunti IA da usare nel momento in cui nasce l'idea. Parla in modo naturale: la voce diventa note, attività, eventi e bozze."
+  },
+  "crumbs": [
+    {
+      "label": "Appunti IA"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Tikpal Voice",
+    "title": "Un assistente di appunti IA che non devi aprire.",
+    "subtitle": "La maggior parte dei prendi-appunti IA aspetta una riunione. Tikpal prende appunti nell'istante in cui nasce il pensiero — un tocco, niente schermo, niente sblocco.",
+    "primaryCta": {
+      "label": "Acquista Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "trustLine": "200 minuti AI al mese inclusi · Nessun abbonamento · Reso entro 30 giorni"
+  },
+  "sections": [
+    {
+      "kind": "table",
+      "title": "La maggior parte dei prendi-appunti IA parte da una riunione.",
+      "intro": "Tikpal parte quando nasce il pensiero.",
+      "cols": [
+        "Tikpal",
+        "Classico strumento di appunti IA"
+      ],
+      "rows": [
+        {
+          "label": "Si parte da",
+          "values": [
+            "Qualsiasi pensiero, ovunque",
+            "Una riunione programmata"
+          ]
+        },
+        {
+          "label": "Per iniziare",
+          "values": [
+            "Un tocco e parla",
+            "Apri un'app, entra in chiamata"
+          ]
+        },
+        {
+          "label": "Quello che ottieni",
+          "values": [
+            "Note, attività, eventi, bozze",
+            "Trascrizione e riepilogo"
+          ]
+        },
+        {
+          "label": "Dove finisce",
+          "values": [
+            "Memoria organizzata e ricercabile",
+            "Un'altra app da tenere aperta"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "scenes",
+      "title": "Gli appunti nascono fuori dalla sala riunioni.",
+      "intro": "Tikpal segue i momenti in cui le idee arrivano davvero.",
+      "items": [
+        {
+          "name": "A passeggio",
+          "body": "Le idee buone arrivano camminando. Un tocco, parla, continua a camminare: l'appunto ti aspetta al ritorno."
+        },
+        {
+          "name": "In viaggio",
+          "body": "Mani sul manubrio, pensiero in testa. Catturalo senza tirare fuori il telefono."
+        },
+        {
+          "name": "Al lavoro",
+          "body": "Tra una chiamata e una scadenza, di' cosa va fatto e diventa un'attività."
+        },
+        {
+          "name": "Mentre crei",
+          "body": "Non interrompere il flusso per scrivere. Di' l'idea e resta nel lavoro."
+        }
+      ]
+    },
+    {
+      "kind": "flow",
+      "title": "Parla una volta. Ottieni qualcosa di utile.",
+      "from": "“Ricordami di mandare ad Ana la bozza della proposta entro venerdì…”",
+      "steps": [
+        "Nota",
+        "Attività",
+        "Evento",
+        "Bozza"
+      ]
+    },
+    {
+      "kind": "chips",
+      "title": "Gli appunti arrivano dove lavori già.",
+      "chips": [
+        "Todoist",
+        "Notion",
+        "Gmail",
+        "Calendar",
+        "Xmind"
+      ],
+      "note": "Collega nella Tikpal App gli strumenti che usi già."
+    },
+    {
+      "kind": "points",
+      "title": "I tuoi appunti restano tuoi.",
+      "points": [
+        "Una luce chiara indica quando Tikpal ascolta.",
+        "16GB di archiviazione locale prima di qualsiasi sincronizzazione.",
+        "Consulta, esporta o elimina in qualsiasi momento.",
+        "Le tue registrazioni non vengono mai usate per addestrare modelli pubblici."
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Risposte rapide",
+    "items": [
+      {
+        "q": "Serve un abbonamento?",
+        "a": "No. Tikpal include 200 minuti AI ogni mese e le funzioni principali funzionano senza abbonamento."
+      },
+      {
+        "q": "Funziona davvero senza aprire il telefono?",
+        "a": "Sì. La registrazione avviene sul dispositivo: premi e parla. Gli appunti compaiono nella Tikpal App, organizzati in testo, attività e bozze."
+      },
+      {
+        "q": "Cosa succede quando finisco i miei 200 minuti AI?",
+        "a": "I tuoi 200 minuti AI si rinnovano ogni mese: i minuti non usati non si accumulano. Se li esaurisci, le funzioni AI si fermano fino al mese successivo, ma puoi continuare a registrare e tutto resta salvato sul dispositivo."
+      },
+      {
+        "q": "Quanto tempo richiede la spedizione?",
+        "a": "La maggior parte degli ordini arriva entro 5–10 giorni lavorativi negli USA e in Asia-Pacifico, e 7–12 giorni lavorativi in Europa. La stima esatta è mostrata al checkout."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Prima registra. Poi pensa.",
+    "button": {
+      "label": "Acquista Tikpal — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    },
+    "learnMore": {
+      "label": "Scopri di più su Tikpal Voice",
+      "href": "/voice/"
+    }
+  }
+}

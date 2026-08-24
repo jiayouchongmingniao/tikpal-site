@@ -1,0 +1,127 @@
+---
+// Generic legal/company article page (Terms, About). Same visual language as
+// PrivacyPage; the "last updated" line renders only when provided.
+export interface ArticleSection {
+  heading: string;
+  paragraphs: string[];
+}
+
+export interface ArticleContent {
+  meta: { title: string; description: string };
+  page: {
+    eyebrow: string;
+    title: string;
+    updatedLabel?: string;
+    updated?: string;
+    intro: string;
+  };
+  sections: ArticleSection[];
+}
+
+interface Props {
+  content: ArticleContent;
+}
+
+const { content } = Astro.props;
+---
+
+<main class="article-page surface-dark grain">
+  <div class="container">
+    <header class="article-head reveal">
+      <p class="article-eyebrow mono">{content.page.eyebrow}</p>
+      <h1 class="article-title">{content.page.title}</h1>
+      {content.page.updated && (
+        <p class="article-updated mono">{content.page.updatedLabel} · {content.page.updated}</p>
+      )}
+      <p class="article-intro">{content.page.intro}</p>
+    </header>
+
+    <div class="article-body">
+      {
+        content.sections.map((section, i) => (
+          <section class="article-section reveal">
+            <h2 class="article-heading">
+              <span class="article-num mono">{String(i + 1).padStart(2, '0')}</span>
+              {section.heading}
+            </h2>
+            {section.paragraphs.map((p) => <p class="article-paragraph">{p}</p>)}
+          </section>
+        ))
+      }
+    </div>
+  </div>
+</main>
+
+<style>
+  .article-page {
+    padding: calc(var(--space-6) + 4rem) 0 var(--space-6);
+    color: var(--white);
+    min-height: 60vh;
+  }
+
+  .article-head {
+    max-width: 42rem;
+    margin-bottom: var(--space-5);
+  }
+
+  .article-eyebrow {
+    font-size: var(--text-micro);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    opacity: 0.55;
+    margin-bottom: var(--space-2);
+  }
+
+  .article-title {
+    font-size: var(--text-h1);
+    font-weight: 600;
+    letter-spacing: var(--tracking-tight);
+    line-height: 1.05;
+  }
+
+  .article-updated {
+    margin-top: var(--space-2);
+    font-size: var(--text-micro);
+    opacity: 0.55;
+  }
+
+  .article-intro {
+    margin-top: var(--space-3);
+    font-size: var(--text-small);
+    line-height: 1.7;
+    opacity: 0.85;
+  }
+
+  .article-body {
+    border-top: 1px solid var(--line-light);
+    padding-top: var(--space-4);
+    display: grid;
+    gap: var(--space-4);
+    max-width: 42rem;
+  }
+
+  .article-heading {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    font-size: var(--text-h4);
+    font-weight: 600;
+    letter-spacing: var(--tracking-tight);
+    margin-bottom: var(--space-2);
+  }
+
+  .article-num {
+    font-size: var(--text-micro);
+    opacity: 0.45;
+  }
+
+  .article-paragraph {
+    font-size: var(--text-small);
+    line-height: 1.75;
+    opacity: 0.8;
+  }
+
+  .article-paragraph + .article-paragraph {
+    margin-top: 0.75rem;
+  }
+</style>

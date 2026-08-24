@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "FAQ",
+    "description": "Domande frequenti su Tikpal Voice, la Tikpal App e Tikpal Room — cattura, trascrizione, ordini, privacy e altro."
+  },
+  "page": {
+    "eyebrow": "Assistenza",
+    "title": "Domande frequenti",
+    "intro": "Risposte rapide alle domande che sentiamo più spesso. Non trovi quello che cerchi? Scrivici a hello@tikpal.io."
+  },
+  "sections": [
+    {
+      "heading": "Cos'è Tikpal Voice?",
+      "paragraphs": [
+        "Tikpal Voice è un compagno vocale tascabile. Tieni premuto il pulsante touch, parli, e lui registra, trascrive e organizza i tuoi pensieri in note e riassunti che puoi davvero usare — senza bisogno di uno schermo."
+      ]
+    },
+    {
+      "heading": "Quali lingue supporta la trascrizione?",
+      "paragraphs": [
+        "Tikpal cattura e trascrive le principali lingue del mondo, e la qualità della trascrizione migliora a ogni aggiornamento. Qualunque lingua tu usi, puoi vedere e gestire i tuoi contenuti catturati nella Tikpal App."
+      ]
+    },
+    {
+      "heading": "Mi serve un telefono per usarlo?",
+      "paragraphs": [
+        "Tikpal Voice è progettato per funzionare a mani libere — la cattura avviene sul dispositivo con un solo tocco. L'app del telefono è la casa della tua libreria: consulta, cerca, riassumi ed esporta quando vuoi."
+      ]
+    },
+    {
+      "heading": "Cos'è Tikpal Room?",
+      "paragraphs": [
+        "Tikpal Room porta la stessa cattura voice-first negli spazi condivisi come cucine e soggiorni. È un sistema voice-first per i luoghi dove accade la vita, così le idee si possono afferrare senza allungare la mano verso il telefono."
+      ]
+    },
+    {
+      "heading": "Dove sono archiviati i miei dati?",
+      "paragraphs": [
+        "Le tue registrazioni e le tue trascrizioni sono archiviate in modo sicuro e sincronizzate tra i tuoi dispositivi tramite il tuo account Tikpal. Puoi esportare o eliminare i tuoi dati in qualsiasi momento dalla Tikpal App."
+      ]
+    },
+    {
+      "heading": "Come faccio un ordine?",
+      "paragraphs": [
+        "Gli ordini si effettuano tramite il Tikpal Shop. Tempi di consegna e disponibilità sono mostrati al checkout, e riceverai un'email con le informazioni di tracciamento non appena il tuo ordine sarà spedito."
+      ]
+    },
+    {
+      "heading": "Cosa succede se qualcosa va storto con il mio ordine o il mio dispositivo?",
+      "paragraphs": [
+        "Contattaci a hello@tikpal.io con il numero d'ordine e ti aiuteremo. Ordini danneggiati, in ritardo o inattesi vengono risolti caso per caso, e i dispositivi in garanzia vengono riparati o sostituiti."
+      ]
+    },
+    {
+      "heading": "Come vi contatto?",
+      "paragraphs": [
+        "Scrivi a hello@tikpal.io — rispondiamo a ogni messaggio, di solito entro un giorno lavorativo. Puoi anche unirti al nostro Discord per parlare con la community e il team."
+      ]
+    }
+  ]
+}

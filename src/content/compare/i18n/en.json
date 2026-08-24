@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Tikpal vs Plaud — Honest Comparison of Two AI Voice Recorders | Tikpal",
+    "description": "Tikpal Voice vs Plaud Note: price, included AI minutes, subscriptions, and what each recorder is built for. An honest, factual comparison to help you choose."
+  },
+  "hero": {
+    "eyebrow": "Comparison",
+    "title": "Looking for a Plaud alternative?",
+    "subtitle": "Plaud and Tikpal both turn speech into something useful — but they're built around different jobs. Here's the honest comparison."
+  },
+  "shared": {
+    "title": "What both do well",
+    "points": [
+      "Record your voice with dedicated hardware instead of a phone.",
+      "Use AI to turn speech into text and summaries.",
+      "Work with a companion app on iOS and Android.",
+      "Built for people who think out loud — founders, creators, professionals."
+    ]
+  },
+  "table": {
+    "title": "Tikpal Voice vs Plaud Note",
+    "intro": "Plaud details reflect public information from plaud.ai and press coverage at the time of writing (early 2026). Check each site for the latest.",
+    "rows": [
+      {
+        "label": "Price",
+        "tikpal": "$129",
+        "plaud": "$159 (Plaud Note)"
+      },
+      {
+        "label": "Included AI usage",
+        "tikpal": "200 AI minutes/month included",
+        "plaud": "300 transcription minutes/month free"
+      },
+      {
+        "label": "Beyond the included minutes",
+        "tikpal": "AI pauses until the next month; recording continues — no paid tier to unlock",
+        "plaud": "More minutes require a subscription (around $99.96/year for 1,200 minutes)"
+      },
+      {
+        "label": "Built around",
+        "tikpal": "Capture → Remember → Recall → Act: organized memory, tasks, integrations",
+        "plaud": "Record → Transcribe → Summarize: meeting notes and transcripts"
+      },
+      {
+        "label": "Integrations",
+        "tikpal": "Notion, Todoist, Gmail, Calendar, Xmind",
+        "plaud": "Transcription and summaries inside the Plaud app"
+      }
+    ]
+  },
+  "fit": {
+    "tikpalTitle": "Tikpal fits you better if",
+    "tikpalPoints": [
+      "You want spoken thoughts to become memory you can search later — not just transcripts.",
+      "You want AI minutes included with the device, with no subscription tier to unlock.",
+      "You want ideas routed to Notion, Todoist, Gmail or Calendar in one sentence."
+    ],
+    "plaudTitle": "Plaud fits you better if",
+    "plaudPoints": [
+      "Most of your recording is meetings and calls, and transcripts plus summaries are the main goal.",
+      "You prefer a thin, card-shaped recorder.",
+      "You're happy to pay a subscription for higher transcription limits."
+    ]
+  },
+  "cta": {
+    "title": "Ready to try the recorder that remembers?",
+    "button": {
+      "label": "Get Tikpal Voice — $129",
+      "href": "https://shop.tikpal.ai/?utm_source=tikpal_site&utm_medium=web&utm_campaign=homepage"
+    }
+  }
+}

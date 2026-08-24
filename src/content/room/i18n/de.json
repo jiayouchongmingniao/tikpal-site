@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "Tikpal Room — High-Fidelity-Sound, der sich dem Moment anpasst",
+    "description": "Tikpal Room ist ein integriertes Verstärker-, Lautsprecher- und Digitalmusiksystem mit Ambient Intelligence — ein Instrument für Hören, Entspannen und Fokus."
+  },
+  "closingLine": "Intelligenz, die sich mit dem Leben bewegt. Hören Sie sie in jedem Raum.",
+  "hero": {
+    "eyebrow": "Tikpal Room",
+    "headline": "High-Fidelity-Sound, der sich dem Moment anpasst.",
+    "subtitle": "Ein integriertes Verstärker-, Lautsprecher- und Digitalmusiksystem mit eingebauter Ambient Intelligence. Es spürt, wie du dich fühlst — und gestaltet Klang und Atmosphäre deines Raums.",
+    "primaryCta": "Entdecke die Lautsprecher",
+    "secondaryCta": "Finde dein System",
+    "statusLine": "Lautsprecher und Verstärker jetzt verfügbar · Streamer und All-in-one-Konsole bald im Kickstarter-Crowdfunding"
+  },
+  "states": {
+    "title": "Ein Raum, drei Zustände.",
+    "items": [
+      {
+        "id": "listen",
+        "name": "Hören",
+        "caption": "High-Fidelity-Wiedergabe · Raumoptimiert"
+      },
+      {
+        "id": "unwind",
+        "name": "Entspannen",
+        "caption": "Abendstimmung · Gedämpftes Licht"
+      },
+      {
+        "id": "focus",
+        "name": "Fokussieren",
+        "caption": "Stille Präsenz · Bereit, wenn du es bist"
+      }
+    ],
+    "footnote": "Ambiente ist KI-Musik, erzeugt aus deinen Voice-Aufnahmen und App-Notizen — sie spürt deinen Moment, und dein Raum antwortet."
+  },
+  "lineup": {
+    "title": "Drei Wege, sich im Klang zu verlieren.",
+    "subtitle": "Vom Schreibtisch vor dir bis zum Raum um dich herum — jedes System ist auf seine Distanz abgestimmt.",
+    "cta": "Finde deinen Klang",
+    "items": [
+      {
+        "id": "near",
+        "name": "Tikpal Near",
+        "tagline": "Design, das die Musik näher bringt.",
+        "distance": "NAHFELD",
+        "best": "Ideal für den Schreibtisch",
+        "specs": [
+          "Designorientiert",
+          "4-Zoll-Breitband",
+          "Mühelos im Alltag",
+          "Benchmark: KEF LSX II"
+        ],
+        "image": "/images/room/near-lsx-ii.webp"
+      },
+      {
+        "id": "reference",
+        "name": "Tikpal Reference",
+        "tagline": "Direkt gegenüber im Raum.",
+        "distance": "MITTELFELD",
+        "best": "Ideal fürs Wohnzimmer",
+        "specs": [
+          "Konsistenz",
+          "Kontrollierte Richtwirkung",
+          "CTA-2034 gemessen"
+        ],
+        "image": "/images/room/placeholder/reference.webp"
+      },
+      {
+        "id": "deep",
+        "name": "Tikpal Deep",
+        "tagline": "Spüre die volle Größe.",
+        "distance": "VOLLE GRÖSSE",
+        "best": "Maximale Immersion",
+        "specs": [
+          "Maßstab",
+          "6 Zoll",
+          "40 Hz (-3 dB)",
+          "Hoher Pegel"
+        ],
+        "image": "/images/room/placeholder/deep.webp"
+      }
+    ]
+  },
+  "systems": {
+    "title": "Raumsysteme",
+    "headline": "Alles passt. Nichts zu klären.",
+    "note": "Ein komplettes Raumerlebnis, dreifach zusammengesetzt. Quelle, Verstärkung und Klang — abgestimmt wie ein einziges Instrument.",
+    "items": [
+      {
+        "name": "Desktop System",
+        "for": "Für persönliche Räume"
+      },
+      {
+        "name": "Reference System",
+        "for": "Für den Alltag",
+        "badge": "Am beliebtesten"
+      },
+      {
+        "name": "Bass Extended System",
+        "for": "Für volle Immersion"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Erwecke den Raum zum Leben.",
+    "label": "Finde deinen Klang",
+    "href": "https://room.tikpal.ai"
+  }
+}
