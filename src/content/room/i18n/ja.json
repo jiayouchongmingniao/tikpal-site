@@ -7,10 +7,62 @@
   "hero": {
     "eyebrow": "Tikpal Room",
     "headline": "その瞬間に寄り添う、ハイファイサウンド。",
-    "subtitle": "アンビエントインテリジェンスを内蔵した、統合アンプ・スピーカー・デジタルミュージックシステム。あなたの状態を読み取り、空間の音と雰囲気を仕立てます。",
+    "subtitle": "Tikpal Room はアンビエントインテリジェンスを備えたハイファイサウンドシステム。あなたの状態を感知し、その空間の音楽と空気感を形づくります。",
+    "roadNote": "Tikpal Room は一つひとつ作り上げています。まずスピーカー、次にアンプとストリーミングへ。最後に完全なシステムをひとつの筐体に収めます。",
     "primaryCta": "スピーカーを見る",
     "secondaryCta": "あなたのシステムを見つける",
-    "statusLine": "スピーカーとアンプは現在販売中 · ストリーマーとオールインワンは Kickstarter でまもなくクラウドファンディング開始"
+    "statusLine": "スピーカーから · 次はアンプとストリーミング · 目的地はオールインワン"
+  },
+  "roadmap": {
+    "title": "ロードマップ",
+    "headline": "ひとつずつ、形にしていく。",
+    "stages": [
+      {
+        "name": "スピーカー",
+        "line": "Tikpal Room のはじまり——それぞれの距離に合わせて調律した 3 台のスピーカー。",
+        "cta": {
+          "label": "スピーカーを見る",
+          "href": "https://audio.tikpal.ai/speakers",
+          "external": true
+        }
+      },
+      {
+        "name": "アンプ",
+        "line": "スピーカーに合わせたパワー——後付けではなく、ひとつに調律。",
+        "cta": {
+          "label": "アンプを見る",
+          "href": "https://audio.tikpal.ai/amplifiers",
+          "external": true
+        }
+      },
+      {
+        "name": "ストリーミング",
+        "line": "音楽を見つけて、すぐに再生——音源は静かに佇む。",
+        "cta": {
+          "label": "ストリーマーを見る",
+          "href": "https://audio.tikpal.ai/streamers",
+          "external": true
+        }
+      },
+      {
+        "name": "Tikpal Audio System",
+        "line": "スピーカー、アンプ、ストリーミングをひとつのシステムとしてマッチング。",
+        "cta": {
+          "label": "オーディオシステムを見る",
+          "href": "#systems",
+          "external": false
+        }
+      },
+      {
+        "name": "Tikpal Room All-in-One",
+        "line": "完全なシステムをひとつの筐体に——それが目的地。",
+        "cta": {
+          "label": "オールインワンをフォロー",
+          "href": "#all-in-one",
+          "external": false
+        }
+      }
+    ]
   },
   "states": {
     "title": "ひとつの部屋、三つの心の状態。",
@@ -40,7 +92,8 @@
     "items": [
       {
         "id": "near",
-        "name": "Tikpal Near",
+        "name": "Tikpal Near — by Tikpal Audio",
+        "status": "発売中",
         "tagline": "デザインで、音楽をもっと近くに。",
         "distance": "ニアフィールド",
         "best": "デスクに最適",
@@ -54,7 +107,8 @@
       },
       {
         "id": "reference",
-        "name": "Tikpal Reference",
+        "name": "Tikpal Reference — by Tikpal Audio",
+        "status": "プロトタイプ検証中",
         "tagline": "部屋の向こう側から、まっすぐ。",
         "distance": "ミッドフィールド",
         "best": "リビングに最適",
@@ -67,7 +121,8 @@
       },
       {
         "id": "deep",
-        "name": "Tikpal Deep",
+        "name": "Tikpal Deep — by Tikpal Audio",
+        "status": "発売中",
         "tagline": "スケールのすべてを感じる。",
         "distance": "フルスケール",
         "best": "最大限の没入",
@@ -100,6 +155,12 @@
         "for": "フルスケールの没入に"
       }
     ]
+  },
+  "allInOne": {
+    "eyebrow": "Room All-in-One",
+    "headline": "ひとつの筐体に、部屋全体を。",
+    "note": "アンプ、ストリーマー、サウンドをひとつのボディに——ロードマップの目的地。現在開発中です。",
+    "status": "開発中"
   },
   "cta": {
     "title": "部屋に命を吹き込む。",

@@ -7,10 +7,62 @@
   "hero": {
     "eyebrow": "Tikpal Room",
     "headline": "高保真之声，随此刻而生。",
-    "subtitle": "集功放、音箱与数字音乐系统于一体，内置氛围智能。感知你的状态，定制空间的声音与氛围。",
+    "subtitle": "Tikpal Room 是一套具备环境智能的高保真声音系统——感知你的状态，塑造你所在空间的音乐与氛围。",
+    "roadNote": "我们正在一步步打造 Tikpal Room——从音箱开始，接着是放大与流媒体，最终将完整系统装进一台机身。",
     "primaryCta": "探索音箱系列",
     "secondaryCta": "找到属于你的系统",
-    "statusLine": "音箱与功放现已开售 · 数播与一体机即将登陆 Kickstarter 开启众筹"
+    "statusLine": "音箱先行 · 放大与流媒体随后 · 一体机是终点"
+  },
+  "roadmap": {
+    "title": "路线图",
+    "headline": "一件一件，逐步成形。",
+    "stages": [
+      {
+        "name": "音箱",
+        "line": "Tikpal Room 的起点——三款为各自距离调音的音箱。",
+        "cta": {
+          "label": "探索音箱",
+          "href": "https://audio.tikpal.ai/speakers",
+          "external": true
+        }
+      },
+      {
+        "name": "放大",
+        "line": "与音箱相匹配的功率——整体调音，而非简单拼装。",
+        "cta": {
+          "label": "探索放大器",
+          "href": "https://audio.tikpal.ai/amplifiers",
+          "external": true
+        }
+      },
+      {
+        "name": "流媒体",
+        "line": "找到你的音乐，即刻播放——音源退居幕后。",
+        "cta": {
+          "label": "探索流媒体播放器",
+          "href": "https://audio.tikpal.ai/streamers",
+          "external": true
+        }
+      },
+      {
+        "name": "Tikpal Audio System",
+        "line": "音箱、放大与流媒体，作为一套系统整体匹配。",
+        "cta": {
+          "label": "探索音频系统",
+          "href": "#systems",
+          "external": false
+        }
+      },
+      {
+        "name": "Tikpal Room All-in-One",
+        "line": "完整系统装进一台机身——这就是终点。",
+        "cta": {
+          "label": "关注一体机",
+          "href": "#all-in-one",
+          "external": false
+        }
+      }
+    ]
   },
   "states": {
     "title": "一个房间，三种心境。",
@@ -40,7 +92,8 @@
     "items": [
       {
         "id": "near",
-        "name": "Tikpal Near",
+        "name": "Tikpal Near — by Tikpal Audio",
+        "status": "现已发售",
         "tagline": "以设计，靠近音乐。",
         "distance": "近场",
         "best": "桌面之选",
@@ -54,7 +107,8 @@
       },
       {
         "id": "reference",
-        "name": "Tikpal Reference",
+        "name": "Tikpal Reference — by Tikpal Audio",
+        "status": "原型验证中",
         "tagline": "就在房间那头。",
         "distance": "中场",
         "best": "客厅之选",
@@ -67,7 +121,8 @@
       },
       {
         "id": "deep",
-        "name": "Tikpal Deep",
+        "name": "Tikpal Deep — by Tikpal Audio",
+        "status": "现已发售",
         "tagline": "感受完整声场。",
         "distance": "全场",
         "best": "极致沉浸",
@@ -100,6 +155,12 @@
         "for": "适合全身心沉浸"
       }
     ]
+  },
+  "allInOne": {
+    "eyebrow": "Room All-in-One",
+    "headline": "一台机身，整个房间。",
+    "note": "放大器、流媒体与声音合于一体——这是路线图的终点，正在开发中。",
+    "status": "开发中"
   },
   "cta": {
     "title": "让房间苏醒。",

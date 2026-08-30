@@ -7,22 +7,25 @@
   "brand": {
     "eyebrow": "Tikpal",
     "title": "Intelligenza che si muove con te.",
-    "subtitle": "Un contesto. Ovunque accada la vita.",
+    "subtitle": "Tikpal è un'intelligenza unica in tre esperienze: Voice cattura, App comprende, Room risponde.",
     "products": [
       {
         "name": "Tikpal Voice",
         "verb": "Cattura.",
-        "line": "Cattura con Voice."
+        "line": "Cattura con Voice.",
+        "href": "/voice/"
       },
       {
         "name": "Tikpal App",
         "verb": "Comprendi.",
-        "line": "Costruisci con App."
+        "line": "Costruisci con App.",
+        "href": "/app/"
       },
       {
         "name": "Tikpal Room",
         "verb": "Rispondi.",
-        "line": "Vivilo con Room."
+        "line": "Vivilo con Room.",
+        "href": "/room/"
       }
     ],
     "exploreCta": {
@@ -296,19 +299,28 @@
     "subtitle": "Abbastanza piccolo da stare sempre con te. Pronto ogni volta che arriva un pensiero.",
     "points": [
       {
-        "name": "Quattro microfoni"
+        "name": "Array a 4 microfoni",
+        "line": "Acquisizione vocale chiara, ogni giorno."
       },
       {
-        "name": "AMOLED"
+        "name": "AMOLED da 1,75\"",
+        "line": "Le informazioni essenziali a colpo d'occhio."
       },
       {
-        "name": "16GB"
+        "name": "16GB di archiviazione locale",
+        "line": "Le registrazioni restano sul dispositivo prima della sincronizzazione."
       },
       {
-        "name": "820mAh"
+        "name": "Batteria ad alta densità su misura",
+        "line": "Progettata per un utilizzo affidabile tutto il giorno."
       },
       {
-        "name": "IP65"
+        "name": "IP65",
+        "line": "Resistente a polvere e acqua per l'uso quotidiano."
+      },
+      {
+        "name": "Ricarica magnetica pogo-pin",
+        "line": "Ricarica semplice e comoda."
       }
     ],
     "specsToggle": "Specifiche complete",

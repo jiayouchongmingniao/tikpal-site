@@ -7,22 +7,25 @@
   "brand": {
     "eyebrow": "Tikpal",
     "title": "あなたとともに動くインテリジェンス。",
-    "subtitle": "ひとつのコンテキスト。暮らしのどこでも。",
+    "subtitle": "Tikpal はひとつの知性、3 つの体験。Voice が捉え、App が理解し、Room が応えます。",
     "products": [
       {
         "name": "Tikpal Voice",
         "verb": "キャプチャ。",
-        "line": "Voice でサッと残す。"
+        "line": "Voice でサッと残す。",
+        "href": "/voice/"
       },
       {
         "name": "Tikpal App",
         "verb": "理解。",
-        "line": "App で形にする。"
+        "line": "App で形にする。",
+        "href": "/app/"
       },
       {
         "name": "Tikpal Room",
         "verb": "応答。",
-        "line": "Room で空間に広げる。"
+        "line": "Room で空間に広げる。",
+        "href": "/room/"
       }
     ],
     "exploreCta": {
@@ -296,19 +299,28 @@
     "subtitle": "ずっと持ち歩ける小ささ。考えが浮かんだら、すぐ準備完了。",
     "points": [
       {
-        "name": "クアッドマイク"
+        "name": "4 マイクアレイ",
+        "line": "日常の声をクリアに収音。"
       },
       {
-        "name": "AMOLED"
+        "name": "1.75\" AMOLED",
+        "line": "必要な情報をひと目で。"
       },
       {
-        "name": "16GB"
+        "name": "16GB ローカルストレージ",
+        "line": "同期するまで、録音はデバイス内に保存。"
       },
       {
-        "name": "820mAh"
+        "name": "カスタム高密度バッテリー",
+        "line": "一日中使える信頼性のために設計。"
       },
       {
-        "name": "IP65"
+        "name": "IP65",
+        "line": "日常づかいに十分な防塵・防水。"
+      },
+      {
+        "name": "マグネット Pogo-Pin 充電",
+        "line": "シンプルで手軽な充電。"
       }
     ],
     "specsToggle": "すべての仕様を見る",

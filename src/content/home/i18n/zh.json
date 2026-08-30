@@ -7,22 +7,25 @@
   "brand": {
     "eyebrow": "Tikpal",
     "title": "智能，随你而行。",
-    "subtitle": "一个语境。生活在哪里发生，它都在。",
+    "subtitle": "Tikpal 是一个智能，三种体验：Voice 捕捉，App 理解，Room 回应。",
     "products": [
       {
         "name": "Tikpal Voice",
         "verb": "捕捉。",
-        "line": "用 Voice 随手记下来。"
+        "line": "用 Voice 随手记下来。",
+        "href": "/voice/"
       },
       {
         "name": "Tikpal App",
         "verb": "理解。",
-        "line": "在 App 里慢慢理清。"
+        "line": "在 App 里慢慢理清。",
+        "href": "/app/"
       },
       {
         "name": "Tikpal Room",
         "verb": "回应。",
-        "line": "让 Room 把它带进生活。"
+        "line": "让 Room 把它带进生活。",
+        "href": "/room/"
       }
     ],
     "exploreCta": {
@@ -296,19 +299,28 @@
     "subtitle": "小到可以一直带在身边。想法一到，随时就绪。",
     "points": [
       {
-        "name": "四麦克风"
+        "name": "4 麦克风阵列",
+        "line": "清晰的日常拾音。"
       },
       {
-        "name": "AMOLED"
+        "name": "1.75\" AMOLED",
+        "line": "关键信息一目了然。"
       },
       {
-        "name": "16GB"
+        "name": "16GB 本地存储",
+        "line": "同步前，录音先保存在设备上。"
       },
       {
-        "name": "820mAh"
+        "name": "定制高密度电池",
+        "line": "为可靠的全天使用而设计。"
       },
       {
-        "name": "IP65"
+        "name": "IP65",
+        "line": "防尘防水，从容应对日常。"
+      },
+      {
+        "name": "磁吸 Pogo-Pin 充电",
+        "line": "简单便捷的充电方式。"
       }
     ],
     "specsToggle": "查看完整规格",

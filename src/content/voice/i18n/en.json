@@ -108,16 +108,34 @@
       ]
     },
     {
-      "kind": "chips",
+      "kind": "specCards",
       "title": "Built to stay with you.",
-      "chips": [
-        "Quad mic",
-        "AMOLED",
-        "16GB",
-        "820mAh",
-        "IP65"
-      ],
-      "note": "1.75-inch AMOLED display · magnetic pogo-pin charging · IP65 water resistance."
+      "cards": [
+        {
+          "name": "4-Mic Array",
+          "line": "Clear everyday voice capture."
+        },
+        {
+          "name": "1.75\" AMOLED",
+          "line": "Essential information at a glance."
+        },
+        {
+          "name": "16GB Local Storage",
+          "line": "Keep recordings on-device before sync."
+        },
+        {
+          "name": "Custom High-Density Battery",
+          "line": "Designed for reliable all-day use."
+        },
+        {
+          "name": "IP65",
+          "line": "Dust and water resistant for everyday use."
+        },
+        {
+          "name": "Magnetic Pogo-Pin Charging",
+          "line": "Simple and convenient charging."
+        }
+      ]
     }
   ],
   "faq": {

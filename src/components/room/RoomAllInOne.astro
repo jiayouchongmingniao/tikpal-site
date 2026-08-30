@@ -1,0 +1,59 @@
+---
+import type { RoomAllInOne } from './types';
+
+interface Props {
+  content: RoomAllInOne;
+}
+
+const { content } = Astro.props;
+---
+
+<section id="all-in-one" class="allinone section surface-room grain">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="allinone-eyebrow">
+        <span class="eyebrow mono">{content.eyebrow}</span>
+        <span class="allinone-status mono">{content.status}</span>
+      </p>
+      <h2 class="h2">{content.headline}</h2>
+      <p class="lead">{content.note}</p>
+    </header>
+  </div>
+</section>
+
+<style>
+  .allinone .lead {
+    max-width: 38em;
+  }
+
+  .allinone-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  /* neutral pill — matches the lineup tier-status treatment */
+  .allinone-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45em;
+    padding: 0.3rem 0.85rem;
+    border: 1px solid rgba(250, 247, 242, 0.22);
+    border-radius: var(--radius-pill);
+    font-size: var(--text-micro);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.72;
+    white-space: nowrap;
+  }
+
+  .allinone-status::before {
+    content: '';
+    width: 0.42em;
+    height: 0.42em;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.7;
+  }
+</style>

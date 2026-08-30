@@ -108,16 +108,34 @@
       ]
     },
     {
-      "kind": "chips",
+      "kind": "specCards",
       "title": "Gebaut, um bei dir zu bleiben.",
-      "chips": [
-        "Quad mic",
-        "AMOLED",
-        "16GB",
-        "820mAh",
-        "IP65"
-      ],
-      "note": "1,75-Zoll-AMOLED-Display · magnetisches Pogo-Pin-Laden · IP65 wasserdicht."
+      "cards": [
+        {
+          "name": "4-Mikrofon-Array",
+          "line": "Klare Sprachaufnahme für den Alltag."
+        },
+        {
+          "name": "1,75\" AMOLED",
+          "line": "Wesentliche Infos auf einen Blick."
+        },
+        {
+          "name": "16GB lokaler Speicher",
+          "line": "Aufnahmen bleiben auf dem Gerät, bis sie synchronisiert werden."
+        },
+        {
+          "name": "Hochdicht-Akku nach Maß",
+          "line": "Entwickelt für zuverlässige Nutzung den ganzen Tag."
+        },
+        {
+          "name": "IP65",
+          "line": "Staub- und wasserfest für den Alltag."
+        },
+        {
+          "name": "Magnetisches Pogo-Pin-Laden",
+          "line": "Einfaches, bequemes Laden."
+        }
+      ]
     }
   ],
   "faq": {

@@ -10,9 +10,33 @@ export interface RoomHero {
   eyebrow: string;
   headline: string;
   subtitle: string;
+  roadNote: string;
   primaryCta: string;
   secondaryCta: string;
   statusLine: string;
+}
+
+export interface RoadmapStage {
+  name: string;
+  line: string;
+  cta: {
+    label: string;
+    href: string;
+    external: boolean;
+  };
+}
+
+export interface RoomRoadmap {
+  title: string;
+  headline: string;
+  stages: RoadmapStage[];
+}
+
+export interface RoomAllInOne {
+  eyebrow: string;
+  headline: string;
+  note: string;
+  status: string;
 }
 
 export interface RoomState {
@@ -30,6 +54,7 @@ export interface RoomStates {
 export interface RoomLineupItem {
   id: string;
   name: string;
+  status: string;
   tagline: string;
   distance: string;
   best: string;
@@ -67,8 +92,10 @@ export interface RoomContent {
   meta: RoomMeta;
   closingLine?: string;
   hero: RoomHero;
+  roadmap: RoomRoadmap;
   states: RoomStates;
   lineup: RoomLineup;
   systems: RoomSystems;
+  allInOne: RoomAllInOne;
   cta: RoomCta;
 }

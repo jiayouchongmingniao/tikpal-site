@@ -1,0 +1,104 @@
+---
+import type { RoomRoadmap } from './types';
+
+interface Props {
+  content: RoomRoadmap;
+}
+
+const { content } = Astro.props;
+---
+
+<section id="roadmap" class="roadmap section surface-dark grain">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow mono">{content.title}</p>
+      <h2 class="h2">{content.headline}</h2>
+    </header>
+
+    <ol class="road-steps">
+      {
+        content.stages.map((stage, i) => (
+          <li class="road-step reveal" style={`--reveal-delay: ${i * 0.1}s`}>
+            <span class="road-index mono">0{i + 1}</span>
+            <h3 class="road-name">{stage.name}</h3>
+            <p class="road-line">{stage.line}</p>
+            <a
+              class="btn btn-ghost road-cta"
+              href={stage.cta.href}
+              {...(stage.cta.external ? { target: '_blank', rel: 'noopener' } : {})}
+            >
+              {stage.cta.label}
+              <span aria-hidden="true">{stage.cta.external ? '↗' : '↓'}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>
+
+<style>
+  .road-steps {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: var(--space-3);
+    padding: 0;
+  }
+
+  .road-step {
+    display: grid;
+    gap: 0.6rem;
+    padding: var(--space-3);
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-l);
+    background: rgba(250, 247, 242, 0.03);
+    transition: transform var(--dur-fast) var(--ease-out),
+      border-color var(--dur-fast) ease;
+  }
+
+  .road-step:hover {
+    transform: translateY(-6px);
+    border-color: rgba(250, 247, 242, 0.3);
+  }
+
+  .road-index {
+    opacity: 0.4;
+    letter-spacing: 0.14em;
+  }
+
+  .road-name {
+    font-size: var(--text-h4);
+    font-weight: 650;
+    letter-spacing: var(--tracking-tight);
+  }
+
+  .road-line {
+    font-size: var(--text-small);
+    opacity: 0.68;
+    min-height: 4.5em;
+  }
+
+  .road-cta {
+    margin-top: auto;
+    font-size: var(--text-small);
+    white-space: normal;
+    text-align: left;
+  }
+
+  @media (max-width: 1080px) {
+    .road-steps {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 640px) {
+    .road-steps {
+      grid-template-columns: 1fr;
+    }
+
+    .road-line {
+      min-height: 0;
+    }
+  }
+</style>

@@ -7,22 +7,25 @@
   "brand": {
     "eyebrow": "Tikpal",
     "title": "당신과 함께 움직이는 인텔리전스.",
-    "subtitle": "하나의 맥락. 삶이 어디에서든.",
+    "subtitle": "Tikpal은 하나의 지능이자 세 가지 경험입니다. Voice가 포착하고, App이 이해하며, Room이 반응합니다.",
     "products": [
       {
         "name": "Tikpal Voice",
         "verb": "캡처.",
-        "line": "Voice로 바로 담고."
+        "line": "Voice로 바로 담고.",
+        "href": "/voice/"
       },
       {
         "name": "Tikpal App",
         "verb": "이해.",
-        "line": "App에서 정리하고."
+        "line": "App에서 정리하고.",
+        "href": "/app/"
       },
       {
         "name": "Tikpal Room",
         "verb": "응답.",
-        "line": "Room으로 완성하세요."
+        "line": "Room으로 완성하세요.",
+        "href": "/room/"
       }
     ],
     "exploreCta": {
@@ -296,19 +299,28 @@
     "subtitle": "늘 들고 다닐 만큼 작게. 생각이 떠오르는 순간, 바로 준비 완료.",
     "points": [
       {
-        "name": "쿼드 마이크"
+        "name": "4-마이크 어레이",
+        "line": "일상의 목소리를 또렷하게 담습니다."
       },
       {
-        "name": "AMOLED"
+        "name": "1.75\" AMOLED",
+        "line": "핵심 정보를 한눈에."
       },
       {
-        "name": "16GB"
+        "name": "16GB 로컬 저장 공간",
+        "line": "동기화 전까지 녹음은 기기에 보관됩니다."
       },
       {
-        "name": "820mAh"
+        "name": "커스텀 고밀도 배터리",
+        "line": "믿을 수 있는 하루 종일 사용을 위해 설계했습니다."
       },
       {
-        "name": "IP65"
+        "name": "IP65",
+        "line": "일상을 위한 방진·방수."
+      },
+      {
+        "name": "마그네틱 Pogo-Pin 충전",
+        "line": "간편하고 손쉬운 충전."
       }
     ],
     "specsToggle": "전체 사양 보기",

@@ -7,10 +7,62 @@
   "hero": {
     "eyebrow": "Tikpal Room",
     "headline": "High-fidelity sound that adapts to the moment.",
-    "subtitle": "An integrated amplifier, speaker and digital music system with ambient intelligence built in. It senses your state — and shapes the music and atmosphere of your space.",
+    "subtitle": "Tikpal Room is a high-fidelity sound system with ambient intelligence — it senses your state, and shapes the music and atmosphere of your space.",
+    "roadNote": "We are building Tikpal Room piece by piece—starting with speakers, then amplification and streaming, before bringing the complete system into one enclosure.",
     "primaryCta": "Explore the speakers",
     "secondaryCta": "Find your system",
-    "statusLine": "Speakers and amplifier available now · Streamer and all-in-one console launching soon on Kickstarter"
+    "statusLine": "Speakers first · Amplification and streaming next · All-in-one as the destination"
+  },
+  "roadmap": {
+    "title": "The Roadmap",
+    "headline": "Built piece by piece.",
+    "stages": [
+      {
+        "name": "Speakers",
+        "line": "Where Tikpal Room starts — three speakers voiced for their distance.",
+        "cta": {
+          "label": "Explore the Speakers",
+          "href": "https://audio.tikpal.ai/speakers",
+          "external": true
+        }
+      },
+      {
+        "name": "Amplification",
+        "line": "Power matched to the speakers — tuned as one, not bolted on.",
+        "cta": {
+          "label": "Explore Amplification",
+          "href": "https://audio.tikpal.ai/amplifiers",
+          "external": true
+        }
+      },
+      {
+        "name": "Streaming",
+        "line": "Your music, found and played — sources that stay out of the way.",
+        "cta": {
+          "label": "Explore Streaming",
+          "href": "https://audio.tikpal.ai/streamers",
+          "external": true
+        }
+      },
+      {
+        "name": "Tikpal Audio System",
+        "line": "Speakers, amplification and streaming, matched as a single system.",
+        "cta": {
+          "label": "Explore the Audio System",
+          "href": "#systems",
+          "external": false
+        }
+      },
+      {
+        "name": "Tikpal Room All-in-One",
+        "line": "The complete system in one enclosure — the destination.",
+        "cta": {
+          "label": "Follow the All-in-One",
+          "href": "#all-in-one",
+          "external": false
+        }
+      }
+    ]
   },
   "states": {
     "title": "One room, three states of mind.",
@@ -40,7 +92,8 @@
     "items": [
       {
         "id": "near",
-        "name": "Tikpal Near",
+        "name": "Tikpal Near — by Tikpal Audio",
+        "status": "Available",
         "tagline": "Design that brings music closer.",
         "distance": "NEAR-FIELD",
         "best": "Best for Desktop",
@@ -54,7 +107,8 @@
       },
       {
         "id": "reference",
-        "name": "Tikpal Reference",
+        "name": "Tikpal Reference — by Tikpal Audio",
+        "status": "Prototype validation",
         "tagline": "Right across the room.",
         "distance": "MID-FIELD",
         "best": "Best for Living",
@@ -67,7 +121,8 @@
       },
       {
         "id": "deep",
-        "name": "Tikpal Deep",
+        "name": "Tikpal Deep — by Tikpal Audio",
+        "status": "Available",
         "tagline": "Feel the full scale.",
         "distance": "FULL-SCALE",
         "best": "Maximum Immersion",
@@ -100,6 +155,12 @@
         "for": "For full-scale immersion"
       }
     ]
+  },
+  "allInOne": {
+    "eyebrow": "Room All-in-One",
+    "headline": "One enclosure. The whole room.",
+    "note": "Amplifier, streamer and sound in a single body — the destination of this roadmap, in development now.",
+    "status": "In development"
   },
   "cta": {
     "title": "Bring the room to life.",

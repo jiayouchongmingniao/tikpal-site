@@ -52,6 +52,13 @@ export interface PointsSection {
   points: string[];
 }
 
+export interface SpecCardsSection {
+  kind: 'specCards';
+  title: string;
+  intro?: string;
+  cards: { name: string; line: string }[];
+}
+
 export interface QuoteSection {
   kind: 'quote';
   title: string;
@@ -72,6 +79,7 @@ export type LandingSection =
   | TableSection
   | ChipsSection
   | PointsSection
+  | SpecCardsSection
   | QuoteSection
   | ScenesSection;
 

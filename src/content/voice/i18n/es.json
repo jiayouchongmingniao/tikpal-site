@@ -108,16 +108,34 @@
       ]
     },
     {
-      "kind": "chips",
+      "kind": "specCards",
       "title": "Hecho para ir contigo.",
-      "chips": [
-        "Quad mic",
-        "AMOLED",
-        "16GB",
-        "820mAh",
-        "IP65"
-      ],
-      "note": "Pantalla AMOLED de 1,75 pulgadas · carga magnética pogo-pin · resistencia al agua IP65."
+      "cards": [
+        {
+          "name": "Matriz de 4 micrófonos",
+          "line": "Captura de voz clara en el día a día."
+        },
+        {
+          "name": "AMOLED de 1,75\"",
+          "line": "La información esencial de un vistazo."
+        },
+        {
+          "name": "16GB de almacenamiento local",
+          "line": "Las grabaciones se quedan en el dispositivo hasta sincronizar."
+        },
+        {
+          "name": "Batería de alta densidad a medida",
+          "line": "Diseñada para un uso fiable durante todo el día."
+        },
+        {
+          "name": "IP65",
+          "line": "Resistente al polvo y al agua para el uso diario."
+        },
+        {
+          "name": "Carga magnética con pogo-pin",
+          "line": "Carga sencilla y cómoda."
+        }
+      ]
     }
   ],
   "faq": {

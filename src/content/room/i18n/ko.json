@@ -7,10 +7,62 @@
   "hero": {
     "eyebrow": "Tikpal Room",
     "headline": "순간에 맞춰지는 하이파이 사운드.",
-    "subtitle": "앰비언트 인텔리전스를 내장한 통합 앰프, 스피커, 디지털 뮤직 시스템. 당신의 상태를 감지해 공간의 음악과 분위기를 완성합니다.",
+    "subtitle": "Tikpal Room은 앰비언트 인텔리전스를 갖춘 하이파이 사운드 시스템입니다. 당신의 상태를 감지해 공간의 음악과 분위기를 만들어 냅니다.",
+    "roadNote": "Tikpal Room은 하나씩 만들어 가고 있습니다. 스피커로 시작해 앰프와 스트리밍으로, 마침내 완전한 시스템을 하나의 본체에 담습니다.",
     "primaryCta": "스피커 살펴보기",
     "secondaryCta": "나에게 맞는 시스템 찾기",
-    "statusLine": "스피커와 앰프 현재 판매 중 · 스트리머와 올인원 콘솔은 Kickstarter 크라우드펀딩 예정"
+    "statusLine": "스피커 먼저 · 다음은 앰프와 스트리밍 · 목적지는 올인원"
+  },
+  "roadmap": {
+    "title": "로드맵",
+    "headline": "하나하나, 완성해 갑니다.",
+    "stages": [
+      {
+        "name": "스피커",
+        "line": "Tikpal Room의 시작 — 각 거리에 맞춰 튜닝한 세 개의 스피커.",
+        "cta": {
+          "label": "스피커 보기",
+          "href": "https://audio.tikpal.ai/speakers",
+          "external": true
+        }
+      },
+      {
+        "name": "앰프",
+        "line": "스피커에 맞춘 출력 — 따로 덧붙이는 것이 아닌 하나의 튜닝.",
+        "cta": {
+          "label": "앰프 보기",
+          "href": "https://audio.tikpal.ai/amplifiers",
+          "external": true
+        }
+      },
+      {
+        "name": "스트리밍",
+        "line": "음악을 찾고 바로 재생 — 소스는 조용히 뒤로.",
+        "cta": {
+          "label": "스트리머 보기",
+          "href": "https://audio.tikpal.ai/streamers",
+          "external": true
+        }
+      },
+      {
+        "name": "Tikpal Audio System",
+        "line": "스피커, 앰프, 스트리밍을 하나의 시스템으로 매칭.",
+        "cta": {
+          "label": "오디오 시스템 보기",
+          "href": "#systems",
+          "external": false
+        }
+      },
+      {
+        "name": "Tikpal Room All-in-One",
+        "line": "완전한 시스템을 하나의 본체에 — 그것이 목적지.",
+        "cta": {
+          "label": "올인원 팔로우",
+          "href": "#all-in-one",
+          "external": false
+        }
+      }
+    ]
   },
   "states": {
     "title": "하나의 방, 세 가지 마음의 상태.",
@@ -40,7 +92,8 @@
     "items": [
       {
         "id": "near",
-        "name": "Tikpal Near",
+        "name": "Tikpal Near — by Tikpal Audio",
+        "status": "출시 완료",
         "tagline": "디자인으로 음악에 더 가까이.",
         "distance": "니어필드",
         "best": "데스크에 최적",
@@ -54,7 +107,8 @@
       },
       {
         "id": "reference",
-        "name": "Tikpal Reference",
+        "name": "Tikpal Reference — by Tikpal Audio",
+        "status": "프로토타입 검증 중",
         "tagline": "방 건너편, 그대로.",
         "distance": "미드필드",
         "best": "거실에 최적",
@@ -67,7 +121,8 @@
       },
       {
         "id": "deep",
-        "name": "Tikpal Deep",
+        "name": "Tikpal Deep — by Tikpal Audio",
+        "status": "출시 완료",
         "tagline": "풀 스케일을 온몸으로.",
         "distance": "풀 스케일",
         "best": "최고의 몰입",
@@ -100,6 +155,12 @@
         "for": "풀 스케일 몰입을 위한"
       }
     ]
+  },
+  "allInOne": {
+    "eyebrow": "Room All-in-One",
+    "headline": "하나의 본체에, 방 전체를.",
+    "note": "앰프, 스트리머, 사운드를 하나의 몸에 — 로드맵의 목적지. 현재 개발 중입니다.",
+    "status": "개발 중"
   },
   "cta": {
     "title": "방에 생명을 불어넣다.",

@@ -43,7 +43,10 @@ const cacheBust = (src: string) => `${src}?${IMG_VER}`;
             </div>
 
             <div class="tier-body">
-              <h3 class="tier-name">{tier.name}</h3>
+              <div class="tier-head">
+                <h3 class="tier-name">{tier.name}</h3>
+                <span class={`tier-status mono${tier.id !== 'reference' ? ' tier-status-live' : ''}`}>{tier.status}</span>
+              </div>
               <p class="tier-line">“{tier.tagline}”</p>
               <ul class="tier-specs">
                 {tier.specs.map((spec) => (
@@ -138,6 +141,40 @@ const cacheBust = (src: string) => `${src}?${IMG_VER}`;
     font-size: var(--text-h4);
     font-weight: 650;
     letter-spacing: var(--tracking-tight);
+  }
+
+  .tier-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .tier-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-pill);
+    font-size: var(--text-micro);
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    opacity: 0.8;
+    white-space: nowrap;
+  }
+
+  .tier-status::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--tone-600);
+  }
+
+  .tier-status-live::before {
+    background: var(--alive);
   }
 
   .tier-line {

@@ -21,11 +21,11 @@ const { content: brand } = Astro.props;
       <div class="brand-products">
         {
           brand.products.map((product, i) => (
-            <article class="brand-card" style={`--reveal-delay: ${0.2 + i * 0.12}s`}>
+            <a class="brand-card reveal" href={product.href} style={`--reveal-delay: ${0.2 + i * 0.12}s`}>
               <p class="brand-name mono">{product.name}</p>
               <p class="brand-verb">{product.verb}</p>
               <p class="brand-line">{product.line}</p>
-            </article>
+            </a>
           ))
         }
       </div>
@@ -96,6 +96,15 @@ const { content: brand } = Astro.props;
     background: rgba(10, 10, 10, 0.82);
     backdrop-filter: blur(4px);
     min-height: 7.5rem;
+    color: inherit;
+    text-decoration: none;
+    transition: transform var(--dur-fast) var(--ease-out),
+      border-color var(--dur-fast) ease;
+  }
+
+  .brand-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(250, 247, 242, 0.3);
   }
 
   .brand-name {

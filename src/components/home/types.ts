@@ -30,6 +30,7 @@ export interface BrandProduct {
   name: string;
   verb: string;
   line: string;
+  href: string;
 }
 
 export interface Brand {
@@ -144,6 +145,7 @@ export interface HomeFaq {
 
 export interface HardwarePoint {
   name: string;
+  line: string;
 }
 
 export interface HardwareSpec {

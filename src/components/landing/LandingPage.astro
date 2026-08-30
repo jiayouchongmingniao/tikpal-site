@@ -117,6 +117,25 @@ const surface = (i: number) => (i % 2 === 0 ? 'surface-warm' : 'surface-dark gra
           </>
         )}
 
+        {section.kind === 'specCards' && (
+          <>
+            <header class="section-head lp-head-center reveal">
+              <h2 class="h2">{section.title}</h2>
+            </header>
+            {section.intro && <p class="lp-intro reveal">{section.intro}</p>}
+            <div class="lp-spec-cards">
+              {
+                section.cards.map((card, j) => (
+                  <div class="lp-spec-card reveal" style={`--reveal-delay: ${0.08 * j}s`}>
+                    <p class="lp-spec-name mono">{card.name}</p>
+                    <p class="lp-spec-line">{card.line}</p>
+                  </div>
+                ))
+              }
+            </div>
+          </>
+        )}
+
         {section.kind === 'quote' && (
           <>
             <header class="section-head lp-head-center reveal">
@@ -395,6 +414,49 @@ const surface = (i: number) => (i % 2 === 0 ? 'surface-warm' : 'surface-dark gra
 
   .lp-check {
     color: var(--tone-400);
+  }
+
+  /* specCards: capability → reliability → convenience */
+  .lp-spec-cards {
+    margin: var(--space-3) auto 0;
+    max-width: 64rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-2);
+  }
+
+  .lp-spec-card {
+    padding: var(--space-3) 1.4rem;
+    border: 1px solid var(--line-dark);
+    border-radius: var(--radius-m);
+    display: grid;
+    gap: 0.5rem;
+    align-content: start;
+  }
+
+  .lp-spec-name {
+    font-size: var(--text-small);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+  }
+
+  .lp-spec-line {
+    margin: 0;
+    font-size: var(--text-small);
+    line-height: 1.6;
+    opacity: 0.75;
+  }
+
+  @media (max-width: 1080px) {
+    .lp-spec-cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 640px) {
+    .lp-spec-cards {
+      grid-template-columns: 1fr;
+    }
   }
 
   /* quote: spoken example → outcome */

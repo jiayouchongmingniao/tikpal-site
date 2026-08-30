@@ -108,16 +108,34 @@
       ]
     },
     {
-      "kind": "chips",
+      "kind": "specCards",
       "title": "生来就跟着你走。",
-      "chips": [
-        "Quad mic",
-        "AMOLED",
-        "16GB",
-        "820mAh",
-        "IP65"
-      ],
-      "note": "1.75 英寸 AMOLED 屏幕 · 磁吸 pogo-pin 充电 · IP65 防水。"
+      "cards": [
+        {
+          "name": "4 麦克风阵列",
+          "line": "清晰的日常拾音。"
+        },
+        {
+          "name": "1.75\" AMOLED",
+          "line": "关键信息一目了然。"
+        },
+        {
+          "name": "16GB 本地存储",
+          "line": "同步前，录音先保存在设备上。"
+        },
+        {
+          "name": "定制高密度电池",
+          "line": "为可靠的全天使用而设计。"
+        },
+        {
+          "name": "IP65",
+          "line": "防尘防水，从容应对日常。"
+        },
+        {
+          "name": "磁吸 Pogo-Pin 充电",
+          "line": "简单便捷的充电方式。"
+        }
+      ]
     }
   ],
   "faq": {

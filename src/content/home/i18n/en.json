@@ -7,22 +7,25 @@
   "brand": {
     "eyebrow": "Tikpal",
     "title": "Intelligence that moves with you.",
-    "subtitle": "One context. Wherever life happens.",
+    "subtitle": "Tikpal is one intelligence across three experiences: Voice captures, App understands, and Room responds.",
     "products": [
       {
         "name": "Tikpal Voice",
         "verb": "Capture.",
-        "line": "Capture with Voice."
+        "line": "Capture with Voice.",
+        "href": "/voice/"
       },
       {
         "name": "Tikpal App",
         "verb": "Understand.",
-        "line": "Build with App."
+        "line": "Build with App.",
+        "href": "/app/"
       },
       {
         "name": "Tikpal Room",
         "verb": "Respond.",
-        "line": "Experience it with Room."
+        "line": "Experience it with Room.",
+        "href": "/room/"
       }
     ],
     "exploreCta": {
@@ -296,19 +299,28 @@
     "subtitle": "Small enough to stay with you. Ready whenever a thought arrives.",
     "points": [
       {
-        "name": "Quad mic"
+        "name": "4-Mic Array",
+        "line": "Clear everyday voice capture."
       },
       {
-        "name": "AMOLED"
+        "name": "1.75\" AMOLED",
+        "line": "Essential information at a glance."
       },
       {
-        "name": "16GB"
+        "name": "16GB Local Storage",
+        "line": "Keep recordings on-device before sync."
       },
       {
-        "name": "820mAh"
+        "name": "Custom High-Density Battery",
+        "line": "Designed for reliable all-day use."
       },
       {
-        "name": "IP65"
+        "name": "IP65",
+        "line": "Dust and water resistant for everyday use."
+      },
+      {
+        "name": "Magnetic Pogo-Pin Charging",
+        "line": "Simple and convenient charging."
       }
     ],
     "specsToggle": "Full specifications",

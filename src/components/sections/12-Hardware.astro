@@ -15,10 +15,13 @@ const { content: hardware } = Astro.props;
       <p class="lead">{hardware.subtitle}</p>
     </header>
 
-    <div class="hw-chips">
+    <div class="hw-cards">
       {
         hardware.points.map((point, i) => (
-          <span class="hw-chip mono reveal" style={`--reveal-delay: ${i * 0.08}s`}>{point.name}</span>
+          <div class="hw-card reveal" style={`--reveal-delay: ${i * 0.08}s`}>
+            <p class="hw-card-name mono">{point.name}</p>
+            <p class="hw-card-line">{point.line}</p>
+          </div>
         ))
       }
     </div>
@@ -40,21 +43,46 @@ const { content: hardware } = Astro.props;
 </section>
 
 <style>
-  .hw-chips {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .hw-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--space-2);
   }
 
-  .hw-chip {
-    padding: 0.55rem 1.2rem;
+  .hw-card {
+    padding: var(--space-3) 1.4rem;
     border: 1px solid var(--line-light);
-    border-radius: 999px;
+    border-radius: var(--radius-m);
     background: rgba(250, 247, 242, 0.03);
+    display: grid;
+    gap: 0.5rem;
+    align-content: start;
+  }
+
+  .hw-card-name {
     font-size: var(--text-small);
-    letter-spacing: 0.08em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--tone-200);
+  }
+
+  .hw-card-line {
+    margin: 0;
+    font-size: var(--text-small);
+    line-height: 1.6;
     color: var(--tone-400);
+  }
+
+  @media (max-width: 1080px) {
+    .hw-cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hw-cards {
+      grid-template-columns: 1fr;
+    }
   }
 
   .hw-specs {

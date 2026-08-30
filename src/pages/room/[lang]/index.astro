@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import RoomHero from '../../../components/room/RoomHero.astro';
+import RoomRoadmap from '../../../components/room/RoomRoadmap.astro';
 import RoomStates from '../../../components/room/RoomStates.astro';
 import RoomLineup from '../../../components/room/RoomLineup.astro';
 import RoomSystems from '../../../components/room/RoomSystems.astro';
+import RoomAllInOne from '../../../components/room/RoomAllInOne.astro';
 import RoomCta from '../../../components/room/RoomCta.astro';
 import type { RoomContent } from '../../../components/room/types';
 
@@ -74,8 +76,10 @@ const alternates = [
   pageKind="room"
 >
   <RoomHero content={content.hero} />
+  <RoomRoadmap content={content.roadmap} />
   <RoomStates content={content.states} />
   <RoomLineup content={content.lineup} />
   <RoomSystems content={content.systems} />
+  <RoomAllInOne content={content.allInOne} />
   <RoomCta content={content.cta} />
 </BaseLayout>

@@ -7,22 +7,25 @@
   "brand": {
     "eyebrow": "Tikpal",
     "title": "Intelligenz, die sich mit dir bewegt.",
-    "subtitle": "Ein Kontext. Wo auch immer das Leben stattfindet.",
+    "subtitle": "Tikpal ist eine Intelligenz in drei Erlebnissen: Voice erfasst, App versteht, Room antwortet.",
     "products": [
       {
         "name": "Tikpal Voice",
         "verb": "Erfassen.",
-        "line": "Mit Voice festhalten."
+        "line": "Mit Voice festhalten.",
+        "href": "/voice/"
       },
       {
         "name": "Tikpal App",
         "verb": "Verstehen.",
-        "line": "Mit App weiterdenken."
+        "line": "Mit App weiterdenken.",
+        "href": "/app/"
       },
       {
         "name": "Tikpal Room",
         "verb": "Antworten.",
-        "line": "Mit Room erleben."
+        "line": "Mit Room erleben.",
+        "href": "/room/"
       }
     ],
     "exploreCta": {
@@ -296,19 +299,28 @@
     "subtitle": "Klein genug, um immer dabei zu sein. Bereit, sobald ein Gedanke kommt.",
     "points": [
       {
-        "name": "Quad-Mikrofone"
+        "name": "4-Mikrofon-Array",
+        "line": "Klare Sprachaufnahme für den Alltag."
       },
       {
-        "name": "AMOLED"
+        "name": "1,75\" AMOLED",
+        "line": "Wesentliche Infos auf einen Blick."
       },
       {
-        "name": "16GB"
+        "name": "16GB lokaler Speicher",
+        "line": "Aufnahmen bleiben auf dem Gerät, bis sie synchronisiert werden."
       },
       {
-        "name": "820mAh"
+        "name": "Hochdicht-Akku nach Maß",
+        "line": "Entwickelt für zuverlässige Nutzung den ganzen Tag."
       },
       {
-        "name": "IP65"
+        "name": "IP65",
+        "line": "Staub- und wasserfest für den Alltag."
+      },
+      {
+        "name": "Magnetisches Pogo-Pin-Laden",
+        "line": "Einfaches, bequemes Laden."
       }
     ],
     "specsToggle": "Alle Spezifikationen",
