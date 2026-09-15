@@ -7,7 +7,7 @@
   "brand": {
     "eyebrow": "Tikpal",
     "title": "智能，随你而行。",
-    "subtitle": "Tikpal 是一个智能，三种体验：Voice 捕捉，App 理解，Room 回应。",
+    "subtitle": "Voice 捕捉，Intelligence 理解，App 帮你行动，Room 回应。",
     "products": [
       {
         "name": "Tikpal Voice",
@@ -17,7 +17,7 @@
       },
       {
         "name": "Tikpal App",
-        "verb": "理解。",
+        "verb": "行动。",
         "line": "在 App 里慢慢理清。",
         "href": "/app/"
       },
@@ -124,6 +124,19 @@
       }
     ],
     "customLine": "在 App 里创建自定义 AI 任务，让 Tikpal 按你的方式工作。"
+  },
+  "intelligenceBand": {
+    "title": "智能，贯穿这一切。",
+    "lines": [
+      "Voice 把它捕捉下来。",
+      "Intelligence 把它读懂。",
+      "App 把它变成行动。",
+      "Room 把它带进你的空间。"
+    ],
+    "explore": {
+      "label": "了解 Tikpal Intelligence",
+      "href": "/intelligence/"
+    }
   },
   "recall": {
     "title": "找到想法，",

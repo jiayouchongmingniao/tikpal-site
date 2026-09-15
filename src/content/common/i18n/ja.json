@@ -11,6 +11,10 @@
         "href": "/voice/"
       },
       {
+        "label": "Intelligence",
+        "href": "/intelligence/"
+      },
+      {
         "label": "App",
         "href": "/app/"
       },
@@ -45,6 +49,19 @@
           {
             "label": "Room",
             "href": "https://room.tikpal.ai"
+          }
+        ]
+      },
+      {
+        "title": "Tikpal",
+        "links": [
+          {
+            "label": "Intelligence",
+            "href": "/intelligence/"
+          },
+          {
+            "label": "仕組みを見る",
+            "href": "/#demo"
           }
         ]
       },

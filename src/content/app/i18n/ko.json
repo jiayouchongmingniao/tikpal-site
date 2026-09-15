@@ -1,13 +1,13 @@
 {
   "meta": {
     "title": "Tikpal App — 생각을 더 멀리.",
-    "description": "Tikpal App은 캡처한 모든 순간을 이어갑니다—흩어진 조각을 검색, 요약, 내보내기 가능한 맥락으로."
+    "description": "Tikpal App은 캡처한 모든 순간을 이어갑니다—Tikpal Intelligence가 이해한 맥락을 탐색하고, 다듬고, 행동으로 옮기세요."
   },
   "closingLine": "삶과 함께 움직이는 인텔리전스 — 주머니 속에, 당신 곁에.",
   "hero": {
     "eyebrow": "Tikpal App",
     "headline": "생각을 더 멀리.",
-    "subtitle": "Voice가 순간을 담고, App이 이어갑니다—흩어진 조각을 행동할 수 있는 맥락으로.",
+    "subtitle": "Voice가 순간을 담고, Tikpal Intelligence가 맥락을 이해하며, App이 그것을 탐색하고 다듬고 실행하도록 돕습니다.",
     "primaryCta": "Tikpal App 사용해 보기",
     "statusLine": "말하고, 그다음은 맡기세요.",
     "downloads": [
@@ -22,7 +22,7 @@
     ]
   },
   "capture": {
-    "title": "조각이 맥락이 됩니다.",
+    "title": "모든 것이 어떻게 연결되는지 보세요.",
     "timeline": {
       "label": "오늘",
       "entries": [

@@ -7,7 +7,7 @@
   "brand": {
     "eyebrow": "Tikpal",
     "title": "あなたとともに動くインテリジェンス。",
-    "subtitle": "Tikpal はひとつの知性、3 つの体験。Voice が捉え、App が理解し、Room が応えます。",
+    "subtitle": "Voice が捉え、Intelligence が理解し、App が行動を助け、Room が応えます。",
     "products": [
       {
         "name": "Tikpal Voice",
@@ -17,7 +17,7 @@
       },
       {
         "name": "Tikpal App",
-        "verb": "理解。",
+        "verb": "行動。",
         "line": "App で形にする。",
         "href": "/app/"
       },
@@ -124,6 +124,19 @@
       }
     ],
     "customLine": "App でカスタム AI タスクをつくって、Tikpal をあなたのやり方で働かせよう。"
+  },
+  "intelligenceBand": {
+    "title": "知性は、すべてを貫いている。",
+    "lines": [
+      "Voice がそれを捉える。",
+      "Intelligence がそれを理解する。",
+      "App がそれを行動に変える。",
+      "Room がそれをあなたの空間へ。"
+    ],
+    "explore": {
+      "label": "Tikpal Intelligence を見る",
+      "href": "/intelligence/"
+    }
   },
   "recall": {
     "title": "アイデアを見つける。",

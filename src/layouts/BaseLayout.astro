@@ -28,8 +28,9 @@ interface Props {
   // Optional per-page override for the footer closing line.
   footerClosingLine?: string;
   // Drives language-switcher link targets. Known kinds: 'home' | 'room' |
-  // 'app' | landing slugs ('voice', 'ai-note-taker', ...) | 'compare/{slug}'
-  // | 'use-cases/{slug}' | 'privacy' | 'terms' | 'about' | 'support' | 'faq'.
+  // 'intelligence' | 'app' | landing slugs ('voice', 'ai-note-taker', ...)
+  // | 'compare/{slug}' | 'use-cases/{slug}' | 'privacy' | 'terms' | 'about'
+  // | 'support' | 'faq'.
   pageKind?: string;
   // Structured data graphs rendered as application/ld+json scripts in <head>.
   jsonLd?: object[];
@@ -106,6 +107,37 @@ const ogImageUrl = new URL(ogImage, Astro.site);
         .chain .chain-link {
           opacity: 1 !important;
           transform: none !important;
+        }
+
+        /* the /intelligence screens are choreographed off .is-visible, which
+           only arrives via JS — force every step to its final state here */
+        .bl-quote-card,
+        .bl-commit,
+        .bl-node,
+        .bl-edge,
+        .ev-node,
+        .as-you,
+        .as-tikpal,
+        .as-answer,
+        .ac-target {
+          opacity: 1 !important;
+        }
+
+        .bl-bridge,
+        .bl-link,
+        .ev-arrow-line {
+          transform: none !important;
+        }
+
+        .ev-arrow-head {
+          opacity: 1 !important;
+          transform: rotate(45deg) !important;
+        }
+
+        @media (max-width: 1080px) {
+          .ev-arrow-head {
+            transform: rotate(135deg) !important;
+          }
         }
       </style>
     </noscript>

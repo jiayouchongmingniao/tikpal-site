@@ -15,29 +15,34 @@ const { crumbs, hero, sections, faq, finalCta } = content;
 const surface = (i: number) => (i % 2 === 0 ? 'surface-warm' : 'surface-dark grain');
 ---
 
-<!-- Visible breadcrumb (mirrored by BreadcrumbList schema) -->
-<nav class="lp-crumbbar" aria-label="Breadcrumb">
-  <ol class="lp-crumbs mono">
-    <li><a href={homeHref}>{homeLabel}</a></li>
-    {
-      crumbs.map((c, i) => (
-        <li>
-          <span class="lp-crumb-sep" aria-hidden="true">/</span>
-          {i === crumbs.length - 1 || !c.href ? (
-            <span class="lp-crumb-current" aria-current={i === crumbs.length - 1 ? 'page' : undefined}>
-              {c.label}
-            </span>
-          ) : (
-            <a href={c.href}>{c.label}</a>
-          )}
-        </li>
-      ))
-    }
-  </ol>
-</nav>
+<!-- Visible breadcrumb: only nested trails (Home / X / Y) earn the strip;
+     a two-item trail just repeats what the nav and H1 already say. -->
+{
+  crumbs.length > 1 && (
+    <nav class="lp-crumbbar" aria-label="Breadcrumb">
+      <ol class="lp-crumbs mono">
+        <li><a href={homeHref}>{homeLabel}</a></li>
+        {
+          crumbs.map((c, i) => (
+            <li>
+              <span class="lp-crumb-sep" aria-hidden="true">/</span>
+              {i === crumbs.length - 1 || !c.href ? (
+                <span class="lp-crumb-current" aria-current={i === crumbs.length - 1 ? 'page' : undefined}>
+                  {c.label}
+                </span>
+              ) : (
+                <a href={c.href}>{c.label}</a>
+              )}
+            </li>
+          ))
+        }
+      </ol>
+    </nav>
+  )
+}
 
 <!-- SEO hero -->
-<section class="lp-hero section surface-dark grain">
+<section class={`lp-hero section surface-dark grain${crumbs.length > 1 ? '' : ' lp-hero-bare'}`}>
   <div class="container lp-hero-copy">
     <p class="eyebrow mono reveal">{hero.eyebrow}</p>
     <h1 class="lp-title reveal" style="--reveal-delay: 0.08s">{hero.title}</h1>
@@ -291,6 +296,12 @@ const surface = (i: number) => (i % 2 === 0 ? 'surface-warm' : 'surface-dark gra
     align-items: center;
     justify-content: center;
     padding-top: var(--space-3);
+  }
+
+  /* without the crumb strip the hero owns the fixed-header clearance,
+     keeping the top gap in the same register as the section bottom pad */
+  .lp-hero.lp-hero-bare {
+    padding-top: calc(var(--section-pad) + 1rem);
   }
 
   .lp-hero-copy {

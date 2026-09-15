@@ -1,13 +1,13 @@
 {
   "meta": {
     "title": "Tikpal App — 思考を、さらに先へ。",
-    "description": "Tikpal App は、キャプチャしたすべての瞬間を引き継ぎます。断片をつなぎ、検索・要約・エクスポートできる文脈に。"
+    "description": "Tikpal App は、キャプチャしたすべての瞬間を引き継ぎます。Tikpal Intelligence が理解した文脈を探索し、整理し、行動に。"
   },
   "closingLine": "暮らしとともに動くインテリジェンス——ポケットの中に、あなたのそばに。",
   "hero": {
     "eyebrow": "Tikpal App",
     "headline": "思考を、さらに先へ。",
-    "subtitle": "Voice が瞬間をキャプチャーし、App がその先へ——断片をつなぎ、行動できる文脈に。",
+    "subtitle": "Voice が瞬間を捉え、Tikpal Intelligence が文脈を理解し、App がその探索と整理、実行を助けます。",
     "primaryCta": "Tikpal App を試す",
     "statusLine": "話したら、あとは任せる。",
     "downloads": [
@@ -22,7 +22,7 @@
     ]
   },
   "capture": {
-    "title": "断片が、文脈になる。",
+    "title": "すべてが、どうつながるか。",
     "timeline": {
       "label": "今日",
       "entries": [

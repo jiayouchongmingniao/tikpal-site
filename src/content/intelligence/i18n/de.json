@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "Tikpal Intelligence — Deine Welt, verstanden",
+    "description": "Tikpal Intelligence versteht die Menschen, Projekte, Ideen, Entscheidungen, Zusagen und nächsten Schritte hinter deinen Sprachnotizen — damit jeder neue Gedanke mit Kontext beginnt, nicht bei null."
+  },
+  "closingLine": "Intelligenz, die mit dem Leben mitgeht — und deine Welt versteht.",
+  "hero": {
+    "eyebrow": "Tikpal Intelligence",
+    "headline": "Deine Welt, verstanden.",
+    "subtitle": "Jeder Moment fügt Kontext hinzu. Tikpal versteht die Menschen, Projekte, Ideen, Entscheidungen, Zusagen — und was als Nächstes kommt."
+  },
+  "belong": {
+    "title": "Es weiß, was zusammengehört.",
+    "titleLine2": "Und was es jetzt bedeutet.",
+    "valueLine": "Du musst nicht jedes Mal bei null anfangen.",
+    "quoteLabel": "Du sagst",
+    "quote": "John gefällt das breitere Gehäuse. Nächste Woche bauen wir einen Prototyp. Ich habe versprochen, ihm die neuen Zeichnungen bis Freitag zu schicken.",
+    "chain": [
+      {
+        "name": "John",
+        "type": "Person",
+        "edge": "arbeitet an"
+      },
+      {
+        "name": "Speaker Project",
+        "type": "Projekt",
+        "edge": "enthält"
+      },
+      {
+        "name": "Wider enclosure",
+        "type": "Entscheidung",
+        "edge": "führt zu"
+      },
+      {
+        "name": "Prototype V3",
+        "type": "Aufgabe",
+        "edge": ""
+      }
+    ],
+    "commitment": {
+      "name": "John die neuen Zeichnungen schicken",
+      "meta": "Zusage · Freitag"
+    }
+  },
+  "evolve": {
+    "title": "Es erinnert sich, wie sich Dinge entwickeln.",
+    "stages": [
+      "Idee",
+      "Diskussion",
+      "Entscheidung",
+      "Aufgabe",
+      "Ergebnis"
+    ],
+    "closing": "Kein Haufen alter Aufnahmen — der Weg von der Idee zum Ergebnis."
+  },
+  "state": {
+    "title": "Es weiß, wo die Dinge stehen.",
+    "subject": "Speaker Project",
+    "rows": [
+      {
+        "label": "Status",
+        "value": "Prototype V3"
+      },
+      {
+        "label": "Beteiligte",
+        "value": "John, David"
+      },
+      {
+        "label": "Letzte Entscheidung",
+        "value": "Wider enclosure"
+      },
+      {
+        "label": "Offene Zusage",
+        "value": "John die neuen Zeichnungen schicken"
+      },
+      {
+        "label": "Nächster Schritt",
+        "value": "Messreview · Freitag"
+      },
+      {
+        "label": "Blocker",
+        "value": "Lieferanten-Timing"
+      }
+    ]
+  },
+  "ask": {
+    "title": "Natürlich fragen. Direkt handeln.",
+    "youLabel": "Du",
+    "question": "Wo stehen wir beim Lautsprecher?",
+    "tikpalLabel": "Tikpal",
+    "answers": [
+      "Als Nächstes kommt Prototype V3.",
+      "John hat dem breiteren Gehäuse zugestimmt.",
+      "Die Lieferung kommt am Freitag.",
+      "Die Prüfung der Messwerte ist noch offen."
+    ],
+    "targets": [
+      "Gmail",
+      "Todoist",
+      "Calendar",
+      "Notion",
+      "Studio"
+    ],
+    "cta": {
+      "label": "App entdecken",
+      "href": "/app/"
+    }
+  }
+}

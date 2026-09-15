@@ -36,6 +36,7 @@ export const HOME_LABELS: Record<string, string> = {
 // Path of a localized page area for `lang`:
 // - 'home': / and /{lang}/
 // - 'room': /room/{lang}/
+// - 'intelligence': /intelligence/{lang}/
 // - 'app': /app/{lang}/
 // - landing slugs ('voice', 'ai-note-taker', ...): /{slug}/{lang}/
 // - 'compare/*' and 'use-cases/*': /{kind}/{lang}/
@@ -43,6 +44,7 @@ export const HOME_LABELS: Record<string, string> = {
 export function pagePath(kind: string, lang: string): string {
   if (kind === 'home') return homePath(lang);
   if (kind === 'room') return `/room/${lang}/`;
+  if (kind === 'intelligence') return `/intelligence/${lang}/`;
   if (kind === 'app') return `/app/${lang}/`;
   if ((LANDING_SLUGS as readonly string[]).includes(kind)) return `/${kind}/${lang}/`;
   if (kind.startsWith('compare/')) return `/compare/${kind.slice('compare/'.length)}/${lang}/`;
@@ -53,16 +55,17 @@ export function pagePath(kind: string, lang: string): string {
 
 // Rewrite one href for the active language:
 // - external URLs, mailto/tel and bare anchors stay untouched
-// - /room* and /app* routes point at the localized /room/{lang}/ and
-//   /app/{lang}/ pages (never the bare /room/ or /app/ browser-language
-//   detection entries, so in-site navigation keeps the language the user
-//   is currently reading)
+// - /room*, /intelligence* and /app* routes point at the localized
+//   /room/{lang}/, /intelligence/{lang}/ and /app/{lang}/ pages (never the
+//   bare /room/, /intelligence/ or /app/ browser-language detection entries,
+//   so in-site navigation keeps the language the user is currently reading)
 // - other internal paths get the /{lang} prefix (en keeps /)
 export function localizeHref(href: string, lang: string): string {
   if (!href || href === '#') return href;
   if (href.startsWith('#')) return href;
   if (/^[a-z][a-z0-9+.-]*:/i.test(href)) return href;
   if (href.startsWith('/room')) return `/room/${lang}/`;
+  if (href.startsWith('/intelligence')) return `/intelligence/${lang}/`;
   if (href.startsWith('/app')) return `/app/${lang}/`;
   if (href.startsWith('/compare/')) return `${href}${lang}/`;
   if (href.startsWith('/use-cases/')) return `${href}${lang}/`;

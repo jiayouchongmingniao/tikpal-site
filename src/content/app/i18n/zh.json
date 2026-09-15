@@ -1,13 +1,13 @@
 {
   "meta": {
     "title": "Tikpal App — 延展你的思维。",
-    "description": "Tikpal App 把每一个被捕捉的瞬间延续下去——把零散片段连成可搜索、可摘要、可导出的上下文。"
+    "description": "Tikpal App 把每一个被捕捉的瞬间延续下去——探索、梳理，并对 Tikpal Intelligence 已理解的上下文采取行动。"
   },
   "closingLine": "随生活流动的智能——装进口袋，陪在你身边。",
   "hero": {
     "eyebrow": "Tikpal App",
     "headline": "延展你的思维。",
-    "subtitle": "Voice 捕捉瞬间，App 让它继续生长——把零散片段连成可行动的上下文。",
+    "subtitle": "Voice 捕捉当下，Tikpal Intelligence 理解上下文，App 帮你探索、梳理并付诸行动。",
     "primaryCta": "试试 Tikpal App",
     "statusLine": "说出口，让它接着生长。",
     "downloads": [
@@ -22,7 +22,7 @@
     ]
   },
   "capture": {
-    "title": "碎片，连成上下文。",
+    "title": "看它如何连成一个整体。",
     "timeline": {
       "label": "今天",
       "entries": [

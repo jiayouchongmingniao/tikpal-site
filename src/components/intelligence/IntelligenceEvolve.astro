@@ -1,0 +1,295 @@
+---
+import type { IntelligenceEvolve } from './types';
+
+interface Props {
+  content: IntelligenceEvolve;
+}
+
+const { content } = Astro.props;
+
+const last = content.stages.length - 1;
+---
+
+<section id="evolve" class="section surface-room grain">
+  <div class="container">
+    <header class="section-head reveal">
+      <h2 class="h2">{content.title}</h2>
+    </header>
+
+    <ol class="ev-track reveal">
+      {
+        content.stages.map((stage, i) => (
+          <li class="ev-step">
+            <div class="ev-node" data-ev-node={i}>
+              <span class="ev-index mono">0{i + 1}</span>
+              <span class="ev-name">{stage}</span>
+            </div>
+            {i < last && (
+              <span class="ev-arrow" data-ev-arrow={i} aria-hidden="true">
+                <span class="ev-arrow-line"></span>
+                <span class="ev-arrow-head"></span>
+              </span>
+            )}
+          </li>
+        ))
+      }
+    </ol>
+
+    <p class="ev-closing reveal" style="--reveal-delay: 0.2s">{content.closing}</p>
+  </div>
+</section>
+
+<style>
+  .ev-track {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .ev-step {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  /* the last step carries no arrow, so it simply fills its cell */
+  .ev-step:last-child {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ev-node {
+    display: grid;
+    gap: 0.45rem;
+    padding: var(--space-3) 1.2rem;
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-m);
+    background: rgba(250, 247, 242, 0.045);
+    min-height: 7.5rem;
+    align-content: start;
+    opacity: 0;
+  }
+
+  .ev-index {
+    font-size: var(--text-micro);
+    letter-spacing: 0.14em;
+    opacity: 0.45;
+  }
+
+  .ev-name {
+    font-family: var(--font-display);
+    font-size: var(--text-h4);
+    font-weight: 650;
+    letter-spacing: var(--tracking-tight);
+    line-height: 1.15;
+  }
+
+  .ev-arrow {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    width: 2.5rem;
+  }
+
+  .ev-arrow-line {
+    height: 1px;
+    background: var(--tone-500);
+    transform: scaleX(0);
+    transform-origin: left center;
+  }
+
+  .ev-arrow-head {
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid var(--tone-500);
+    border-right: 1px solid var(--tone-500);
+    transform: rotate(45deg) scale(0);
+    opacity: 0;
+  }
+
+  /* each stage lands, then its arrow draws toward the next one */
+  .ev-track.is-visible .ev-node[data-ev-node='0'] {
+    animation: ev-in 0.6s var(--ease-out) forwards;
+  }
+  .ev-track.is-visible .ev-arrow[data-ev-arrow='0'] .ev-arrow-line {
+    animation: ev-draw 0.45s var(--ease-out) 0.35s forwards;
+  }
+  .ev-track.is-visible .ev-arrow[data-ev-arrow='0'] .ev-arrow-head {
+    animation: ev-head 0.3s ease 0.7s forwards;
+  }
+  .ev-track.is-visible .ev-node[data-ev-node='1'] {
+    animation: ev-in 0.6s var(--ease-out) 0.6s forwards;
+  }
+  .ev-track.is-visible .ev-arrow[data-ev-arrow='1'] .ev-arrow-line {
+    animation: ev-draw 0.45s var(--ease-out) 0.95s forwards;
+  }
+  .ev-track.is-visible .ev-arrow[data-ev-arrow='1'] .ev-arrow-head {
+    animation: ev-head 0.3s ease 1.3s forwards;
+  }
+  .ev-track.is-visible .ev-node[data-ev-node='2'] {
+    animation: ev-in 0.6s var(--ease-out) 1.2s forwards;
+  }
+  .ev-track.is-visible .ev-arrow[data-ev-arrow='2'] .ev-arrow-line {
+    animation: ev-draw 0.45s var(--ease-out) 1.55s forwards;
+  }
+  .ev-track.is-visible .ev-arrow[data-ev-arrow='2'] .ev-arrow-head {
+    animation: ev-head 0.3s ease 1.9s forwards;
+  }
+  .ev-track.is-visible .ev-node[data-ev-node='3'] {
+    animation: ev-in 0.6s var(--ease-out) 1.8s forwards;
+  }
+  .ev-track.is-visible .ev-arrow[data-ev-arrow='3'] .ev-arrow-line {
+    animation: ev-draw 0.45s var(--ease-out) 2.15s forwards;
+  }
+  .ev-track.is-visible .ev-arrow[data-ev-arrow='3'] .ev-arrow-head {
+    animation: ev-head 0.3s ease 2.5s forwards;
+  }
+  .ev-track.is-visible .ev-node[data-ev-node='4'] {
+    animation: ev-in 0.6s var(--ease-out) 2.4s forwards;
+  }
+
+  @keyframes ev-in {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes ev-draw {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  @keyframes ev-head {
+    from {
+      opacity: 0;
+      transform: rotate(45deg) scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(45deg) scale(1);
+    }
+  }
+
+  .ev-closing {
+    margin: var(--space-4) auto 0;
+    max-width: 42rem;
+    text-align: center;
+    font-size: var(--text-lead);
+    line-height: 1.55;
+    opacity: 0.82;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ev-node {
+      animation: none;
+      opacity: 1;
+    }
+    .ev-arrow-line,
+    .ev-arrow-head {
+      animation: none;
+      transform: none;
+      opacity: 1;
+    }
+    .ev-arrow-head {
+      transform: rotate(45deg);
+    }
+  }
+
+  /* tablet and below: the track turns into a vertical timeline */
+  @media (max-width: 1080px) {
+    .ev-track {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0;
+    }
+
+    .ev-step,
+    .ev-step:last-child {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0;
+    }
+
+    .ev-node {
+      min-height: 0;
+      grid-template-columns: auto minmax(0, 1fr);
+      align-items: center;
+      gap: 0.9rem;
+      padding: var(--space-2) 1.2rem;
+    }
+
+    .ev-arrow {
+      width: 1px;
+      height: 2rem;
+      margin-left: 2rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto;
+    }
+
+    .ev-arrow-line {
+      width: 1px;
+      height: 100%;
+      transform: scaleY(0);
+      transform-origin: top center;
+    }
+
+    .ev-arrow-head {
+      justify-self: center;
+      transform: rotate(135deg) scale(0);
+    }
+
+    .ev-track.is-visible .ev-arrow[data-ev-arrow='0'] .ev-arrow-line,
+    .ev-track.is-visible .ev-arrow[data-ev-arrow='1'] .ev-arrow-line,
+    .ev-track.is-visible .ev-arrow[data-ev-arrow='2'] .ev-arrow-line,
+    .ev-track.is-visible .ev-arrow[data-ev-arrow='3'] .ev-arrow-line {
+      animation-name: ev-draw-y;
+    }
+
+    .ev-track.is-visible .ev-arrow[data-ev-arrow='0'] .ev-arrow-head,
+    .ev-track.is-visible .ev-arrow[data-ev-arrow='1'] .ev-arrow-head,
+    .ev-track.is-visible .ev-arrow[data-ev-arrow='2'] .ev-arrow-head,
+    .ev-track.is-visible .ev-arrow[data-ev-arrow='3'] .ev-arrow-head {
+      animation-name: ev-head-y;
+    }
+  }
+
+  @keyframes ev-draw-y {
+    from {
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
+    }
+  }
+
+  @keyframes ev-head-y {
+    from {
+      opacity: 0;
+      transform: rotate(135deg) scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(135deg) scale(1);
+    }
+  }
+
+  @media (max-width: 1080px) and (prefers-reduced-motion: reduce) {
+    .ev-arrow-line,
+    .ev-arrow-head {
+      animation: none;
+      transform: none;
+    }
+    .ev-arrow-head {
+      transform: rotate(135deg);
+    }
+  }
+</style>

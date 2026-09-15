@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "Tikpal Intelligence — Il tuo mondo, compreso",
+    "description": "Tikpal Intelligence comprende le persone, i progetti, le idee, le decisioni, gli impegni e i prossimi passi dietro le tue note vocali: ogni nuovo pensiero parte con contesto, non da zero."
+  },
+  "closingLine": "Intelligenza che si muove con la vita — e comprende il tuo mondo.",
+  "hero": {
+    "eyebrow": "Tikpal Intelligence",
+    "headline": "Il tuo mondo, compreso.",
+    "subtitle": "Ogni momento aggiunge contesto. Tikpal comprende le persone, i progetti, le idee, le decisioni, gli impegni — e ciò che viene dopo."
+  },
+  "belong": {
+    "title": "Sa quali cose stanno insieme.",
+    "titleLine2": "E cosa significa adesso.",
+    "valueLine": "Non riparti da zero ogni volta.",
+    "quoteLabel": "Tu dici",
+    "quote": "A John piace la cassa più larga. Prototipiamola la prossima settimana; ho promesso di mandargli i nuovi disegni entro venerdì.",
+    "chain": [
+      {
+        "name": "John",
+        "type": "Persona",
+        "edge": "lavora a"
+      },
+      {
+        "name": "Speaker Project",
+        "type": "Progetto",
+        "edge": "contiene"
+      },
+      {
+        "name": "Wider enclosure",
+        "type": "Decisione",
+        "edge": "porta a"
+      },
+      {
+        "name": "Prototype V3",
+        "type": "Attività",
+        "edge": ""
+      }
+    ],
+    "commitment": {
+      "name": "Mandare i disegni a John",
+      "meta": "Impegno · venerdì"
+    }
+  },
+  "evolve": {
+    "title": "Ricorda come evolvono le cose.",
+    "stages": [
+      "Idea",
+      "Discussione",
+      "Decisione",
+      "Attività",
+      "Risultato"
+    ],
+    "closing": "Non una pila di vecchie registrazioni: il percorso dall'idea al risultato."
+  },
+  "state": {
+    "title": "Sa a che punto sono le cose.",
+    "subject": "Speaker Project",
+    "rows": [
+      {
+        "label": "Stato",
+        "value": "Prototype V3"
+      },
+      {
+        "label": "Persone",
+        "value": "John, David"
+      },
+      {
+        "label": "Ultima decisione",
+        "value": "Wider enclosure"
+      },
+      {
+        "label": "Impegno aperto",
+        "value": "Mandare i disegni a John"
+      },
+      {
+        "label": "Prossimo passo",
+        "value": "Revisione misure · venerdì"
+      },
+      {
+        "label": "Blocco",
+        "value": "Tempistiche fornitore"
+      }
+    ]
+  },
+  "ask": {
+    "title": "Chiedi con naturalezza. Agisci subito.",
+    "youLabel": "Tu",
+    "question": "A che punto siamo con l'altoparlante?",
+    "tikpalLabel": "Tikpal",
+    "answers": [
+      "Il prossimo passo è Prototype V3.",
+      "John ha approvato il cabinet più largo.",
+      "La consegna del fornitore è venerdì.",
+      "La verifica delle misure è ancora aperta."
+    ],
+    "targets": [
+      "Gmail",
+      "Todoist",
+      "Calendar",
+      "Notion",
+      "Studio"
+    ],
+    "cta": {
+      "label": "Scopri App",
+      "href": "/app/"
+    }
+  }
+}

@@ -11,6 +11,7 @@ const ORIGIN = 'https://www.tikpal.ai';
 const GROUPS: { path: (lang: string) => string; xDefault: string }[] = [
   { path: (l) => (l === 'en' ? '/' : `/${l}/`), xDefault: '/' },
   { path: (l) => `/room/${l}/`, xDefault: '/room/en/' },
+  { path: (l) => `/intelligence/${l}/`, xDefault: '/intelligence/en/' },
   { path: (l) => `/app/${l}/`, xDefault: '/app/en/' },
   { path: (l) => `/voice/${l}/`, xDefault: '/voice/en/' },
   { path: (l) => `/compare/tikpal-vs-plaud/${l}/`, xDefault: '/compare/tikpal-vs-plaud/en/' },

@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import IntelligenceHero from '../../../components/intelligence/IntelligenceHero.astro';
+import IntelligenceBelong from '../../../components/intelligence/IntelligenceBelong.astro';
+import IntelligenceEvolve from '../../../components/intelligence/IntelligenceEvolve.astro';
+import IntelligenceState from '../../../components/intelligence/IntelligenceState.astro';
+import IntelligenceAsk from '../../../components/intelligence/IntelligenceAsk.astro';
+import type { IntelligenceContent } from '../../../components/intelligence/types';
+import { localizeContent } from '../../../utils/i18n';
+
+import en from '../../../content/intelligence/i18n/en.json';
+import de from '../../../content/intelligence/i18n/de.json';
+import it from '../../../content/intelligence/i18n/it.json';
+import ko from '../../../content/intelligence/i18n/ko.json';
+import ja from '../../../content/intelligence/i18n/ja.json';
+import zh from '../../../content/intelligence/i18n/zh.json';
+import es from '../../../content/intelligence/i18n/es.json';
+
+import enCommon from '../../../content/common/i18n/en.json';
+import deCommon from '../../../content/common/i18n/de.json';
+import itCommon from '../../../content/common/i18n/it.json';
+import koCommon from '../../../content/common/i18n/ko.json';
+import jaCommon from '../../../content/common/i18n/ja.json';
+import zhCommon from '../../../content/common/i18n/zh.json';
+import esCommon from '../../../content/common/i18n/es.json';
+import type { CommonContent } from '../../../components/home/types';
+
+export const INTELLIGENCE_LANGS = ['en', 'de', 'it', 'ko', 'ja', 'zh', 'es'] as const;
+
+// localizeContent rewrites the in-page /app/ CTA to /app/{lang}/ so navigating
+// onward keeps the language the user is reading.
+const locales: Record<string, IntelligenceContent> = {
+  en: localizeContent(en as IntelligenceContent, 'en'),
+  de: localizeContent(de as IntelligenceContent, 'de'),
+  it: localizeContent(it as IntelligenceContent, 'it'),
+  ko: localizeContent(ko as IntelligenceContent, 'ko'),
+  ja: localizeContent(ja as IntelligenceContent, 'ja'),
+  zh: localizeContent(zh as IntelligenceContent, 'zh'),
+  es: localizeContent(es as IntelligenceContent, 'es'),
+};
+
+const commonLocales: Record<string, CommonContent> = {
+  en: enCommon as CommonContent,
+  de: deCommon as CommonContent,
+  it: itCommon as CommonContent,
+  ko: koCommon as CommonContent,
+  ja: jaCommon as CommonContent,
+  zh: zhCommon as CommonContent,
+  es: esCommon as CommonContent,
+};
+
+export function getStaticPaths() {
+  return INTELLIGENCE_LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as string;
+const content = locales[lang];
+
+// 7 language alternates + x-default → /intelligence/en/
+const alternates = [
+  ...INTELLIGENCE_LANGS.map((l) => ({
+    lang: l,
+    href: new URL(`/intelligence/${l}/`, Astro.site).href,
+  })),
+  { lang: 'x-default', href: new URL('/intelligence/en/', Astro.site).href },
+];
+---
+
+<BaseLayout
+  title={content.meta.title}
+  description={content.meta.description}
+  lang={lang}
+  alternates={alternates}
+  currentLang={lang}
+  common={commonLocales[lang]}
+  footerClosingLine={content.closingLine}
+  pageKind="intelligence"
+>
+  <IntelligenceHero content={content.hero} />
+  <IntelligenceBelong content={content.belong} />
+  <IntelligenceEvolve content={content.evolve} />
+  <IntelligenceState content={content.state} />
+  <IntelligenceAsk content={content.ask} />
+</BaseLayout>

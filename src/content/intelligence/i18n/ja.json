@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "Tikpal Intelligence — あなたの世界を理解する",
+    "description": "Tikpal Intelligence は、ボイスメモの背後にある人物・プロジェクト・アイデア・決定・約束・次の一歩を理解します。すべての新しい思考が、ゼロからではなく文脈を持った状態で始まります。"
+  },
+  "closingLine": "暮らしとともに動く知性が、あなたの世界を理解する。",
+  "hero": {
+    "eyebrow": "Tikpal Intelligence",
+    "headline": "あなたの世界を、理解する。",
+    "subtitle": "ひとつの瞬間ごとに、文脈が増えていきます。Tikpal は大切な人物・プロジェクト・アイデア・決定・約束——そして、その先に何が続くかを理解します。"
+  },
+  "belong": {
+    "title": "何と何がつながるべきかを、知っている。",
+    "titleLine2": "そして、それが今何を意味するかも。",
+    "valueLine": "毎回ゼロから始めなくていい。",
+    "quoteLabel": "あなたの一言",
+    "quote": "John はより広いエンクロージャーが好みだ。来週プロトタイプを作ろう。金曜日までに新しい図面を送ると約束した。",
+    "chain": [
+      {
+        "name": "John",
+        "type": "人物",
+        "edge": "担当"
+      },
+      {
+        "name": "Speaker Project",
+        "type": "プロジェクト",
+        "edge": "含む"
+      },
+      {
+        "name": "Wider enclosure",
+        "type": "決定",
+        "edge": "につながる"
+      },
+      {
+        "name": "Prototype V3",
+        "type": "タスク",
+        "edge": ""
+      }
+    ],
+    "commitment": {
+      "name": "John に新しい図面を送る",
+      "meta": "約束 · 金曜"
+    }
+  },
+  "evolve": {
+    "title": "物事がどう変わるかを、覚えている。",
+    "stages": [
+      "アイデア",
+      "議論",
+      "決定",
+      "タスク",
+      "結果"
+    ],
+    "closing": "古い録音の山ではなく、アイデアから結果までの道のり。"
+  },
+  "state": {
+    "title": "今どこまで進んでいるかを、知っている。",
+    "subject": "Speaker Project",
+    "rows": [
+      {
+        "label": "ステータス",
+        "value": "Prototype V3"
+      },
+      {
+        "label": "参加者",
+        "value": "John、David"
+      },
+      {
+        "label": "最新の決定",
+        "value": "Wider enclosure"
+      },
+      {
+        "label": "未完了の約束",
+        "value": "John に新しい図面を送る"
+      },
+      {
+        "label": "次のステップ",
+        "value": "計測レビュー · 金曜"
+      },
+      {
+        "label": "ブロッカー",
+        "value": "サプライヤーの納期"
+      }
+    ]
+  },
+  "ask": {
+    "title": "自然に聞いて、そのまま行動。",
+    "youLabel": "あなた",
+    "question": "スピーカーの件、今どこまで？",
+    "tikpalLabel": "Tikpal",
+    "answers": [
+      "次は Prototype V3 です。",
+      "John はより広い箱に賛成しました。",
+      "供給者の納品は金曜です。",
+      "計測データの確認はまだ完了していません。"
+    ],
+    "targets": [
+      "Gmail",
+      "Todoist",
+      "Calendar",
+      "Notion",
+      "Studio"
+    ],
+    "cta": {
+      "label": "App を見る",
+      "href": "/app/"
+    }
+  }
+}

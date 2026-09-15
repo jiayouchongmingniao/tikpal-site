@@ -3,26 +3,11 @@ import type { ComparePageContent } from './types';
 
 interface Props {
   content: ComparePageContent;
-  // Localized breadcrumb labels (mirrored by BreadcrumbList schema).
-  homeLabel: string;
-  homeHref: string;
-  crumbLabel: string;
 }
 
-const { content, homeLabel, homeHref, crumbLabel } = Astro.props;
+const { content } = Astro.props;
 const { hero, shared, table, fit, cta } = content;
 ---
-
-<!-- Visible breadcrumb (mirrored by BreadcrumbList schema) -->
-<nav class="cp-crumbbar" aria-label="Breadcrumb">
-  <ol class="cp-crumbs mono">
-    <li><a href={homeHref}>{homeLabel}</a></li>
-    <li>
-      <span class="cp-crumb-sep" aria-hidden="true">/</span>
-      <span class="cp-crumb-current" aria-current="page">{crumbLabel}</span>
-    </li>
-  </ol>
-</nav>
 
 <!-- Hero: H1 targets "Plaud alternative" -->
 <section class="cp-hero section surface-dark grain">
@@ -120,53 +105,12 @@ const { hero, shared, table, fit, cta } = content;
 </section>
 
 <style>
-  .cp-crumbbar {
-    position: relative;
-    z-index: 2;
-    padding: 5.4rem 1.4rem 0;
-    background: #0a0a0a;
-  }
-
-  .cp-crumbs {
-    max-width: 72rem;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.55rem;
-    list-style: none;
-    padding: 0;
-    font-size: var(--text-micro);
-    letter-spacing: 0.08em;
-    color: rgba(250, 247, 242, 0.6);
-  }
-
-  .cp-crumbs a {
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: color 0.25s ease, border-color 0.25s ease;
-  }
-
-  .cp-crumbs a:hover {
-    color: rgba(250, 247, 242, 0.95);
-    border-color: currentColor;
-  }
-
-  .cp-crumb-sep {
-    opacity: 0.4;
-    margin-right: 0.55rem;
-  }
-
-  .cp-crumb-current {
-    color: rgba(250, 247, 242, 0.9);
-  }
-
   .cp-hero {
     min-height: 62svh;
     display: flex;
     align-items: center;
-    padding-top: calc(var(--section-pad) + 1rem);
+    /* owns the fixed-header clearance now that the crumb strip is gone */
+    padding-top: calc(5.4rem + var(--section-pad));
   }
 
   .cp-hero-copy {

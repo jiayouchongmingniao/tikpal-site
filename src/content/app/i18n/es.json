@@ -1,13 +1,13 @@
 {
   "meta": {
     "title": "Tikpal App — Tu pensamiento, prolongado.",
-    "description": "La Tikpal App lleva cada momento capturado más allá — los fragmentos se convierten en contexto que puedes buscar, resumir y exportar."
+    "description": "La Tikpal App lleva cada momento capturado más allá: explora, da forma y actúa sobre el contexto que entiende Tikpal Intelligence."
   },
   "closingLine": "Inteligencia que se mueve con la vida — en tu bolsillo, a tu lado.",
   "hero": {
     "eyebrow": "Tikpal App",
     "headline": "Tu pensamiento, prolongado.",
-    "subtitle": "Voice atrapa el momento — App lo lleva adelante y convierte los fragmentos en contexto listo para actuar.",
+    "subtitle": "Voice atrapa el momento. Tikpal Intelligence entiende el contexto. App te ayuda a explorarlo, darle forma y actuar.",
     "primaryCta": "Probar Tikpal App",
     "statusLine": "Dilo — y deja que siga creciendo.",
     "downloads": [
@@ -22,7 +22,7 @@
     ]
   },
   "capture": {
-    "title": "Los fragmentos se vuelven contexto.",
+    "title": "Mira cómo todo encaja.",
     "timeline": {
       "label": "Hoy",
       "entries": [

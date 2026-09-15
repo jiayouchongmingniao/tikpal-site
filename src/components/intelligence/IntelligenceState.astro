@@ -1,0 +1,87 @@
+---
+import type { IntelligenceState } from './types';
+
+interface Props {
+  content: IntelligenceState;
+}
+
+const { content } = Astro.props;
+---
+
+<section id="state" class="section surface-dark grain">
+  <div class="container">
+    <header class="section-head reveal">
+      <h2 class="h2">{content.title}</h2>
+    </header>
+
+    <!-- where a real-world object stands right now, not just its history -->
+    <div class="st-card reveal" style="--reveal-delay: 0.1s">
+      <p class="st-subject mono">{content.subject}</p>
+      <dl class="st-rows">
+        {
+          content.rows.map((row, i) => (
+            <div class="st-row reveal" style={`--reveal-delay: ${0.18 + i * 0.08}s`}>
+              <dt class="st-label mono">{row.label}</dt>
+              <dd class="st-value">{row.value}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </div>
+  </div>
+</section>
+
+<style>
+  .st-card {
+    max-width: 34rem;
+    padding: var(--space-4) var(--space-3);
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-l);
+    background: rgba(250, 247, 242, 0.03);
+  }
+
+  .st-subject {
+    font-size: var(--text-micro);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--alive);
+    opacity: 0.9;
+    padding-bottom: var(--space-2);
+    margin-bottom: var(--space-2);
+    border-bottom: 1px solid var(--line-light);
+  }
+
+  .st-rows {
+    display: grid;
+    gap: 0.9rem;
+    margin: 0;
+  }
+
+  .st-row {
+    display: grid;
+    grid-template-columns: minmax(0, 9.5rem) minmax(0, 1fr);
+    gap: var(--space-2);
+    align-items: baseline;
+  }
+
+  .st-label {
+    font-size: var(--text-micro);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+
+  .st-value {
+    margin: 0;
+    font-size: var(--text-body);
+    font-weight: 600;
+    letter-spacing: var(--tracking-tight);
+  }
+
+  @media (max-width: 560px) {
+    .st-row {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0.15rem;
+    }
+  }
+</style>

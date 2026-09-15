@@ -7,7 +7,7 @@
   "brand": {
     "eyebrow": "Tikpal",
     "title": "Intelligenz, die sich mit dir bewegt.",
-    "subtitle": "Tikpal ist eine Intelligenz in drei Erlebnissen: Voice erfasst, App versteht, Room antwortet.",
+    "subtitle": "Voice erfasst, Intelligence versteht, App hilft dir zu handeln, Room antwortet.",
     "products": [
       {
         "name": "Tikpal Voice",
@@ -17,7 +17,7 @@
       },
       {
         "name": "Tikpal App",
-        "verb": "Verstehen.",
+        "verb": "Handeln.",
         "line": "Mit App weiterdenken.",
         "href": "/app/"
       },
@@ -124,6 +124,19 @@
       }
     ],
     "customLine": "Mit eigenen AI-Aufgaben in der App arbeitet Tikpal so, wie du es willst."
+  },
+  "intelligenceBand": {
+    "title": "Intelligenz zieht sich durch alles.",
+    "lines": [
+      "Voice erfasst es.",
+      "Intelligence versteht es.",
+      "App macht es zur Handlung.",
+      "Room bringt es in deinen Raum."
+    ],
+    "explore": {
+      "label": "Tikpal Intelligence entdecken",
+      "href": "/intelligence/"
+    }
   },
   "recall": {
     "title": "Finde die Idee.",

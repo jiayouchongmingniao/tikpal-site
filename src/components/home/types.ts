@@ -184,6 +184,14 @@ export interface Community {
   footnote: string;
 }
 
+// The band between Abilities and Integrations: four lines naming the layer
+// that runs through Voice / App / Room, with Intelligence as the pivot.
+export interface IntelligenceBand {
+  title: string;
+  lines: string[];
+  explore: Cta;
+}
+
 export interface HomeContent {
   meta: HomeMeta;
   closingLine?: string;
@@ -192,6 +200,7 @@ export interface HomeContent {
   demo: HomeDemo;
   whyNotPhone: WhyNotPhone;
   tasks: TasksSection;
+  intelligenceBand: IntelligenceBand;
   integrations: Integrations;
   recall: Recall;
   community: Community;

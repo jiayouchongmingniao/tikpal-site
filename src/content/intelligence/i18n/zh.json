@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "Tikpal Intelligence — 读懂你的世界",
+    "description": "Tikpal Intelligence 读懂你语音笔记背后的人、项目、想法、决定、承诺与下一步——让每个新想法都带着上下文开始，而不是从零开始。"
+  },
+  "closingLine": "随生活前行的智能——并且读懂你的世界。",
+  "hero": {
+    "eyebrow": "Tikpal Intelligence",
+    "headline": "你的世界，被读懂。",
+    "subtitle": "每一个瞬间都在累积上下文。Tikpal 读懂重要的人、项目、想法、决定、承诺——以及接下来会发生什么。"
+  },
+  "belong": {
+    "title": "它知道什么该连在一起。",
+    "titleLine2": "也知道它现在意味着什么。",
+    "valueLine": "每一次，都不必从零开始。",
+    "quoteLabel": "你说",
+    "quote": "John 喜欢更宽的箱体。我们下周做原型，我答应周五前把新图纸发给他。",
+    "chain": [
+      {
+        "name": "John",
+        "type": "人物",
+        "edge": "参与"
+      },
+      {
+        "name": "Speaker Project",
+        "type": "项目",
+        "edge": "包含"
+      },
+      {
+        "name": "Wider enclosure",
+        "type": "决定",
+        "edge": "导向"
+      },
+      {
+        "name": "Prototype V3",
+        "type": "任务",
+        "edge": ""
+      }
+    ],
+    "commitment": {
+      "name": "把新图纸发给 John",
+      "meta": "承诺 · 周五"
+    }
+  },
+  "evolve": {
+    "title": "它记得事情是如何演进的。",
+    "stages": [
+      "想法",
+      "讨论",
+      "决定",
+      "任务",
+      "结果"
+    ],
+    "closing": "不是一堆旧录音，而是从想法到结果的完整路径。"
+  },
+  "state": {
+    "title": "它知道事情进展到哪了。",
+    "subject": "Speaker Project",
+    "rows": [
+      {
+        "label": "状态",
+        "value": "Prototype V3"
+      },
+      {
+        "label": "参与者",
+        "value": "John、David"
+      },
+      {
+        "label": "最新决定",
+        "value": "Wider enclosure"
+      },
+      {
+        "label": "未完成的承诺",
+        "value": "把新图纸发给 John"
+      },
+      {
+        "label": "下一步",
+        "value": "测量评审 · 周五"
+      },
+      {
+        "label": "阻碍",
+        "value": "供应商交期"
+      }
+    ]
+  },
+  "ask": {
+    "title": "自然地提问，随即行动。",
+    "youLabel": "你",
+    "question": "音箱那件事进展到哪了？",
+    "tikpalLabel": "Tikpal",
+    "answers": [
+      "下一步是 Prototype V3。",
+      "John 同意了更宽的箱体。",
+      "供应商周五交付。",
+      "测量数据复核还没完成。"
+    ],
+    "targets": [
+      "Gmail",
+      "Todoist",
+      "Calendar",
+      "Notion",
+      "Studio"
+    ],
+    "cta": {
+      "label": "了解 App",
+      "href": "/app/"
+    }
+  }
+}

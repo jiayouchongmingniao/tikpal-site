@@ -1,0 +1,99 @@
+---
+import type { IntelligenceHero } from './types';
+
+interface Props {
+  content: IntelligenceHero;
+}
+
+const { content } = Astro.props;
+---
+
+<section class="hero section surface-dark grain">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-glow hero-glow-alt" aria-hidden="true"></div>
+
+  <div class="container hero-inner">
+    <p class="eyebrow mono reveal">{content.eyebrow}</p>
+    <h1 class="h1 reveal" style="--reveal-delay: 0.1s">{content.headline}</h1>
+    <p class="lead reveal" style="--reveal-delay: 0.2s">{content.subtitle}</p>
+  </div>
+</section>
+
+<style>
+  .hero {
+    /* copy-only hero: cap the height so tall viewports don't strand the
+       three lines in a full-screen void */
+    min-height: min(100svh, 46rem);
+    display: flex;
+    align-items: center;
+    padding-top: 4rem;
+  }
+
+  /* two slow lamplight pools — warm amber plus a faint alive tint, so the
+     copy-only hero still has depth without any node diagram */
+  .hero-glow {
+    position: absolute;
+    right: -12%;
+    top: -16%;
+    width: 46vw;
+    height: 46vw;
+    max-width: 38rem;
+    max-height: 38rem;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      var(--amber-soft) 0%,
+      rgba(201, 138, 75, 0.05) 45%,
+      transparent 70%
+    );
+    animation: drift 16s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  .hero-glow-alt {
+    right: auto;
+    top: auto;
+    left: -14%;
+    bottom: -22%;
+    width: 38vw;
+    height: 38vw;
+    max-width: 30rem;
+    max-height: 30rem;
+    background: radial-gradient(
+      circle,
+      rgba(47, 230, 167, 0.09) 0%,
+      rgba(47, 230, 167, 0.03) 45%,
+      transparent 70%
+    );
+    animation: drift 21s ease-in-out infinite reverse;
+  }
+
+  .hero-inner {
+    position: relative;
+    display: grid;
+    gap: var(--space-2);
+    align-content: center;
+    max-width: var(--container);
+  }
+
+  .hero-inner .h1 {
+    max-width: 14em;
+  }
+
+  .hero-inner .lead {
+    max-width: 34em;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-glow {
+      animation: none;
+    }
+  }
+
+  @media (max-width: 860px) {
+    .hero {
+      min-height: 0;
+      padding-top: calc(var(--section-pad) + 2rem);
+    }
+  }
+</style>

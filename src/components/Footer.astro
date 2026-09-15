@@ -82,7 +82,8 @@ const icons: Record<string, string> = {
 
   .footer-grid {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    /* 5 content columns (Products, Tikpal, Explore, Help, Company) + Follow */
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: var(--space-4);
     padding-block: var(--space-4);
     border-top: 1px solid var(--line-light);

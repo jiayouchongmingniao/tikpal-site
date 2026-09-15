@@ -1,13 +1,13 @@
 {
   "meta": {
     "title": "Tikpal App — Dein Denken, weitergedacht.",
-    "description": "Die Tikpal App trägt jeden erfassten Moment weiter — Fragmente werden zu Kontext, den du durchsuchen, zusammenfassen und exportieren kannst."
+    "description": "Die Tikpal App trägt jeden erfassten Moment weiter — erkunde, forme und handle mit dem Kontext, den Tikpal Intelligence versteht."
   },
   "closingLine": "Intelligenz, die sich mit dem Leben bewegt — in Ihrer Tasche, an Ihrer Seite.",
   "hero": {
     "eyebrow": "Tikpal App",
     "headline": "Dein Denken, weitergedacht.",
-    "subtitle": "Voice fängt den Moment — App trägt ihn weiter und verwebt Fragmente zu Kontext, mit dem du arbeiten kannst.",
+    "subtitle": "Voice fängt den Moment. Tikpal Intelligence versteht den Kontext. App hilft dir, ihn zu erkunden, zu formen und umzusetzen.",
     "primaryCta": "Tikpal App ausprobieren",
     "statusLine": "Sprich es aus — und lass es weiterwachsen.",
     "downloads": [
@@ -22,7 +22,7 @@
     ]
   },
   "capture": {
-    "title": "Fragmente werden Kontext.",
+    "title": "Sieh, wie alles zusammenkommt.",
     "timeline": {
       "label": "Heute",
       "entries": [

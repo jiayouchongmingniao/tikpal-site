@@ -1,0 +1,141 @@
+---
+import type { IntelligenceBand } from '../home/types';
+
+interface Props {
+  content: IntelligenceBand;
+}
+
+const { content } = Astro.props;
+
+// line index 1 is the Intelligence line — the layer the other three hang off
+const PIVOT = 1;
+---
+
+<section id="intelligence" class="section surface-room grain">
+  <div class="container">
+    <div class="ib-inner">
+      <header class="ib-head reveal">
+        <h2 class="h2">{content.title}</h2>
+      </header>
+
+      <!-- four lines on one rail: the thread runs through all of them -->
+      <p class="ib-lines">
+        {
+          content.lines.map((line, i) => (
+            <span
+              class:list={['ib-line reveal', { 'ib-line-pivot': i === PIVOT }]}
+              style={`--reveal-delay: ${0.12 + i * 0.09}s`}
+            >
+              {line}
+            </span>
+          ))
+        }
+      </p>
+
+      <p class="ib-explore reveal" style="--reveal-delay: 0.55s">
+        <a class="link-arrow" href={content.explore.href}>
+          {content.explore.label}
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ib-inner {
+    max-width: 36rem;
+    margin-inline: auto;
+  }
+
+  .ib-head {
+    display: grid;
+    gap: var(--space-2);
+    margin-bottom: clamp(2.5rem, 2rem + 3vw, 4rem);
+  }
+
+  .ib-lines {
+    position: relative;
+    display: grid;
+    gap: clamp(1.1rem, 1rem + 1vw, 1.7rem);
+    margin: 0;
+    padding-left: clamp(1.6rem, 1.2rem + 2vw, 2.6rem);
+  }
+
+  /* the through-line, fading at both ends so it reads as continuous */
+  .ib-lines::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+    bottom: 0.2em;
+    width: 1px;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      var(--tone-600) 12%,
+      var(--tone-600) 88%,
+      transparent
+    );
+  }
+
+  .ib-line {
+    position: relative;
+    display: block;
+    font-family: var(--font-display);
+    font-size: var(--text-lead);
+    font-weight: 500;
+    letter-spacing: var(--tracking-tight);
+    line-height: 1.45;
+    /* .reveal starts these at 0; the resting state is a dimmed 0.72 so the
+       Intelligence line is the only one at full strength */
+    opacity: 0;
+  }
+
+  /* one node per line, sitting on the rail */
+  .ib-line::before {
+    content: "";
+    position: absolute;
+    left: calc(-1 * clamp(1.6rem, 1.2rem + 2vw, 2.6rem) - 2.5px);
+    top: 0.62em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--tone-500);
+  }
+
+  .ib-line.is-visible {
+    opacity: 0.72;
+  }
+
+  .ib-line-pivot {
+    font-weight: 650;
+    color: var(--alive);
+  }
+
+  .ib-line-pivot.is-visible {
+    opacity: 1;
+  }
+
+  .ib-line-pivot::before {
+    width: 7px;
+    height: 7px;
+    left: calc(-1 * clamp(1.6rem, 1.2rem + 2vw, 2.6rem) - 3.5px);
+    background: var(--alive);
+    box-shadow: 0 0 0 4px var(--alive-dim);
+  }
+
+  .ib-explore {
+    margin: clamp(2.5rem, 2rem + 3vw, 3.5rem) 0 0;
+  }
+
+  @media (max-width: 640px) {
+    .ib-line {
+      font-size: var(--text-body);
+    }
+
+    .ib-explore .link-arrow {
+      font-size: var(--text-small);
+    }
+  }
+</style>

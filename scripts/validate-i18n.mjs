@@ -72,7 +72,7 @@ function checkPreservation(group, data) {
 }
 
 const GROUPS = [
-  'home', 'common', 'room', 'app', 'privacy', 'terms', 'about', 'support', 'faq', 'voice', 'compare',
+  'home', 'common', 'room', 'intelligence', 'app', 'privacy', 'terms', 'about', 'support', 'faq', 'voice', 'compare',
   'ai-note-taker', 'ai-memory', 'voice-recorder-for-ideas', 'voice-to-task', 'voice-to-email',
   'voice-to-calendar', 'plaud-alternative', 'compare-ai-voice-recorders', 'use-cases-creators',
 ];

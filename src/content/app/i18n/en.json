@@ -1,13 +1,13 @@
 {
   "meta": {
     "title": "Tikpal App — Your thinking, extended.",
-    "description": "The Tikpal App carries every captured moment forward — weaving fragments into context you can search, summarize and export."
+    "description": "The Tikpal App carries every captured moment forward — explore, shape and act on the context Tikpal Intelligence understands."
   },
   "closingLine": "Intelligence that moves with life — in your pocket, on your side.",
   "hero": {
     "eyebrow": "Tikpal App",
     "headline": "Your thinking, extended.",
-    "subtitle": "Voice catches the moment — App carries it forward, weaving every fragment into context you can act on.",
+    "subtitle": "Voice captures the moment. Tikpal Intelligence understands the context. App helps you explore it, shape it and act on it.",
     "primaryCta": "Try Tikpal App",
     "statusLine": "Say it, then let it continue.",
     "downloads": [
@@ -22,7 +22,7 @@
     ]
   },
   "capture": {
-    "title": "Fragments become context.",
+    "title": "See how it all comes together.",
     "timeline": {
       "label": "Today",
       "entries": [

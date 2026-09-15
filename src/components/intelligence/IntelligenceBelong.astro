@@ -1,0 +1,372 @@
+---
+import type { IntelligenceBelong } from './types';
+
+interface Props {
+  content: IntelligenceBelong;
+}
+
+const { content } = Astro.props;
+
+const last = content.chain.length - 1;
+---
+
+<section id="belong" class="section surface-dark grain">
+  <div class="container">
+    <header class="section-head reveal">
+      <h2 class="h2">
+        {content.title}
+        <span class="bl-title2">{content.titleLine2}</span>
+      </h2>
+      <p class="bl-value">{content.valueLine}</p>
+    </header>
+
+    <div class="bl-stage reveal">
+      <!-- the words, exactly as spoken, plus the promise caught alongside -->
+      <div class="bl-left">
+        <div class="bl-quote-card">
+          <p class="bl-role mono">
+            <span class="dot-alive" aria-hidden="true"></span>
+            {content.quoteLabel}
+          </p>
+          <blockquote class="bl-quote">“{content.quote}”</blockquote>
+          <div class="bl-wave" aria-hidden="true">
+            <span class="bl-wave-bar" style="height: 8px; animation-delay: 0s"></span>
+            <span class="bl-wave-bar" style="height: 18px; animation-delay: 0.12s"></span>
+            <span class="bl-wave-bar" style="height: 26px; animation-delay: 0.24s"></span>
+            <span class="bl-wave-bar" style="height: 14px; animation-delay: 0.36s"></span>
+            <span class="bl-wave-bar" style="height: 30px; animation-delay: 0.48s"></span>
+            <span class="bl-wave-bar" style="height: 18px; animation-delay: 0.6s"></span>
+            <span class="bl-wave-bar" style="height: 24px; animation-delay: 0.72s"></span>
+            <span class="bl-wave-bar" style="height: 10px; animation-delay: 0.84s"></span>
+          </div>
+        </div>
+
+        <div class="bl-commit">
+          <p class="bl-commit-meta mono">{content.commitment.meta}</p>
+          <p class="bl-commit-name">{content.commitment.name}</p>
+        </div>
+      </div>
+
+      <span class="bl-bridge" aria-hidden="true"></span>
+
+      <!-- what Tikpal makes of it: typed entities joined by typed relations -->
+      <ol class="bl-chain">
+        {
+          content.chain.map((node, i) => (
+            <li class="bl-step">
+              <span class="bl-node" data-bl-node={i}>
+                {node.name}
+                <em class="bl-type mono">{node.type}</em>
+              </span>
+              {i < last && (
+                <span class="bl-link" data-bl-link={i} aria-hidden="true">
+                  {node.edge && <em class="bl-edge mono">{node.edge}</em>}
+                </span>
+              )}
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </div>
+</section>
+
+<style>
+  .bl-title2 {
+    display: block;
+  }
+
+  /* the consumer-value punchline under the belong title */
+  .bl-value {
+    margin-top: var(--space-2);
+    font-size: var(--text-lead);
+    line-height: 1.5;
+    color: var(--tone-400);
+    max-width: 26em;
+  }
+
+  .bl-stage {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) 4rem minmax(0, 4fr);
+    align-items: center;
+  }
+
+  .bl-left {
+    display: grid;
+    gap: var(--space-2);
+    align-content: start;
+  }
+
+  .bl-quote-card {
+    display: grid;
+    gap: var(--space-2);
+    align-content: start;
+    padding: var(--space-4) var(--space-3);
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-l);
+    background: rgba(250, 247, 242, 0.03);
+    opacity: 0;
+  }
+
+  /* the promise, highlighted as its own kind of understanding */
+  .bl-commit {
+    display: grid;
+    gap: 0.3rem;
+    padding: var(--space-3);
+    border: 1px solid rgba(47, 230, 167, 0.28);
+    border-radius: var(--radius-l);
+    background: rgba(47, 230, 167, 0.06);
+    opacity: 0;
+  }
+
+  .bl-commit-meta {
+    font-size: var(--text-micro);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--alive);
+    opacity: 0.85;
+  }
+
+  .bl-commit-name {
+    font-size: var(--text-body);
+    font-weight: 600;
+    letter-spacing: var(--tracking-tight);
+  }
+
+  .bl-role {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-size: var(--text-micro);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+
+  .bl-role .dot-alive {
+    flex: none;
+  }
+
+  .bl-quote {
+    font-size: var(--text-lead);
+    font-style: italic;
+    line-height: 1.55;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .bl-wave {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .bl-wave-bar {
+    width: 3px;
+    border-radius: 2px;
+    background: var(--white);
+    opacity: 0.8;
+    display: block;
+    animation: wave 1.1s ease-in-out infinite;
+  }
+
+  /* horizontal hairline joining the spoken words to the chain */
+  .bl-bridge {
+    height: 1px;
+    background: var(--tone-600);
+    transform: scaleX(0);
+    transform-origin: left center;
+  }
+
+  .bl-chain {
+    list-style: none;
+    display: grid;
+    justify-items: start;
+    padding: 0;
+  }
+
+  .bl-step {
+    display: grid;
+    justify-items: start;
+  }
+
+  .bl-node {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    padding: 0.7rem 1.4rem;
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-pill);
+    background: rgba(250, 247, 242, 0.055);
+    font-family: var(--font-display);
+    font-size: var(--text-body);
+    font-weight: 600;
+    letter-spacing: var(--tracking-tight);
+    opacity: 0;
+  }
+
+  /* the entity kind, as a quiet tag inside the pill */
+  .bl-type {
+    font-style: normal;
+    font-size: var(--text-micro);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--tone-400);
+    opacity: 0.75;
+  }
+
+  .bl-link {
+    position: relative;
+    width: 1px;
+    height: 3rem;
+    margin-left: 2rem;
+    background: var(--tone-600);
+    transform: scaleY(0);
+    transform-origin: top center;
+  }
+
+  .bl-edge {
+    position: absolute;
+    left: 0.9rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-style: normal;
+    font-size: var(--text-micro);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0;
+    color: var(--tone-400);
+  }
+
+  /* choreography: quote → commit → node → line+label → node → ... */
+  .bl-stage.is-visible .bl-quote-card {
+    animation: bl-in 0.7s var(--ease-out) forwards;
+  }
+  .bl-stage.is-visible .bl-commit {
+    animation: bl-in 0.6s var(--ease-out) 0.3s forwards;
+  }
+  .bl-stage.is-visible .bl-bridge {
+    animation: bl-draw-x 0.5s var(--ease-out) 0.25s forwards;
+  }
+  .bl-stage.is-visible .bl-node[data-bl-node='0'] {
+    animation: bl-in 0.6s var(--ease-out) 0.55s forwards;
+  }
+  .bl-stage.is-visible .bl-link[data-bl-link='0'] {
+    animation: bl-draw-y 0.5s var(--ease-out) 0.95s forwards;
+  }
+  .bl-stage.is-visible .bl-link[data-bl-link='0'] .bl-edge {
+    animation: bl-fade 0.4s ease 1.25s forwards;
+  }
+  .bl-stage.is-visible .bl-node[data-bl-node='1'] {
+    animation: bl-in 0.6s var(--ease-out) 1.35s forwards;
+  }
+  .bl-stage.is-visible .bl-link[data-bl-link='1'] {
+    animation: bl-draw-y 0.5s var(--ease-out) 1.75s forwards;
+  }
+  .bl-stage.is-visible .bl-link[data-bl-link='1'] .bl-edge {
+    animation: bl-fade 0.4s ease 2.05s forwards;
+  }
+  .bl-stage.is-visible .bl-node[data-bl-node='2'] {
+    animation: bl-in 0.6s var(--ease-out) 2.15s forwards;
+  }
+  .bl-stage.is-visible .bl-link[data-bl-link='2'] {
+    animation: bl-draw-y 0.5s var(--ease-out) 2.55s forwards;
+  }
+  .bl-stage.is-visible .bl-link[data-bl-link='2'] .bl-edge {
+    animation: bl-fade 0.4s ease 2.85s forwards;
+  }
+  .bl-stage.is-visible .bl-node[data-bl-node='3'] {
+    animation: bl-in 0.6s var(--ease-out) 2.95s forwards;
+  }
+
+  @keyframes bl-in {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes bl-fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes bl-draw-x {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  @keyframes bl-draw-y {
+    from {
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bl-quote-card,
+    .bl-commit,
+    .bl-node,
+    .bl-edge {
+      animation: none;
+      opacity: 1;
+    }
+    .bl-bridge,
+    .bl-link {
+      animation: none;
+      transform: none;
+    }
+    .bl-wave-bar {
+      animation: none;
+    }
+  }
+
+  @media (max-width: 860px) {
+    .bl-stage {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0;
+      justify-items: stretch;
+    }
+
+    /* the bridge turns vertical between the stacked quote and chain */
+    .bl-bridge {
+      width: 1px;
+      height: 2.5rem;
+      justify-self: center;
+      transform: scaleY(0);
+      transform-origin: top center;
+    }
+
+    .bl-stage.is-visible .bl-bridge {
+      animation: bl-draw-y 0.5s var(--ease-out) 0.25s forwards;
+    }
+
+    .bl-chain {
+      justify-items: start;
+      padding-top: var(--space-2);
+    }
+  }
+
+  @media (max-width: 860px) and (prefers-reduced-motion: reduce) {
+    .bl-bridge {
+      animation: none;
+      transform: none;
+    }
+  }
+</style>
