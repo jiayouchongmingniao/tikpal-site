@@ -13,33 +13,55 @@
     "title": "무엇이 함께 속하는지 압니다.",
     "titleLine2": "그리고 그것이 지금 무엇을 의미하는지도 압니다.",
     "valueLine": "매번 처음부터 시작하지 않아도 됩니다.",
-    "quoteLabel": "당신의 한마디",
-    "quote": "John은 더 넓은 인클로저를 좋아해. 다음 주에 프로토타입을 만들자. 금요일 전에 새 도면을 보내기로 약속했어.",
-    "chain": [
-      {
-        "name": "John",
-        "type": "인물",
-        "edge": "담당"
-      },
-      {
-        "name": "Speaker Project",
-        "type": "프로젝트",
-        "edge": "포함"
-      },
-      {
-        "name": "Wider enclosure",
-        "type": "결정",
-        "edge": "로 이어짐"
-      },
-      {
-        "name": "Prototype V3",
-        "type": "과제",
-        "edge": ""
+    "life": {
+      "quoteLabel": "당신의 한마디",
+      "quote": "다음 주 금요일은 엄마 생신이세요. 작년에 갔던 그 작은 이탈리아 식당을 좋아하셨지. 아빠께 네 명 테이블 예약하고 케이크도 찾아오겠다고 약속했어.",
+      "chain": [
+        {
+          "name": "엄마",
+          "type": "인물",
+          "edge": "의 이벤트"
+        },
+        {
+          "name": "생신 · 다음 주 금요일",
+          "type": "이벤트",
+          "edge": "선호하는 장소"
+        },
+        {
+          "name": "이탈리아 레스토랑",
+          "type": "장소",
+          "edge": ""
+        },
+        {
+          "name": "네 명 테이블 예약",
+          "type": "과제",
+          "edge": ""
+        },
+        {
+          "name": "아빠와의 약속",
+          "type": "약속",
+          "edge": ""
+        },
+        {
+          "name": "케이크 찾아오기",
+          "type": "과제",
+          "edge": ""
+        }
+      ],
+      "followup": {
+        "whenLabel": "며칠 후",
+        "question": "엄마 생신에 아직 뭐가 남았지?",
+        "answer": "테이블 예약과 케이크 찾기가 남았어요. 저녁은 다음 주 금요일이에요."
       }
-    ],
-    "commitment": {
-      "name": "John에게 새 도면 보내기",
-      "meta": "약속 · 금요일"
+    },
+    "work": {
+      "label": "업무도 마찬가지.",
+      "nodes": [
+        "John",
+        "Speaker Project",
+        "Wider enclosure",
+        "Prototype V3"
+      ]
     }
   },
   "evolve": {
@@ -86,13 +108,12 @@
   "ask": {
     "title": "자연스럽게 묻고, 바로 실행하세요。",
     "youLabel": "당신",
-    "question": "스피커 일, 지금 어디까지 왔어?",
+    "question": "이번 주에 아직 해야 할 일이 뭐지?",
     "tikpalLabel": "Tikpal",
     "answers": [
-      "다음은 Prototype V3입니다.",
-      "John은 더 넓은 인클로저에 동의했습니다.",
-      "공급업체 납품은 금요일입니다.",
-      "측정 데이터 검토는 아직 열려 있습니다."
+      "엄마 생신 저녁은 금요일이에요 — 테이블 예약과 케이크 찾기가 아직 남았어요.",
+      "Speaker 측정 리뷰도 금요일이에요.",
+      "그전에 John에게 새 도면을 보내기로 약속했어요."
     ],
     "targets": [
       "Gmail",

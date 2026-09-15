@@ -13,33 +13,55 @@
     "title": "Es weiß, was zusammengehört.",
     "titleLine2": "Und was es jetzt bedeutet.",
     "valueLine": "Du musst nicht jedes Mal bei null anfangen.",
-    "quoteLabel": "Du sagst",
-    "quote": "John gefällt das breitere Gehäuse. Nächste Woche bauen wir einen Prototyp. Ich habe versprochen, ihm die neuen Zeichnungen bis Freitag zu schicken.",
-    "chain": [
-      {
-        "name": "John",
-        "type": "Person",
-        "edge": "arbeitet an"
-      },
-      {
-        "name": "Speaker Project",
-        "type": "Projekt",
-        "edge": "enthält"
-      },
-      {
-        "name": "Wider enclosure",
-        "type": "Entscheidung",
-        "edge": "führt zu"
-      },
-      {
-        "name": "Prototype V3",
-        "type": "Aufgabe",
-        "edge": ""
+    "life": {
+      "quoteLabel": "Du sagst",
+      "quote": "Nächsten Freitag ist Mamas Geburtstag. Ihr hat letztes Jahr dieses kleine italienische Lokal gefallen. Ich habe Papa versprochen, einen Tisch für vier zu reservieren und die Torte abzuholen.",
+      "chain": [
+        {
+          "name": "Mama",
+          "type": "Person",
+          "edge": "hat Ereignis"
+        },
+        {
+          "name": "Geburtstag · nächsten Freitag",
+          "type": "Ereignis",
+          "edge": "Lieblingsort"
+        },
+        {
+          "name": "italienisches Restaurant",
+          "type": "Ort",
+          "edge": ""
+        },
+        {
+          "name": "Tisch für vier reservieren",
+          "type": "Aufgabe",
+          "edge": ""
+        },
+        {
+          "name": "Versprechen an Papa",
+          "type": "Zusage",
+          "edge": ""
+        },
+        {
+          "name": "Torte abholen",
+          "type": "Aufgabe",
+          "edge": ""
+        }
+      ],
+      "followup": {
+        "whenLabel": "Tage später",
+        "question": "Was muss ich für Mamas Geburtstag noch erledigen?",
+        "answer": "Du musst noch den Tisch reservieren und die Torte abholen. Das Essen ist nächsten Freitag."
       }
-    ],
-    "commitment": {
-      "name": "John die neuen Zeichnungen schicken",
-      "meta": "Zusage · Freitag"
+    },
+    "work": {
+      "label": "Auch bei der Arbeit.",
+      "nodes": [
+        "John",
+        "Speaker Project",
+        "Wider enclosure",
+        "Prototype V3"
+      ]
     }
   },
   "evolve": {
@@ -86,13 +108,12 @@
   "ask": {
     "title": "Natürlich fragen. Direkt handeln.",
     "youLabel": "Du",
-    "question": "Wo stehen wir beim Lautsprecher?",
+    "question": "Was muss ich diese Woche noch erledigen?",
     "tikpalLabel": "Tikpal",
     "answers": [
-      "Als Nächstes kommt Prototype V3.",
-      "John hat dem breiteren Gehäuse zugestimmt.",
-      "Die Lieferung kommt am Freitag.",
-      "Die Prüfung der Messwerte ist noch offen."
+      "Mamas Geburtstagsessen ist am Freitag — du musst noch den Tisch reservieren und die Torte abholen.",
+      "Das Messreview für Speaker ist ebenfalls am Freitag.",
+      "Du hast John versprochen, ihm vorher die neuen Zeichnungen zu schicken."
     ],
     "targets": [
       "Gmail",

@@ -13,33 +13,55 @@
     "title": "Sabe qué cosas van juntas.",
     "titleLine2": "Y qué significa ahora.",
     "valueLine": "No empiezas de cero cada vez.",
-    "quoteLabel": "Tú dices",
-    "quote": "A John le gusta la caja más ancha. Prototipémosla la próxima semana; prometí enviarle los planos nuevos antes del viernes.",
-    "chain": [
-      {
-        "name": "John",
-        "type": "Persona",
-        "edge": "trabaja en"
-      },
-      {
-        "name": "Speaker Project",
-        "type": "Proyecto",
-        "edge": "contiene"
-      },
-      {
-        "name": "Wider enclosure",
-        "type": "Decisión",
-        "edge": "lleva a"
-      },
-      {
-        "name": "Prototype V3",
-        "type": "Tarea",
-        "edge": ""
+    "life": {
+      "quoteLabel": "Tú dices",
+      "quote": "El viernes que viene es el cumpleaños de mamá. Le encantó aquel italiano pequeño al que fuimos el año pasado. Le dije a papá que reservaría una mesa para cuatro y recogería la tarta.",
+      "chain": [
+        {
+          "name": "Mamá",
+          "type": "Persona",
+          "edge": "tiene evento"
+        },
+        {
+          "name": "Cumpleaños · viernes próximo",
+          "type": "Evento",
+          "edge": "lugar preferido"
+        },
+        {
+          "name": "restaurante italiano",
+          "type": "Lugar",
+          "edge": ""
+        },
+        {
+          "name": "Reservar mesa para cuatro",
+          "type": "Tarea",
+          "edge": ""
+        },
+        {
+          "name": "Promesa a papá",
+          "type": "Compromiso",
+          "edge": ""
+        },
+        {
+          "name": "Recoger la tarta",
+          "type": "Tarea",
+          "edge": ""
+        }
+      ],
+      "followup": {
+        "whenLabel": "Días después",
+        "question": "¿Qué me queda por hacer para el cumpleaños de mamá?",
+        "answer": "Te falta reservar la mesa y recoger la tarta. La cena es el viernes que viene."
       }
-    ],
-    "commitment": {
-      "name": "Enviar los planos a John",
-      "meta": "Compromiso · viernes"
+    },
+    "work": {
+      "label": "También en el trabajo.",
+      "nodes": [
+        "John",
+        "Speaker Project",
+        "Wider enclosure",
+        "Prototype V3"
+      ]
     }
   },
   "evolve": {
@@ -86,13 +108,12 @@
   "ask": {
     "title": "Pregunta con naturalidad. Actúa sin más.",
     "youLabel": "Tú",
-    "question": "¿Cómo vamos con el altavoz?",
+    "question": "¿Qué me queda por hacer esta semana?",
     "tikpalLabel": "Tikpal",
     "answers": [
-      "Lo siguiente es Prototype V3.",
-      "John estuvo de acuerdo con la caja más ancha.",
-      "La entrega del proveedor es el viernes.",
-      "La revisión de las mediciones sigue pendiente."
+      "La cena del cumpleaños de mamá es el viernes — te falta reservar la mesa y recoger la tarta.",
+      "La revisión de medición de Speaker también es el viernes.",
+      "Le prometiste a John enviarle los planos actualizados antes de eso."
     ],
     "targets": [
       "Gmail",

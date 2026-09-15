@@ -13,33 +13,55 @@
     "title": "它知道什么该连在一起。",
     "titleLine2": "也知道它现在意味着什么。",
     "valueLine": "每一次，都不必从零开始。",
-    "quoteLabel": "你说",
-    "quote": "John 喜欢更宽的箱体。我们下周做原型，我答应周五前把新图纸发给他。",
-    "chain": [
-      {
-        "name": "John",
-        "type": "人物",
-        "edge": "参与"
-      },
-      {
-        "name": "Speaker Project",
-        "type": "项目",
-        "edge": "包含"
-      },
-      {
-        "name": "Wider enclosure",
-        "type": "决定",
-        "edge": "导向"
-      },
-      {
-        "name": "Prototype V3",
-        "type": "任务",
-        "edge": ""
+    "life": {
+      "quoteLabel": "你说",
+      "quote": "下周五是妈妈的生日。她很喜欢我们去年去的那家意大利小馆。我答应爸爸订一张四人桌，再去取蛋糕。",
+      "chain": [
+        {
+          "name": "妈妈",
+          "type": "人物",
+          "edge": "有事件"
+        },
+        {
+          "name": "生日 · 下周五",
+          "type": "事件",
+          "edge": "偏爱的地方"
+        },
+        {
+          "name": "意大利餐厅",
+          "type": "地点",
+          "edge": ""
+        },
+        {
+          "name": "订四人桌",
+          "type": "任务",
+          "edge": ""
+        },
+        {
+          "name": "我答应了爸爸",
+          "type": "承诺",
+          "edge": ""
+        },
+        {
+          "name": "取蛋糕",
+          "type": "任务",
+          "edge": ""
+        }
+      ],
+      "followup": {
+        "whenLabel": "几天后",
+        "question": "妈妈的生日我还差什么没办？",
+        "answer": "还得订桌子和取蛋糕。晚餐就在下周五。"
       }
-    ],
-    "commitment": {
-      "name": "把新图纸发给 John",
-      "meta": "承诺 · 周五"
+    },
+    "work": {
+      "label": "工作也一样。",
+      "nodes": [
+        "John",
+        "Speaker Project",
+        "Wider enclosure",
+        "Prototype V3"
+      ]
     }
   },
   "evolve": {
@@ -86,13 +108,12 @@
   "ask": {
     "title": "自然地提问，随即行动。",
     "youLabel": "你",
-    "question": "音箱那件事进展到哪了？",
+    "question": "这周我还需要做什么？",
     "tikpalLabel": "Tikpal",
     "answers": [
-      "下一步是 Prototype V3。",
-      "John 同意了更宽的箱体。",
-      "供应商周五交付。",
-      "测量数据复核还没完成。"
+      "妈妈的生日晚餐在周五——你还得订桌子和取蛋糕。",
+      "Speaker 的测量评审也在周五。",
+      "你答应过 John，要在那之前把更新的图纸发给他。"
     ],
     "targets": [
       "Gmail",

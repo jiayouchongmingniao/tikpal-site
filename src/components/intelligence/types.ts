@@ -21,10 +21,27 @@ export interface IntelligenceChainNode {
   edge: string;
 }
 
-// the promise Tikpal caught alongside the chain, e.g. "Send drawings to John".
-export interface IntelligenceCommitment {
-  name: string;
-  meta: string;
+// a second, everyday demo: the same understanding applied to a family
+// birthday, closed by the question the user asks days later.
+export interface IntelligenceFollowup {
+  whenLabel: string;
+  question: string;
+  answer: string;
+}
+
+export interface IntelligenceLifeDemo {
+  quoteLabel: string;
+  quote: string;
+  chain: IntelligenceChainNode[];
+  followup: IntelligenceFollowup;
+}
+
+// the work demo, reduced to one quiet line so the family story owns the
+// first screen: a label plus the bare chain of names, no types or edges.
+// The speaker project is developed properly in the evolve and state sections.
+export interface IntelligenceWorkTeaser {
+  label: string;
+  nodes: string[];
 }
 
 export interface IntelligenceBelong {
@@ -33,10 +50,8 @@ export interface IntelligenceBelong {
   titleLine2: string;
   // consumer-value punchline under the title
   valueLine: string;
-  quoteLabel: string;
-  quote: string;
-  chain: IntelligenceChainNode[];
-  commitment: IntelligenceCommitment;
+  life: IntelligenceLifeDemo;
+  work: IntelligenceWorkTeaser;
 }
 
 export interface IntelligenceEvolve {

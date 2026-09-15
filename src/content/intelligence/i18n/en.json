@@ -13,33 +13,55 @@
     "title": "It knows what belongs together.",
     "titleLine2": "And what it means now.",
     "valueLine": "You don't start from zero every time.",
-    "quoteLabel": "You say",
-    "quote": "John likes the wider enclosure. Let's prototype it next week, and I promised to send him the new drawings before Friday.",
-    "chain": [
-      {
-        "name": "John",
-        "type": "Person",
-        "edge": "works on"
-      },
-      {
-        "name": "Speaker Project",
-        "type": "Project",
-        "edge": "contains"
-      },
-      {
-        "name": "Wider enclosure",
-        "type": "Decision",
-        "edge": "leads to"
-      },
-      {
-        "name": "Prototype V3",
-        "type": "Task",
-        "edge": ""
+    "life": {
+      "quoteLabel": "You say",
+      "quote": "Mom's birthday is next Friday. She liked that little Italian place we went to last year. I told Dad I'd book a table for four and pick up the cake.",
+      "chain": [
+        {
+          "name": "Mom",
+          "type": "Person",
+          "edge": "has event"
+        },
+        {
+          "name": "Birthday · Next Friday",
+          "type": "Event",
+          "edge": "preferred place"
+        },
+        {
+          "name": "Italian restaurant",
+          "type": "Place",
+          "edge": ""
+        },
+        {
+          "name": "Book table for four",
+          "type": "Task",
+          "edge": ""
+        },
+        {
+          "name": "I promised Dad",
+          "type": "Commitment",
+          "edge": ""
+        },
+        {
+          "name": "Pick up cake",
+          "type": "Task",
+          "edge": ""
+        }
+      ],
+      "followup": {
+        "whenLabel": "Days later",
+        "question": "What do I still need to do for Mom's birthday?",
+        "answer": "You still need to book the table and pick up the cake. The dinner is next Friday."
       }
-    ],
-    "commitment": {
-      "name": "Send drawings to John",
-      "meta": "Commitment · Friday"
+    },
+    "work": {
+      "label": "Work too.",
+      "nodes": [
+        "John",
+        "Speaker Project",
+        "Wider enclosure",
+        "Prototype V3"
+      ]
     }
   },
   "evolve": {
@@ -86,13 +108,12 @@
   "ask": {
     "title": "Ask naturally. Act on it.",
     "youLabel": "You",
-    "question": "Where are we with the speaker?",
+    "question": "What do I still need to do this week?",
     "tikpalLabel": "Tikpal",
     "answers": [
-      "Prototype V3 is next.",
-      "John agreed with the wider enclosure.",
-      "Supplier delivery is Friday.",
-      "Measurement review is still open."
+      "Mom's birthday dinner is Friday — you still need to book the table and pick up the cake.",
+      "The Speaker measurement review is also Friday.",
+      "You promised John the updated drawings before then."
     ],
     "targets": [
       "Gmail",

@@ -7,7 +7,12 @@ interface Props {
 
 const { content } = Astro.props;
 
-const last = content.chain.length - 1;
+// The family birthday is the one full demo here — it already proves the
+// point. Work appears only as a quiet one-line teaser; the speaker project
+// is developed properly in the evolve and state sections that follow.
+const life = content.life;
+const lifeLast = life.chain.length - 1;
+const workLast = content.work.nodes.length - 1;
 ---
 
 <section id="belong" class="section surface-dark grain">
@@ -20,15 +25,16 @@ const last = content.chain.length - 1;
       <p class="bl-value">{content.valueLine}</p>
     </header>
 
+    <!-- the one full demo: a family birthday, from the spoken words to the
+         typed chain to the question only a living world can answer days later -->
     <div class="bl-stage reveal">
-      <!-- the words, exactly as spoken, plus the promise caught alongside -->
       <div class="bl-left">
         <div class="bl-quote-card">
           <p class="bl-role mono">
             <span class="dot-alive" aria-hidden="true"></span>
-            {content.quoteLabel}
+            {life.quoteLabel}
           </p>
-          <blockquote class="bl-quote">“{content.quote}”</blockquote>
+          <blockquote class="bl-quote">“{life.quote}”</blockquote>
           <div class="bl-wave" aria-hidden="true">
             <span class="bl-wave-bar" style="height: 8px; animation-delay: 0s"></span>
             <span class="bl-wave-bar" style="height: 18px; animation-delay: 0.12s"></span>
@@ -41,9 +47,10 @@ const last = content.chain.length - 1;
           </div>
         </div>
 
-        <div class="bl-commit">
-          <p class="bl-commit-meta mono">{content.commitment.meta}</p>
-          <p class="bl-commit-name">{content.commitment.name}</p>
+        <div class="bl-followup">
+          <p class="bl-followup-when mono">{life.followup.whenLabel}</p>
+          <p class="bl-followup-q">“{life.followup.question}”</p>
+          <p class="bl-followup-a">{life.followup.answer}</p>
         </div>
       </div>
 
@@ -52,16 +59,33 @@ const last = content.chain.length - 1;
       <!-- what Tikpal makes of it: typed entities joined by typed relations -->
       <ol class="bl-chain">
         {
-          content.chain.map((node, i) => (
+          life.chain.map((node, i) => (
             <li class="bl-step">
               <span class="bl-node" data-bl-node={i}>
                 {node.name}
                 <em class="bl-type mono">{node.type}</em>
               </span>
-              {i < last && (
+              {i < lifeLast && (
                 <span class="bl-link" data-bl-link={i} aria-hidden="true">
                   {node.edge && <em class="bl-edge mono">{node.edge}</em>}
                 </span>
+              )}
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+
+    <!-- work, in one quiet line: the same understanding, not a second full demo -->
+    <div class="bl-work reveal" style="--reveal-delay: 0.1s">
+      <p class="bl-work-label mono">{content.work.label}</p>
+      <ol class="bl-work-chain">
+        {
+          content.work.nodes.map((name, i) => (
+            <li class="bl-work-item">
+              <span class="bl-work-node">{name}</span>
+              {i < workLast && (
+                <span class="bl-work-sep" aria-hidden="true">→</span>
               )}
             </li>
           ))
@@ -91,6 +115,10 @@ const last = content.chain.length - 1;
     align-items: center;
   }
 
+  .bl-stage + .bl-stage {
+    margin-top: var(--space-6);
+  }
+
   .bl-left {
     display: grid;
     gap: var(--space-2);
@@ -108,29 +136,85 @@ const last = content.chain.length - 1;
     opacity: 0;
   }
 
-  /* the promise, highlighted as its own kind of understanding */
-  .bl-commit {
-    display: grid;
-    gap: 0.3rem;
-    padding: var(--space-3);
-    border: 1px solid rgba(47, 230, 167, 0.28);
-    border-radius: var(--radius-l);
-    background: rgba(47, 230, 167, 0.06);
-    opacity: 0;
+  /* work, kept to one quiet line so the family demo owns the first screen */
+  .bl-work {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem 0.9rem;
+    margin-top: var(--space-5);
   }
 
-  .bl-commit-meta {
+  .bl-work-label {
     font-size: var(--text-micro);
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--alive);
-    opacity: 0.85;
+    color: var(--tone-400);
+    opacity: 0.75;
   }
 
-  .bl-commit-name {
-    font-size: var(--text-body);
+  .bl-work-chain {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem 0.55rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bl-work-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .bl-work-node {
+    padding: 0.32rem 0.8rem;
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-pill);
+    background: rgba(250, 247, 242, 0.04);
+    font-size: var(--text-micro);
     font-weight: 600;
     letter-spacing: var(--tracking-tight);
+    color: var(--tone-300);
+  }
+
+  .bl-work-sep {
+    color: var(--tone-600);
+    font-size: var(--text-micro);
+    opacity: 0.55;
+  }
+
+  /* days-later payoff: the question only a living world can answer */
+  .bl-followup {
+    display: grid;
+    gap: 0.55rem;
+    padding: var(--space-3);
+    border: 1px solid var(--line-light);
+    border-radius: var(--radius-l);
+    background: rgba(250, 247, 242, 0.03);
+    opacity: 0;
+  }
+
+  .bl-followup-when {
+    font-size: var(--text-micro);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--tone-400);
+    opacity: 0.8;
+  }
+
+  .bl-followup-q {
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--tone-300);
+  }
+
+  .bl-followup-a {
+    font-weight: 600;
+    letter-spacing: var(--tracking-tight);
+    color: var(--tone-100);
   }
 
   .bl-role {
@@ -244,9 +328,6 @@ const last = content.chain.length - 1;
   .bl-stage.is-visible .bl-quote-card {
     animation: bl-in 0.7s var(--ease-out) forwards;
   }
-  .bl-stage.is-visible .bl-commit {
-    animation: bl-in 0.6s var(--ease-out) 0.3s forwards;
-  }
   .bl-stage.is-visible .bl-bridge {
     animation: bl-draw-x 0.5s var(--ease-out) 0.25s forwards;
   }
@@ -279,6 +360,28 @@ const last = content.chain.length - 1;
   }
   .bl-stage.is-visible .bl-node[data-bl-node='3'] {
     animation: bl-in 0.6s var(--ease-out) 2.95s forwards;
+  }
+  .bl-stage.is-visible .bl-link[data-bl-link='3'] {
+    animation: bl-draw-y 0.5s var(--ease-out) 3.35s forwards;
+  }
+  .bl-stage.is-visible .bl-link[data-bl-link='3'] .bl-edge {
+    animation: bl-fade 0.4s ease 3.65s forwards;
+  }
+  .bl-stage.is-visible .bl-node[data-bl-node='4'] {
+    animation: bl-in 0.6s var(--ease-out) 3.75s forwards;
+  }
+  .bl-stage.is-visible .bl-link[data-bl-link='4'] {
+    animation: bl-draw-y 0.5s var(--ease-out) 4.15s forwards;
+  }
+  .bl-stage.is-visible .bl-link[data-bl-link='4'] .bl-edge {
+    animation: bl-fade 0.4s ease 4.45s forwards;
+  }
+  .bl-stage.is-visible .bl-node[data-bl-node='5'] {
+    animation: bl-in 0.6s var(--ease-out) 4.55s forwards;
+  }
+  /* the days-later answer lands once the life chain finished building */
+  .bl-stage.is-visible .bl-followup {
+    animation: bl-in 0.7s var(--ease-out) 5.15s forwards;
   }
 
   @keyframes bl-in {
@@ -321,7 +424,7 @@ const last = content.chain.length - 1;
 
   @media (prefers-reduced-motion: reduce) {
     .bl-quote-card,
-    .bl-commit,
+    .bl-followup,
     .bl-node,
     .bl-edge {
       animation: none;
